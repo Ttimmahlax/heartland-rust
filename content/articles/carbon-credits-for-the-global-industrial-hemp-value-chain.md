@@ -1,9 +1,9 @@
 +++
 title = "Carbon Credits for the Global Industrial Hemp Value Chain"
 excerpt = "Carbon Credits for the Global Industrial Hemp Value Chain — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "growth-from-systems.png"
 hero_alt = "Carbon Credits for the Global Industrial Hemp Value Chain"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["hemp", "carbon"]
 +++

@@ -1,9 +1,9 @@
 +++
 title = "Planting Hemp Fiber in the Summer Behind Winter Wheat"
 excerpt = "Planting Hemp Fiber in the Summer Behind Winter Wheat — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "plant-hemp-fiber-winter-wheat.png"
 hero_alt = "Planting Hemp Fiber in the Summer Behind Winter Wheat"
-published_at = "2024-06-01"
+published_at = "2023-12-13"
 author = "Heartland Industries"
 tags = ["hemp", "hemp-fiber"]
 +++

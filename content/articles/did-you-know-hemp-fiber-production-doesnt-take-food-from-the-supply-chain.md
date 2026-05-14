@@ -1,9 +1,9 @@
 +++
 title = "Did You Know Hemp Fiber Production Doesnt Take Food from the Supply Chain"
 excerpt = "Did You Know Hemp Fiber Production Doesnt Take Food from the Supply Chain — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "untitled-1027-×-768-px-1210-×-768-px-2.png"
 hero_alt = "Did You Know Hemp Fiber Production Doesnt Take Food from the Supply Chain"
-published_at = "2024-06-01"
+published_at = "2023-08-18"
 author = "Heartland Industries"
 tags = ["hemp", "hemp-fiber", "plastic"]
 +++

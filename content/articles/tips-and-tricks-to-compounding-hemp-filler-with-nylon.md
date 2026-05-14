@@ -1,9 +1,9 @@
 +++
 title = "Tips and Tricks to Compounding Hemp Filler with Nylon"
 excerpt = "Tips and Tricks to Compounding Hemp Filler with Nylon — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "untitled-1027-x-768-px-1210-x-768-px-3-1210x660.png"
 hero_alt = "Tips and Tricks to Compounding Hemp Filler with Nylon"
-published_at = "2024-06-01"
+published_at = "2023-07-03"
 author = "Heartland Industries"
 tags = ["hemp", "hemp-textile"]
 +++

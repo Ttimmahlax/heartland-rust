@@ -1,9 +1,9 @@
 +++
 title = "How Heartland Uses Carbon Report to Simplify Emissions Tracking TDS SDS Carbon Report"
 excerpt = "How Heartland Uses Carbon Report to Simplify Emissions Tracking TDS SDS Carbon Report — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "sds-tds-carbon-report-simplified-emissions-tracking-1210x660.png"
 hero_alt = "How Heartland Uses Carbon Report to Simplify Emissions Tracking TDS SDS Carbon Report"
-published_at = "2024-06-01"
+published_at = "2025-03-18"
 author = "Heartland Industries"
 tags = ["carbon"]
 +++

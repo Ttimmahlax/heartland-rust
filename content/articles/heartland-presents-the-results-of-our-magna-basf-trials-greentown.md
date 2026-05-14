@@ -1,9 +1,9 @@
 +++
 title = "Heartland Presents the Results of Our Magna Basf Trials Greentown"
 excerpt = "Heartland Presents the Results of Our Magna Basf Trials Greentown — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "foam-7.png"
 hero_alt = "Heartland Presents the Results of Our Magna Basf Trials Greentown"
-published_at = "2024-06-01"
+published_at = "2023-04-19"
 author = "Heartland Industries"
 tags = ["automotive"]
 +++

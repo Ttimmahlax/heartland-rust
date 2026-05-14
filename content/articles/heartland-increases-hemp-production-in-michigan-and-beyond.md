@@ -1,9 +1,9 @@
 +++
 title = "Heartland Increases Hemp Production in Michigan and Beyond"
 excerpt = "Heartland Increases Hemp Production in Michigan and Beyond — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "michigan-farm-article-1-1210-×-786-px.jpg"
 hero_alt = "Heartland Increases Hemp Production in Michigan and Beyond"
-published_at = "2024-06-01"
+published_at = "2023-03-21"
 author = "Heartland Industries"
 tags = ["hemp"]
 +++

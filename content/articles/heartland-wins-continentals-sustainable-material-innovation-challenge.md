@@ -1,9 +1,9 @@
 +++
 title = "Heartland Wins Continentals Sustainable Material Innovation Challenge"
 excerpt = "Heartland Wins Continentals Sustainable Material Innovation Challenge — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "paper-8-11.webp"
 hero_alt = "Heartland Wins Continentals Sustainable Material Innovation Challenge"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

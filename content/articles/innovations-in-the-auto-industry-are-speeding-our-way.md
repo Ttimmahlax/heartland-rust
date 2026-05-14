@@ -1,9 +1,9 @@
 +++
 title = "Innovations in the Auto Industry Are Speeding Our Way"
 excerpt = "Innovations in the Auto Industry Are Speeding Our Way — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "future-car.png"
 hero_alt = "Innovations in the Auto Industry Are Speeding Our Way"
-published_at = "2024-06-01"
+published_at = "2023-07-05"
 author = "Heartland Industries"
 tags = ["automotive"]
 +++

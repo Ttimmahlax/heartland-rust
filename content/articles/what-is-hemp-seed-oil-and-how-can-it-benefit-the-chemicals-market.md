@@ -1,9 +1,9 @@
 +++
 title = "What Is Hemp Seed Oil and How Can It Benefit the Chemicals Market"
 excerpt = "What Is Hemp Seed Oil and How Can It Benefit the Chemicals Market — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "what-is-hemp-seed-oil-how-can-it-benefit-chemical-market-1210x660.png"
 hero_alt = "What Is Hemp Seed Oil and How Can It Benefit the Chemicals Market"
-published_at = "2024-06-01"
+published_at = "2025-03-04"
 author = "Heartland Industries"
 tags = ["hemp"]
 +++

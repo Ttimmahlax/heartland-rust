@@ -1,9 +1,9 @@
 +++
 title = "52 of US Soybean Bought By China in 2024 Now Is Not the Time to Plant Soybean"
 excerpt = "52 of US Soybean Bought By China in 2024 Now Is Not the Time to Plant Soybean — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "52-of-us-soybean-bought-by-china-in-2024-now-is-not-the-time-to-plant-soybean.png"
 hero_alt = "52 of US Soybean Bought By China in 2024 Now Is Not the Time to Plant Soybean"
-published_at = "2024-06-01"
+published_at = "2025-04-07"
 author = "Heartland Industries"
 tags = ["policy", "rotation"]
 +++

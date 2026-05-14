@@ -1,9 +1,9 @@
 +++
 title = "Heartland Puts Industrial Hemp Headquarters in Detroit"
 excerpt = "Heartland Puts Industrial Hemp Headquarters in Detroit — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "plastic-pallets-1-1.png"
 hero_alt = "Heartland Puts Industrial Hemp Headquarters in Detroit"
-published_at = "2024-06-01"
+published_at = "2022-08-17"
 author = "Heartland Industries"
 tags = ["hemp"]
 +++

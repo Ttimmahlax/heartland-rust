@@ -1,9 +1,9 @@
 +++
 title = "International Hemp Partners with Heartland to Develop Americas Industrial Hemp Supply Chain"
 excerpt = "International Hemp Partners with Heartland to Develop Americas Industrial Hemp Supply Chain — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "heartland-altering-the-fabric-of-democracy-1.png"
 hero_alt = "International Hemp Partners with Heartland to Develop Americas Industrial Hemp Supply Chain"
-published_at = "2024-06-01"
+published_at = "2022-08-19"
 author = "Heartland Industries"
 tags = ["hemp", "plastic", "supply-chain"]
 +++

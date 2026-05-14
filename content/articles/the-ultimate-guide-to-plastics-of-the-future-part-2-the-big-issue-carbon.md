@@ -1,9 +1,9 @@
 +++
 title = "The Ultimate Guide to Plastics of the Future Part 2 the Big Issue Carbon"
 excerpt = "The Ultimate Guide to Plastics of the Future Part 2 the Big Issue Carbon — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "rubber-11.png"
 hero_alt = "The Ultimate Guide to Plastics of the Future Part 2 the Big Issue Carbon"
-published_at = "2024-06-01"
+published_at = "2022-08-21"
 author = "Heartland Industries"
 tags = ["carbon", "plastic"]
 +++

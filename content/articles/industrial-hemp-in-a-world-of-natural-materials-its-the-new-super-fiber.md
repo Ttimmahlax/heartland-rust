@@ -1,9 +1,9 @@
 +++
 title = "Industrial Hemp in a World of Natural Materials Its the New Super Fiber"
 excerpt = "Industrial Hemp in a World of Natural Materials Its the New Super Fiber — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "hemp-fiber-close-up-1210x660.png"
 hero_alt = "Industrial Hemp in a World of Natural Materials Its the New Super Fiber"
-published_at = "2024-06-01"
+published_at = "2023-04-26"
 author = "Heartland Industries"
 tags = ["hemp", "hemp-fiber"]
 +++

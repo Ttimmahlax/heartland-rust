@@ -1,9 +1,9 @@
 +++
 title = "Engineering Earth Rethinking Agriculture After 100 Years of Innovation"
 excerpt = "Engineering Earth Rethinking Agriculture After 100 Years of Innovation — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "paper-8.png"
 hero_alt = "Engineering Earth Rethinking Agriculture After 100 Years of Innovation"
-published_at = "2024-06-01"
+published_at = "2024-01-22"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

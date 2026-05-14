@@ -1,9 +1,9 @@
 +++
 title = "Lethal Ventures Heartland Partner to Launch Carbon Report"
 excerpt = "Lethal Ventures Heartland Partner to Launch Carbon Report — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "lethal-ventures-heartland-carbon-report-1210x660.png"
 hero_alt = "Lethal Ventures Heartland Partner to Launch Carbon Report"
-published_at = "2024-06-01"
+published_at = "2024-11-20"
 author = "Heartland Industries"
 tags = ["carbon"]
 +++

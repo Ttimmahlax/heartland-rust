@@ -1,9 +1,9 @@
 +++
 title = "Hurd Milled Not Good for Plastic Compounders"
 excerpt = "Hurd Milled Not Good for Plastic Compounders — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "regenerative-agriculture-hemp-fiber-3.png"
 hero_alt = "Hurd Milled Not Good for Plastic Compounders"
-published_at = "2024-06-01"
+published_at = "2023-07-28"
 author = "Heartland Industries"
 tags = ["plastic"]
 +++

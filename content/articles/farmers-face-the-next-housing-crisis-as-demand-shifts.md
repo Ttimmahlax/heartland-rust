@@ -1,9 +1,9 @@
 +++
 title = "Farmers Face the Next Housing Crisis As Demand Shifts"
 excerpt = "Farmers Face the Next Housing Crisis As Demand Shifts — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "transporting-bales-of-hemp-fiber.png"
 hero_alt = "Farmers Face the Next Housing Crisis As Demand Shifts"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["farming"]
 +++

@@ -3,7 +3,7 @@ title = "Customized Carbon Negative Materials for Large Manufacturers"
 excerpt = "Customized Carbon Negative Materials for Large Manufacturers — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
 hero_image = "hero.svg"
 hero_alt = "Customized Carbon Negative Materials for Large Manufacturers"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["carbon", "manufacturing"]
 +++

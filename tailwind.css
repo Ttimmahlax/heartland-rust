@@ -439,6 +439,19 @@ main {
 .site-header:not([data-scrolled]) .site-header-logo-light { display: none; }
 .site-header:not([data-scrolled]) .site-header-logo-dark  { display: block; }
 
+/* Dropdown panel items sit on a light surface even when the rest of the
+   header is transparent over the hero, so undo the white-text override for
+   anything inside .nav-dropdown-panel — keep them dark on light, brand-red
+   on hover. */
+.site-header:not([data-scrolled]) .nav-dropdown-panel a,
+.site-header:not([data-scrolled]) .nav-dropdown-panel button {
+  color: var(--color-fg);
+}
+.site-header:not([data-scrolled]) .nav-dropdown-panel a:hover,
+.site-header:not([data-scrolled]) .nav-dropdown-panel button:hover {
+  color: var(--color-accent);
+}
+
 /* ====== Layout helpers ============================================== */
 
 .container-content {

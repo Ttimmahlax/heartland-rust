@@ -1,9 +1,9 @@
 +++
 title = "Lets Celebrate Heartland Industries Banner Year in 2023"
 excerpt = "Lets Celebrate Heartland Industries Banner Year in 2023 — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "2023-in-review.jpg"
 hero_alt = "Lets Celebrate Heartland Industries Banner Year in 2023"
-published_at = "2023-06-01"
+published_at = "2024-01-02"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

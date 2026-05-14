@@ -1,9 +1,9 @@
 +++
 title = "Basf Regenerative Farming Program Cuts Emissions By 90"
 excerpt = "Basf Regenerative Farming Program Cuts Emissions By 90 — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "basf-regenerative-farming-program-cuts-emissions-by-90-1210x660.png"
 hero_alt = "Basf Regenerative Farming Program Cuts Emissions By 90"
-published_at = "2024-06-01"
+published_at = "2025-03-18"
 author = "Heartland Industries"
 tags = ["regenerative-ag", "farming", "automotive"]
 +++

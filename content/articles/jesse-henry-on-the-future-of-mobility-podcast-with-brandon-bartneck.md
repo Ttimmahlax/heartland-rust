@@ -1,9 +1,9 @@
 +++
 title = "Jesse Henry on the Future of Mobility Podcast with Brandon Bartneck"
 excerpt = "Jesse Henry on the Future of Mobility Podcast with Brandon Bartneck — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "jesse-henry-brandon-bartneck-future-of-mobility.png"
 hero_alt = "Jesse Henry on the Future of Mobility Podcast with Brandon Bartneck"
-published_at = "2024-06-01"
+published_at = "2023-11-22"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

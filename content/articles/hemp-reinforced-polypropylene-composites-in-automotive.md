@@ -1,9 +1,9 @@
 +++
 title = "Hemp Reinforced Polypropylene Composites in Automotive"
 excerpt = "Hemp Reinforced Polypropylene Composites in Automotive — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "paper-8-6.png"
 hero_alt = "Hemp Reinforced Polypropylene Composites in Automotive"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["hemp", "automotive"]
 +++

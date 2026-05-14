@@ -1,9 +1,9 @@
 +++
 title = "Replacing Nylon Fabric with Hemp Lyocell Same Great Strength No Microplastics"
 excerpt = "Replacing Nylon Fabric with Hemp Lyocell Same Great Strength No Microplastics — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "replacing-nylon-fabric-with-hemp-lyocell-same-great-strength-no-microplastics.webp"
 hero_alt = "Replacing Nylon Fabric with Hemp Lyocell Same Great Strength No Microplastics"
-published_at = "2024-06-01"
+published_at = "2025-11-10"
 author = "Heartland Industries"
 tags = ["hemp", "hemp-textile", "plastic"]
 +++

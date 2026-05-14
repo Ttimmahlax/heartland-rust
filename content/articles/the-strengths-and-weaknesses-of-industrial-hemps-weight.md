@@ -1,9 +1,9 @@
 +++
 title = "The Strengths and Weaknesses of Industrial Hemps Weight"
 excerpt = "The Strengths and Weaknesses of Industrial Hemps Weight — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "paper-8-1.png"
 hero_alt = "The Strengths and Weaknesses of Industrial Hemps Weight"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["hemp"]
 +++

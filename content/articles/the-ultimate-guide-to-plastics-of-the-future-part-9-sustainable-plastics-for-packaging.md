@@ -1,9 +1,9 @@
 +++
 title = "The Ultimate Guide to Plastics of the Future Part 9 Sustainable Plastics for Packaging"
 excerpt = "The Ultimate Guide to Plastics of the Future Part 9 Sustainable Plastics for Packaging — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "rubber-11.png"
 hero_alt = "The Ultimate Guide to Plastics of the Future Part 9 Sustainable Plastics for Packaging"
-published_at = "2024-06-01"
+published_at = "2022-08-22"
 author = "Heartland Industries"
 tags = ["plastic"]
 +++

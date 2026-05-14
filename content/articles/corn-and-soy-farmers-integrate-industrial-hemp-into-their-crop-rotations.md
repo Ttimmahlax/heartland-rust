@@ -1,9 +1,9 @@
 +++
 title = "Corn and Soy Farmers Integrate Industrial Hemp Into Their Crop Rotations"
 excerpt = "Corn and Soy Farmers Integrate Industrial Hemp Into Their Crop Rotations — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "corn-for-ethanol.png"
 hero_alt = "Corn and Soy Farmers Integrate Industrial Hemp Into Their Crop Rotations"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["hemp", "farming", "rotation"]
 +++

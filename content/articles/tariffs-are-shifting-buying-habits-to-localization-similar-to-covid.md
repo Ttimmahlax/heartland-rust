@@ -1,9 +1,9 @@
 +++
 title = "Tariffs Are Shifting Buying Habits to Localization Similar to Covid"
 excerpt = "Tariffs Are Shifting Buying Habits to Localization Similar to Covid — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "shifting-buying-habits-1210x660.png"
 hero_alt = "Tariffs Are Shifting Buying Habits to Localization Similar to Covid"
-published_at = "2024-06-01"
+published_at = "2025-03-31"
 author = "Heartland Industries"
 tags = ["policy"]
 +++

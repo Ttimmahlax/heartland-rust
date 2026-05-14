@@ -1,9 +1,9 @@
 +++
 title = "Sustainability in the Textile Industry Challenges and Opportunities"
 excerpt = "Sustainability in the Textile Industry Challenges and Opportunities — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "sustainability-in-the-textile-industry-challenges-and-opportunities.webp"
 hero_alt = "Sustainability in the Textile Industry Challenges and Opportunities"
-published_at = "2024-06-01"
+published_at = "2025-08-22"
 author = "Heartland Industries"
 tags = ["hemp-textile", "sustainability", "plastic"]
 +++

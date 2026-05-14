@@ -1,9 +1,9 @@
 +++
 title = "Local Materials for US Manufacturing Imperium Supply Chain"
 excerpt = "Local Materials for US Manufacturing Imperium Supply Chain — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "local-materials-for-us-manufacturing-imperium-supply-chain-1210x660.png"
 hero_alt = "Local Materials for US Manufacturing Imperium Supply Chain"
-published_at = "2024-06-01"
+published_at = "2025-02-03"
 author = "Heartland Industries"
 tags = ["plastic", "supply-chain", "imperium"]
 +++

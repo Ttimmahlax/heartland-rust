@@ -1,9 +1,9 @@
 +++
 title = "2022 the Year of Sustainability and ESG Mandates"
 excerpt = "2022 the Year of Sustainability and ESG Mandates — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "plastic-pallets-4-2.png"
 hero_alt = "2022 the Year of Sustainability and ESG Mandates"
-published_at = "2022-06-01"
+published_at = "2022-08-17"
 author = "Heartland Industries"
 tags = ["sustainability"]
 +++

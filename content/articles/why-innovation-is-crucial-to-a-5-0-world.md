@@ -1,9 +1,9 @@
 +++
 title = "Why Innovation Is Crucial to a 5 0 World"
 excerpt = "Why Innovation Is Crucial to a 5 0 World — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "13-1.png"
 hero_alt = "Why Innovation Is Crucial to a 5 0 World"
-published_at = "2024-06-01"
+published_at = "2024-08-05"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

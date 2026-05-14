@@ -1,9 +1,9 @@
 +++
 title = "Collecting Farming Data to Standardize Hemp Insurance Lending"
 excerpt = "Collecting Farming Data to Standardize Hemp Insurance Lending — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "ultimate-guide-to-regenerative-agriculture.png"
 hero_alt = "Collecting Farming Data to Standardize Hemp Insurance Lending"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["hemp", "farming"]
 +++

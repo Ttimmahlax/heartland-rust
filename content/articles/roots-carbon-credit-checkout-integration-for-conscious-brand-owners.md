@@ -1,9 +1,9 @@
 +++
 title = "Roots Carbon Credit Checkout Integration for Conscious Brand Owners"
 excerpt = "Roots Carbon Credit Checkout Integration for Conscious Brand Owners — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "roots-carbon-credit-checkout-local-farming.png-1210x660.png"
 hero_alt = "Roots Carbon Credit Checkout Integration for Conscious Brand Owners"
-published_at = "2024-06-01"
+published_at = "2025-03-10"
 author = "Heartland Industries"
 tags = ["carbon"]
 +++

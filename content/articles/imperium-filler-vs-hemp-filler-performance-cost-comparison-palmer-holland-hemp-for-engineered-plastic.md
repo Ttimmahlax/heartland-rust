@@ -1,9 +1,9 @@
 +++
 title = "Imperium Filler vs. Hemp Filler Performance Cost Comparison Palmer Holland Hemp for Engineered Plastic"
 excerpt = "Imperium Filler vs. Hemp Filler Performance Cost Comparison Palmer Holland Hemp for Engineered Plastic — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "palmer-holland-hemp-fiber-plastic-1210x660.png"
 hero_alt = "Imperium Filler vs. Hemp Filler Performance Cost Comparison Palmer Holland Hemp for Engineered Plastic"
-published_at = "2024-06-01"
+published_at = "2023-06-17"
 author = "Heartland Industries"
 tags = ["hemp", "plastic", "imperium"]
 +++

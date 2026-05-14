@@ -1,9 +1,9 @@
 +++
 title = "Industrial Hemp As the Feedstock to Make New Chemicals Protein Fatty Acids Cellulose Lignin"
 excerpt = "Industrial Hemp As the Feedstock to Make New Chemicals Protein Fatty Acids Cellulose Lignin — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "industrial-hemp-as-the-feedstock-to-make-new-chemicals-protein-fatty-acids-cellulose-lignin-1210x660.png"
 hero_alt = "Industrial Hemp As the Feedstock to Make New Chemicals Protein Fatty Acids Cellulose Lignin"
-published_at = "2024-06-01"
+published_at = "2025-01-21"
 author = "Heartland Industries"
 tags = ["hemp"]
 +++

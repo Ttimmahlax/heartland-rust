@@ -1,9 +1,9 @@
 +++
 title = "Farmers Are Reducing Water Usage By Adopting Hemp Fiber and Grain Crops"
 excerpt = "Farmers Are Reducing Water Usage By Adopting Hemp Fiber and Grain Crops — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "hemp-fiber-water-conservation-1210x660.png"
 hero_alt = "Farmers Are Reducing Water Usage By Adopting Hemp Fiber and Grain Crops"
-published_at = "2024-06-01"
+published_at = "2025-05-19"
 author = "Heartland Industries"
 tags = ["hemp", "hemp-fiber", "farming"]
 +++

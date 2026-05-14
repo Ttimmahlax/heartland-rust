@@ -1,9 +1,9 @@
 +++
 title = "Heartland Industries Cracks the Industrial Hemp Supply Chain Bottleneck"
 excerpt = "Heartland Industries Cracks the Industrial Hemp Supply Chain Bottleneck — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "plastic-pallets-4.png"
 hero_alt = "Heartland Industries Cracks the Industrial Hemp Supply Chain Bottleneck"
-published_at = "2024-06-01"
+published_at = "2022-08-17"
 author = "Heartland Industries"
 tags = ["hemp", "plastic", "supply-chain"]
 +++

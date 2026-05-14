@@ -1,7 +1,7 @@
 +++
 title = "Sustainable Plastics for Industrial Packaging Crates Pallets"
 excerpt = "Sustainable Plastics for Industrial Packaging Crates Pallets — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "paper-8-16-1210x660.png"
 hero_alt = "Sustainable Plastics for Industrial Packaging Crates Pallets"
 published_at = "2024-06-01"
 author = "Heartland Industries"

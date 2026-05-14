@@ -1,9 +1,9 @@
 +++
 title = "Lightweighting in Transportation"
 excerpt = "Lightweighting in Transportation — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "light-car.jpg"
 hero_alt = "Lightweighting in Transportation"
-published_at = "2024-06-01"
+published_at = "2023-10-03"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

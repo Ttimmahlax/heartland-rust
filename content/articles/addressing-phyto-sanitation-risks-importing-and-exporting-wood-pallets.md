@@ -1,9 +1,9 @@
 +++
 title = "Addressing Phyto Sanitation Risks Importing and Exporting Wood Pallets"
 excerpt = "Addressing Phyto Sanitation Risks Importing and Exporting Wood Pallets — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "phyto-sanitation-wood-pallet-1210x660.png"
 hero_alt = "Addressing Phyto Sanitation Risks Importing and Exporting Wood Pallets"
-published_at = "2024-06-01"
+published_at = "2024-11-02"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

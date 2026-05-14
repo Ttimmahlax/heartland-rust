@@ -1,9 +1,9 @@
 +++
 title = "Hemp Fiber Requires Less Water Than Cotton to Farm"
 excerpt = "Hemp Fiber Requires Less Water Than Cotton to Farm — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "hemp-fiber-requires-less-water-than-cotton-95.png"
 hero_alt = "Hemp Fiber Requires Less Water Than Cotton to Farm"
-published_at = "2024-06-01"
+published_at = "2024-12-12"
 author = "Heartland Industries"
 tags = ["hemp", "hemp-fiber", "hemp-textile"]
 +++

@@ -1,9 +1,9 @@
 +++
 title = "Heartland Joins Forces with the Hemp Fiber and Grain Association"
 excerpt = "Heartland Joins Forces with the Hemp Fiber and Grain Association — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "heartland-and-hemp-fiber-and-grain-association.png"
 hero_alt = "Heartland Joins Forces with the Hemp Fiber and Grain Association"
-published_at = "2024-06-01"
+published_at = "2023-12-05"
 author = "Heartland Industries"
 tags = ["hemp", "hemp-fiber"]
 +++

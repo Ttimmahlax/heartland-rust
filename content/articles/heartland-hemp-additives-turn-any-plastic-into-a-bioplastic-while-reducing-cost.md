@@ -1,9 +1,9 @@
 +++
 title = "Heartland Hemp Additives Turn Any Plastic Into a Bioplastic While Reducing Cost"
 excerpt = "Heartland Hemp Additives Turn Any Plastic Into a Bioplastic While Reducing Cost — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "plastic-pallets-3-1-1210x660.png"
 hero_alt = "Heartland Hemp Additives Turn Any Plastic Into a Bioplastic While Reducing Cost"
-published_at = "2024-06-01"
+published_at = "2022-08-17"
 author = "Heartland Industries"
 tags = ["hemp", "plastic"]
 +++

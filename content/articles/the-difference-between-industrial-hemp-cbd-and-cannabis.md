@@ -1,9 +1,9 @@
 +++
 title = "The Difference Between Industrial Hemp Cbd and Cannabis"
 excerpt = "The Difference Between Industrial Hemp Cbd and Cannabis — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "female-hemp-farmer-1210x660.jpg"
 hero_alt = "The Difference Between Industrial Hemp Cbd and Cannabis"
-published_at = "2024-06-01"
+published_at = "2023-02-27"
 author = "Heartland Industries"
 tags = ["hemp"]
 +++

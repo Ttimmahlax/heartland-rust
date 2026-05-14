@@ -139,7 +139,7 @@ fn ProductsDropdown() -> Element {
                 }
             }
             div { class: "absolute left-0 top-full pt-2 invisible group-hover:visible group-focus-within:visible",
-                div { class: "min-w-60 rounded-lg bg-[color:var(--color-surface)] border border-[color:var(--color-border)] p-2 shadow-xl",
+                div { class: "nav-dropdown-panel min-w-60 rounded-lg bg-[color:var(--color-surface)] border border-[color:var(--color-border)] p-2 shadow-xl",
                     DropdownItem { to: Route::ImperiumMasterbatch {}, title: "Imperium Masterbatch" }
                     DropdownItem { to: Route::ImperiumFilledResin {}, title: "Performance Plastics" }
                     DropdownItem { to: Route::ImperiumFiller {}, title: "Imperium Filler" }
@@ -162,7 +162,7 @@ fn IndustriesDropdown() -> Element {
                 }
             }
             div { class: "absolute left-0 top-full pt-2 invisible group-hover:visible group-focus-within:visible",
-                div { class: "rounded-lg bg-[color:var(--color-surface)] border border-[color:var(--color-border)] p-2 shadow-xl grid grid-cols-2 gap-2 min-w-[28rem]",
+                div { class: "nav-dropdown-panel rounded-lg bg-[color:var(--color-surface)] border border-[color:var(--color-border)] p-2 shadow-xl grid grid-cols-2 gap-2 min-w-[28rem]",
                     div {
                         ColumnHeading { label: "Markets" }
                         DropdownItem { to: Route::SustainablePlastic {}, title: "Plastic Compounding" }
@@ -198,7 +198,7 @@ fn ResourcesDropdown() -> Element {
                 }
             }
             div { class: "absolute right-0 top-full pt-2 invisible group-hover:visible group-focus-within:visible",
-                div { class: "rounded-lg bg-[color:var(--color-surface)] border border-[color:var(--color-border)] p-2 shadow-xl grid grid-cols-3 gap-2 min-w-[42rem]",
+                div { class: "nav-dropdown-panel rounded-lg bg-[color:var(--color-surface)] border border-[color:var(--color-border)] p-2 shadow-xl grid grid-cols-3 gap-2 min-w-[42rem]",
                     div {
                         ColumnHeading { label: "Innovation" }
                         DropdownItem { to: Route::EngineeringEarth {}, title: "Engineering Earth" }
@@ -234,7 +234,7 @@ fn AboutDropdown() -> Element {
                 }
             }
             div { class: "absolute right-0 top-full pt-2 invisible group-hover:visible group-focus-within:visible",
-                div { class: "min-w-60 rounded-lg bg-[color:var(--color-surface)] border border-[color:var(--color-border)] p-2 shadow-xl",
+                div { class: "nav-dropdown-panel min-w-60 rounded-lg bg-[color:var(--color-surface)] border border-[color:var(--color-border)] p-2 shadow-xl",
                     DropdownItem { to: Route::Team {}, title: "Team" }
                     DropdownItem { to: Route::Farmers {}, title: "Our Farmers" }
                     DropdownItem { to: Route::GreenPackaging {}, title: "Green Packaging Initiative" }

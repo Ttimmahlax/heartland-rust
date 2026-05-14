@@ -3,7 +3,7 @@ title = "Challenging Fast Fashion As Prices Shift Upward for Clothing"
 excerpt = "Challenging Fast Fashion As Prices Shift Upward for Clothing — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
 hero_image = "hero.svg"
 hero_alt = "Challenging Fast Fashion As Prices Shift Upward for Clothing"
-published_at = "2024-06-01"
+published_at = "2025-05-28"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

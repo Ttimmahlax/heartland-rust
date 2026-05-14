@@ -1,9 +1,9 @@
 +++
 title = "Industry 5 0 the Bridge Between Capitalism and Sustainability"
 excerpt = "Industry 5 0 the Bridge Between Capitalism and Sustainability — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "paper-8-8.png"
 hero_alt = "Industry 5 0 the Bridge Between Capitalism and Sustainability"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["sustainability"]
 +++

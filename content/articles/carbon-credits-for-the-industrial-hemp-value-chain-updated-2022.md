@@ -1,9 +1,9 @@
 +++
 title = "Carbon Credits for the Industrial Hemp Value Chain Updated 2022"
 excerpt = "Carbon Credits for the Industrial Hemp Value Chain Updated 2022 — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "growth-from-systems.png"
 hero_alt = "Carbon Credits for the Industrial Hemp Value Chain Updated 2022"
-published_at = "2022-06-01"
+published_at = "2022-09-21"
 author = "Heartland Industries"
 tags = ["hemp", "carbon"]
 +++

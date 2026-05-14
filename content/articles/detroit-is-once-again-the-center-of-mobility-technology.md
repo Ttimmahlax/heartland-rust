@@ -1,9 +1,9 @@
 +++
 title = "Detroit Is Once Again the Center of Mobility Technology"
 excerpt = "Detroit Is Once Again the Center of Mobility Technology — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "detroit.jpg"
 hero_alt = "Detroit Is Once Again the Center of Mobility Technology"
-published_at = "2024-06-01"
+published_at = "2024-02-19"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

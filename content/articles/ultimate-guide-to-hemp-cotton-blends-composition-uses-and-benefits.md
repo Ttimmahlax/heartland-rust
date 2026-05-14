@@ -1,9 +1,9 @@
 +++
 title = "Ultimate Guide to Hemp Cotton Blends Composition Uses and Benefits"
 excerpt = "Ultimate Guide to Hemp Cotton Blends Composition Uses and Benefits — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "ultimate-guide-to-hemp-cotton-blends-uses-and-benefits-1210x660.png"
 hero_alt = "Ultimate Guide to Hemp Cotton Blends Composition Uses and Benefits"
-published_at = "2024-06-01"
+published_at = "2026-01-19"
 author = "Heartland Industries"
 tags = ["hemp", "hemp-textile"]
 +++

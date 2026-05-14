@@ -1,9 +1,9 @@
 +++
 title = "The New Sustainable Leadership Era Why Its Here to Stay"
 excerpt = "The New Sustainable Leadership Era Why Its Here to Stay — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "leadership.jpg"
 hero_alt = "The New Sustainable Leadership Era Why Its Here to Stay"
-published_at = "2024-06-01"
+published_at = "2024-01-31"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

@@ -1,9 +1,9 @@
 +++
 title = "Green Is the New Gold How Sustainability Elevates Brand Value"
 excerpt = "Green Is the New Gold How Sustainability Elevates Brand Value — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "industry-5.0-article-series-1210-x-786-px.png"
 hero_alt = "Green Is the New Gold How Sustainability Elevates Brand Value"
-published_at = "2024-06-01"
+published_at = "2024-07-01"
 author = "Heartland Industries"
 tags = ["sustainability"]
 +++

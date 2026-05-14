@@ -1,9 +1,9 @@
 +++
 title = "Sustainable Supply Chain for Automotive"
 excerpt = "Sustainable Supply Chain for Automotive — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "plastic-pallets-3-2.png"
 hero_alt = "Sustainable Supply Chain for Automotive"
-published_at = "2024-06-01"
+published_at = "2022-08-17"
 author = "Heartland Industries"
 tags = ["plastic", "automotive", "supply-chain"]
 +++

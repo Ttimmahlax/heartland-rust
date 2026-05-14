@@ -1,9 +1,9 @@
 +++
 title = "Why Innovation Is Crucial to Our Carbon Neutral Future"
 excerpt = "Why Innovation Is Crucial to Our Carbon Neutral Future — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "innovation-lab.webp"
 hero_alt = "Why Innovation Is Crucial to Our Carbon Neutral Future"
-published_at = "2024-06-01"
+published_at = "2023-05-22"
 author = "Heartland Industries"
 tags = ["carbon"]
 +++

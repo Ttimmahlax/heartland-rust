@@ -106,7 +106,7 @@ pub fn LogoCarousel(props: LogoCarouselProps) -> Element {
     let heading = props.heading.clone();
     let show_heading = !heading.is_empty();
     rsx! {
-        section { class: "logo-carousel-section py-12 md:py-16 overflow-hidden",
+        section { class: "logo-carousel-section py-20 md:py-28 overflow-hidden",
             if show_heading {
                 div { class: "container-content text-center mb-8",
                     h2 { class: "text-xs md:text-sm uppercase tracking-[0.25em] text-[color:var(--color-fg-muted)] font-bold",

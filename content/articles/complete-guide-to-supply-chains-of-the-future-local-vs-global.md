@@ -1,9 +1,9 @@
 +++
 title = "Complete Guide to Supply Chains of the Future Local vs. Global"
 excerpt = "Complete Guide to Supply Chains of the Future Local vs. Global — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "international-supply-chain-shortages.png"
 hero_alt = "Complete Guide to Supply Chains of the Future Local vs. Global"
-published_at = "2024-06-01"
+published_at = "2022-08-19"
 author = "Heartland Industries"
 tags = ["plastic", "supply-chain"]
 +++

@@ -1,9 +1,9 @@
 +++
 title = "The Dark Side of Wood Pallets for International Shipments"
 excerpt = "The Dark Side of Wood Pallets for International Shipments — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "wood-pallets-international-shipping-dark-side-1210x660.png"
 hero_alt = "The Dark Side of Wood Pallets for International Shipments"
-published_at = "2024-06-01"
+published_at = "2024-11-20"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

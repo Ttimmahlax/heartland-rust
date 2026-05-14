@@ -1,9 +1,9 @@
 +++
 title = "The Time for New Materials in Manufacturing Is Now"
 excerpt = "The Time for New Materials in Manufacturing Is Now — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "injection-molding-1210x660.png"
 hero_alt = "The Time for New Materials in Manufacturing Is Now"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["manufacturing"]
 +++

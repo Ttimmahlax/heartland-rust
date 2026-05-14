@@ -1,9 +1,9 @@
 +++
 title = "Heartland Partners with Magnolia Partners to Distribute Decarbonized Returnable Packaging"
 excerpt = "Heartland Partners with Magnolia Partners to Distribute Decarbonized Returnable Packaging — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "heartland-lca-1210x660.png"
 hero_alt = "Heartland Partners with Magnolia Partners to Distribute Decarbonized Returnable Packaging"
-published_at = "2024-06-01"
+published_at = "2023-05-16"
 author = "Heartland Industries"
 tags = ["carbon"]
 +++

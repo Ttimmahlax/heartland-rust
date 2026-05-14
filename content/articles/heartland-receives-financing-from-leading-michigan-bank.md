@@ -1,9 +1,9 @@
 +++
 title = "Heartland Receives Financing from Leading Michigan Bank"
 excerpt = "Heartland Receives Financing from Leading Michigan Bank — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "paper-8-3.png"
 hero_alt = "Heartland Receives Financing from Leading Michigan Bank"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

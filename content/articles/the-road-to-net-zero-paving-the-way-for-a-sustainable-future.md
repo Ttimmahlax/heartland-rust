@@ -1,9 +1,9 @@
 +++
 title = "The Road to Net Zero Paving the Way for a Sustainable Future"
 excerpt = "The Road to Net Zero Paving the Way for a Sustainable Future — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "the-road-to-net-zero-title-image.png"
 hero_alt = "The Road to Net Zero Paving the Way for a Sustainable Future"
-published_at = "2024-06-01"
+published_at = "2024-07-08"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

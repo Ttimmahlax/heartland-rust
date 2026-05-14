@@ -1,9 +1,9 @@
 +++
 title = "John Ely Appointed CEO of Heartland Industries"
 excerpt = "John Ely Appointed CEO of Heartland Industries — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "1210x786.png"
 hero_alt = "John Ely Appointed CEO of Heartland Industries"
-published_at = "2024-06-01"
+published_at = "2024-07-08"
 author = "Heartland Industries"
 tags = ["plastic"]
 +++

@@ -1,9 +1,9 @@
 +++
 title = "2 Ways Automotive Manufacturers Are Decarbonizing Their Plastic Portfolio By 2030"
 excerpt = "2 Ways Automotive Manufacturers Are Decarbonizing Their Plastic Portfolio By 2030 — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "decarbonize-plastic-automotive.png"
 hero_alt = "2 Ways Automotive Manufacturers Are Decarbonizing Their Plastic Portfolio By 2030"
-published_at = "2030-06-01"
+published_at = "2023-09-11"
 author = "Heartland Industries"
 tags = ["carbon", "plastic", "automotive"]
 +++

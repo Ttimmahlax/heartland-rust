@@ -1,9 +1,9 @@
 +++
 title = "Problems Solutions Compounding Natural Fibers Into Plastics"
 excerpt = "Problems Solutions Compounding Natural Fibers Into Plastics — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "foam-7.png"
 hero_alt = "Problems Solutions Compounding Natural Fibers Into Plastics"
-published_at = "2024-06-01"
+published_at = "2022-09-06"
 author = "Heartland Industries"
 tags = ["hemp-fiber", "plastic"]
 +++

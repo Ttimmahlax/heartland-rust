@@ -1,9 +1,9 @@
 +++
 title = "Investing in Manufacturing Innovations Pioneering a Sustainable Future"
 excerpt = "Investing in Manufacturing Innovations Pioneering a Sustainable Future — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "industry-5.0-article-series-1210-x-786-px-2.png"
 hero_alt = "Investing in Manufacturing Innovations Pioneering a Sustainable Future"
-published_at = "2024-06-01"
+published_at = "2024-07-15"
 author = "Heartland Industries"
 tags = ["manufacturing"]
 +++

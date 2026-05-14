@@ -1,9 +1,9 @@
 +++
 title = "Heartland and Ravago Partner to Reduce the Carbon Footprint of Plastic"
 excerpt = "Heartland and Ravago Partner to Reduce the Carbon Footprint of Plastic — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "ravagoheartland-image-e1641222297209.png"
 hero_alt = "Heartland and Ravago Partner to Reduce the Carbon Footprint of Plastic"
-published_at = "2024-06-01"
+published_at = "2022-08-19"
 author = "Heartland Industries"
 tags = ["carbon", "plastic"]
 +++

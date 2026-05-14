@@ -1,9 +1,9 @@
 +++
 title = "Ultimate Guide to Hemp Lyocell Blends Uses and Benefits"
 excerpt = "Ultimate Guide to Hemp Lyocell Blends Uses and Benefits — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "ultimate-guide-to-hemp-lyocell-blends-composition-uses-and-benefits.png"
 hero_alt = "Ultimate Guide to Hemp Lyocell Blends Uses and Benefits"
-published_at = "2024-06-01"
+published_at = "2025-11-19"
 author = "Heartland Industries"
 tags = ["hemp", "hemp-textile"]
 +++

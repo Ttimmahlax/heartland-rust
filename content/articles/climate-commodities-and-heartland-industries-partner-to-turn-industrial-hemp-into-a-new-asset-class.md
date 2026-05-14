@@ -3,7 +3,7 @@ title = "Climate Commodities and Heartland Industries Partner to Turn Industrial
 excerpt = "Climate Commodities and Heartland Industries Partner to Turn Industrial Hemp Into a New Asset Class — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
 hero_image = "hero.svg"
 hero_alt = "Climate Commodities and Heartland Industries Partner to Turn Industrial Hemp Into a New Asset Class"
-published_at = "2024-06-01"
+published_at = "2022-08-19"
 author = "Heartland Industries"
 tags = ["hemp"]
 +++

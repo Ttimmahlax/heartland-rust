@@ -1,9 +1,9 @@
 +++
 title = "Arizona Alfalfa Farming Export to China Hits a Brick Wall"
 excerpt = "Arizona Alfalfa Farming Export to China Hits a Brick Wall — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "arizona-alfalfa-farming-hemp-fiber-and-grain-1210x660.png"
 hero_alt = "Arizona Alfalfa Farming Export to China Hits a Brick Wall"
-published_at = "2024-06-01"
+published_at = "2025-05-06"
 author = "Heartland Industries"
 tags = ["policy", "farming", "rotation"]
 +++

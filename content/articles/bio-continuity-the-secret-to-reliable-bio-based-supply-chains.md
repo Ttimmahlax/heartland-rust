@@ -1,7 +1,7 @@
 +++
 title = "Bio Continuity - The Secret to Reliable Bio-Based Supply Chains"
 excerpt = "Find out how bio continuity is defining the standards for bio-based materials that manufacturers will utilize for decades to come."
-hero_image = "hero.svg"
+hero_image = "paper-8.png"
 hero_alt = "Bio Continuity - The Secret to Reliable Bio-Based Supply Chains"
 published_at = "2022-08-18"
 author = "Tim Almond"

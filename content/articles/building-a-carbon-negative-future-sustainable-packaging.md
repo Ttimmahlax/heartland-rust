@@ -1,9 +1,9 @@
 +++
 title = "Building a Carbon Negative Future Sustainable Packaging"
 excerpt = "Building a Carbon Negative Future Sustainable Packaging — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "carbon-neutral-plastic-pallets-heartland-1210x660.png"
 hero_alt = "Building a Carbon Negative Future Sustainable Packaging"
-published_at = "2024-06-01"
+published_at = "2024-10-11"
 author = "Heartland Industries"
 tags = ["carbon"]
 +++

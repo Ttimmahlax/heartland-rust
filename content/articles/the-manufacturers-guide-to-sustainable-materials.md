@@ -1,9 +1,9 @@
 +++
 title = "The Manufacturers Guide to Sustainable Materials"
 excerpt = "The Manufacturers Guide to Sustainable Materials — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "lower-carbon-footprint-terraforming-1210x660.webp"
 hero_alt = "The Manufacturers Guide to Sustainable Materials"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["manufacturing"]
 +++

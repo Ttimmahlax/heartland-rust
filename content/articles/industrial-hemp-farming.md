@@ -1,9 +1,9 @@
 +++
 title = "Industrial Hemp Farming"
 excerpt = "Industrial Hemp Farming — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "transporting-bales-of-hemp-fiber.png"
 hero_alt = "Industrial Hemp Farming"
-published_at = "2024-06-01"
+published_at = "2022-08-17"
 author = "Heartland Industries"
 tags = ["hemp", "farming"]
 +++

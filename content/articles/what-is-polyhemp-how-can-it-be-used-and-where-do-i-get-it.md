@@ -1,9 +1,9 @@
 +++
 title = "What Is Polyhemp How Can It Be Used and Where Do I Get It"
 excerpt = "What Is Polyhemp How Can It Be Used and Where Do I Get It — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "what-is-polyhemp-how-is-it-different-than-polycotton-1-1210x660.png"
 hero_alt = "What Is Polyhemp How Can It Be Used and Where Do I Get It"
-published_at = "2024-06-01"
+published_at = "2025-06-27"
 author = "Heartland Industries"
 tags = ["hemp", "hemp-textile"]
 +++

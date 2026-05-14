@@ -1,9 +1,9 @@
 +++
 title = "Farming Hemp Grain and Fiber in 2025 Organic Is King"
 excerpt = "Farming Hemp Grain and Fiber in 2025 Organic Is King — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "farming-hemp-grain-and-fiber-in-2025-organic-is-king.png"
 hero_alt = "Farming Hemp Grain and Fiber in 2025 Organic Is King"
-published_at = "2025-06-01"
+published_at = "2025-01-14"
 author = "Heartland Industries"
 tags = ["hemp", "hemp-fiber", "farming"]
 +++

@@ -1,9 +1,9 @@
 +++
 title = "Carbon Farming Its Not About Carbon Footprint Its About Better Food and Water"
 excerpt = "Carbon Farming Its Not About Carbon Footprint Its About Better Food and Water — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "carbon-farming-benefits-1210x660.png"
 hero_alt = "Carbon Farming Its Not About Carbon Footprint Its About Better Food and Water"
-published_at = "2024-06-01"
+published_at = "2024-10-16"
 author = "Heartland Industries"
 tags = ["carbon", "farming"]
 +++

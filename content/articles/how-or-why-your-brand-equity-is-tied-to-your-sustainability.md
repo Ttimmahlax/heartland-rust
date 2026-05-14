@@ -3,7 +3,7 @@ title = "How or Why Your Brand Equity Is Tied to Your Sustainability"
 excerpt = "How or Why Your Brand Equity Is Tied to Your Sustainability — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
 hero_image = "hero.svg"
 hero_alt = "How or Why Your Brand Equity Is Tied to Your Sustainability"
-published_at = "2024-06-01"
+published_at = "2022-08-19"
 author = "Heartland Industries"
 tags = ["sustainability"]
 +++

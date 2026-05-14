@@ -1,9 +1,9 @@
 +++
 title = "Imperium Reinforced HDPE to Replace PP Applications"
 excerpt = "Imperium Reinforced HDPE to Replace PP Applications — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "hdpe-to-replace-pp-1210x660.png"
 hero_alt = "Imperium Reinforced HDPE to Replace PP Applications"
-published_at = "2024-06-01"
+published_at = "2025-04-23"
 author = "Heartland Industries"
 tags = ["plastic", "imperium"]
 +++

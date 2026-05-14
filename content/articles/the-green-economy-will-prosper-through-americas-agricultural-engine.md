@@ -1,9 +1,9 @@
 +++
 title = "The Green Economy Will Prosper Through Americas Agricultural Engine"
 excerpt = "The Green Economy Will Prosper Through Americas Agricultural Engine — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "paper-8-12.png"
 hero_alt = "The Green Economy Will Prosper Through Americas Agricultural Engine"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

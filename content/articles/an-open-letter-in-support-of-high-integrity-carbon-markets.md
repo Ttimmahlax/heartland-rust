@@ -1,9 +1,9 @@
 +++
 title = "An Open Letter in Support of High Integrity Carbon Markets"
 excerpt = "An Open Letter in Support of High Integrity Carbon Markets — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "sylvera-letter-image-1210x660.jpg"
 hero_alt = "An Open Letter in Support of High Integrity Carbon Markets"
-published_at = "2024-06-01"
+published_at = "2023-02-09"
 author = "Heartland Industries"
 tags = ["carbon", "plastic"]
 +++

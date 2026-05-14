@@ -3,7 +3,7 @@ title = "SEC Proposes Climate Related Disclosures"
 excerpt = "SEC Proposes Climate Related Disclosures — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
 hero_image = "hero.svg"
 hero_alt = "SEC Proposes Climate Related Disclosures"
-published_at = "2024-06-01"
+published_at = "2022-10-18"
 author = "Heartland Industries"
 tags = ["policy"]
 +++

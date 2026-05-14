@@ -3,7 +3,7 @@ title = "Industrial Packaging the Entry Point for Sustainability"
 excerpt = "Industrial Packaging the Entry Point for Sustainability — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
 hero_image = "hero.svg"
 hero_alt = "Industrial Packaging the Entry Point for Sustainability"
-published_at = "2024-06-01"
+published_at = "2023-02-01"
 author = "Heartland Industries"
 tags = ["sustainability"]
 +++

@@ -1,9 +1,9 @@
 +++
 title = "Implementing the New SEC Goals a Pathway to Sustainable"
 excerpt = "Implementing the New SEC Goals a Pathway to Sustainable — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "industry-5.0-article-series-1210-x-786-px-6.png"
 hero_alt = "Implementing the New SEC Goals a Pathway to Sustainable"
-published_at = "2024-06-01"
+published_at = "2024-06-10"
 author = "Heartland Industries"
 tags = ["policy"]
 +++

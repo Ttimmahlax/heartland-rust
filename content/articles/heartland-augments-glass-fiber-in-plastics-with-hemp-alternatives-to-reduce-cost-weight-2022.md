@@ -1,9 +1,9 @@
 +++
 title = "Heartland Augments Glass Fiber in Plastics with Hemp Alternatives to Reduce Cost Weight 2022"
 excerpt = "Heartland Augments Glass Fiber in Plastics with Hemp Alternatives to Reduce Cost Weight 2022 — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "plastic-pallets-1-2.png"
 hero_alt = "Heartland Augments Glass Fiber in Plastics with Hemp Alternatives to Reduce Cost Weight 2022"
-published_at = "2022-06-01"
+published_at = "2022-10-10"
 author = "Heartland Industries"
 tags = ["hemp", "hemp-fiber", "plastic"]
 +++

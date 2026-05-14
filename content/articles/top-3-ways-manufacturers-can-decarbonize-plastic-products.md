@@ -1,9 +1,9 @@
 +++
 title = "Top 3 Ways Manufacturers Can Decarbonize Plastic Products"
 excerpt = "Top 3 Ways Manufacturers Can Decarbonize Plastic Products — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "untitled-1027-×-768-px-1210-×-768-px-1.png"
 hero_alt = "Top 3 Ways Manufacturers Can Decarbonize Plastic Products"
-published_at = "2024-06-01"
+published_at = "2023-08-11"
 author = "Heartland Industries"
 tags = ["carbon", "plastic", "manufacturing"]
 +++

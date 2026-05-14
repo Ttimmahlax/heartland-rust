@@ -1,9 +1,9 @@
 +++
 title = "Heartland Presents Hemp4soil Usda Grant Results At Soil Water Conservation Society"
 excerpt = "Heartland Presents Hemp4soil Usda Grant Results At Soil Water Conservation Society — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "hemp4soil-heartland-usda-grant.webp"
 hero_alt = "Heartland Presents Hemp4soil Usda Grant Results At Soil Water Conservation Society"
-published_at = "2024-06-01"
+published_at = "2025-08-06"
 author = "Heartland Industries"
 tags = ["hemp"]
 +++

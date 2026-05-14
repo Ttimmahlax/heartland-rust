@@ -1,9 +1,9 @@
 +++
 title = "The Chief Sustainability Officer Cso"
 excerpt = "The Chief Sustainability Officer Cso — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "industry-5.0-article-series-1210-x-786-px-8-1210x660.png"
 hero_alt = "The Chief Sustainability Officer Cso"
-published_at = "2024-06-01"
+published_at = "2024-08-23"
 author = "Heartland Industries"
 tags = ["sustainability"]
 +++

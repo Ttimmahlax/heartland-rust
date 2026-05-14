@@ -3,7 +3,7 @@ title = "Industrial Hemp Marketplace"
 excerpt = "Industrial Hemp Marketplace — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
 hero_image = "hero.svg"
 hero_alt = "Industrial Hemp Marketplace"
-published_at = "2024-06-01"
+published_at = "2022-08-17"
 author = "Heartland Industries"
 tags = ["hemp"]
 +++

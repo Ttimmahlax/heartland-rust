@@ -1,9 +1,9 @@
 +++
 title = "First in Class Natural Fiber Reinforced PC ABS for Electronics"
 excerpt = "First in Class Natural Fiber Reinforced PC ABS for Electronics — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "copy-of-articles-standard-sizing-1210x660.webp"
 hero_alt = "First in Class Natural Fiber Reinforced PC ABS for Electronics"
-published_at = "2024-06-01"
+published_at = "2025-12-04"
 author = "Heartland Industries"
 tags = ["hemp-fiber", "electronics"]
 +++

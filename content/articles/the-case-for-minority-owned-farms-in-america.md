@@ -1,9 +1,9 @@
 +++
 title = "The Case for Minority Owned Farms in America"
 excerpt = "The Case for Minority Owned Farms in America — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "plastic-pallets-5-1210x660.png"
 hero_alt = "The Case for Minority Owned Farms in America"
-published_at = "2024-06-01"
+published_at = "2022-08-19"
 author = "Heartland Industries"
 tags = ["farming"]
 +++

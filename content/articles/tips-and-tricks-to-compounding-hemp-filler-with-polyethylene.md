@@ -1,9 +1,9 @@
 +++
 title = "Tips and Tricks to Compounding Hemp Filler with Polyethylene"
 excerpt = "Tips and Tricks to Compounding Hemp Filler with Polyethylene — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "untitled-1027-×-768-px-1210-×-768-px-1.png"
 hero_alt = "Tips and Tricks to Compounding Hemp Filler with Polyethylene"
-published_at = "2024-06-01"
+published_at = "2023-07-03"
 author = "Heartland Industries"
 tags = ["hemp"]
 +++

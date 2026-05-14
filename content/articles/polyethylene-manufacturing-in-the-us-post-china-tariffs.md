@@ -1,9 +1,9 @@
 +++
 title = "Polyethylene Manufacturing in the US Post China Tariffs"
 excerpt = "Polyethylene Manufacturing in the US Post China Tariffs — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "copy-of-articles-standard-sizing-1210x660.png"
 hero_alt = "Polyethylene Manufacturing in the US Post China Tariffs"
-published_at = "2024-06-01"
+published_at = "2025-04-22"
 author = "Heartland Industries"
 tags = ["policy", "manufacturing"]
 +++

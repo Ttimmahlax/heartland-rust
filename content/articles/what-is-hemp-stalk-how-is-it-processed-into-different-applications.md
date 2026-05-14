@@ -1,9 +1,9 @@
 +++
 title = "What Is Hemp Stalk How Is It Processed Into Different Applications"
 excerpt = "What Is Hemp Stalk How Is It Processed Into Different Applications — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "what-is-hemp-stalk-how-is-it-processed-into-different-applications-1210x660.png"
 hero_alt = "What Is Hemp Stalk How Is It Processed Into Different Applications"
-published_at = "2024-06-01"
+published_at = "2025-02-24"
 author = "Heartland Industries"
 tags = ["hemp", "plastic"]
 +++

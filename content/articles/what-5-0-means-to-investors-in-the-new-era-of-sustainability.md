@@ -1,9 +1,9 @@
 +++
 title = "What 5 0 Means to Investors in the New Era of Sustainability"
 excerpt = "What 5 0 Means to Investors in the New Era of Sustainability — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "industry-5.0-article-series-1210-x-786-px-3.png"
 hero_alt = "What 5 0 Means to Investors in the New Era of Sustainability"
-published_at = "2024-06-01"
+published_at = "2024-07-22"
 author = "Heartland Industries"
 tags = ["sustainability"]
 +++

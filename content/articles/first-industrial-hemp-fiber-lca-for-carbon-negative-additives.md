@@ -1,9 +1,9 @@
 +++
 title = "First Industrial Hemp Fiber LCA for Carbon Negative Additives"
 excerpt = "First Industrial Hemp Fiber LCA for Carbon Negative Additives — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "heartland-lca.png"
 hero_alt = "First Industrial Hemp Fiber LCA for Carbon Negative Additives"
-published_at = "2024-06-01"
+published_at = "2022-11-08"
 author = "Heartland Industries"
 tags = ["hemp", "hemp-fiber", "carbon"]
 +++

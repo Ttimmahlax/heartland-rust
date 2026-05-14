@@ -1,9 +1,9 @@
 +++
 title = "Is the World Entering a Recycled Plastic Shortage"
 excerpt = "Is the World Entering a Recycled Plastic Shortage — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "paper-8-14.png"
 hero_alt = "Is the World Entering a Recycled Plastic Shortage"
-published_at = "2024-06-01"
+published_at = "2022-08-19"
 author = "Heartland Industries"
 tags = ["plastic"]
 +++

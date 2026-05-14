@@ -1,9 +1,9 @@
 +++
 title = "The Foundation of the Graphene Revolution Is Bio Based Materials"
 excerpt = "The Foundation of the Graphene Revolution Is Bio Based Materials — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "imperium-carbon.png"
 hero_alt = "The Foundation of the Graphene Revolution Is Bio Based Materials"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["graphene"]
 +++

@@ -1,9 +1,9 @@
 +++
 title = "Heartland Solves Traveling Salesman Problem to Optimize Agriculture"
 excerpt = "Heartland Solves Traveling Salesman Problem to Optimize Agriculture — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "untitled-design-1210x660.png"
 hero_alt = "Heartland Solves Traveling Salesman Problem to Optimize Agriculture"
-published_at = "2024-06-01"
+published_at = "2022-08-19"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

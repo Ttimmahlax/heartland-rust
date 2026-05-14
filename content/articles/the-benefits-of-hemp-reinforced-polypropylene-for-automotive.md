@@ -1,9 +1,9 @@
 +++
 title = "The Benefits of Hemp Reinforced Polypropylene for Automotive"
 excerpt = "The Benefits of Hemp Reinforced Polypropylene for Automotive — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "mining-3.png"
 hero_alt = "The Benefits of Hemp Reinforced Polypropylene for Automotive"
-published_at = "2024-06-01"
+published_at = "2022-08-22"
 author = "Heartland Industries"
 tags = ["hemp", "automotive"]
 +++

@@ -1,9 +1,9 @@
 +++
 title = "Industrial Hemp Additives Create Blue Ocean in the Plastics"
 excerpt = "Industrial Hemp Additives Create Blue Ocean in the Plastics — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "plastic-pallets-1210x660.webp"
 hero_alt = "Industrial Hemp Additives Create Blue Ocean in the Plastics"
-published_at = "2024-06-01"
+published_at = "2022-08-19"
 author = "Heartland Industries"
 tags = ["hemp", "plastic"]
 +++

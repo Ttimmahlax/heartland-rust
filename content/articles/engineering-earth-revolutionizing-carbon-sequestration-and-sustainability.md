@@ -3,7 +3,7 @@ title = "Engineering Earth Revolutionizing Carbon Sequestration and Sustainabili
 excerpt = "Engineering Earth Revolutionizing Carbon Sequestration and Sustainability — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
 hero_image = "hero.svg"
 hero_alt = "Engineering Earth Revolutionizing Carbon Sequestration and Sustainability"
-published_at = "2024-06-01"
+published_at = "2024-08-12"
 author = "Heartland Industries"
 tags = ["carbon", "sustainability"]
 +++

@@ -1,9 +1,9 @@
 +++
 title = "Industry 5 0 the First Proactive Industrial Revolution"
 excerpt = "Industry 5 0 the First Proactive Industrial Revolution — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "5-0-correcting-the-ills-1210x660.png"
 hero_alt = "Industry 5 0 the First Proactive Industrial Revolution"
-published_at = "2024-06-01"
+published_at = "2024-09-09"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

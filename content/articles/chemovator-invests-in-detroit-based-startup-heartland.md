@@ -1,9 +1,9 @@
 +++
 title = "Chemovator Invests in Detroit Based Startup Heartland"
 excerpt = "Chemovator Invests in Detroit Based Startup Heartland — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "fasdf-1.png"
 hero_alt = "Chemovator Invests in Detroit Based Startup Heartland"
-published_at = "2024-06-01"
+published_at = "2024-05-02"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

@@ -1,9 +1,9 @@
 +++
 title = "Industrial Hemp Planting 2024 the Year of Growth and Standardization"
 excerpt = "Industrial Hemp Planting 2024 the Year of Growth and Standardization — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "hemp-fiber-farming-2024.png"
 hero_alt = "Industrial Hemp Planting 2024 the Year of Growth and Standardization"
-published_at = "2024-04-01"
+published_at = "2023-12-19"
 author = "Heartland Industries"
 tags = ["hemp"]
 +++

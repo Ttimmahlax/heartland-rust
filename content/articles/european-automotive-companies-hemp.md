@@ -1,9 +1,9 @@
 +++
 title = "European Automotive Companies Hemp"
 excerpt = "European Automotive Companies Hemp — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "plastic-pallets-2-2-1210x660.png"
 hero_alt = "European Automotive Companies Hemp"
-published_at = "2024-06-01"
+published_at = "2022-08-17"
 author = "Heartland Industries"
 tags = ["hemp", "automotive"]
 +++

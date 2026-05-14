@@ -3,7 +3,7 @@ title = "Alfalfa to Hemp Farming in Arizona Asu Water Conservation"
 excerpt = "Alfalfa to Hemp Farming in Arizona Asu Water Conservation — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
 hero_image = "hero.svg"
 hero_alt = "Alfalfa to Hemp Farming in Arizona Asu Water Conservation"
-published_at = "2024-06-01"
+published_at = "2025-07-29"
 author = "Heartland Industries"
 tags = ["hemp", "farming", "rotation"]
 +++

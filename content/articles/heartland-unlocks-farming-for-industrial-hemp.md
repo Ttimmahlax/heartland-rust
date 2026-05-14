@@ -1,9 +1,9 @@
 +++
 title = "Heartland Unlocks Farming for Industrial Hemp"
 excerpt = "Heartland Unlocks Farming for Industrial Hemp — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "plastic-pallets-5-1210x660.png"
 hero_alt = "Heartland Unlocks Farming for Industrial Hemp"
-published_at = "2024-06-01"
+published_at = "2022-08-17"
 author = "Heartland Industries"
 tags = ["hemp", "farming"]
 +++

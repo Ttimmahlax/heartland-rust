@@ -30,11 +30,11 @@ pub fn Landing() -> Element {
 fn Hero() -> Element {
     rsx! {
         section {
-            class: "video-hero-section section-soft-bottom min-h-[88vh] flex items-center",
+            class: "video-hero-section section-soft-bottom min-h-[110vh] flex items-center pb-[20vh]",
             VideoBackground { slug: "landing".to_string() }
             div { class: "video-hero-scrim" }
             div { class: "video-hero-content container-content w-full py-24 md:py-32 text-center",
-                p { class: "text-sm uppercase tracking-[0.25em] text-white/90 mb-4 animate-fade-in",
+                p { class: "text-[0.7438rem] uppercase tracking-[0.25em] text-white/90 mb-4 animate-fade-in",
                     "Sustainability Without Compromise"
                 }
                 h1 {

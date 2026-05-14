@@ -1,9 +1,9 @@
 +++
 title = "3 Reasons Talc Fillers Will Go Extinct Over the Next Decade"
 excerpt = "3 Reasons Talc Fillers Will Go Extinct Over the Next Decade — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "talc-mining.png"
 hero_alt = "3 Reasons Talc Fillers Will Go Extinct Over the Next Decade"
-published_at = "2024-06-01"
+published_at = "2022-08-18"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

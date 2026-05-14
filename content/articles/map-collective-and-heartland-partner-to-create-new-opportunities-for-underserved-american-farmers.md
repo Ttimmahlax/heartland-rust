@@ -1,9 +1,9 @@
 +++
 title = "Map Collective and Heartland Partner to Create New Opportunities for Underserved American Farmers"
 excerpt = "Map Collective and Heartland Partner to Create New Opportunities for Underserved American Farmers — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "american-wheat-farmers.png"
 hero_alt = "Map Collective and Heartland Partner to Create New Opportunities for Underserved American Farmers"
-published_at = "2024-06-01"
+published_at = "2022-08-19"
 author = "Heartland Industries"
 tags = ["farming", "plastic"]
 +++

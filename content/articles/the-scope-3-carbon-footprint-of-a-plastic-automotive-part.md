@@ -1,9 +1,9 @@
 +++
 title = "The Scope 3 Carbon Footprint of a Plastic Automotive Part"
 excerpt = "The Scope 3 Carbon Footprint of a Plastic Automotive Part — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "scope-3-plastic-carbon-footprint.png"
 hero_alt = "The Scope 3 Carbon Footprint of a Plastic Automotive Part"
-published_at = "2024-06-01"
+published_at = "2023-09-24"
 author = "Heartland Industries"
 tags = ["carbon", "plastic", "automotive"]
 +++

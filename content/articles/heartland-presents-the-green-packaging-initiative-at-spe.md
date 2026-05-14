@@ -1,9 +1,9 @@
 +++
 title = "Heartland Presents the Green Packaging Initiative At SPE"
 excerpt = "Heartland Presents the Green Packaging Initiative At SPE — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "untitled-1027-×-768-px-1210-×-768-px.png"
 hero_alt = "Heartland Presents the Green Packaging Initiative At SPE"
-published_at = "2024-06-01"
+published_at = "2023-08-09"
 author = "Heartland Industries"
 tags = ["heartland"]
 +++

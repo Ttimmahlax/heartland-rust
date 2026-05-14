@@ -1,9 +1,9 @@
 +++
 title = "Alternative to Talc and Calcium Carbonate in Plastic"
 excerpt = "Alternative to Talc and Calcium Carbonate in Plastic — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "plastic-pallets-4-1.png"
 hero_alt = "Alternative to Talc and Calcium Carbonate in Plastic"
-published_at = "2024-06-01"
+published_at = "2023-05-31"
 author = "Heartland Industries"
 tags = ["carbon", "plastic"]
 +++

@@ -3,7 +3,7 @@ title = "Opening Up the Industrial Hemp Supply Chain"
 excerpt = "Opening Up the Industrial Hemp Supply Chain — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
 hero_image = "hero.svg"
 hero_alt = "Opening Up the Industrial Hemp Supply Chain"
-published_at = "2024-06-01"
+published_at = "2023-06-12"
 author = "Heartland Industries"
 tags = ["hemp", "plastic", "supply-chain"]
 +++

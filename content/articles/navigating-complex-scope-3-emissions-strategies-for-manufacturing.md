@@ -1,9 +1,9 @@
 +++
 title = "Navigating Complex Scope 3 Emissions Strategies for Manufacturing"
 excerpt = "Navigating Complex Scope 3 Emissions Strategies for Manufacturing — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "scope-3-emissions.jpg"
 hero_alt = "Navigating Complex Scope 3 Emissions Strategies for Manufacturing"
-published_at = "2024-06-01"
+published_at = "2023-11-30"
 author = "Heartland Industries"
 tags = ["manufacturing"]
 +++

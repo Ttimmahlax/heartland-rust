@@ -3,7 +3,7 @@ title = "Natural Alternative to Nylon Fabric Future Fashion By Heartland"
 excerpt = "Natural Alternative to Nylon Fabric Future Fashion By Heartland — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
 hero_image = "hero.svg"
 hero_alt = "Natural Alternative to Nylon Fabric Future Fashion By Heartland"
-published_at = "2024-06-01"
+published_at = "2025-12-05"
 author = "Heartland Industries"
 tags = ["hemp-textile"]
 +++

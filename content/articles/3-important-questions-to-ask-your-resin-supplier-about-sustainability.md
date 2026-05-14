@@ -1,9 +1,9 @@
 +++
 title = "3 Important Questions to Ask Your Resin Supplier About Sustainability"
 excerpt = "3 Important Questions to Ask Your Resin Supplier About Sustainability — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "heartland-natural-fiber-filled-black-plastic-pellets.webp"
 hero_alt = "3 Important Questions to Ask Your Resin Supplier About Sustainability"
-published_at = "2024-06-01"
+published_at = "2022-08-19"
 author = "Heartland Industries"
 tags = ["sustainability", "plastic"]
 +++

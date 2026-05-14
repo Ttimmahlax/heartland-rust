@@ -1,9 +1,9 @@
 +++
 title = "What Is Mass Balance Understanding Carbon Neutrality and Science Based Targets"
 excerpt = "What Is Mass Balance Understanding Carbon Neutrality and Science Based Targets — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "understanding-mass-balance-and-carbon-neutrality.png"
 hero_alt = "What Is Mass Balance Understanding Carbon Neutrality and Science Based Targets"
-published_at = "2024-06-01"
+published_at = "2024-10-16"
 author = "Heartland Industries"
 tags = ["carbon"]
 +++

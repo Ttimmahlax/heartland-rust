@@ -1,9 +1,9 @@
 +++
 title = "How Sustainability Can Build More Brand Value"
 excerpt = "How Sustainability Can Build More Brand Value — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "untitled-1210-×-786-px.png"
 hero_alt = "How Sustainability Can Build More Brand Value"
-published_at = "2024-06-01"
+published_at = "2022-11-02"
 author = "Heartland Industries"
 tags = ["sustainability"]
 +++

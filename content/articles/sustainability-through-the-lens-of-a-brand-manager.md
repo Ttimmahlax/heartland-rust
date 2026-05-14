@@ -1,9 +1,9 @@
 +++
 title = "Sustainability Through the Lens of a Brand Manager"
 excerpt = "Sustainability Through the Lens of a Brand Manager — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
+hero_image = "industry_5.0_article_series__1210_x_786_px___6__720.png"
 hero_alt = "Sustainability Through the Lens of a Brand Manager"
-published_at = "2024-06-01"
+published_at = "2024-08-17"
 author = "Heartland Industries"
 tags = ["sustainability"]
 +++
