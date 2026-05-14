@@ -1,0 +1,72 @@
+# Supply-chain audit workflow — two complementary checks against
+# Cargo.lock:
+#   1. cargo-audit: RustSec advisory DB (https://rustsec.org/)
+#   2. cargo-deny: advisories + bans (wildcards) + sources (unknown
+#      registries / git remotes), per `deny.toml` in repo root
+#
+# Both fail on known vulnerabilities. Running both deliberately — they
+# overlap on advisory checks, which catches regressions in either tool.
+#
+# Triggers:
+#   - Every push to main
+#   - Every PR targeting main
+#   - Daily at 09:00 UTC (catches advisories filed after our last commit)
+#   - Manual dispatch
+#
+# Why a separate workflow instead of folding into Amplify's build:
+# Amplify rebuilds on every commit and we don't want audit tooling
+# adding ~30s to every deploy. This runs alongside, doesn't gate deploys,
+# and surfaces issues as a failed check on the commit/PR.
+
+name: Audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cargo-audit:
+    name: cargo audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache cargo-audit binary
+        id: cache-audit
+        uses: actions/cache@v4
+        with:
+          path: ~/.cargo/bin/cargo-audit
+          key: cargo-audit-bin-${{ runner.os }}
+
+      - name: Install cargo-audit
+        if: steps.cache-audit.outputs.cache-hit != 'true'
+        run: cargo install cargo-audit --locked
+
+      - name: Run cargo audit
+        run: cargo audit --deny warnings
+
+  cargo-deny:
+    name: cargo deny
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: EmbarkStudios/cargo-deny-action@v2
+        with:
+          # Skip licenses intentionally — see deny.toml header for rationale.
+          command: check advisories bans sources

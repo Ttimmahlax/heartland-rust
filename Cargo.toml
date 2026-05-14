@@ -1,0 +1,24 @@
+[package]
+name = "heartland-website"
+version = "0.1.0"
+edition = "2021"
+description = "Heartland Industries — Dioxus + Rust + WASM rebuild of heartland.io"
+
+[dependencies]
+dioxus = { version = "0.7", features = ["router", "fullstack"] }
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+pulldown-cmark = { version = "0.12", default-features = false, features = ["html"] }
+chrono = { version = "0.4", default-features = false, features = ["clock", "serde"] }
+
+[features]
+default = []
+web = ["dioxus/web"]
+server = ["dioxus/server"]
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

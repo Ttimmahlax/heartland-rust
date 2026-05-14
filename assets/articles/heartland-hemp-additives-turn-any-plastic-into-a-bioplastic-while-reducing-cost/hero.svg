@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ad2929"/>
+      <stop offset="100%" stop-color="#6e1414"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="280" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="120" fill="#ffffff" letter-spacing="-4">HEARTLAND</text>
+  <text x="600" y="370" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="42" fill="#ffffff" fill-opacity="0.85" letter-spacing="2">MATERIAL SCIENCE · AMERICAN MADE</text>
+</svg>

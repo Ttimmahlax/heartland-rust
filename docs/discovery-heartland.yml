@@ -1,0 +1,104 @@
+# Phase 1a/1c/1d discovery output for Heartland Industries
+brand:
+  name: "Heartland Industries"
+  short_name: "Heartland"
+  domain: "heartland.io"
+  tagline: "The future of material innovation"
+  pitch: "Heartland is a material science company helping manufacturers exceed their cost-reduction goals while reducing their emissions."
+  primary_color: "#ad2929"     # exact match to HFGA template default — no token sweep needed
+  accent_color:  "#ad5353"     # secondary tint visible on heartland.io
+  body_font: "Inter"           # source uses Roboto+Poppins; swap to Inter per replicate.md §5i font portability
+  display_font: "Inter"
+  source_fonts_noted: ["Roboto:500,400", "Poppins:600"]   # for the record only
+  logo_color_url:  "https://heartland.io/wp-content/uploads/2022/08/Heartland-MAIN-LOGO.png"
+  logo_white_url:  "https://heartland.io/wp-content/uploads/2022/08/Heartland-White-Logo.png"
+  favicon_url:     "https://heartland.io/wp-content/uploads/2025/04/cropped-Heartland-White-Logo-favicon-e1745249729589-192x192.png"
+  social:
+    facebook:  https://www.facebook.com/therealheartland/
+    twitter:   https://twitter.com/HeartlandXL
+    linkedin:  https://linkedin.com/company/therealheartland
+    instagram: https://www.instagram.com/heartlandmaterials
+    youtube:   https://www.youtube.com/channel/UCw3n3hnQX8PqgG-QIDb4BjA
+  contact_email: "Hello@heartland.io"
+
+trackers:
+  keep:
+    ga4: "G-CFVBK0N6L6"        # reused from existing heartland.io property (per playbook)
+  drop:
+    - HubSpot (_hsq)            # Heartland was a HubSpot CMS-adjacent site; drop the runtime
+    - Hotjar (hjid:2032509)     # session replay — out of scope by default
+    - Klaviyo                   # not present on source — delete popup.rs component
+    - Elementor + Revslider JS  # WP plugin runtime, irrelevant after migration
+
+primary_menu:
+  why_imperium:    /why-imperium
+  products:
+    - { label: "Imperium Masterbatch",      path: /imperium-masterbatch }
+    - { label: "Performance Plastics",      path: /imperium-filled-resin }
+    - { label: "Pallets & Bins",            path: /carbon-neutral-packaging-with-imperium-inside }
+    - { label: "Shop Samples",              path: /shop }
+  industries:
+    - { label: "Plastic Compounding",       path: /sustainable-plastic-compounding }
+    - { label: "Automotive",                path: /automotive }
+    - { label: "Packaging",                 path: /sustainable-packaging }
+    - { label: "Construction",              path: /sustainable-building-materials }
+    - { label: "Animal Feed",               path: /imperium-animal-feed }
+  materials:
+    - { label: "Plastic",   path: /sustainable-plastic-compounding }
+    - { label: "Rubber",    path: /sustainable-rubber-additives }
+    - { label: "Textiles",  path: /imperium-fibers }
+    - { label: "Concrete",  path: /sustainable-concrete-additives }
+    - { label: "Asphalt",   path: /sustainable-asphalt-additives }
+    - { label: "Paper",     path: /sustainable-paper-additives }
+  resources:
+    - { label: "Imperium Graphene",   path: /imperium-graphene }
+    - { label: "Engineering Earth",   path: /engineering-earth }
+    - { label: "Carbon Report",       path: "https://www.carbon-report.com",  external: true }
+    - { label: "E-Books",             path: /e-books }
+    - { label: "HFGA",                path: "https://hfga.io",                external: true }
+    - { label: "FAQ",                 path: /frequently-asked-questions }
+    - { label: "Research",            path: /natural-fiber-research }
+    - { label: "White Papers",        path: /whitepapers }
+  about:
+    - { label: "Team",                          path: /heartland-team }
+    - { label: "Our Farmers",                   path: /heartland-farmers }
+    - { label: "Green Packaging Initiative",    path: /green-packaging-initiative }
+    - { label: "Imperium Farming LCA",          path: /lca }
+  blog:   /sustainability-news
+  contact: /contact
+
+skipped_routes:
+  - /portfolios/                       # custom post type — duplicates inner pages
+  - /page-piling/                      # WP-themed sample/landing leftover
+  - /heartland-blog/                   # dupes /sustainability-news
+  - /heartland-e-books/                # dupes /e-books
+  - /hemp-fiber-and-hurd/              # supersceded by /imperium-filler
+  - /wood-products/                    # legacy product line page, retired
+  - /engage/                           # WP form-only landing
+  - /z-landing-page-*/                 # 5x z-prefixed landing-page variants (Yoast leftovers)
+  - /case-studies/                     # empty / no body
+  - /plastic-additives/                # dupes /sustainable-plastic-compounding
+  - /usda/                             # award announcement, content folded into an article
+  - /imperium-pork-feed/               # 3x species-specific feed dupes → covered by /imperium-animal-feed
+  - /imperium-cattle-feed/
+  - /imperium-chicken-feed/
+  - /carbon-neutral-packaging-with-imperium-inside/  # alias for /sustainable-packaging
+  - /imperium-spin-ready-white-fiber/  # narrow product variant — covered by /imperium-fibers
+  - /imperium-yarn/
+  - /imperium-fabric/
+  - /imperium-graphene/                # planned product page — skip until product launches
+  - /shop                              # external e-commerce — keep as external link, no internal route
+  - /sustainable-foam/                 # category leftover, no body
+  - /sustainable-building-materials/   # covered as "Construction" — keep this; remove only the dupe
+  - /digeco_team*                      # WP custom post type — replaced by /heartland-team static page
+  - /digeco_portfolio*                 # WP custom post type — out of scope (collateral imagery only)
+  - /sustainability-news/team/*        # 8 team profile pages, folded into a single /heartland-team
+  - /sustainability-news/portfolio/*   # 23 portfolio item pages, out of scope
+  - /sustainability-news/category/*    # WP archive
+  - /sustainability-news/tag/*         # WP archive
+
+# Articles to migrate: every URL under /sustainability-news/<slug>/ from post-sitemap.xml
+# Slugs match verbatim, including the "sustainability-news" prefix — we'll route as /sustainability-news/<slug>
+
+cms_source: "WordPress + Elementor + DigEco theme"
+migration_date: "2026-05-14"

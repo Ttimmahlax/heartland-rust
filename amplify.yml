@@ -1,0 +1,23 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable
+        - source "$HOME/.cargo/env"
+        - rustup target add wasm32-unknown-unknown
+        - cargo install dioxus-cli --version 0.7.7 --locked
+        - chmod +x ./scripts/download-fonts.sh && ./scripts/download-fonts.sh || true
+    build:
+      commands:
+        - source "$HOME/.cargo/env"
+        - chmod +x ./scripts/*.sh
+        - ./scripts/build-ssg.sh
+  artifacts:
+    baseDirectory: target/dx/heartland-website/release/web/public
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - ~/.cargo/**/*
+      - target/**/*

@@ -1,0 +1,73 @@
+# Dependabot — opens PRs when new versions of dependencies are released.
+#
+# Frequency intentionally weekly (not daily) so PRs don't pile up. Dependabot
+# is a *PR sender*, not an auto-merger: each update is a PR you review,
+# Amplify builds a preview, and you decide whether to merge. The audit.yml
+# workflow runs `cargo audit` and `cargo deny` on each PR, so a vulnerable
+# update gets caught before merge.
+#
+# Dependency quarantine (cooldown):
+# Dependabot's `cooldown` feature delays PR creation for newly published
+# versions. This is supply-chain hygiene — compromised maintainer publishes
+# (typosquatting, hijacked accounts) are usually caught by the security
+# community within days. We wait before adopting:
+#   - patch:  3 days
+#   - minor:  7 days
+#   - major: 14 days
+# Security updates (CVE-tagged) bypass cooldown by design and ship
+# immediately, since active-exploit risk outweighs quarantine value.
+#
+# To pause: comment out the `cargo` block or set interval: monthly.
+# To narrow scope: add `allow:` or `ignore:` filters per the Dependabot docs.
+
+version: 2
+
+updates:
+  # Rust crate updates from crates.io.
+  - package-ecosystem: cargo
+    directory: '/'
+    schedule:
+      interval: weekly
+      day: monday
+      time: '09:00'
+      timezone: America/Phoenix
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+      - rust
+    commit-message:
+      prefix: 'deps(cargo)'
+    cooldown:
+      default-days: 5
+      semver-major-days: 14
+      semver-minor-days: 7
+      semver-patch-days: 3
+      include:
+        - '*'
+    # Group all minor + patch updates into one PR per week to reduce noise.
+    # Major bumps still come as individual PRs so we can review breaking changes.
+    groups:
+      cargo-minor-patch:
+        update-types:
+          - minor
+          - patch
+
+  # GitHub Actions versions used in .github/workflows/.
+  # Compromised actions are a real attack vector (e.g. tj-actions/changed-files
+  # 2024 incident), so cooldown applies here too.
+  - package-ecosystem: github-actions
+    directory: '/'
+    schedule:
+      interval: monthly
+    labels:
+      - dependencies
+      - github-actions
+    commit-message:
+      prefix: 'deps(actions)'
+    cooldown:
+      default-days: 7
+      semver-major-days: 14
+      semver-minor-days: 7
+      semver-patch-days: 3
+      include:
+        - '*'
