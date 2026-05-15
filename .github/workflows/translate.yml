@@ -1,0 +1,78 @@
+# Auto-translate any new or changed English articles into all supported
+# languages whenever `content/articles/*.md` changes on main.
+#
+# Translations are committed back to the repo so they're versioned alongside
+# the source. The `.translation-cache.json` keeps incremental runs cheap —
+# unchanged files are skipped.
+#
+# Setup (one-time):
+#   1. Get an Anthropic API key from https://console.anthropic.com
+#   2. Add it as a repo secret named ANTHROPIC_API_KEY
+#      (GitHub repo → Settings → Secrets and variables → Actions → New secret)
+#
+# Manual trigger: GitHub UI → Actions → "Translate content" → Run workflow.
+
+name: Translate content
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/articles/*.md"
+      - "scripts/translate.py"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Force re-translation of every article (ignores cache)"
+        required: false
+        default: "false"
+      lang:
+        description: "Limit to one language code (e.g. es). Empty = all langs."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install Python deps
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run translator
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          FLAGS=""
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            FLAGS="$FLAGS --force"
+          fi
+          if [ -n "${{ github.event.inputs.lang }}" ]; then
+            FLAGS="$FLAGS --lang ${{ github.event.inputs.lang }}"
+          fi
+          ./scripts/translate.py $FLAGS
+
+      - name: Commit translations
+        run: |
+          git config user.name "translation-bot"
+          git config user.email "translation-bot@heartland.io"
+          if git diff --quiet content/articles .translation-cache.json; then
+            echo "No new translations to commit."
+            exit 0
+          fi
+          git add content/articles .translation-cache.json
+          git commit -m "translate: auto-update translations [skip ci]"
+          git push

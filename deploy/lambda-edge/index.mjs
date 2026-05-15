@@ -5,15 +5,14 @@
 // translation network. Everything else passes through to the default
 // origin (Amplify).
 //
-// Deploy: copy this code into the Lambda console, publish a new version,
-// then attach the versioned ARN to the CloudFront distribution's default
-// behavior under "Function associations → Origin request".
+// Deploy: copy this code into the Lambda console (index.mjs), publish a
+// new version, then attach the versioned ARN to the CloudFront
+// distribution's default behavior under "Function associations →
+// Origin request".
 //
 // LANGS must stay in sync with `Language::ALL` in src/i18n.rs.
 
-'use strict';
-
-const crypto = require('crypto');
+import { createHash } from 'node:crypto';
 
 const LANGS = new Set([
   'ar', 'bn', 'de', 'es', 'fr', 'hi', 'it', 'ja', 'ko',
@@ -29,12 +28,12 @@ const GT_SERVERS = [
 
 function gtServerFor(hostname) {
   const stripped = hostname.replace(/^www\./, '');
-  const md5 = crypto.createHash('md5').update(stripped).digest('hex');
+  const md5 = createHash('md5').update(stripped).digest('hex');
   const idx = parseInt(md5.slice(0, 5), 16) % GT_SERVERS.length;
   return `${GT_SERVERS[idx]}.tdn.gtranslate.net`;
 }
 
-exports.handler = async (event) => {
+export const handler = async (event) => {
   const request = event.Records[0].cf.request;
   const host =
     (request.headers.host && request.headers.host[0] && request.headers.host[0].value) ||

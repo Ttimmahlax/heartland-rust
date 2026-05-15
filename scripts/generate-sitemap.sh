@@ -94,7 +94,7 @@ CHANGEFREQS=(
   "weekly"
 )
 
-SITEMAP="$OUT_DIR/sitemap.xml"
+SITEMAP="$OUT_DIR/sitemap_index.xml"
 
 {
   echo '<?xml version="1.0" encoding="UTF-8"?>'
@@ -154,13 +154,54 @@ SITEMAP="$OUT_DIR/sitemap.xml"
   echo '</urlset>'
 } > "$SITEMAP"
 
+# --- Per-language sitemaps ---------------------------------------------------
+# For every translated language directory we have (content/articles/<lang>/),
+# emit /<lang>/sitemap.xml with the article URLs for that language. Google
+# Search Console submissions reference these paths.
+if [ -d content/articles ]; then
+  for langdir in content/articles/*/; do
+    [ -d "$langdir" ] || continue
+    lang=$(basename "$langdir")
+    case "$lang" in .*|_*) continue ;; esac
+
+    LANG_DIR="$OUT_DIR/${lang}"
+    mkdir -p "$LANG_DIR"
+    LANG_SITEMAP="$LANG_DIR/sitemap_index.xml"
+    {
+      echo '<?xml version="1.0" encoding="UTF-8"?>'
+      echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+      for f in "$langdir"*.md; do
+        [ -e "$f" ] || continue
+        slug=$(basename "$f" .md)
+        date=$(grep -E '^published_at\s*=\s*' "$f" | head -1 | sed -E 's/.*"([0-9]{4}-[0-9]{2}-[0-9]{2}).*"/\1/' || echo "$TODAY")
+        [ -z "$date" ] && date="$TODAY"
+        printf '  <url>\n    <loc>%s/%s/sustainability-news/%s</loc>\n    <lastmod>%s</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>\n' \
+          "$BASE" "$lang" "$slug" "$date"
+      done
+      echo '</urlset>'
+    } > "$LANG_SITEMAP"
+    echo "Wrote $LANG_SITEMAP"
+  done
+fi
+
 cat > "$OUT_DIR/robots.txt" <<EOF
 User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: ${BASE}/sitemap.xml
+Sitemap: ${BASE}/sitemap_index.xml
 EOF
+# Add a Sitemap: directive for each per-language sitemap (lets crawlers
+# discover them without explicit GSC submission, though GSC submission is
+# still the canonical source of truth).
+if [ -d content/articles ]; then
+  for langdir in content/articles/*/; do
+    [ -d "$langdir" ] || continue
+    lang=$(basename "$langdir")
+    case "$lang" in .*|_*) continue ;; esac
+    echo "Sitemap: ${BASE}/${lang}/sitemap_index.xml" >> "$OUT_DIR/robots.txt"
+  done
+fi
 
 cat > "$OUT_DIR/ads.txt" <<EOF
 # Heartland Industries — no programmatic ads run on this domain.

@@ -74,12 +74,30 @@ ROUTES=(
   "/404"
 )
 
-# Append each migrated article slug
+# Append each migrated article slug (English).
 if [ -d content/articles ]; then
   for f in content/articles/*.md; do
     [ -e "$f" ] || continue
     slug=$(basename "$f" .md)
     ROUTES+=("/sustainability-news/${slug}")
+  done
+fi
+
+# Append the translated article routes for every language we have markdown for.
+# Each non-English language dir under content/articles/ becomes a set of routes
+# at /<lang>/sustainability-news/<slug>. Article components fall back to English
+# when a specific translation is missing, so it's safe to enumerate by directory.
+if [ -d content/articles ]; then
+  for langdir in content/articles/*/; do
+    [ -d "$langdir" ] || continue
+    lang=$(basename "$langdir")
+    # Skip dot/underscore dirs (none today, but defensive).
+    case "$lang" in .*|_*) continue ;; esac
+    for f in "$langdir"*.md; do
+      [ -e "$f" ] || continue
+      slug=$(basename "$f" .md)
+      ROUTES+=("/${lang}/sustainability-news/${slug}")
+    done
   done
 fi
 
@@ -149,6 +167,27 @@ for route in "${ROUTES[@]}"; do
 
   if [ "$status" != "200" ]; then
     echo "WARN: $route returned HTTP $status" >&2
+  fi
+
+  # Patch the <html> tag with lang + dir for translated routes. Dioxus SSR
+  # emits a bare `<html>` (no attributes), so we inject them post-render.
+  # English routes get `lang="en"` and `dir="ltr"`; /<lang>/... gets the
+  # matching BCP-47 code + dir.
+  html_lang="en"
+  html_dir="ltr"
+  case "$route" in
+    /*/*)
+      maybe_lang="${route#/}"
+      maybe_lang="${maybe_lang%%/*}"
+      if [[ "$maybe_lang" =~ ^[a-z]{2}(-[A-Z]{2})?$ ]]; then
+        html_lang="$maybe_lang"
+        case "$maybe_lang" in ar|ur) html_dir="rtl" ;; esac
+      fi
+      ;;
+  esac
+  # macOS sed needs -i ''; GNU sed needs -i without the arg. Try GNU first.
+  if ! sed -i "s|<html>|<html lang=\"${html_lang}\" dir=\"${html_dir}\">|" "$out" 2>/dev/null; then
+    sed -i '' "s|<html>|<html lang=\"${html_lang}\" dir=\"${html_dir}\">|" "$out"
   fi
 done
 

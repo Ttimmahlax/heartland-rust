@@ -40,6 +40,44 @@ pub fn canonical(path: &str) -> String {
     }
 }
 
+/// Emit `<link rel="alternate" hreflang="..." href="...">` tags for every
+/// language that has a real translation of `english_path`. Always includes
+/// an `x-default` pointing at the English version.
+///
+/// `english_path` is the bare English route (no language prefix), e.g.
+/// `/sustainability-news/heartland-raises-seed-capital`.
+#[component]
+pub fn HreflangAlternates(english_path: String, available_langs: Vec<String>) -> Element {
+    let english_url = canonical(&english_path);
+    let trimmed = english_path.trim_end_matches('/').to_string();
+    rsx! {
+        // x-default → English (Google's recommended convention).
+        document::Link {
+            rel: "alternate",
+            hreflang: "x-default",
+            href: "{english_url}",
+        }
+        for lang in available_langs.iter() {
+            {
+                let href = if lang == "en" {
+                    english_url.clone()
+                } else {
+                    format!("{SITE_BASE}/{}{}", lang, trimmed)
+                };
+                let lang_attr = lang.clone();
+                rsx! {
+                    document::Link {
+                        key: "{lang_attr}",
+                        rel: "alternate",
+                        hreflang: "{lang_attr}",
+                        href: "{href}",
+                    }
+                }
+            }
+        }
+    }
+}
+
 #[component]
 pub fn Seo(props: SeoProps) -> Element {
     let canonical_url = canonical(&props.path);

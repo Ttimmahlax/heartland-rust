@@ -2,18 +2,44 @@ use dioxus::prelude::*;
 
 use crate::components::markdown::Markdown;
 use crate::content;
-use crate::seo::{article_jsonld, Seo};
+use crate::seo::{article_jsonld, HreflangAlternates, Seo};
 use crate::Route;
 
 #[component]
 pub fn Article(slug: String) -> Element {
-    let article = content::find(&slug);
+    ArticleInner(ArticleInnerProps { slug, lang: "en".to_string() })
+}
+
+/// Translated article. Same content shape, served at /<lang>/sustainability-news/<slug>.
+/// Falls back to English if no translation exists for the given slug.
+#[component]
+pub fn LangArticle(lang: String, slug: String) -> Element {
+    ArticleInner(ArticleInnerProps { slug, lang })
+}
+
+#[derive(Props, Clone, PartialEq)]
+struct ArticleInnerProps {
+    slug: String,
+    lang: String,
+}
+
+#[component]
+fn ArticleInner(props: ArticleInnerProps) -> Element {
+    let ArticleInnerProps { slug, lang } = props;
+    let article = content::find_lang(&lang, &slug);
 
     let Some(article) = article else {
         return rsx! { NotFound {} };
     };
 
-    let url_path = article.url_path();
+    // The URL path reflects the route the user hit, not the article's
+    // canonical English path. SEO + canonical-link logic should reference
+    // the locale-prefixed URL so Google sees a stable per-language identity.
+    let url_path = if lang == "en" {
+        article.url_path()
+    } else {
+        format!("/{}{}", lang, article.url_path())
+    };
     let hero = article.hero_path();
     let title = article.front.title.clone();
     let seo_title = article.seo_title();
@@ -33,6 +59,11 @@ pub fn Article(slug: String) -> Element {
         &author,
     );
     let md_url = format!("{}.md", url_path);
+    let english_path = article.url_path();
+    let available_langs: Vec<String> = content::translations_for(&slug)
+        .iter()
+        .map(|s| s.to_string())
+        .collect();
 
     rsx! {
         Seo {
@@ -44,6 +75,10 @@ pub fn Article(slug: String) -> Element {
             image_height: "786",
             image_alt: "{alt}",
             og_type: "article",
+        }
+        HreflangAlternates {
+            english_path: english_path,
+            available_langs: available_langs,
         }
         document::Meta { property: "article:published_time", content: "{published}" }
         document::Link {

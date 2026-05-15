@@ -12,7 +12,7 @@ mod tracking;
 use components::layout::LayoutShell;
 use pages::{
     about::About,
-    article::Article,
+    article::{Article, LangArticle},
     automotive::Automotive,
     carbon_neutral_packaging::CarbonNeutralPackaging,
     case_studies::CaseStudies,
@@ -183,6 +183,12 @@ pub enum Route {
         PortfolioItem { slug: String },
         #[route("/sustainability-news/:slug")]
         Article { slug: String },
+
+        // Translated article — same content, served at /<lang>/sustainability-news/<slug>.
+        // The page component reads the lang param and loads the matching translation
+        // (or falls back to English if a translation for that slug doesn't exist).
+        #[route("/:lang/sustainability-news/:slug")]
+        LangArticle { lang: String, slug: String },
 
         // Branded 404 — catch-all, must be last
         #[route("/:..segments")]

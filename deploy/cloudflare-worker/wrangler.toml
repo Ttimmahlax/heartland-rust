@@ -1,0 +1,16 @@
+# Wrangler config for the heartland.io Cloudflare Worker.
+# This file is optional — you can also deploy via the Cloudflare dashboard
+# web editor. Used by `wrangler deploy` if you set up CLI-based deploys.
+
+name = "heartland-router"
+main = "worker.js"
+compatibility_date = "2024-12-01"
+
+# Bind the Worker to heartland.io and www.heartland.io. Add the zone via the
+# dashboard after deploy; some plans don't allow zone bindings in wrangler.toml.
+# routes = [
+#   { pattern = "heartland.io/*", zone_name = "heartland.io" },
+#   { pattern = "www.heartland.io/*", zone_name = "heartland.io" },
+# ]
+
+# Bot management / analytics work without explicit config; defaults are fine.
