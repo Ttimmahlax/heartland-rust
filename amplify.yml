@@ -3,7 +3,6 @@ frontend:
   phases:
     preBuild:
       commands:
-        - (command -v rsync) || (yum install -y rsync) || (dnf install -y rsync) || (apt-get update && apt-get install -y rsync)
         - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable
         - source "$HOME/.cargo/env"
         - rustup target add wasm32-unknown-unknown

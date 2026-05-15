@@ -31,13 +31,18 @@ mkdir -p "$OUT/assets"
 # Exception: assets/brand/** keeps its PNGs — favicons, apple-touch-icon,
 # Organization JSON-LD logo, and og:image URLs all need PNG for crawler /
 # OS-icon-consumer compatibility. wrap-webp.py has the matching exemption.
-rsync -a \
-  --include 'brand/***' \
-  --exclude '*.png' --exclude '*.PNG' \
-  --exclude '*.jpg' --exclude '*.JPG' \
-  --exclude '*.jpeg' --exclude '*.JPEG' \
-  --exclude '*.mp4' --exclude '*.MP4' \
-  assets/ "$OUT/assets/"
+if command -v rsync >/dev/null 2>&1; then
+  rsync -a \
+    --include 'brand/***' \
+    --exclude '*.png' --exclude '*.PNG' \
+    --exclude '*.jpg' --exclude '*.JPG' \
+    --exclude '*.jpeg' --exclude '*.JPEG' \
+    --exclude '*.mp4' --exclude '*.MP4' \
+    assets/ "$OUT/assets/"
+else
+  # Portable fallback: copy everything, the find-delete below prunes rasters.
+  cp -a assets/. "$OUT/assets/"
+fi
 
 # Sweep stale rasters/MP4s left behind by prior builds (rsync above doesn't
 # --delete, since other build steps write tailwind*.css into $OUT/assets/).
