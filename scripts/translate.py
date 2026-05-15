@@ -257,49 +257,41 @@ def cache_key(source: Path, lang_code: str) -> str:
     return f"{rel}::{lang_code}"
 
 
-# ----------------------------------------------------------------------------
-# Main
-# ----------------------------------------------------------------------------
+# Map between batch custom_id <-> (source path, lang_code). Slugs use hyphens
+# so we use `::` as the separator. Format: `<lang_code>::<slug>`. The slug
+# implies `content/articles/<slug>.md` as the source.
+def batch_custom_id(source: Path, lang_code: str) -> str:
+    return f"{lang_code}::{source.stem}"
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--lang", action="append", default=None,
-                        help="Only translate to this language code (repeatable). Default: all 17 target langs.")
-    parser.add_argument("--file", action="append", default=None,
-                        help="Only translate this specific source file path (repeatable).")
-    parser.add_argument("--force", action="store_true",
-                        help="Ignore cache; re-translate everything in scope.")
-    parser.add_argument("--dry-run", action="store_true",
-                        help="List what would be translated; make no API calls.")
-    parser.add_argument("--concurrency", type=int, default=5,
-                        help="Max concurrent API calls. Default 5.")
-    args = parser.parse_args()
 
-    if not args.dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
-        print("ANTHROPIC_API_KEY not set. Export it before running (or use --dry-run).", file=sys.stderr)
-        return 2
+def parse_batch_custom_id(custom_id: str) -> tuple[str, Path]:
+    """Returns (lang_code, source_path)."""
+    lang_code, slug = custom_id.split("::", 1)
+    return lang_code, ARTICLES_DIR / f"{slug}.md"
 
-    # Build the work list.
+
+def build_work_list(args, cache: dict) -> list[tuple[Path, str, str]]:
+    """Enumerate (source, lang_code, lang_name) tuples needing translation,
+    respecting --file / --lang filters and the cache (unless --force).
+    """
     target_langs: dict[str, str] = (
         {code: LANGUAGES[code] for code in args.lang} if args.lang else dict(LANGUAGES)
     )
     unknown = [c for c in (args.lang or []) if c not in LANGUAGES]
     if unknown:
         print(f"Unknown language code(s): {unknown}", file=sys.stderr)
-        return 2
+        raise SystemExit(2)
 
     if args.file:
         sources = [Path(f).resolve() for f in args.file]
         for s in sources:
             if not s.exists():
                 print(f"File not found: {s}", file=sys.stderr)
-                return 2
+                raise SystemExit(2)
     else:
         sources = english_articles()
 
-    cache = load_cache()
-    work: list[tuple[Path, str, str]] = []  # (source, lang_code, lang_name)
-
+    work: list[tuple[Path, str, str]] = []
     for source in sources:
         try:
             text = source.read_text()
@@ -316,7 +308,174 @@ def main() -> int:
                 continue
             work.append((source, lang_code, lang_name))
 
-    print(f"Sources: {len(sources)}   Languages: {len(target_langs)}   Pairs to translate: {len(work)}")
+    return work
+
+
+# ----------------------------------------------------------------------------
+# Batch API (50% cheaper, up to 24h latency)
+# ----------------------------------------------------------------------------
+
+def submit_batch_mode(args) -> int:
+    """Submit all pending translations as one Anthropic Batch job. Prints
+    the batch ID to stdout (and to .translation-batches/<id>.txt for
+    convenience). Subsequent `--batch-poll <id>` downloads the results.
+    """
+    cache = load_cache()
+    work = build_work_list(args, cache)
+    print(f"Pairs to submit: {len(work)}")
+    if not work:
+        print("Nothing to do.")
+        return 0
+    if args.dry_run:
+        for source, lang_code, _ in work[:20]:
+            print(f"  would batch: {source.relative_to(REPO_ROOT)} -> {lang_code}")
+        if len(work) > 20:
+            print(f"  ... and {len(work) - 20} more")
+        return 0
+
+    client = anthropic.Anthropic()
+    requests = []
+    for source, lang_code, lang_name in work:
+        text = source.read_text()
+        requests.append({
+            "custom_id": batch_custom_id(source, lang_code),
+            "params": {
+                "model": MODEL,
+                "max_tokens": 8192,
+                "system": [{
+                    "type": "text",
+                    "text": build_system_prompt(lang_name),
+                    "cache_control": {"type": "ephemeral"},
+                }],
+                "messages": [{"role": "user", "content": text}],
+            },
+        })
+
+    batch = client.messages.batches.create(requests=requests)
+    batch_id = batch.id
+
+    # Note the batch ID to a tracking file so CI / next run can pick it up.
+    tracking_dir = REPO_ROOT / ".translation-batches"
+    tracking_dir.mkdir(exist_ok=True)
+    (tracking_dir / f"{batch_id}.txt").write_text(
+        f"Submitted: {len(requests)} pairs\n"
+        f"Created at: {batch.created_at}\n"
+    )
+
+    print(f"\nBatch submitted: {batch_id}")
+    print(f"Status: {batch.processing_status}")
+    print(f"Pairs in batch: {len(requests)}")
+    print(f"\nPoll with: ./scripts/translate.py --batch-poll {batch_id}")
+    print(f"Or wait: anthropic typically completes within minutes for ~thousand-request batches.")
+    return 0
+
+
+def poll_batch_mode(args) -> int:
+    """Check the status of a batch; if complete, download results and write
+    translated files to disk. Idempotent — safe to call repeatedly.
+    """
+    batch_id = args.batch_poll
+    client = anthropic.Anthropic()
+    batch = client.messages.batches.retrieve(batch_id)
+
+    counts = batch.request_counts
+    print(
+        f"Batch {batch_id}: {batch.processing_status} "
+        f"(processing={counts.processing} succeeded={counts.succeeded} "
+        f"errored={counts.errored} canceled={counts.canceled} expired={counts.expired})"
+    )
+
+    if batch.processing_status != "ended":
+        print("Not ready yet. Try again in a minute.")
+        return 2
+
+    print("Downloading results...")
+    cache = load_cache()
+    done = 0
+    failed: list[tuple[str, str]] = []
+
+    for result in client.messages.batches.results(batch_id):
+        cid = result.custom_id
+        try:
+            lang_code, source = parse_batch_custom_id(cid)
+        except Exception as e:
+            print(f"  skip malformed custom_id {cid!r}: {e}", file=sys.stderr)
+            continue
+
+        rtype = result.result.type
+        if rtype != "succeeded":
+            err = getattr(result.result, "error", None)
+            err_msg = getattr(err, "message", None) or str(rtype)
+            failed.append((cid, err_msg))
+            print(f"  FAIL  {cid}: {err_msg}", file=sys.stderr)
+            continue
+
+        text = result.result.message.content[0].text
+        text = re.sub(r"^```(?:markdown|md)?\s*\n", "", text)
+        text = re.sub(r"\n```\s*$", "", text)
+
+        out_path = output_path(source, lang_code)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(text)
+
+        if source.exists():
+            cache[cache_key(source, lang_code)] = content_hash(source.read_text())
+        done += 1
+
+    save_cache(cache)
+
+    # Clean up the tracking file now that we've consumed it.
+    tracking_file = REPO_ROOT / ".translation-batches" / f"{batch_id}.txt"
+    if tracking_file.exists():
+        tracking_file.unlink()
+
+    print(f"\nDownloaded {done} translation(s). Failed: {len(failed)}.")
+    return 0 if not failed else 1
+
+
+# ----------------------------------------------------------------------------
+# Main
+# ----------------------------------------------------------------------------
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--lang", action="append", default=None,
+                        help="Only translate to this language code (repeatable). Default: all 17 target langs.")
+    parser.add_argument("--file", action="append", default=None,
+                        help="Only translate this specific source file path (repeatable).")
+    parser.add_argument("--force", action="store_true",
+                        help="Ignore cache; re-translate everything in scope.")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="List what would be translated; make no API calls.")
+    parser.add_argument("--concurrency", type=int, default=5,
+                        help="Max concurrent API calls in real-time mode. Default 5.")
+    parser.add_argument("--batch", action="store_true",
+                        help="Submit all pending translations as one Anthropic Batch job "
+                             "(50%% cheaper, ~minutes to hours latency). Prints batch ID.")
+    parser.add_argument("--batch-poll", default=None, metavar="BATCH_ID",
+                        help="Poll an existing batch ID; download results when ready.")
+    args = parser.parse_args()
+
+    if not args.dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
+        print("ANTHROPIC_API_KEY not set. Export it before running (or use --dry-run).", file=sys.stderr)
+        return 2
+
+    # Dispatch to batch modes early.
+    if args.batch_poll:
+        return poll_batch_mode(args)
+    if args.batch:
+        return submit_batch_mode(args)
+
+    # Real-time mode (the original path).
+    cache = load_cache()
+    try:
+        work = build_work_list(args, cache)
+    except SystemExit as e:
+        return e.code if isinstance(e.code, int) else 2
+
+    target_lang_count = len(args.lang) if args.lang else len(LANGUAGES)
+    source_count = len(args.file) if args.file else len(english_articles())
+    print(f"Sources: {source_count}   Languages: {target_lang_count}   Pairs to translate: {len(work)}")
 
     if args.dry_run:
         for source, lang_code, _ in work[:20]:

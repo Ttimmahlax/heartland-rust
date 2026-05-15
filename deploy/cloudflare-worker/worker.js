@@ -1,92 +1,122 @@
-  // heartland.io — Cloudflare Worker (language router)
-  //
-  // Routes /<lang>/<path> requests through GTranslate's translation network.
-  // Everything else passes through to the origin (Amplify Hosting, reached via
-  // the proxied CNAME record for heartland.io).
-  //
-  // LANGS must stay in sync with `Language::ALL` in src/i18n.rs.
-  //
-  // Deploy:
-  //   1. Cloudflare dashboard → Workers & Pages → Create Worker
-  //   2. Paste this file into the editor
-  //   3. Save & Deploy
-  //   4. Triggers → add custom domain or route: `heartland.io/*` and `www.heartland.io/*`
+// heartland.io — Cloudflare Worker (auto-language redirect)
+//
+// On every request, if the user's browser prefers a language we support
+// AND the path they're requesting has a translated version, 302-redirect
+// them to the /<lang>/<path> equivalent. Bookmark a cookie so subsequent
+// visits don't re-trigger the redirect.
+//
+// Safeguards:
+//   - Skip bots (Googlebot etc.) so search engines crawl English at English URLs.
+//   - Skip paths already prefixed with a language.
+//   - Skip paths that don't have translations yet (allowlist).
+//   - Cookie-based opt-in: once redirected, the cookie remembers their choice.
+//     A user can clear cookies or set `lang_preference=en` (e.g. via a UI we
+//     might add later) to escape.
+//
+// LANGS must stay in sync with `Language::ALL` in src/i18n.rs.
 
-  const LANGS = new Set([
-    'ar', 'bn', 'de', 'es', 'fr', 'hi', 'it', 'ja', 'ko',
-    'nl', 'pa', 'pl', 'pt', 'tr', 'ur', 'vi', 'zh-CN',
-  ]);
+const LANGS = new Set([
+  'ar', 'bn', 'de', 'es', 'fr', 'hi', 'it', 'ja', 'ko',
+  'nl', 'pa', 'pl', 'pt', 'tr', 'ur', 'vi', 'zh-CN',
+]);
 
-  // GTranslate translation-server pool. md5("heartland.io") → idx 10 of 12 → "ani".
-  // Pinned here because Workers' crypto.subtle doesn't implement MD5.
-  // If the production hostname changes, recompute (see deploy/lambda-edge/index.mjs
-  // gtServerFor()) and update this constant.
-  const GT_SERVER = 'ani.tdn.gtranslate.net';
+// Bot detection. Conservative — better to occasionally fail to redirect a
+// legitimate user (they can still navigate manually) than to redirect a
+// crawler and pollute Google's index with wrong-language signals.
+const BOT_REGEX =
+  /\b(googlebot|bingbot|baiduspider|yandex|duckduck|slurp|facebookexternalhit|twitterbot|linkedinbot|whatsapp|telegrambot|discordbot|applebot|petalbot|semrushbot|ahrefsbot|mj12bot|dotbot|crawler|spider)\b/i;
 
-  export default {
-    async fetch(request) {
-      const url = new URL(request.url);
+/// Paths that have translated versions on Amplify. Only requests matching
+/// these get redirected; other paths stay English. As we translate more of
+/// the site (page components, etc.) we expand this list.
+function isTranslatablePath(pathname) {
+  return pathname === '/'
+    ? false   // home page isn't translated yet; redirecting / → /es/ would 404
+    : pathname.startsWith('/sustainability-news/');
+}
 
-      // Match /<lang>/<rest>. Supports zh-CN (two-letter base + optional region).
-      const m = url.pathname.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)(\/.*)?$/);
-      if (!m || !LANGS.has(m[1])) {
-        // English or unknown-prefix path — passthrough to the Amplify origin.
-        // Cloudflare's subrequests skip the Worker route, so this goes
-        // directly to the CNAME target (Amplify Hosting) without looping.
-        return fetch(request);
-      }
+/// Parse the Accept-Language header, return the best-matching code we
+/// support, or null. Honors `;q=` quality weights and falls back from
+/// `es-MX` → `es`; also maps `zh` / `zh-TW` / `zh-HK` to `zh-CN` since
+/// that's the only Chinese variant we ship.
+function pickLang(acceptLanguage) {
+  if (!acceptLanguage) return null;
+  const prefs = acceptLanguage
+    .split(',')
+    .map((seg) => {
+      const [tag, ...params] = seg.trim().split(';');
+      const qParam = params.find((p) => p.trim().startsWith('q='));
+      const q = qParam ? parseFloat(qParam.trim().slice(2)) : 1.0;
+      return { tag: tag.trim(), q: isNaN(q) ? 1.0 : q };
+    })
+    .sort((a, b) => b.q - a.q);
 
-      // Translated path — proxy to GTranslate's network.
-      //
-      // Three things to know about this call (matches GTranslate's PHP addon):
-      //
-      // 1. We use HTTP (not HTTPS) because *.tdn.gtranslate.net presents a
-      //    self-signed cert. Cloudflare Workers' fetch doesn't support custom
-      //    CA bundles, so HTTPS would 526. The CF→GT hop is unencrypted, but
-      //    it's all public marketing content. User-facing TLS is unaffected.
-      //
-      // 2. We STRIP the language prefix from the URL. GTranslate's TDN servers
-      //    don't expect the lang in the path.
-      //
-      // 3. We set Host to `<lang>.heartland.io`. The PHP addon does this
-      //    exact thing (gtranslate.php line 71: `$host = $glang . '.' . ...`).
-      //    GTranslate identifies BOTH the source site AND the target language
-      //    from this single Host header.
-      const lang = m[1];
-      const rest = m[2] || '/';
-      const gtUrl = `http://${GT_SERVER}${rest}${url.search}`;
+  for (const { tag } of prefs) {
+    if (LANGS.has(tag)) return tag;
+    const base = tag.split('-')[0];
+    if (LANGS.has(base)) return base;
+    if (base === 'zh' && LANGS.has('zh-CN')) return 'zh-CN';
+  }
+  return null;
+}
 
-      // Build the upstream headers. Mirror what the PHP addon does:
-      //   - Strip CF-* headers (the addon explicitly removes these so they
-      //     don't confuse GT's request fingerprinting).
-      //   - Set Host to `<lang>.heartland.io`.
-      //   - Add `X-GT-Viewer-IP` with the real client IP — GT uses this to
-      //     distinguish authenticated origin requests from anonymous demos.
-      //     Without it, GT returns the source content un-translated and
-      //     stamped with `X-Robots-Tag: noindex,nofollow,noarchive,nosnippet`.
-      const headers = new Headers();
-      for (const [k, v] of request.headers) {
-        if (k.toLowerCase().startsWith('cf-')) continue;
-        headers.set(k, v);
-      }
-      headers.set('host', `${lang}.heartland.io`);
-      headers.set('accept-encoding', 'gzip');
+function getCookie(request, name) {
+  const header = request.headers.get('cookie') || '';
+  const m = header.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+  return m ? decodeURIComponent(m[1]) : null;
+}
 
-      const viewerIp =
-        request.headers.get('cf-connecting-ip') ||
-        request.headers.get('x-real-ip') ||
-        (request.headers.get('x-forwarded-for') || '').split(',')[0].trim() ||
-        '0.0.0.0';
-      headers.set('x-gt-viewer-ip', viewerIp);
+function buildRedirect(targetUrl, setLangCookie) {
+  const headers = new Headers({ Location: targetUrl });
+  if (setLangCookie) {
+    // 180 days. SameSite=Lax so the cookie survives cross-site link clicks
+    // (e.g. arriving via a Google search result) but not third-party iframes.
+    headers.set(
+      'Set-Cookie',
+      `lang_preference=${setLangCookie}; Path=/; Max-Age=15552000; SameSite=Lax; Secure`,
+    );
+  }
+  return new Response(null, { status: 302, headers });
+}
 
-      const xff = request.headers.get('x-forwarded-for');
-      if (xff) headers.set('x-gt-forwarded-for', xff);
+export default {
+  async fetch(request) {
+    const url = new URL(request.url);
 
-      return fetch(gtUrl, {
-        method: request.method,
-        headers,
-        body: ['GET', 'HEAD'].includes(request.method) ? undefined : request.body,
-        redirect: 'manual',
-      });
-    },
-  };
+    // 1. Already on a language path? Let it through unchanged.
+    if (/^\/[a-z]{2}(-[A-Z]{2})?\//.test(url.pathname)) {
+      return fetch(request);
+    }
+
+    // 2. Bot? Never redirect.
+    const ua = request.headers.get('user-agent') || '';
+    if (BOT_REGEX.test(ua)) {
+      return fetch(request);
+    }
+
+    // 3. Sticky cookie wins. Once a user has been auto-redirected (or
+    //    explicitly opted in to a language), respect it on every visit
+    //    until they clear cookies or override.
+    const cookieLang = getCookie(request, 'lang_preference');
+    if (cookieLang === 'en') {
+      return fetch(request);
+    }
+    if (cookieLang && LANGS.has(cookieLang) && isTranslatablePath(url.pathname)) {
+      return buildRedirect(`/${cookieLang}${url.pathname}${url.search}`, null);
+    }
+
+    // 4. First-visit auto-detect from Accept-Language.
+    if (!isTranslatablePath(url.pathname)) {
+      return fetch(request);
+    }
+    const detected = pickLang(request.headers.get('accept-language'));
+    if (!detected || detected === 'en') {
+      return fetch(request);
+    }
+
+    return buildRedirect(
+      `/${detected}${url.pathname}${url.search}`,
+      detected, // set the cookie so subsequent visits skip the detection
+    );
+  },
+};
