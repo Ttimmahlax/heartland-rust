@@ -1,6 +1,10 @@
+pub mod contact_block;
+pub mod decarb_solutions;
 pub mod layout;
 pub mod logo_carousel;
 pub mod markdown;
+pub mod markets_amplify;
+pub mod mats_amplify;
 pub mod news_carousel;
 pub mod stat_counters;
 pub mod video_hero;

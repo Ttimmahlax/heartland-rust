@@ -1,13 +1,13 @@
 +++
 title = "Bio Continuity - The Secret to Reliable Bio-Based Supply Chains"
-excerpt = "Find out how bio continuity is defining the standards for bio-based materials that manufacturers will utilize for decades to come."
+excerpt = "Raw material supply chains provide the foundation to the manufacturing industry. These are the solids and liquids that are used to make all the products you see around you."
 hero_image = "paper-8.png"
-hero_alt = "Bio Continuity - The Secret to Reliable Bio-Based Supply Chains"
+hero_alt = "bio continuity"
 published_at = "2022-08-18"
-author = "Tim Almond"
+author = "Heartland Industries"
+categories = ["hemp-processing"]
+tags = ["agriculture", "automotive", "detroit", "glass-fiber", "innovation", "michigan", "plastic", "sustainability"]
 +++
-
-Bio Continuity – The Secret to Reliable Bio-Based Supply Chains
 
 Raw material supply chains provide the foundation to the manufacturing industry. These are the solids and liquids that are used to make all the products you see around you.
 
@@ -58,4 +58,22 @@ Well, I’m glad you’ve asked.
 
 [The Heartland team](/team) has been doing research for over two years studying different bio-based materials, their use cases, and their capability for creating a reliable supply chain. After looking at half a dozen or more types of natural fibers, the Heartland team decided that industrial hemp was the best market opportunity. It turns out, hemp is stronger, lighter, cheaper, and more sustainable than just about every other material on the planet.
 
-_Full source: _
+Hemp as an additive can be mixed with plastics, cement, rubbers, paints, resins, cotton, and other types of materials. The ability for hemp to mix with other materials makes it one of the most versatile plants on the planet.
+
+Just like any other type of chemistry, hemp has to be milled in the right way and mixed in the proper format to make a consistent output every time. This is why our team has laser-focused on bio continuity.
+
+It’s not about the ability to make 100 or 1,000 pounds of a material the same every time.
+
+It’s about the ability to create 100,000,000 pounds of something where every pound looks the same. This type of consistency has never been seen before in bio-based supply chains.
+
+Materials suppliers from across the world will recognize bio continuity as the standard that is required for green materials. Today, the focus is on size, moisture content, and surface area.
+
+In 5-10 years, there will be dozens of other variables that become increasingly important to maintain consistency. The Heartland team is already tracking some of these variables and is actively focused on performance characteristics that can be amplified through proper processing and milling technologies.
+
+For the first time ever, bio-based materials have a path out of R&D labs and into mainstream products. Bio continuity is the golden ticket that the manufacturing industry has been waiting for. The partner that they need is a team focused on building a reliable supply chain of bio-based materials.
+
+Join us as we help manufacturers across industries build a better world out of hemp.
+
+— Heartland Team
+
+–Heartland Team

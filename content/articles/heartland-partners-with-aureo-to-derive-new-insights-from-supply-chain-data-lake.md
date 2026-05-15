@@ -1,23 +1,28 @@
 +++
-title = "Heartland Partners with Aureo to Derive New Insights from Supply Chain Data Lake"
-excerpt = "Heartland Partners with Aureo to Derive New Insights from Supply Chain Data Lake — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "hero.svg"
-hero_alt = "Heartland Partners with Aureo to Derive New Insights from Supply Chain Data Lake"
-published_at = "2024-06-01"
+title = "Heartland Partners with Aureo To Derive New Insights From Data Lake"
+excerpt = "In the modern era of industrial innovation, manufacturing and farming equipment generate some of the most intricate and voluminous data streams in the world. High-tech machinery, from precision agricultural tools to advanced manufactur"
+hero_image = "heartland-aureo-partnership.png"
+hero_alt = "Heartland Partners with Aureo To Derive New Insights From Data Lake"
+published_at = "2025-06-05"
 author = "Heartland Industries"
-tags = ["plastic", "supply-chain"]
+categories = ["sustainable-plastics"]
+tags = []
 +++
 
-Heartland Industries originally published this story on heartland.io. We're preserving the exact URL — `/sustainability-news/heartland-partners-with-aureo-to-derive-new-insights-from-supply-chain-data-lake/` — so any inbound links from search engines, citations, and social shares keep landing on a 200.
+## Heartland Manufacturing & Farming Data Lake
 
-The full original archive is available on the Wayback Machine: [heartland.io/sustainability-news/heartland-partners-with-aureo-to-derive-new-insights-from-supply-chain-data-lake/](https://web.archive.org/web/2025/https://heartland.io/sustainability-news/heartland-partners-with-aureo-to-derive-new-insights-from-supply-chain-data-lake/).
+In the modern era of industrial innovation, manufacturing and farming equipment generate some of the most intricate and voluminous data streams in the world. High-tech machinery, from precision agricultural tools to advanced manufacturing systems, can produce upwards of 1 terabyte of data per day.
 
-## Why we care about this topic
+This data encompasses everything from equipment performance metrics and environmental conditions to supply chain logistics and operational efficiencies. For Heartland, a leader in sustainable manufacturing and farming solutions, this "data lake" represents both a challenge and an opportunity.
 
-Topics like this one — covering plastic, supply-chain — are central to how Heartland thinks about material innovation. If you'd like the full story, get in touch with us at [Hello@heartland.io](mailto:Hello@heartland.io) and we'll share it.
+The ability to harness and analyze this vast dataset is critical to unlocking actionable insights that drive efficiency, reduce waste, and enhance sustainability across their operations.
 
-## Related from Heartland
+Heartland's data lake is a centralized repository that aggregates raw, unstructured, and structured data from diverse sources across their network. The sheer scale and complexity of this data require cutting-edge tools to process and interpret it effectively.
 
-- Browse the full library at [/sustainability-news](/sustainability-news).
-- Learn why manufacturers switch to [Imperium](/why-imperium).
-- Read about our regenerative agronomy program at [/engineering-earth](/engineering-earth).
+By prioritizing rapid and accurate analysis, Heartland aims to empower its teams to make data-driven decisions that optimize operations and strengthen partnerships with stakeholders, including farmers, manufacturers, and distributors.
+
+## Future Of Heartland’s Digital Division
+
+Heartland's Digital Division is at the forefront of the company's mission to become the world's most sustainable business. Over the years, Heartland has developed and deployed a [suite of software](/sustainability-news/lethal-ventures-heartland-partner-to-launch-carbon-report/) technologies designed to enhance stakeholder engagement and streamline operations. These tools include advanced analytics platforms, real-time monitoring systems, and collaborative portals that connect partners across the supply chain. By leveraging these technologies, Heartland is creating a digital ecosystem that fosters transparency, efficiency, and innovation.
+
+The partnership with [Aureo](http://Aureo-ai.com), a leading artificial intelligence firm specializing in data analytics, marks a significant milestone in Heartland's digital transformation journey. This collaboration is poised to amplify the capabilities of Heartland's Digital Division, enabling the company to extract deeper insights from its data lake and identify new opportunities for value creation.

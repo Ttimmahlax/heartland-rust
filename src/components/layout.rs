@@ -2,6 +2,7 @@
 
 use dioxus::prelude::*;
 
+use crate::components::contact_block::ContactBlock;
 use crate::tracking::{TrackingFooter, TrackingHead, REF_CAPTURE_JS};
 use crate::Route;
 
@@ -23,11 +24,25 @@ const HEADER_SCROLL_JS: &str = r#"
 
 #[component]
 pub fn LayoutShell() -> Element {
+    // Derive the top-level slug from the current route so the contact block
+    // can pick the right HubSpot form ID. e.g. "/why-imperium" → "why-imperium".
+    // For nested routes like "/sustainability-news/<x>" we use the first
+    // segment ("sustainability-news"), which maps to the news-index form.
+    let page_slug = use_route::<Route>()
+        .to_string()
+        .trim_start_matches('/')
+        .trim_end_matches('/')
+        .split('/')
+        .next()
+        .unwrap_or("")
+        .to_string();
+
     rsx! {
         TrackingHead {}
         Header {}
         main { class: "flex-1",
             Outlet::<Route> {}
+            ContactBlock { page_slug }
         }
         Footer {}
         TrackingFooter {}
@@ -74,20 +89,31 @@ pub fn Header() -> Element {
                     AboutDropdown {}
                 }
 
-                button {
-                    class: "lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-[color:var(--color-border)] justify-self-end col-start-3",
-                    aria_label: "Toggle navigation menu",
-                    onclick: move |_| menu_open.toggle(),
-                    if menu_open() {
-                        svg { width: "20", height: "20", view_box: "0 0 24 24", fill: "none", stroke: "currentColor", stroke_width: "2",
-                            line { x1: "18", y1: "6", x2: "6", y2: "18" }
-                            line { x1: "6", y1: "6", x2: "18", y2: "18" }
-                        }
-                    } else {
-                        svg { width: "20", height: "20", view_box: "0 0 24 24", fill: "none", stroke: "currentColor", stroke_width: "2",
-                            line { x1: "3", y1: "6", x2: "21", y2: "6" }
-                            line { x1: "3", y1: "12", x2: "21", y2: "12" }
-                            line { x1: "3", y1: "18", x2: "21", y2: "18" }
+                // Right-side cluster: solid Contact CTA + mobile hamburger.
+                // The Contact link scrolls to the ContactBlock anchor on the
+                // current page (every page renders <section id="contact">
+                // via LayoutShell).
+                div { class: "flex items-center gap-2 md:gap-3 justify-self-end col-start-3",
+                    a {
+                        href: "#contact",
+                        class: "site-header-cta inline-flex items-center justify-center px-3 py-2 md:px-4 md:py-2 rounded-md bg-[#ad2929] text-white text-xs md:text-sm font-bold tracking-wide hover:bg-[#931f1f] hover:text-white transition-colors shadow-md",
+                        "Contact"
+                    }
+                    button {
+                        class: "lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-[color:var(--color-border)]",
+                        aria_label: "Toggle navigation menu",
+                        onclick: move |_| menu_open.toggle(),
+                        if menu_open() {
+                            svg { width: "20", height: "20", view_box: "0 0 24 24", fill: "none", stroke: "currentColor", stroke_width: "2",
+                                line { x1: "18", y1: "6", x2: "6", y2: "18" }
+                                line { x1: "6", y1: "6", x2: "18", y2: "18" }
+                            }
+                        } else {
+                            svg { width: "20", height: "20", view_box: "0 0 24 24", fill: "none", stroke: "currentColor", stroke_width: "2",
+                                line { x1: "3", y1: "6", x2: "21", y2: "6" }
+                                line { x1: "3", y1: "12", x2: "21", y2: "12" }
+                                line { x1: "3", y1: "18", x2: "21", y2: "18" }
+                            }
                         }
                     }
                 }
@@ -238,7 +264,6 @@ fn AboutDropdown() -> Element {
                     DropdownItem { to: Route::Team {}, title: "Team" }
                     DropdownItem { to: Route::Farmers {}, title: "Our Farmers" }
                     DropdownItem { to: Route::GreenPackaging {}, title: "Green Packaging Initiative" }
-                    DropdownItem { to: Route::Contact {}, title: "Contact" }
                 }
             }
         }
@@ -292,7 +317,6 @@ fn MobileMenu(close: EventHandler<()>) -> Element {
                 MobileLink { to: Route::Team {}, label: "Team", close }
                 MobileLink { to: Route::Farmers {}, label: "Our Farmers", close }
                 MobileLink { to: Route::GreenPackaging {}, label: "Green Packaging Initiative", close }
-                MobileLink { to: Route::Contact {}, label: "Contact", close }
             }
         }
     }
@@ -332,19 +356,40 @@ pub fn Footer() -> Element {
                         img {
                             src: "/assets/brand/heartland-logo-light.png",
                             alt: "Heartland Industries",
-                            class: "h-10 w-auto block dark:hidden",
+                            class: "h-6 w-auto block dark:hidden",
                         }
                         img {
                             src: "/assets/brand/heartland-logo-dark.png",
                             alt: "",
                             aria_hidden: "true",
-                            class: "h-10 w-auto hidden dark:block",
+                            class: "h-6 w-auto hidden dark:block",
                         }
                     }
                     p { class: "text-sm text-[color:var(--color-fg-muted)] max-w-xs",
-                        "High performance, cost-reducing, carbon-negative materials. Helping manufacturers cut cost and emissions at the same time."
+                        "Heartland Imperium materials reduce the cost and carbon footprint of everyday products."
                     }
-                    p { class: "mt-3 text-sm",
+
+                    // Office addresses — Detroit + Brooklyn
+                    div { class: "mt-5 space-y-3 max-w-xs",
+                        div {
+                            div { class: "text-xs uppercase tracking-[0.15em] text-[color:var(--color-fg)] font-semibold mb-1",
+                                "Detroit Headquarters"
+                            }
+                            address { class: "text-sm text-[color:var(--color-fg-muted)] not-italic",
+                                "2050 15th St, Detroit, MI 48216"
+                            }
+                        }
+                        div {
+                            div { class: "text-xs uppercase tracking-[0.15em] text-[color:var(--color-fg)] font-semibold mb-1",
+                                "New York"
+                            }
+                            address { class: "text-sm text-[color:var(--color-fg-muted)] not-italic",
+                                "19 Morris Ave, Brooklyn, NY 11205"
+                            }
+                        }
+                    }
+
+                    p { class: "mt-5 text-sm",
                         a { href: "mailto:Hello@heartland.io",
                             class: "text-[color:var(--color-fg-muted)] hover:text-[color:var(--color-accent)]",
                             "Hello@heartland.io"

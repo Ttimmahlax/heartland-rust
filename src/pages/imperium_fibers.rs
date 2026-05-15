@@ -2,7 +2,7 @@ use dioxus::prelude::*;
 
 use crate::components::logo_carousel::LogoCarousel;
 use crate::components::news_carousel::NewsCarousel;
-use crate::components::stat_counters::{product_stats, StatCounters};
+use crate::components::video_hero::VideoBackground;
 use crate::seo::Seo;
 use crate::Route;
 
@@ -10,15 +10,14 @@ use crate::Route;
 pub fn ImperiumFibers() -> Element {
     rsx! {
         Seo {
-            title: "Imperium Textile Fiber",
-            description: "Imperium textile fiber — soft American hemp fiber for yarn, polyhemp, hemp-lyocell and hemp-cotton blends. No microplastics, no offshore supply risk.",
+            title: "Imperium Fibers",
+            description: "Imperium Fiber is engineered hemp fiber designed to reduce the cost, weight, and carbon footprint of existing raw materials.",
             path: "/imperium-fibers",
         }
 
         Hero {}
-        StatCounters { stats: product_stats() }
-        Sections {}
-        LogoCarousel { heading: "As Seen In" }
+        LogoCarousel { heading: "" }
+        Body {}
         ClosingCta {}
         NewsCarousel { heading: "Related Articles" }
     }
@@ -27,17 +26,21 @@ pub fn ImperiumFibers() -> Element {
 #[component]
 fn Hero() -> Element {
     rsx! {
-        section { class: "bg-mesh-hero section-soft-bottom",
-            div { class: "container-content py-20 md:py-28 text-center",
-                p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4 animate-fade-in",
-                    "Hemp textile"
+        section {
+            class: "video-hero-section section-soft-bottom min-h-[110vh] flex items-center pb-[20vh]",
+            VideoBackground { slug: "imperium-fibers".to_string() }
+            div { class: "video-hero-scrim" }
+            div { class: "video-hero-content container-content w-full py-24 md:py-32 text-center",
+                p { class: "text-[0.7438rem] uppercase tracking-[0.25em] text-white/90 mb-4 animate-fade-in",
+                    "Imperium Fibers"
                 }
-                h1 { class: "text-4xl md:text-6xl font-extrabold leading-tight max-w-4xl mx-auto animate-fade-in-up",
-                    span { class: "text-gradient-red", "Imperium Fiber" }
-                    " — the new super-fiber for textiles."
+                h1 {
+                    class: "text-3xl md:text-5xl font-extrabold leading-tight uppercase tracking-tight text-white max-w-4xl mx-auto animate-fade-in-up",
+                    "The Softest Hemp fiber on earth"
                 }
-                p { class: "mt-6 max-w-2xl mx-auto text-lg text-[color:var(--color-fg-muted)] animate-fade-in-up delay-1",
-                    "Soft American hemp fiber engineered for spin-ready white yarn, polyhemp, hemp-lyocell, hemp-linen, hemp-cotton, hemp-silk and hemp-wool blends."
+                p {
+                    class: "mt-5 max-w-2xl mx-auto text-base md:text-lg text-white/85 animate-fade-in-up delay-1",
+                    "Imperium Fiber is available for brands, converters, and suppliers that are need a high volume, consistent supply of hemp fiber for yarn and fabric manufacturing."
                 }
             }
         }
@@ -45,29 +48,52 @@ fn Hero() -> Element {
 }
 
 #[component]
-fn Sections() -> Element {
+fn Body() -> Element {
     rsx! {
-        section { class: "container-content py-16",
-            div { class: "grid gap-8 md:grid-cols-2",
-                    div { class: "surface-glass p-7 animate-fade-in-up",
-                        h2 { class: "text-2xl font-display font-bold mb-4", "The natural alternative to nylon and polycotton" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Polyhemp delivers the same hand and drape as polycotton at lower cost — and without the microplastic shed." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Hemp-lyocell preserves the strength of nylon without the oxidative-stress static-electricity penalties." }
+        section { class: "container-content py-16 md:py-20",
+            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
+                div { class: "md:order-2",
+                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Butter Soft Hemp Fiber With Incredible Strength" }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium Fiber is available for brands, converters, and suppliers that are need a high volume, consistent supply of hemp fiber for yarn and fabric manufacturing." }
+                }
+                div { class: "md:order-1",
+                    img {
+                        src: "/assets/pages/imperium-fibers/heartland-hemp-fiber-textile-fabric.png",
+                        alt: "heartland hemp fiber textile fabric",
+                        loading: "lazy",
+                        class: "w-full rounded-xl shadow-lg",
                     }
-                    div { class: "surface-glass p-7 animate-fade-in-up",
-                        h2 { class: "text-2xl font-display font-bold mb-4", "US fiber, no port risk" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Most premium hemp fiber today moves through European or Indian processors. Heartland grows, processes, and bales in the US." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "For brands sourcing under the Uyghur Forced Labor Prevention Act or similar, US-origin fiber removes a layer of audit complexity." }
-                    }
-                    div { class: "surface-glass p-7 animate-fade-in-up",
-                        h2 { class: "text-2xl font-display font-bold mb-4", "What ships" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Spin-ready white fiber (combed, ready for the spinning frame)." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Yarn (custom counts, blend ratios on request)." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Bales of conditioned hemp fiber for downstream conversion." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Sample-quantity fabric for protyping." }
-                    }
+                }
             }
-        }
+            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
+                div { class: "md:order-1",
+                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Textile Fiber With An Origin Story To Be Proud Of" }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium Fiber is the highest quality hemp fiber on Earth" }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium fiber is grown by small farmers with care, consuming 95% less water than Cotton and no pesticides. Imperium is one of the softest, strongest natural fibers on earth that regenerates our farmland." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium fiber can be used in garments, furniture, and composites." }
+                }
+                div { class: "md:order-2",
+                    img {
+                        src: "/assets/pages/imperium-filler/1210x786-px-4.png",
+                        alt: "heartland hemp bales",
+                        loading: "lazy",
+                        class: "w-full rounded-xl shadow-lg",
+                    }
+                }
+            }
+            figure { class: "mb-16 animate-fade-in-up",
+                img { src: "/assets/pages/imperium-fibers/imperium-bulk-spin-ready-fiber.png", alt: "Imperium Bulk Spin Ready Fiber", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+            }
+            div { class: "max-w-3xl mx-auto mb-16 animate-fade-in-up",
+                h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 text-center", "Throughout The Supply Chain" }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland partners with corn, wheat, and soy farmers to embed industrial hemp into their crop rotation. Our USDA Grant has given us unique insights into industrial hemp farming, regenerative agriculture, and carbon sequestration." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Yarn Manufacturer Heartland partners with yarn manufacturers to produce high quality yarns for fabric made from Imperium Hemp Fiber. We support customers in the top 10 textile manufacturing countries." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Textile Fabric Mill Heartland partners with textile mills and cut/sows to ensure they're able to successfully integrate hemp fiber alongside other natural and synthetic fibers." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Brand Heartland is the sustainability partner for brands on their journey to reduce their carbon footprint. Our team helps create stakeholder alignment so companies can effectively communicate the value of imperium hemp fiber." }
+            }
+            figure { class: "mb-16 animate-fade-in-up",
+                img { src: "/assets/pages/imperium-fibers/plastic-pallets-2-1.png", alt: "cellulose fiber", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+            }        }
     }
 }
 
@@ -77,9 +103,9 @@ fn ClosingCta() -> Element {
         section { class: "bg-mesh-dramatic py-20 my-12 section-soft-edges",
             div { class: "container-content text-center",
                 h2 { class: "text-3xl md:text-4xl font-bold mb-6 max-w-2xl mx-auto",
-                    "Ready to dig in?"
+                    "Learn more about The"
                 }
-                Link { to: Route::Contact {}, class: "btn-accent-gradient", "Sample request" }
+                Link { to: Route::Contact {}, class: "btn-accent-gradient", "Get in touch" }
             }
         }
     }

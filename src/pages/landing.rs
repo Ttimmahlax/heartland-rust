@@ -1,6 +1,9 @@
 use dioxus::prelude::*;
 
+use crate::components::decarb_solutions::DecarbSolutions;
 use crate::components::logo_carousel::LogoCarousel;
+use crate::components::markets_amplify::MarketsAmplify;
+use crate::components::mats_amplify::MatsAmplify;
 use crate::components::news_carousel::NewsCarousel;
 use crate::components::video_hero::VideoBackground;
 use crate::seo::{organization_jsonld, Seo};
@@ -19,8 +22,15 @@ pub fn Landing() -> Element {
         Hero {}
         LogoCarousel { heading: "" }
         HighPerformanceSection {}
-        IndustriesGrid {}
+        MeetTheTeamStrip {}
+        EngineeringEarthSection {}
+        DecarbSolutions {}
+        UnlockingSustainableFuture {}
+        BrightFutureManufacturing {}
+        MatsAmplify {}
         WhyImperiumStrip {}
+        MarketsAmplify {}
+        CarbonCalculator {}
         TestimonialBlock {}
         NewsCarousel { heading: "From The Heartland" }
     }
@@ -59,50 +69,195 @@ fn Hero() -> Element {
 #[component]
 fn HighPerformanceSection() -> Element {
     rsx! {
-        section { class: "container-content py-16 text-center",
-            h2 { class: "text-3xl md:text-4xl font-bold mb-6",
-                "High Performance "
-                span { class: "text-gradient-red", "Cost Reducing Materials" }
-            }
-            p { class: "max-w-3xl mx-auto text-lg text-[color:var(--color-fg-muted)]",
-                "Heartland engineers industrial hemp into drop-in additives that lower cost AND emissions in plastics, rubber, concrete, asphalt, paper, and textiles. Same equipment. Same performance. Better economics. Lower carbon footprint."
+        section { class: "container-content py-16 md:py-20",
+            div { class: "grid md:grid-cols-2 gap-12 items-center",
+                // Left: text
+                div { class: "animate-fade-in-up",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Low Carbon Natural Fibers"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "High Performance"
+                        br { class: "hidden md:inline" }
+                        " "
+                        span { class: "text-gradient-red", "Cost Reducing Materials" }
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4",
+                        "Plastics, textiles, paper, and construction. Global demand is accelerating the need for more sustainable materials that perform better and cost less."
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)]",
+                        "Heartland's Imperium improves the strength of everyday plastic and textile products while reducing the cost, weight and carbon footprint."
+                    }
+                }
+                // Right: image
+                div { class: "animate-fade-in-up",
+                    img {
+                        src: "/assets/pages/landing/farming-hemp-michigan.webp",
+                        alt: "Hemp farming in Michigan — Heartland Industries' supply chain",
+                        loading: "lazy",
+                        class: "w-full rounded-xl shadow-lg",
+                    }
+                }
             }
         }
     }
 }
 
 #[component]
-fn IndustriesGrid() -> Element {
-    let industries: Vec<(&'static str, &'static str, Route)> = vec![
-        (
-            "Decarbonized Solutions",
-            "Imperium Filler and Filled Resin let plastic compounders cut costs and emissions in one drop-in step. Same lines, same throughput.",
-            Route::SustainablePlastic {},
-        ),
-        (
-            "Unlocking Sustainable Materials",
-            "Imperium hemp augments or replaces glass fiber, talc, and calcium carbonate. Lower weight, lower carbon, lower cost.",
-            Route::WhyImperium {},
-        ),
-        (
-            "A Bright Future For Manufacturing",
-            "From automotive to building materials, Heartland's drop-in additives slot into existing supply chains. No retooling required.",
-            Route::Automotive {},
-        ),
-    ];
-
+fn MeetTheTeamStrip() -> Element {
     rsx! {
-        section { class: "container-content pb-12",
-            div { class: "grid gap-6 md:grid-cols-3",
-                for (i, (title, desc, route)) in industries.into_iter().enumerate() {
+        section { class: "container-content py-10 md:py-12 border-t border-b border-[color:var(--color-border)]",
+            div { class: "flex flex-col items-center justify-center gap-5 md:flex-row md:gap-8",
+                h3 { class: "text-xl md:text-2xl font-display font-semibold",
+                    Link { to: Route::Team {},
+                        class: "hover:text-[color:var(--color-accent)] transition-colors",
+                        "Meet The Team →"
+                    }
+                }
+                a {
+                    href: "https://www.linkedin.com/company/therealheartland/",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    aria_label: "Follow Heartland Industries on LinkedIn",
+                    class: "inline-flex items-center justify-center text-[color:var(--color-fg-muted)] hover:text-[color:var(--color-accent)] hover:scale-110 transition",
+                    svg { width: "36", height: "36", view_box: "0 0 24 24", fill: "currentColor",
+                        path { d: "M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.7A1.7 1.7 0 1 1 8.2 5a1.7 1.7 0 0 1-1.7 1.7zM20 19h-3v-5.6c0-1.4-.5-2.3-1.7-2.3-.9 0-1.5.6-1.7 1.2-.1.2-.1.5-.1.8V19h-3V8h3v1.3a3 3 0 0 1 2.7-1.5c2 0 3.5 1.3 3.5 4V19z" }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#[component]
+fn EngineeringEarthSection() -> Element {
+    rsx! {
+        section { class: "container-content py-16 md:py-20",
+            div { class: "grid md:grid-cols-2 gap-12 items-center",
+                // Left: image
+                div { class: "animate-fade-in-up md:order-1 order-2",
+                    img {
+                        src: "/assets/pages/landing/industrial-hemp-farm-michigan.png",
+                        alt: "Industrial hemp farm — Michigan",
+                        loading: "lazy",
+                        class: "w-full rounded-xl shadow-lg",
+                    }
+                }
+                // Right: text
+                div { class: "animate-fade-in-up md:order-2 order-1",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Engineering Earth"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "Changing The "
+                        span { class: "text-gradient-red", "World" }
+                        br {}
+                        "One Farm At A Time"
+                    }
+                    p { class: "text-lg font-medium text-[color:var(--color-accent)] mb-4",
+                        "Heartland's Imperium empowers local farming for local manufacturing to boost supply chain resiliency."
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-6",
+                        "Imperium can be grown anywhere in the world, using 95% less water than cotton and regenerating soil, leaving it healthier."
+                    }
                     Link {
-                        to: route,
-                        key: "{i}",
-                        class: "block surface-glass p-7 animate-fade-in-up hover:translate-y-[-2px] transition-transform",
-                        style: "animation-delay: {i * 80}ms",
-                        h3 { class: "font-display font-semibold text-xl mb-3 leading-snug", "{title}" }
-                        p { class: "text-[color:var(--color-fg-muted)]", "{desc}" }
-                        span { class: "mt-4 inline-block text-sm font-medium text-[color:var(--color-accent)]", "Learn more →" }
+                        to: Route::EngineeringEarth {},
+                        class: "inline-block btn-accent-gradient",
+                        "Engineering Earth →"
+                    }
+                }
+            }
+        }
+    }
+}
+
+#[component]
+fn UnlockingSustainableFuture() -> Element {
+    rsx! {
+        section { class: "container-content py-16 md:py-20",
+            div { class: "grid md:grid-cols-2 gap-12 items-center",
+                // Left: text + stat
+                div { class: "animate-fade-in-up",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Lower Cost Materials"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "Unlocking Our"
+                        br { class: "hidden md:inline" }
+                        " "
+                        span { class: "text-gradient-red", "Sustainable Future" }
+                    }
+                    p { class: "text-lg font-medium text-[color:var(--color-accent)] mb-4",
+                        "Imperium can replace more than 30% of the material in existing products; plastics, textiles, concrete, & asphalt."
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4",
+                        "We work with global brands and their suppliers to predictably reduce the cost and carbon footprint of everyday products."
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-8",
+                        "Imperium will be in everything in the next 20 years because it costs less."
+                    }
+                    // Carbon Footprint Reduction stat bar
+                    div { class: "mt-2",
+                        div { class: "flex items-center justify-between mb-2",
+                            h3 { class: "text-sm font-semibold uppercase tracking-wider text-[color:var(--color-fg)]",
+                                "Carbon Footprint Reduction"
+                            }
+                            span { class: "text-2xl font-bold text-[color:var(--color-accent)]",
+                                "70%"
+                            }
+                        }
+                        div { class: "w-full h-2 rounded-full bg-[color:var(--color-accent-quiet)] overflow-hidden",
+                            div {
+                                class: "h-full rounded-full bg-[color:var(--color-accent)] animate-fade-in",
+                                style: "width: 70%",
+                            }
+                        }
+                    }
+                }
+                // Right: image
+                div { class: "animate-fade-in-up",
+                    img {
+                        src: "/assets/pages/landing/sustainable-future-heartland.png",
+                        alt: "Sustainable future — Heartland Industries",
+                        loading: "lazy",
+                        class: "w-full rounded-xl shadow-lg",
+                    }
+                }
+            }
+        }
+    }
+}
+
+#[component]
+fn BrightFutureManufacturing() -> Element {
+    rsx! {
+        section { class: "container-content py-16 md:py-20",
+            div { class: "grid md:grid-cols-2 gap-12 items-center",
+                // Left: image
+                div { class: "animate-fade-in-up md:order-1 order-2",
+                    img {
+                        src: "/assets/pages/landing/sustainable-manufacturing.png",
+                        alt: "Sustainable manufacturing materials — Heartland Industries",
+                        loading: "lazy",
+                        class: "w-full rounded-xl shadow-lg",
+                    }
+                }
+                // Right: text
+                div { class: "animate-fade-in-up md:order-2 order-1",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Simple & Scalable"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "A Bright Future For"
+                        br { class: "hidden md:inline" }
+                        " "
+                        span { class: "text-gradient-red", "Manufacturing" }
+                    }
+                    p { class: "text-lg font-medium text-[color:var(--color-accent)] mb-4",
+                        "Lower Cost. Better Strength. Available to Everyone Globally."
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)]",
+                        "Everyday products made with petroleum and mined rock can be made better with Imperium. Heartland enables local farmers to empower their local industries with stronger and lower cost raw materials."
                     }
                 }
             }
@@ -113,30 +268,186 @@ fn IndustriesGrid() -> Element {
 #[component]
 fn WhyImperiumStrip() -> Element {
     rsx! {
-        section {
-            class: "bg-mesh-dramatic py-24 my-12 section-soft-edges",
-            div { class: "container-content text-center",
-                h2 { class: "text-3xl md:text-5xl font-bold mb-6 max-w-3xl mx-auto",
-                    "Throughout The "
-                    span { class: "text-gradient-red", "Supply Chain" }
-                }
-                p { class: "max-w-2xl mx-auto text-lg text-[color:var(--color-fg-muted)] mb-2",
-                    "Heartland farms industrial hemp through our farmer network across 11 US states, processes it into Imperium-grade material, and ships it directly to manufacturers as filler, masterbatch, filled resin, or textile fiber."
-                }
-                p { class: "max-w-2xl mx-auto text-lg text-[color:var(--color-fg-muted)] mb-8",
-                    "American farms. American mills. American manufacturers. Verified carbon-negative end-to-end."
-                }
-                div { class: "flex items-center justify-center gap-3 flex-wrap",
-                    Link {
-                        to: Route::Lca {},
-                        class: "btn-accent-gradient",
-                        "See The LCA"
+        section { class: "bg-mesh-dramatic py-20 md:py-28 my-12 section-soft-edges",
+            div { class: "container-content",
+                // Section header
+                div { class: "text-center mb-16 max-w-3xl mx-auto",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Your Sustainability Partner"
                     }
-                    Link {
-                        to: Route::EngineeringEarth {},
-                        class: "px-5 py-3 rounded-md border border-[color:var(--color-border)] hover:border-[color:var(--color-accent)] text-[color:var(--color-fg)] hover:text-[color:var(--color-accent)]",
-                        "Engineering Earth →"
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight",
+                        "Throughout The "
+                        span { class: "text-gradient-red", "Supply Chain" }
                     }
+                }
+
+                // The 4-step zigzag timeline
+                div { class: "relative",
+                    // Vertical center line (desktop only) — the rail that the steps anchor to
+                    div { class: "hidden md:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-px bg-gradient-to-b from-transparent via-[color:var(--color-accent)] to-transparent opacity-40" }
+
+                    SupplyChainStep {
+                        number: 1,
+                        icon: SupplyIcon::Tractor,
+                        heading: "Regenerative Farmer",
+                        body: "Heartland partners with corn, soy, alfalfa, and cotton farmers to successfully add industrial hemp into their crop rotation. Our USDA Grant has given us unique insights on water conservation and carbon sequestration from our farming practices.",
+                        align_right: false,
+                    }
+                    SupplyChainStep {
+                        number: 2,
+                        icon: SupplyIcon::Blender,
+                        heading: "Raw Material Processor",
+                        body: "Heartland partners with material processors from every industry to replace existing materials without any new equipment costs. Our Imperium product line is a drop-in material alongside their existing processes to reduce costs and emissions.",
+                        align_right: true,
+                    }
+                    SupplyChainStep {
+                        number: 3,
+                        icon: SupplyIcon::Gears,
+                        heading: "Finished Part Converter",
+                        body: "Heartland partners with finished goods manufacturers to ensure our Imperium products are handled properly. Our team works alongside component part manufacturers to process everyday products with the same technology used today.",
+                        align_right: false,
+                    }
+                    SupplyChainStep {
+                        number: 4,
+                        icon: SupplyIcon::Store,
+                        heading: "Brand",
+                        body: "Heartland is the decarbonization partner empowering brands on their journey to reduce their costs and carbon footprint. Our team helps create stakeholder alignment to effectively communicate the consumer value of material innovation.",
+                        align_right: true,
+                    }
+                }
+            }
+        }
+    }
+}
+
+#[derive(Clone, PartialEq)]
+enum SupplyIcon { Tractor, Blender, Gears, Store }
+
+#[component]
+fn SupplyChainStep(
+    number: u8,
+    icon: SupplyIcon,
+    heading: &'static str,
+    body: &'static str,
+    align_right: bool,
+) -> Element {
+    // On desktop: alternate the card to the left or right of the center rail.
+    // On mobile: every card is full-width.
+    let outer_grid = "grid md:grid-cols-2 gap-6 md:gap-12 mb-12 md:mb-16 items-center";
+    // For align_right we put an empty spacer in column 1 and the card in column 2.
+    let card_col = if align_right { "md:col-start-2" } else { "md:col-start-1" };
+    let card_align = if align_right { "md:text-left" } else { "md:text-right" };
+    let icon_align = if align_right { "md:justify-start" } else { "md:justify-end" };
+
+    rsx! {
+        div { class: "{outer_grid} animate-fade-in-up",
+            div { class: "{card_col} surface-glass p-6 md:p-8 rounded-xl shadow-lg {card_align}",
+                div { class: "flex items-center gap-4 mb-4 {icon_align}",
+                    if align_right {
+                        // align-right: number first, then icon
+                        StepNumber { number }
+                        IconBadge { icon: icon.clone() }
+                    } else {
+                        // align-left (text right-aligned on desktop): icon first, number to its right
+                        IconBadge { icon: icon.clone() }
+                        StepNumber { number }
+                    }
+                }
+                h3 { class: "text-xl md:text-2xl font-display font-bold mb-3", "{heading}" }
+                p { class: "text-[color:var(--color-fg-muted)] leading-relaxed", "{body}" }
+            }
+        }
+    }
+}
+
+#[component]
+fn StepNumber(number: u8) -> Element {
+    rsx! {
+        div { class: "w-10 h-10 md:w-12 md:h-12 rounded-full bg-[color:var(--color-accent)] text-white font-display font-extrabold flex items-center justify-center text-lg md:text-xl shadow-md",
+            "{number}"
+        }
+    }
+}
+
+#[component]
+fn IconBadge(icon: SupplyIcon) -> Element {
+    rsx! {
+        div { class: "w-12 h-12 md:w-14 md:h-14 rounded-full bg-[color:var(--color-accent-quiet)] flex items-center justify-center text-[color:var(--color-accent)]",
+            match icon {
+                SupplyIcon::Tractor => rsx! {
+                    // tractor-y icon (simplified)
+                    svg { width: "24", height: "24", view_box: "0 0 24 24", fill: "none", stroke: "currentColor", stroke_width: "2", stroke_linecap: "round", stroke_linejoin: "round",
+                        circle { cx: "7", cy: "18", r: "3" }
+                        circle { cx: "16", cy: "18", r: "3" }
+                        path { d: "M3 18h1M11 18h2M19 18h2" }
+                        path { d: "M5 15V8h6l3 5h5v5" }
+                        path { d: "M11 8l3 5" }
+                    }
+                },
+                SupplyIcon::Blender => rsx! {
+                    // factory / processor
+                    svg { width: "24", height: "24", view_box: "0 0 24 24", fill: "none", stroke: "currentColor", stroke_width: "2", stroke_linecap: "round", stroke_linejoin: "round",
+                        path { d: "M2 20h20" }
+                        path { d: "M4 20V10l5 4V10l5 4V6l5 14" }
+                        rect { x: "6", y: "14", width: "2", height: "3" }
+                        rect { x: "11", y: "14", width: "2", height: "3" }
+                        rect { x: "16", y: "14", width: "2", height: "3" }
+                    }
+                },
+                SupplyIcon::Gears => rsx! {
+                    // gears / conversion
+                    svg { width: "24", height: "24", view_box: "0 0 24 24", fill: "none", stroke: "currentColor", stroke_width: "2", stroke_linecap: "round", stroke_linejoin: "round",
+                        circle { cx: "12", cy: "12", r: "3" }
+                        path { d: "M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" }
+                    }
+                },
+                SupplyIcon::Store => rsx! {
+                    // storefront / brand
+                    svg { width: "24", height: "24", view_box: "0 0 24 24", fill: "none", stroke: "currentColor", stroke_width: "2", stroke_linecap: "round", stroke_linejoin: "round",
+                        path { d: "M3 9l1.5-5h15L21 9" }
+                        path { d: "M3 9v11h18V9" }
+                        path { d: "M3 9c0 1.66 1.34 3 3 3s3-1.34 3-3" }
+                        path { d: "M9 9c0 1.66 1.34 3 3 3s3-1.34 3-3" }
+                        path { d: "M15 9c0 1.66 1.34 3 3 3s3-1.34 3-3" }
+                        path { d: "M10 20v-5h4v5" }
+                    }
+                },
+            }
+        }
+    }
+}
+
+#[component]
+fn CarbonCalculator() -> Element {
+    rsx! {
+        section { class: "container-content py-16 md:py-20",
+            div { class: "text-center mb-10 max-w-3xl mx-auto",
+                p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                    "Sustainable Material Innovation"
+                }
+                h2 { class: "text-3xl md:text-4xl font-bold",
+                    "Try Our "
+                    span { class: "text-gradient-red", "Carbon Footprint Calculator" }
+                }
+            }
+            // Live Retool embed — same iframe heartland.io shipped.
+            // Allowed via `frame-src https://*.retool.com` in customHttp.yml.
+            div { class: "max-w-5xl mx-auto rounded-xl overflow-hidden shadow-lg border border-[color:var(--color-border)] bg-[color:var(--color-surface)]",
+                iframe {
+                    src: "https://heartland.retool.com/embedded/public/62ab75c7-b652-4139-90a4-393a67b6148e",
+                    width: "100%",
+                    height: "450",
+                    style: "border: 0; display: block;",
+                    title: "Carbon Footprint Calculator",
+                }
+            }
+            div { class: "mt-8 text-center",
+                a {
+                    href: "https://www.carbon-report.com",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    class: "btn-accent-gradient inline-block",
+                    "Try Carbon Report Free →"
                 }
             }
         }

@@ -1,23 +1,32 @@
 +++
-title = "Heartland Presents the Results of Our Magna Basf Trials Greentown"
-excerpt = "Heartland Presents the Results of Our Magna Basf Trials Greentown — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
+title = "Heartland Presents The Results of Magna & BASF Trials"
+excerpt = "The GoMove program is an automotive partnership between BASF and Magna to develop sustainable products. There were over 100 applicants and ultimately 5 startups were accepted into the program."
 hero_image = "foam-7.png"
-hero_alt = "Heartland Presents the Results of Our Magna Basf Trials Greentown"
+hero_alt = "greentown labs heartland"
 published_at = "2023-04-19"
 author = "Heartland Industries"
-tags = ["automotive"]
+categories = ["article"]
+tags = ["agriculture", "detroit", "hemp-fiber", "hemp-processing", "hemp-seed", "industrial-hemp", "michigan", "sustainability"]
 +++
 
-Heartland Industries originally published this story on heartland.io. We're preserving the exact URL — `/sustainability-news/heartland-presents-the-results-of-our-magna-basf-trials-greentown/` — so any inbound links from search engines, citations, and social shares keep landing on a 200.
+## **Greentown Labs GoMove Program**
 
-The full original archive is available on the Wayback Machine: [heartland.io/sustainability-news/heartland-presents-the-results-of-our-magna-basf-trials-greentown/](https://web.archive.org/web/2025/https://heartland.io/sustainability-news/heartland-presents-the-results-of-our-magna-basf-trials-greentown/).
+[Greentown Labs](http://greentownlabs.com)is a studio in Boston and Houston that brings corporate partners to the table to invest in and develop sustainable products. They develop startups through advisory services that provide a strong foundation for success working with major corporate partners.
 
-## Why we care about this topic
+The GoMove program is an automotive partnership between [BASF](http://Basf.com) and [Magna](http://magna.com) to develop sustainable products. There were over 100 applicants and ultimately 5 startups were accepted into the program.
 
-Topics like this one — covering automotive — are central to how Heartland thinks about material innovation. If you'd like the full story, get in touch with us at [Hello@heartland.io](mailto:Hello@heartland.io) and we'll share it.
+The startups work side by side with Greentown, Magna, and BASF to develop proof of concepts (POCs) that have an opportunity to convert into commercial programs upon success.
 
-## Related from Heartland
+## **May 11th - Graduation Day**
 
-- Browse the full library at [/sustainability-news](/sustainability-news).
-- Learn why manufacturers switch to [Imperium](/why-imperium).
-- Read about our regenerative agronomy program at [/engineering-earth](/engineering-earth).
+The last 6 Months of work have led up to the final presentations of all 5 startups, including the [Heartland Team](https://heartland.io). Each company will be presenting the results of its work and asking for a path forward to new product development and commercial discussions.
+
+The goal of this program was to have a path to the commercialization of new, sustainable products.
+
+Final presentations are open invite to anyone in Boston and anyone remote can tune in online as well.
+
+https://greentownlabs.com/event/energybar-go-move-2022-final-showcase/
+
+Join us in creating a carbon negative future.
+
+– [Heartland Team](/team)

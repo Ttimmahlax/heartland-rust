@@ -177,6 +177,14 @@ html.dark {
 html {
   background-color: var(--color-bg);
   color: var(--color-fg);
+  /* Anchor-link smooth scroll — the header Contact CTA uses #contact;
+     also drop the destination below the fixed header so it isn't hidden. */
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
 
 body {
@@ -405,9 +413,11 @@ main {
     backdrop-filter 220ms ease;
 }
 .site-header[data-scrolled] {
-  background-color: color-mix(in oklab, var(--color-bg) 80%, transparent);
-  backdrop-filter: blur(16px) saturate(130%);
-  -webkit-backdrop-filter: blur(16px) saturate(130%);
+  /* Solid background on scroll — opaque so dropdowns and content underneath
+     never bleed through. */
+  background-color: var(--color-bg);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   border-bottom-color: color-mix(in oklab, var(--color-accent) 18%, var(--color-border));
   box-shadow: 0 8px 24px -16px color-mix(in oklab, var(--color-accent) 30%, transparent);
 }
@@ -424,32 +434,49 @@ main {
   color: var(--color-accent);
 }
 
-/* AT TOP of the page (header transparent over the hero mesh): force the logo
-   + nav text to white so they read against the dark/red mesh background.
-   When the user scrolls, the [data-scrolled] attribute is added by the JS in
-   src/components/layout.rs, which reverts to the per-color-scheme defaults. */
-.site-header:not([data-scrolled]) a,
-.site-header:not([data-scrolled]) button {
+/* AT TOP of the page WITH A VIDEO HERO behind the transparent header
+   (landing + every menu page): force the logo + nav text to white so they
+   read against the dark video. When the user scrolls, the [data-scrolled]
+   attribute is added by the JS in src/components/layout.rs, which reverts
+   to the per-color-scheme defaults.
+
+   Pages that DON'T have .video-hero-section (articles, news index, 404)
+   fall through to the regular dark-on-light header styling — no
+   white-on-white legibility bug. The body:has() selector is the key. */
+body:has(.video-hero-section) .site-header:not([data-scrolled]) a,
+body:has(.video-hero-section) .site-header:not([data-scrolled]) button {
   color: #ffffff;
 }
-.site-header:not([data-scrolled]) a:hover,
-.site-header:not([data-scrolled]) button:hover {
+body:has(.video-hero-section) .site-header:not([data-scrolled]) a:hover,
+body:has(.video-hero-section) .site-header:not([data-scrolled]) button:hover {
   color: rgba(255, 255, 255, 0.75);
 }
-.site-header:not([data-scrolled]) .site-header-logo-light { display: none; }
-.site-header:not([data-scrolled]) .site-header-logo-dark  { display: block; }
+body:has(.video-hero-section) .site-header:not([data-scrolled]) .site-header-logo-light { display: none; }
+body:has(.video-hero-section) .site-header:not([data-scrolled]) .site-header-logo-dark  { display: block; }
 
 /* Dropdown panel items sit on a light surface even when the rest of the
    header is transparent over the hero, so undo the white-text override for
    anything inside .nav-dropdown-panel — keep them dark on light, brand-red
    on hover. */
-.site-header:not([data-scrolled]) .nav-dropdown-panel a,
-.site-header:not([data-scrolled]) .nav-dropdown-panel button {
+body:has(.video-hero-section) .site-header:not([data-scrolled]) .nav-dropdown-panel a,
+body:has(.video-hero-section) .site-header:not([data-scrolled]) .nav-dropdown-panel button {
   color: var(--color-fg);
 }
-.site-header:not([data-scrolled]) .nav-dropdown-panel a:hover,
-.site-header:not([data-scrolled]) .nav-dropdown-panel button:hover {
+body:has(.video-hero-section) .site-header:not([data-scrolled]) .nav-dropdown-panel a:hover,
+body:has(.video-hero-section) .site-header:not([data-scrolled]) .nav-dropdown-panel button:hover {
   color: var(--color-accent);
+}
+
+/* The Contact CTA in the header is always solid brand-red with white text
+   — it must not pick up the at-top white-text override (which would still
+   read white-on-red, but the hover state would dim it). Keep both states
+   explicit so it stays a true CTA regardless of scroll/theme. */
+.site-header .site-header-cta,
+.site-header .site-header-cta:hover,
+.site-header .site-header-cta:focus,
+body:has(.video-hero-section) .site-header:not([data-scrolled]) .site-header-cta,
+body:has(.video-hero-section) .site-header:not([data-scrolled]) .site-header-cta:hover {
+  color: #ffffff;
 }
 
 /* ====== Layout helpers ============================================== */

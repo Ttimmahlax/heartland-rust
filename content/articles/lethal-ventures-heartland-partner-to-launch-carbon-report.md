@@ -1,23 +1,30 @@
 +++
-title = "Lethal Ventures Heartland Partner to Launch Carbon Report"
-excerpt = "Lethal Ventures Heartland Partner to Launch Carbon Report — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "lethal-ventures-heartland-carbon-report-1210x660.png"
-hero_alt = "Lethal Ventures Heartland Partner to Launch Carbon Report"
+title = "Lethal Ventures & Heartland Partner To Launch Carbon Report"
+excerpt = "DETROIT, MI, UNITED STATES, November 12, 2024 /[EINPresswire.com](https://www.einpresswire.com/)/ -- [Heartland Industries](/), a leading innovator in sustainable materials and technology, is partnering with [Lethal Ventures](https://w"
+hero_image = "lethal-ventures-heartland-carbon-report.png"
+hero_alt = "lethal ventures heartland carbon report"
 published_at = "2024-11-20"
 author = "Heartland Industries"
-tags = ["carbon"]
+categories = ["sustainable-technology"]
+tags = []
 +++
 
-Heartland Industries originally published this story on heartland.io. We're preserving the exact URL — `/sustainability-news/lethal-ventures-heartland-partner-to-launch-carbon-report/` — so any inbound links from search engines, citations, and social shares keep landing on a 200.
+DETROIT, MI, UNITED STATES, November 12, 2024 /[EINPresswire.com](https://www.einpresswire.com/)/ -- [Heartland Industries](/), a leading innovator in sustainable materials and technology, is partnering with [Lethal Ventures](https://www.lethalventures.com/), an emerging industrials-focused NYC venture studio to launch [Carbon Report](https://www.carbon-report.com/). Much of the sustainability community is focused on big business and has forgotten or is unable to service small businesses. The cost of consultants or sustainability teams does not make sense for many manufacturers, meaning no one is providing carbon footprint information for their products.
 
-The full original archive is available on the Wayback Machine: [heartland.io/sustainability-news/lethal-ventures-heartland-partner-to-launch-carbon-report/](https://web.archive.org/web/2025/https://heartland.io/sustainability-news/lethal-ventures-heartland-partner-to-launch-carbon-report/).
+## Carbon Report is a 5-minute solution to help Tier 2 and Tier 3 manufacturers
 
-## Why we care about this topic
+Carbon Report is a 5-minute solution to help Tier 2 and Tier 3 manufacturers get a report for the products they make. The platform provides Scope 1, 2, and 3 carbon footprint reporting, allowing manufacturers to provide accurate emissions information when bidding for new contracts or understanding existing products.
 
-Topics like this one — covering carbon — are central to how Heartland thinks about material innovation. If you'd like the full story, get in touch with us at [Hello@heartland.io](mailto:Hello@heartland.io) and we'll share it.
+“Carbon Report will integrate directly into many of the existing reporting tools used by Brands and OEMs,” says Carson Morell, Managing Partner of Lethal Ventures, “Manufacturers with a Carbon Report will win more business without having an expensive sustainability team.”
 
-## Related from Heartland
+From the smallest bolt to a full final assembly, Carbon Report delivers reliable, comprehensive carbon footprint data for every component of your product. By analyzing emissions across your entire process—including warehouse operations, workforce activities, materials, packaging, and logistics—Carbon Report ensures that manufacturers have a full-spectrum view of their environmental impact from start to finish.
 
-- Browse the full library at [/sustainability-news](/sustainability-news).
-- Learn why manufacturers switch to [Imperium](/why-imperium).
-- Read about our regenerative agronomy program at [/engineering-earth](/engineering-earth).
+Get started today: [carbon-report.com](http://carbon-report.com)
+
+###
+
+About Lethal VenturesLethal Ventures is a New York based venture studio dedicated to reindustrialization. They’re building practical, high-impact software for the industrial sector. Lethal collaborates closely with industry partners to co-create solutions that tackle widespread challenges, focusing on affordability, scalability, and data-driven insights. Their structured approach ensures explosive go-to-market and a seamless handoff to experienced operators, allowing each venture to thrive within its market. [www.lethalventures.com](http://www.lethalventures.com/)
+
+About Heartland IndustriesHeartland Industries is dedicated to revolutionizing the materials science industry with sustainable solutions. By leveraging natural fibers, Heartland helps manufacturers reduce their environmental impact, decrease costs, and enhance the performance of their products. Headquartered in Detroit, Michigan, Heartland is committed to driving the next wave of sustainable innovation in the manufacturing sector. [www.heartland.io](/heartland-team/)
+
+Sara ZubietaHeartland Industries+1 614-309-5981[sara.zubieta@heartland.io](mailto:sara.zubieta@heartland.io)

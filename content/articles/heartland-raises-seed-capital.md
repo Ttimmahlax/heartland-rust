@@ -1,23 +1,28 @@
 +++
-title = "Heartland Raises Seed Capital"
-excerpt = "Heartland Raises Seed Capital — coverage from the Heartland Industries library on industrial hemp, sustainable materials, and the supply chain ahead."
-hero_image = "plastic-pallets-2.webp"
-hero_alt = "Heartland Raises Seed Capital"
+title = "Heartland Raises Seed Capital For Detroit Facility For Processing"
+excerpt = "July 2020 – The Heartland team has raised their first round of seed capital from a local power player in the [Detroit community.](/sustainability-news/industry-50-the-sustainability-revolution/)This financing brings with it tremendous"
+hero_image = "plastic-pallets-2.png"
+hero_alt = "raising capital"
 published_at = "2022-08-17"
 author = "Heartland Industries"
-tags = ["heartland"]
+categories = ["hemp-processing"]
+tags = ["building-materials", "detroit", "innovation", "michigan", "plastic", "raising-capital", "sustainability", "technology"]
 +++
 
-Heartland Industries originally published this story on heartland.io. We're preserving the exact URL — `/sustainability-news/heartland-raises-seed-capital/` — so any inbound links from search engines, citations, and social shares keep landing on a 200.
+July 2020 – The Heartland team has raised their first round of seed capital from a local power player in the [Detroit community.](/sustainability-news/industry-50-the-sustainability-revolution/)This financing brings with it tremendous value in terms of local partnerships and political capital.
 
-The full original archive is available on the Wayback Machine: [heartland.io/sustainability-news/heartland-raises-seed-capital/](https://web.archive.org/web/2025/https://heartland.io/sustainability-news/heartland-raises-seed-capital/).
+This round of seed capital will be used to validate the scalable technologies that Heartland Industries will use to build one of the largest industrial hemp processing facilities in America.
 
-## Why we care about this topic
+The Heartland team is working with the proper legal counsel to finalize the documentation necessary for a larger capital raise down the road.
 
-Topics like this one — covering heartland — are central to how Heartland thinks about material innovation. If you'd like the full story, get in touch with us at [Hello@heartland.io](mailto:Hello@heartland.io) and we'll share it.
+## What happens for Heartland After Raising Capital
 
-## Related from Heartland
+Because of COVID-19, the Heartland team is starting the technology vetting process virtually. Fortunately, Heartlands technology partners are flexible and are happy to send out samples, videos, and other forms of documentation.
 
-- Browse the full library at [/sustainability-news](/sustainability-news).
-- Learn why manufacturers switch to [Imperium](/why-imperium).
-- Read about our regenerative agronomy program at [/engineering-earth](/engineering-earth).
+In the coming months, the Heartland team will work to create a robust data room that creates certainty that investors are putting money into a strong investment. Before Heartland takes their deal out to market, they will have properly validated all technology, and have the documentation to properly execute the business plan.
+
+– [Heartland](/tea)[Team](/team)
+
+## Heartland Company Description
+
+Heartland is a material science company that engineers hemp fibers as additives for plastics. Their team is building America’s first reliable industrial hemp supply chain to provide additives for manufacturers that use plastic resins. As an industrial hemp material processor, they work with farmers and manufacturers to ensure the product consistency of bio-based additives that can be used across raw material supply chains. Heartland's products help companies manufacture stronger, lighter, cheaper, and more sustainable materials. For more information, visit [https://heartland.io](https://heartland.io).

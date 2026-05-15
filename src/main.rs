@@ -13,6 +13,9 @@ use pages::{
     about::About,
     article::Article,
     automotive::Automotive,
+    carbon_neutral_packaging::CarbonNeutralPackaging,
+    case_studies::CaseStudies,
+    category_archive::{CategoryArchive, TagArchive},
     contact::Contact,
     ebooks::Ebooks,
     engineering_earth::EngineeringEarth,
@@ -20,27 +23,42 @@ use pages::{
     farmers::Farmers,
     government::Government,
     green_packaging::GreenPackaging,
+    heartland_ebooks::HeartlandEbooks,
+    hemp_fiber_and_hurd::HempFiberAndHurd,
     imperium_animal_feed::ImperiumAnimalFeed,
+    imperium_cattle_feed::ImperiumCattleFeed,
+    imperium_chicken_feed::ImperiumChickenFeed,
+    imperium_fabric::ImperiumFabric,
     imperium_fibers::ImperiumFibers,
     imperium_filled_resin::ImperiumFilledResin,
     imperium_filler::ImperiumFiller,
+    imperium_graphene::ImperiumGraphene,
     imperium_masterbatch::ImperiumMasterbatch,
+    imperium_pork_feed::ImperiumPorkFeed,
+    imperium_spin_ready_white_fiber::ImperiumSpinReadyWhiteFiber,
+    imperium_yarn::ImperiumYarn,
     landing::Landing,
     lca::Lca,
     marine::Marine,
     news::News,
     not_found::NotFound,
+    plastic_additives::PlasticAdditives,
+    portfolio_item::{all_portfolio_slugs, PortfolioItem},
+    portfolios::Portfolios,
     research::Research,
     sustainable_asphalt::SustainableAsphalt,
     sustainable_building::SustainableBuilding,
     sustainable_concrete::SustainableConcrete,
+    sustainable_foam::SustainableFoam,
     sustainable_packaging::SustainablePackaging,
     sustainable_paper::SustainablePaper,
     sustainable_plastic::SustainablePlastic,
     sustainable_rubber::SustainableRubber,
     team::Team,
+    usda::Usda,
     whitepapers::Whitepapers,
     why_imperium::WhyImperium,
+    wood_products::WoodProducts,
 };
 
 pub const SITE_BASE: &str = "https://heartland.io";
@@ -53,9 +71,11 @@ pub enum Route {
         #[route("/")]
         Landing {},
 
-        // Products
+        // Why
         #[route("/why-imperium")]
         WhyImperium {},
+
+        // Products
         #[route("/imperium-masterbatch")]
         ImperiumMasterbatch {},
         #[route("/imperium-filled-resin")]
@@ -66,6 +86,20 @@ pub enum Route {
         ImperiumFibers {},
         #[route("/imperium-animal-feed")]
         ImperiumAnimalFeed {},
+        #[route("/imperium-pork-feed")]
+        ImperiumPorkFeed {},
+        #[route("/imperium-cattle-feed")]
+        ImperiumCattleFeed {},
+        #[route("/imperium-chicken-feed")]
+        ImperiumChickenFeed {},
+        #[route("/imperium-spin-ready-white-fiber")]
+        ImperiumSpinReadyWhiteFiber {},
+        #[route("/imperium-yarn")]
+        ImperiumYarn {},
+        #[route("/imperium-fabric")]
+        ImperiumFabric {},
+        #[route("/imperium-graphene")]
+        ImperiumGraphene {},
 
         // Industries / Materials
         #[route("/sustainable-plastic-compounding")]
@@ -74,6 +108,8 @@ pub enum Route {
         Automotive {},
         #[route("/sustainable-packaging")]
         SustainablePackaging {},
+        #[route("/carbon-neutral-packaging-with-imperium-inside")]
+        CarbonNeutralPackaging {},
         #[route("/sustainable-building-materials")]
         SustainableBuilding {},
         #[route("/sustainable-rubber-additives")]
@@ -84,22 +120,40 @@ pub enum Route {
         SustainableAsphalt {},
         #[route("/sustainable-paper-additives")]
         SustainablePaper {},
+        #[route("/sustainable-foam")]
+        SustainableFoam {},
         #[route("/marine")]
         Marine {},
         #[route("/government")]
         Government {},
+
+        // Legacy product / category landings (re-added for SEO continuity)
+        #[route("/hemp-fiber-and-hurd")]
+        HempFiberAndHurd {},
+        #[route("/wood-products")]
+        WoodProducts {},
+        #[route("/plastic-additives")]
+        PlasticAdditives {},
+        #[route("/case-studies")]
+        CaseStudies {},
+        #[route("/usda")]
+        Usda {},
 
         // Resources
         #[route("/engineering-earth")]
         EngineeringEarth {},
         #[route("/e-books")]
         Ebooks {},
+        #[route("/heartland-e-books")]
+        HeartlandEbooks {},
         #[route("/whitepapers")]
         Whitepapers {},
         #[route("/natural-fiber-research")]
         Research {},
         #[route("/frequently-asked-questions")]
         Faq {},
+        #[route("/portfolios")]
+        Portfolios {},
 
         // About + LCA + initiatives
         #[route("/heartland-team")]
@@ -115,13 +169,21 @@ pub enum Route {
         #[route("/contact")]
         Contact {},
 
-        // News
+        // News + taxonomy archives + portfolio items.
+        // SPECIFIC paths MUST come before the generic /:slug fallback,
+        // or every archive URL would route to Article and miss.
         #[route("/sustainability-news")]
         News {},
+        #[route("/sustainability-news/category/:slug")]
+        CategoryArchive { slug: String },
+        #[route("/sustainability-news/tag/:slug")]
+        TagArchive { slug: String },
+        #[route("/sustainability-news/portfolio/:slug")]
+        PortfolioItem { slug: String },
         #[route("/sustainability-news/:slug")]
         Article { slug: String },
 
-        // Branded 404
+        // Branded 404 — catch-all, must be last
         #[route("/:..segments")]
         NotFound { segments: Vec<String> },
 }
@@ -159,21 +221,37 @@ async fn static_routes() -> Result<Vec<String>, ServerFnError> {
         "/imperium-filler".into(),
         "/imperium-fibers".into(),
         "/imperium-animal-feed".into(),
+        "/imperium-pork-feed".into(),
+        "/imperium-cattle-feed".into(),
+        "/imperium-chicken-feed".into(),
+        "/imperium-spin-ready-white-fiber".into(),
+        "/imperium-yarn".into(),
+        "/imperium-fabric".into(),
+        "/imperium-graphene".into(),
         "/sustainable-plastic-compounding".into(),
         "/automotive".into(),
         "/sustainable-packaging".into(),
+        "/carbon-neutral-packaging-with-imperium-inside".into(),
         "/sustainable-building-materials".into(),
         "/sustainable-rubber-additives".into(),
         "/sustainable-concrete-additives".into(),
         "/sustainable-asphalt-additives".into(),
         "/sustainable-paper-additives".into(),
+        "/sustainable-foam".into(),
         "/marine".into(),
         "/government".into(),
+        "/hemp-fiber-and-hurd".into(),
+        "/wood-products".into(),
+        "/plastic-additives".into(),
+        "/case-studies".into(),
+        "/usda".into(),
         "/engineering-earth".into(),
         "/e-books".into(),
+        "/heartland-e-books".into(),
         "/whitepapers".into(),
         "/natural-fiber-research".into(),
         "/frequently-asked-questions".into(),
+        "/portfolios".into(),
         "/heartland-team".into(),
         "/heartland-farmers".into(),
         "/green-packaging-initiative".into(),
@@ -184,6 +262,15 @@ async fn static_routes() -> Result<Vec<String>, ServerFnError> {
     ];
     for slug in content::all_slugs() {
         routes.push(format!("/sustainability-news/{slug}"));
+    }
+    for slug in content::all_categories() {
+        routes.push(format!("/sustainability-news/category/{slug}"));
+    }
+    for slug in content::all_tags() {
+        routes.push(format!("/sustainability-news/tag/{slug}"));
+    }
+    for slug in all_portfolio_slugs() {
+        routes.push(format!("/sustainability-news/portfolio/{slug}"));
     }
     Ok(routes)
 }

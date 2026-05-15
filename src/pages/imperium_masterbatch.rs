@@ -2,7 +2,7 @@ use dioxus::prelude::*;
 
 use crate::components::logo_carousel::LogoCarousel;
 use crate::components::news_carousel::NewsCarousel;
-use crate::components::stat_counters::{product_stats, StatCounters};
+use crate::components::video_hero::VideoBackground;
 use crate::seo::Seo;
 use crate::Route;
 
@@ -11,14 +11,13 @@ pub fn ImperiumMasterbatch() -> Element {
     rsx! {
         Seo {
             title: "Imperium Masterbatch",
-            description: "Imperium Masterbatch — pre-dispersed hemp filler concentrate, ready for direct let-down into polypropylene, polyethylene, PVC, and engineered resins.",
+            description: "Imperium Masterbatch is hemp fiber engineered to reinforce plastic while reducing the cost, weight, and carbon footprint of plastics.",
             path: "/imperium-masterbatch",
         }
 
         Hero {}
-        StatCounters { stats: product_stats() }
-        Sections {}
-        LogoCarousel { heading: "As Seen In" }
+        LogoCarousel { heading: "" }
+        Body {}
         ClosingCta {}
         NewsCarousel { heading: "Related Articles" }
     }
@@ -27,18 +26,21 @@ pub fn ImperiumMasterbatch() -> Element {
 #[component]
 fn Hero() -> Element {
     rsx! {
-        section { class: "bg-mesh-hero section-soft-bottom",
-            div { class: "container-content py-20 md:py-28 text-center",
-                p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4 animate-fade-in",
-                    "Concentrate format"
+        section {
+            class: "video-hero-section section-soft-bottom min-h-[110vh] flex items-center pb-[20vh]",
+            VideoBackground { slug: "imperium-masterbatch".to_string() }
+            div { class: "video-hero-scrim" }
+            div { class: "video-hero-content container-content w-full py-24 md:py-32 text-center",
+                p { class: "text-[0.7438rem] uppercase tracking-[0.25em] text-white/90 mb-4 animate-fade-in",
+                    "Imperium Masterbatch"
                 }
-                h1 { class: "text-4xl md:text-6xl font-extrabold leading-tight max-w-4xl mx-auto animate-fade-in-up",
-                    "Imperium "
-                    span { class: "text-gradient-red", "Masterbatch" }
-                    " — high-loading concentrate for plastic compounders"
+                h1 {
+                    class: "text-3xl md:text-5xl font-extrabold leading-tight uppercase tracking-tight text-white max-w-4xl mx-auto animate-fade-in-up",
+                    "carbon negative material innovation"
                 }
-                p { class: "mt-6 max-w-2xl mx-auto text-lg text-[color:var(--color-fg-muted)] animate-fade-in-up delay-1",
-                    "A 60–70% loaded Imperium concentrate engineered for direct let-down at 5–30% in PP, PE, PVC and PA. Eliminates the dispersion and feed-handling penalties of dry filler."
+                p {
+                    class: "mt-5 max-w-2xl mx-auto text-base md:text-lg text-white/85 animate-fade-in-up delay-1",
+                    "Imperium Masterbatch enables compounders to develop decarbonized plastic for brands and molders that are looking for high-performance carbon-negative products. Brands now have a path to predictably…"
                 }
             }
         }
@@ -46,30 +48,62 @@ fn Hero() -> Element {
 }
 
 #[component]
-fn Sections() -> Element {
+fn Body() -> Element {
     rsx! {
-        section { class: "container-content py-16",
-            div { class: "grid gap-8 md:grid-cols-2",
-                    div { class: "surface-glass p-7 animate-fade-in-up",
-                        h2 { class: "text-2xl font-display font-bold mb-4", "Drop-in let-down" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Add Imperium Masterbatch at your normal masterbatch ratio. No new feeders, no special drying, no twin-screw retrofit." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Compatible with single-screw extrusion, twin-screw compounding, and injection-molding direct let-down." }
+        section { class: "container-content py-16 md:py-20",
+            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
+                div { class: "md:order-2",
+                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Unlocking Sustainable Material Innovation" }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium Masterbatch enables compounders to develop decarbonized plastic for brands and molders that are looking for high-performance carbon-negative products. Brands now have a path to predictably reduce the cost, weight, and carbon footprint of their products." }
+                }
+                div { class: "md:order-1",
+                    img {
+                        src: "/assets/pages/why-imperium/heartland-masterbatch.png",
+                        alt: "heartland masterbatch",
+                        loading: "lazy",
+                        class: "w-full rounded-xl shadow-lg",
                     }
-                    div { class: "surface-glass p-7 animate-fade-in-up",
-                        h2 { class: "text-2xl font-display font-bold mb-4", "Engineered dispersion" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Pre-wetted, pre-coupled, and stabilized for downstream processing temperatures up to 230°C." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Particle distribution targeted for the specific carrier resin you specify." }
-                    }
-                    div { class: "surface-glass p-7 animate-fade-in-up",
-                        h2 { class: "text-2xl font-display font-bold mb-4", "Available carriers" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Polypropylene (PP) — most common." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Polyethylene (HDPE / LDPE) — pallet, packaging, pipe." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Polyvinyl chloride (PVC) — building products, profiles." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Polyamide 6 (PA6) — automotive engineering thermoplastics." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Custom carriers available on a per-program basis." }
-                    }
+                }
             }
-        }
+            div { class: "max-w-3xl mx-auto mb-16 animate-fade-in-up",
+                h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 text-center", "Solving Problems For Brands & Plastic Compounders" }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium Masterbatch is designed to bond and perform inside thermoplastics without any retooling costs." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Most manufacturers use mined and synthetic materials every day. Heartland's natural fiber masterbatch is engineered to solve concerns around dust, flammability, moisture uptake, bulk density, and product consistency." }
+            }
+            figure { class: "mb-16 animate-fade-in-up",
+                img { src: "/assets/pages/imperium-masterbatch/plastic.png", alt: "plastic", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+            }
+            figure { class: "mb-16 animate-fade-in-up",
+                img { src: "/assets/pages/imperium-masterbatch/asphalt.png", alt: "asphalt", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+            }
+            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
+                div { class: "md:order-2",
+                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Unlocking Our Sustainable Future" }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland's materials replace and augment additives like talc, calcium carbonate, fiberglass, and carbon black." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "We work with global brands and their suppliers to predictably reduce the carbon footprint of everyday products without any retooling costs." }
+                }
+                div { class: "md:order-1",
+                    img {
+                        src: "/assets/pages/imperium-masterbatch/sustainable-future-heartland.png",
+                        alt: "sustainable future heartland",
+                        loading: "lazy",
+                        class: "w-full rounded-xl shadow-lg",
+                    }
+                }
+            }
+            figure { class: "mb-16 animate-fade-in-up",
+                img { src: "/assets/pages/why-imperium/heartland-plastic-picture-3.png", alt: "Markets We Amplify", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+            }
+            figure { class: "mb-16 animate-fade-in-up",
+                img { src: "/assets/pages/why-imperium/heartland-packaging-plastic-pallets.png", alt: "", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+            }
+            div { class: "max-w-3xl mx-auto mb-16 animate-fade-in-up",
+                h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 text-center", "Throughout The Supply Chain" }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland partners with corn, wheat, and soy farmers to embed industrial hemp into their crop rotation. Our USDA Grant has given us unique insights into industrial hemp farming, regenerative agriculture, and carbon sequestration." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Compounder Heartland partners with plastic compounders to augment talc, calcium, and glass without any retooling costs. Our Imperium masterbatch solves dust, flammability, bonding, and bulk density problems typically associated with bio-based additives." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Converter Heartland partners with plastic converters to ensure the hemp-filled resin is processed properly. Our team works alongside component part manufacturers to process natural fiber-filled plastic with the same molds used today." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Brand Heartland is the sustainability partner for brands on their journey to reduce their carbon footprint. Our team helps create stakeholder alignment so companies can effectively communicate the value of sustainable material innovation." }
+            }        }
     }
 }
 
@@ -79,9 +113,9 @@ fn ClosingCta() -> Element {
         section { class: "bg-mesh-dramatic py-20 my-12 section-soft-edges",
             div { class: "container-content text-center",
                 h2 { class: "text-3xl md:text-4xl font-bold mb-6 max-w-2xl mx-auto",
-                    "Ready to dig in?"
+                    "Learn more about carbon"
                 }
-                Link { to: Route::Contact {}, class: "btn-accent-gradient", "Request a TDS" }
+                Link { to: Route::Contact {}, class: "btn-accent-gradient", "Get in touch" }
             }
         }
     }

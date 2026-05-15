@@ -20,6 +20,8 @@ pub struct FrontMatter {
     #[serde(default)]
     pub tags: Vec<String>,
     #[serde(default)]
+    pub categories: Vec<String>,
+    #[serde(default)]
     pub seo_title: Option<String>,
     #[serde(default)]
     pub seo_description: Option<String>,
@@ -106,4 +108,45 @@ pub fn find(slug: &str) -> Option<&'static Article> {
 
 pub fn recent(n: usize) -> Vec<&'static Article> {
     parsed().iter().take(n).collect()
+}
+
+/// All articles assigned to a given category slug. Used by the category
+/// archive routes at `/sustainability-news/category/:slug`.
+pub fn by_category(slug: &str) -> Vec<&'static Article> {
+    parsed()
+        .iter()
+        .filter(|a| a.front.categories.iter().any(|c| c == slug))
+        .collect()
+}
+
+/// All articles assigned to a given tag slug. Used by the tag archive
+/// routes at `/sustainability-news/tag/:slug`.
+pub fn by_tag(slug: &str) -> Vec<&'static Article> {
+    parsed()
+        .iter()
+        .filter(|a| a.front.tags.iter().any(|t| t == slug))
+        .collect()
+}
+
+/// Unique sorted list of every category slug that has at least one article.
+/// Used by the prerender + sitemap generators.
+pub fn all_categories() -> Vec<String> {
+    let mut s: std::collections::BTreeSet<String> = std::collections::BTreeSet::new();
+    for a in parsed().iter() {
+        for c in &a.front.categories {
+            s.insert(c.clone());
+        }
+    }
+    s.into_iter().collect()
+}
+
+/// Unique sorted list of every tag slug that has at least one article.
+pub fn all_tags() -> Vec<String> {
+    let mut s: std::collections::BTreeSet<String> = std::collections::BTreeSet::new();
+    for a in parsed().iter() {
+        for t in &a.front.tags {
+            s.insert(t.clone());
+        }
+    }
+    s.into_iter().collect()
 }

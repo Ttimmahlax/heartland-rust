@@ -2,7 +2,7 @@ use dioxus::prelude::*;
 
 use crate::components::logo_carousel::LogoCarousel;
 use crate::components::news_carousel::NewsCarousel;
-use crate::components::stat_counters::{product_stats, StatCounters};
+use crate::components::video_hero::VideoBackground;
 use crate::seo::Seo;
 use crate::Route;
 
@@ -11,14 +11,13 @@ pub fn ImperiumFiller() -> Element {
     rsx! {
         Seo {
             title: "Imperium Filler",
-            description: "Imperium Filler — dry milled hemp filler shipped in supersack or bulk, ready for direct addition on your existing compounding lines.",
+            description: "Imperium Filler is engineered hemp fiber designed as an additive to reduce the cost, weight, and carbon footprint of existing products.",
             path: "/imperium-filler",
         }
 
         Hero {}
-        StatCounters { stats: product_stats() }
-        Sections {}
-        LogoCarousel { heading: "As Seen In" }
+        LogoCarousel { heading: "" }
+        Body {}
         ClosingCta {}
         NewsCarousel { heading: "Related Articles" }
     }
@@ -27,17 +26,21 @@ pub fn ImperiumFiller() -> Element {
 #[component]
 fn Hero() -> Element {
     rsx! {
-        section { class: "bg-mesh-hero section-soft-bottom",
-            div { class: "container-content py-20 md:py-28 text-center",
-                p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4 animate-fade-in",
-                    "Dry filler"
+        section {
+            class: "video-hero-section section-soft-bottom min-h-[110vh] flex items-center pb-[20vh]",
+            VideoBackground { slug: "imperium-filler".to_string() }
+            div { class: "video-hero-scrim" }
+            div { class: "video-hero-content container-content w-full py-24 md:py-32 text-center",
+                p { class: "text-[0.7438rem] uppercase tracking-[0.25em] text-white/90 mb-4 animate-fade-in",
+                    "Imperium Filler"
                 }
-                h1 { class: "text-4xl md:text-6xl font-extrabold leading-tight max-w-4xl mx-auto animate-fade-in-up",
-                    span { class: "text-gradient-red", "Imperium Filler" }
-                    " — drop-in for talc and calcium carbonate."
+                h1 {
+                    class: "text-3xl md:text-5xl font-extrabold leading-tight uppercase tracking-tight text-white max-w-4xl mx-auto animate-fade-in-up",
+                    "Carbon Negative additives"
                 }
-                p { class: "mt-6 max-w-2xl mx-auto text-lg text-[color:var(--color-fg-muted)] animate-fade-in-up delay-1",
-                    "The most direct way to lower cost AND emissions in your existing plastic compound: swap your current mineral filler for Imperium."
+                p {
+                    class: "mt-5 max-w-2xl mx-auto text-base md:text-lg text-white/85 animate-fade-in-up delay-1",
+                    "Imperium Fillers are for brands, converters, and suppliers that are looking for bio-based powders to replace or augment talc, calcium, and fiberglass."
                 }
             }
         }
@@ -45,28 +48,72 @@ fn Hero() -> Element {
 }
 
 #[component]
-fn Sections() -> Element {
+fn Body() -> Element {
     rsx! {
-        section { class: "container-content py-16",
-            div { class: "grid gap-8 md:grid-cols-2",
-                    div { class: "surface-glass p-7 animate-fade-in-up",
-                        h2 { class: "text-2xl font-display font-bold mb-4", "Cost reduction vs. talc" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "At equivalent loading, Imperium typically lands at or below talc on a per-pound basis. Your sourcing team will see savings on the invoice before they see them on the dock." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Hemp is also de-coupled from talc and CaCO₃ supply-chain shocks (mining bans, tariff exposure, etc.)." }
+        section { class: "container-content py-16 md:py-20",
+            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
+                div { class: "md:order-2",
+                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Unlocking Commodity Natural Fiber Additives" }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium Fillers are for brands, converters, and suppliers that are looking for bio-based powders to replace or augment talc, calcium, and fiberglass." }
+                }
+                div { class: "md:order-1",
+                    img {
+                        src: "/assets/pages/imperium-filler/heartland-powder.png",
+                        alt: "Unlocking Commodity Natural Fiber Additives",
+                        loading: "lazy",
+                        class: "w-full rounded-xl shadow-lg",
                     }
-                    div { class: "surface-glass p-7 animate-fade-in-up",
-                        h2 { class: "text-2xl font-display font-bold mb-4", "Carbon reduction vs. glass fiber" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Where glass fiber typically contributes 2–3 kg CO₂e/kg, Imperium contributes net-negative carbon thanks to the upstream photosynthesis credit on the LCA." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Verified through the Imperium Farming LCA — see /lca for the full disclosure pack." }
-                    }
-                    div { class: "surface-glass p-7 animate-fade-in-up",
-                        h2 { class: "text-2xl font-display font-bold mb-4", "Specification" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Available particle sizes from coarse mill to micronized." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Bulk density and moisture engineered for stable feeder behavior at typical extruder feed throats." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-3 last:mb-0", "Bag, supersack, or pneumatic bulk delivery." }
-                    }
+                }
             }
-        }
+            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
+                div { class: "md:order-1",
+                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "One Additive. Unlimited Applications." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium Filler is a carbon-negative additive for materials used for mass manufacturing." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Most manufacturers use mined and synthetic additives in their raw materials. Heartland's Imperium filler is engineered to replace and augment additives like talc, calcium, and fiberglass." }
+                }
+                div { class: "md:order-2",
+                    img {
+                        src: "/assets/pages/imperium-filler/1210x786-px-4.png",
+                        alt: "heartland hemp bales",
+                        loading: "lazy",
+                        class: "w-full rounded-xl shadow-lg",
+                    }
+                }
+            }
+            figure { class: "mb-16 animate-fade-in-up",
+                img { src: "/assets/pages/imperium-masterbatch/plastic.png", alt: "plastic", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+            }
+            figure { class: "mb-16 animate-fade-in-up",
+                img { src: "/assets/pages/imperium-masterbatch/asphalt.png", alt: "asphalt", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+            }
+            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
+                div { class: "md:order-2",
+                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Unlocking The Sustainable Future We Need And Deserve" }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland's materials replace and augment additives like talc, calcium carbonate, fiberglass, and carbon black." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "We work with global brands and their suppliers to predictably reduce the carbon footprint of everyday products without any retooling costs." }
+                }
+                div { class: "md:order-1",
+                    img {
+                        src: "/assets/pages/imperium-filler/talc-mining.png",
+                        alt: "talc mining",
+                        loading: "lazy",
+                        class: "w-full rounded-xl shadow-lg",
+                    }
+                }
+            }
+            figure { class: "mb-16 animate-fade-in-up",
+                img { src: "/assets/pages/why-imperium/heartland-plastic-picture-3.png", alt: "Markets We Amplify", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+            }
+            figure { class: "mb-16 animate-fade-in-up",
+                img { src: "/assets/pages/why-imperium/heartland-packaging-plastic-pallets.png", alt: "", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+            }
+            div { class: "max-w-3xl mx-auto mb-16 animate-fade-in-up",
+                h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 text-center", "Throughout The Supply Chain" }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland partners with corn, wheat, and soy farmers to embed industrial hemp into their crop rotation. Our USDA Grant has given us unique insights into industrial hemp farming, regenerative agriculture, and carbon sequestration." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Compounder Heartland partners with plastic compounders to augment talc, calcium, and glass without any retooling costs. Our Imperium masterbatch solves dust, flammability, bonding, and bulk density problems typically associated with bio-based additives." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Converter Heartland partners with plastic converters to ensure the hemp-filled resin is processed properly. Our team works alongside component part manufacturers to process natural fiber-filled plastic with the same molds used today." }
+                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Brand Heartland is the sustainability partner for brands on their journey to reduce their carbon footprint. Our team helps create stakeholder alignment so companies can effectively communicate the value of sustainable material innovation." }
+            }        }
     }
 }
 
@@ -76,9 +123,9 @@ fn ClosingCta() -> Element {
         section { class: "bg-mesh-dramatic py-20 my-12 section-soft-edges",
             div { class: "container-content text-center",
                 h2 { class: "text-3xl md:text-4xl font-bold mb-6 max-w-2xl mx-auto",
-                    "Ready to dig in?"
+                    "Learn more about Carbon"
                 }
-                Link { to: Route::Contact {}, class: "btn-accent-gradient", "Request a TDS" }
+                Link { to: Route::Contact {}, class: "btn-accent-gradient", "Get in touch" }
             }
         }
     }

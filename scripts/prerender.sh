@@ -33,21 +33,37 @@ ROUTES=(
   "/imperium-filler"
   "/imperium-fibers"
   "/imperium-animal-feed"
+  "/imperium-pork-feed"
+  "/imperium-cattle-feed"
+  "/imperium-chicken-feed"
+  "/imperium-spin-ready-white-fiber"
+  "/imperium-yarn"
+  "/imperium-fabric"
+  "/imperium-graphene"
   "/sustainable-plastic-compounding"
   "/automotive"
   "/sustainable-packaging"
+  "/carbon-neutral-packaging-with-imperium-inside"
   "/sustainable-building-materials"
   "/sustainable-rubber-additives"
   "/sustainable-concrete-additives"
   "/sustainable-asphalt-additives"
   "/sustainable-paper-additives"
+  "/sustainable-foam"
   "/marine"
   "/government"
+  "/hemp-fiber-and-hurd"
+  "/wood-products"
+  "/plastic-additives"
+  "/case-studies"
+  "/usda"
   "/engineering-earth"
   "/e-books"
+  "/heartland-e-books"
   "/whitepapers"
   "/natural-fiber-research"
   "/frequently-asked-questions"
+  "/portfolios"
   "/heartland-team"
   "/heartland-farmers"
   "/green-packaging-initiative"
@@ -66,6 +82,33 @@ if [ -d content/articles ]; then
     ROUTES+=("/sustainability-news/${slug}")
   done
 fi
+
+# Append every category archive page (one per unique slug across all articles)
+CATEGORY_SLUGS=$(
+  grep -h '^categories = \[' content/articles/*.md 2>/dev/null \
+    | grep -oE '"[^"]+"' | tr -d '"' | sort -u
+)
+for slug in $CATEGORY_SLUGS; do
+  ROUTES+=("/sustainability-news/category/${slug}")
+done
+
+# Append every tag archive page
+TAG_SLUGS=$(
+  grep -h '^tags = \[' content/articles/*.md 2>/dev/null \
+    | grep -oE '"[^"]+"' | tr -d '"' | sort -u
+)
+for slug in $TAG_SLUGS; do
+  ROUTES+=("/sustainability-news/tag/${slug}")
+done
+
+# Append every portfolio item (slugs baked into src/pages/portfolio_item.rs)
+PORTFOLIO_SLUGS=$(
+  grep -oE 'slug: "[^"]+"' src/pages/portfolio_item.rs 2>/dev/null \
+    | sed 's/slug: "//; s/"$//'
+)
+for slug in $PORTFOLIO_SLUGS; do
+  ROUTES+=("/sustainability-news/portfolio/${slug}")
+done
 
 # Start server in background
 echo "==> Starting server: $SERVER_BIN on :$PORT"

@@ -50,7 +50,7 @@ pub fn Article(slug: String) -> Element {
         }
         document::Script { r#type: "application/ld+json", "{jsonld}" }
 
-        article { class: "container-content py-12 md:py-16 max-w-3xl",
+        article { class: "container-content py-12 md:py-16 px-6 md:px-12 lg:px-20 max-w-3xl",
 
             nav { class: "flex items-center gap-2 text-sm text-[color:var(--color-fg-muted)] mb-6",
                 Link { to: Route::News {}, class: "hover:text-[color:var(--color-accent)]", "News" }
