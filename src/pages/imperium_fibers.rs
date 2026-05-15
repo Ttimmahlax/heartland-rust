@@ -86,7 +86,7 @@ fn Section4() -> Element {
         section { class: "container-content py-16 md:py-20",
             div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
                 // Left: text
-                div { class: "animate-fade-in-up md:order-1 order-2",
+                div { class: "animate-fade-in-up md:order-2 order-1",
                     p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
                         "No Pesticides or Toxins"
                     }
@@ -105,7 +105,7 @@ fn Section4() -> Element {
                     }
                 }
                 // Right: image
-                div { class: "animate-fade-in-up md:order-2 order-1",
+                div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
                         src: "/assets/pages/imperium-filler/1210x786-px-4.png",
                         alt: "heartland hemp bales",

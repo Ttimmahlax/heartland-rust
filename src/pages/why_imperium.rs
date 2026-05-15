@@ -56,7 +56,7 @@ fn Hero() -> Element {
                 }
                 p {
                     class: "mt-5 max-w-2xl mx-auto text-base md:text-lg text-white/85 animate-fade-in-up delay-1",
-                    "95% less water than cotton."
+                    "95% less water than cotton"
                 }
             }
         }

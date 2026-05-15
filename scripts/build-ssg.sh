@@ -26,6 +26,9 @@ echo "==> Copying assets/ → $OUT/assets"
 mkdir -p "$OUT/assets"
 cp -R assets/. "$OUT/assets/" 2>/dev/null || true
 
+echo "==> Wrapping <img> tags in <picture>+webp (browsers get the smaller file)"
+python3 ./scripts/wrap-webp.py "$OUT"
+
 echo "==> Generating sitemap.xml + robots.txt"
 ./scripts/generate-sitemap.sh "$OUT"
 
