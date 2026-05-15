@@ -1,0 +1,718 @@
+{
+  "batch_id": "msgbatch_012JvRYySd6BH32Zho7j3TvA",
+  "submitted_at": "2026-05-15 22:37:39.928094+00:00",
+  "pairs": {
+    "i00000": {
+      "source": "content/articles/2-ways-automotive-manufacturers-are-decarbonizing-their-plastic-portfolio-by-2030.md",
+      "lang": "pt"
+    },
+    "i00001": {
+      "source": "content/articles/2022-the-year-of-sustainability-and-esg-mandates.md",
+      "lang": "pt"
+    },
+    "i00002": {
+      "source": "content/articles/3-important-questions-to-ask-your-resin-supplier-about-sustainability.md",
+      "lang": "pt"
+    },
+    "i00003": {
+      "source": "content/articles/3-reasons-talc-fillers-will-go-extinct-over-the-next-decade.md",
+      "lang": "pt"
+    },
+    "i00004": {
+      "source": "content/articles/52-of-us-soybean-bought-by-china-in-2024-now-is-not-the-time-to-plant-soybean.md",
+      "lang": "pt"
+    },
+    "i00005": {
+      "source": "content/articles/additives-the-move-towards-sustainable-bio-based-materials.md",
+      "lang": "pt"
+    },
+    "i00006": {
+      "source": "content/articles/addressing-phyto-sanitation-risks-importing-and-exporting-wood-pallets.md",
+      "lang": "pt"
+    },
+    "i00007": {
+      "source": "content/articles/alfalfa-to-hemp-farming-in-arizona-asu-water-conservation.md",
+      "lang": "pt"
+    },
+    "i00008": {
+      "source": "content/articles/alternative-to-talc-and-calcium-carbonate-in-plastic.md",
+      "lang": "pt"
+    },
+    "i00009": {
+      "source": "content/articles/american-manufacturers.md",
+      "lang": "pt"
+    },
+    "i00010": {
+      "source": "content/articles/an-open-letter-in-support-of-high-integrity-carbon-markets.md",
+      "lang": "pt"
+    },
+    "i00011": {
+      "source": "content/articles/arizona-alfalfa-farming-export-to-china-hits-a-brick-wall.md",
+      "lang": "pt"
+    },
+    "i00012": {
+      "source": "content/articles/basf-regenerative-farming-program-cuts-emissions-by-90.md",
+      "lang": "pt"
+    },
+    "i00013": {
+      "source": "content/articles/bio-based-materials-plastic-global-shortage.md",
+      "lang": "pt"
+    },
+    "i00014": {
+      "source": "content/articles/bio-continuity-the-secret-to-reliable-bio-based-supply-chains.md",
+      "lang": "pt"
+    },
+    "i00015": {
+      "source": "content/articles/building-a-carbon-negative-future-sustainable-packaging.md",
+      "lang": "pt"
+    },
+    "i00016": {
+      "source": "content/articles/carbon-credits-for-the-global-industrial-hemp-value-chain.md",
+      "lang": "pt"
+    },
+    "i00017": {
+      "source": "content/articles/carbon-credits-for-the-industrial-hemp-value-chain-updated-2022.md",
+      "lang": "pt"
+    },
+    "i00018": {
+      "source": "content/articles/carbon-emissions-how-they-affect-the-environment-how-they-affect-your-business.md",
+      "lang": "pt"
+    },
+    "i00019": {
+      "source": "content/articles/carbon-farming-its-not-about-carbon-footprint-its-about-better-food-and-water.md",
+      "lang": "pt"
+    },
+    "i00020": {
+      "source": "content/articles/cbd-catastrophe.md",
+      "lang": "pt"
+    },
+    "i00021": {
+      "source": "content/articles/cellulose-the-organic-polymer-shaping-our-planet.md",
+      "lang": "pt"
+    },
+    "i00022": {
+      "source": "content/articles/challenging-fast-fashion-as-prices-shift-upward-for-clothing.md",
+      "lang": "pt"
+    },
+    "i00023": {
+      "source": "content/articles/chemovator-invests-in-detroit-based-startup-heartland.md",
+      "lang": "pt"
+    },
+    "i00024": {
+      "source": "content/articles/climate-commodities-and-heartland-industries-partner-to-turn-industrial-hemp-into-a-new-asset-class.md",
+      "lang": "pt"
+    },
+    "i00025": {
+      "source": "content/articles/collecting-farming-data-to-standardize-hemp-insurance-lending.md",
+      "lang": "pt"
+    },
+    "i00026": {
+      "source": "content/articles/complete-guide-to-supply-chains-of-the-future-local-vs-global.md",
+      "lang": "pt"
+    },
+    "i00027": {
+      "source": "content/articles/composites-weekly-hemp.md",
+      "lang": "pt"
+    },
+    "i00028": {
+      "source": "content/articles/conflict-in-ukraine-and-russia-impacts-the-global-supply-chain.md",
+      "lang": "pt"
+    },
+    "i00029": {
+      "source": "content/articles/corn-and-soy-farmers-integrate-industrial-hemp-into-their-crop-rotations.md",
+      "lang": "pt"
+    },
+    "i00030": {
+      "source": "content/articles/customized-carbon-negative-materials-for-large-manufacturers.md",
+      "lang": "pt"
+    },
+    "i00031": {
+      "source": "content/articles/declouding-customer-data-and-hemp-supply-chain-data-to-improve-privacy.md",
+      "lang": "pt"
+    },
+    "i00032": {
+      "source": "content/articles/detroit-is-once-again-the-center-of-mobility-technology.md",
+      "lang": "pt"
+    },
+    "i00033": {
+      "source": "content/articles/did-you-know-hemp-fiber-production-doesnt-take-food-from-the-supply-chain.md",
+      "lang": "pt"
+    },
+    "i00034": {
+      "source": "content/articles/engineering-earth-rethinking-agriculture-after-100-years-of-innovation.md",
+      "lang": "pt"
+    },
+    "i00035": {
+      "source": "content/articles/engineering-earth-revolutionizing-carbon-sequestration-and-sustainability.md",
+      "lang": "pt"
+    },
+    "i00036": {
+      "source": "content/articles/european-automotive-companies-hemp.md",
+      "lang": "pt"
+    },
+    "i00037": {
+      "source": "content/articles/farmers-are-reducing-water-usage-by-adopting-hemp-fiber-and-grain-crops.md",
+      "lang": "pt"
+    },
+    "i00038": {
+      "source": "content/articles/farmers-face-the-next-housing-crisis-as-demand-shifts.md",
+      "lang": "pt"
+    },
+    "i00039": {
+      "source": "content/articles/farming-hemp-grain-and-fiber-in-2025-organic-is-king.md",
+      "lang": "pt"
+    },
+    "i00040": {
+      "source": "content/articles/first-in-class-natural-fiber-reinforced-pc-abs-for-electronics.md",
+      "lang": "pt"
+    },
+    "i00041": {
+      "source": "content/articles/first-industrial-hemp-fiber-lca-for-carbon-negative-additives.md",
+      "lang": "pt"
+    },
+    "i00042": {
+      "source": "content/articles/green-is-the-new-gold-how-sustainability-elevates-brand-value.md",
+      "lang": "pt"
+    },
+    "i00043": {
+      "source": "content/articles/heartland-and-ravago-partner-to-reduce-the-carbon-footprint-of-plastic.md",
+      "lang": "pt"
+    },
+    "i00044": {
+      "source": "content/articles/heartland-at-the-detroit-auto-show-2022.md",
+      "lang": "pt"
+    },
+    "i00045": {
+      "source": "content/articles/heartland-augments-glass-fiber-in-plastics-with-hemp-alternatives-to-reduce-cost-weight-2022.md",
+      "lang": "pt"
+    },
+    "i00046": {
+      "source": "content/articles/heartland-enters-hemp-textile-industry-as-us-exporter-providing-fabric-yarn-and-fiber.md",
+      "lang": "pt"
+    },
+    "i00047": {
+      "source": "content/articles/heartland-has-been-awarded-a-360000-usda-grant-to-study-soil-health.md",
+      "lang": "pt"
+    },
+    "i00048": {
+      "source": "content/articles/heartland-hemp-additives-turn-any-plastic-into-a-bioplastic-while-reducing-cost.md",
+      "lang": "pt"
+    },
+    "i00049": {
+      "source": "content/articles/heartland-increases-hemp-production-in-michigan-and-beyond.md",
+      "lang": "pt"
+    },
+    "i00050": {
+      "source": "content/articles/heartland-india-offering-us-hemp-fiber-for-spinning-hemp-yarn-hemp-fabric.md",
+      "lang": "pt"
+    },
+    "i00051": {
+      "source": "content/articles/heartland-industries-cracks-the-industrial-hemp-supply-chain-bottleneck.md",
+      "lang": "pt"
+    },
+    "i00052": {
+      "source": "content/articles/heartland-joins-amazon-devices-climate-tech-accelerator.md",
+      "lang": "pt"
+    },
+    "i00053": {
+      "source": "content/articles/heartland-joins-forces-with-the-hemp-fiber-and-grain-association.md",
+      "lang": "pt"
+    },
+    "i00054": {
+      "source": "content/articles/heartland-partners-with-aureo-to-derive-new-insights-from-supply-chain-data-lake.md",
+      "lang": "pt"
+    },
+    "i00055": {
+      "source": "content/articles/heartland-partners-with-magnolia-partners-to-distribute-decarbonized-returnable-packaging.md",
+      "lang": "pt"
+    },
+    "i00056": {
+      "source": "content/articles/heartland-presents-hemp4soil-usda-grant-results-at-soil-water-conservation-society.md",
+      "lang": "pt"
+    },
+    "i00057": {
+      "source": "content/articles/heartland-presents-the-green-packaging-initiative-at-spe.md",
+      "lang": "pt"
+    },
+    "i00058": {
+      "source": "content/articles/heartland-presents-the-results-of-our-magna-basf-trials-greentown.md",
+      "lang": "pt"
+    },
+    "i00059": {
+      "source": "content/articles/heartland-puts-industrial-hemp-headquarters-in-detroit.md",
+      "lang": "pt"
+    },
+    "i00060": {
+      "source": "content/articles/heartland-raises-seed-capital.md",
+      "lang": "pt"
+    },
+    "i00061": {
+      "source": "content/articles/heartland-receives-financing-from-leading-michigan-bank.md",
+      "lang": "pt"
+    },
+    "i00062": {
+      "source": "content/articles/heartland-solves-traveling-salesman-problem-to-optimize-agriculture.md",
+      "lang": "pt"
+    },
+    "i00063": {
+      "source": "content/articles/heartland-unlocks-farming-for-industrial-hemp.md",
+      "lang": "pt"
+    },
+    "i00064": {
+      "source": "content/articles/heartland-uses-hemp-as-alternative-to-fiberglass-in-plastic.md",
+      "lang": "pt"
+    },
+    "i00065": {
+      "source": "content/articles/heartland-wins-continentals-sustainable-material-innovation-challenge.md",
+      "lang": "pt"
+    },
+    "i00066": {
+      "source": "content/articles/heartlands-imperium-fiber-setting-new-standard-for-soft-hemp-fiber.md",
+      "lang": "pt"
+    },
+    "i00067": {
+      "source": "content/articles/hemp-amplifies-the-output-of-plastic-recycling-supply-chains.md",
+      "lang": "pt"
+    },
+    "i00068": {
+      "source": "content/articles/hemp-based-materials-engineered-as-additives-for-polymers.md",
+      "lang": "pt"
+    },
+    "i00069": {
+      "source": "content/articles/hemp-fiber-and-grain-association-joins-forces-with-heartland-for-farmer-education.md",
+      "lang": "pt"
+    },
+    "i00070": {
+      "source": "content/articles/hemp-fiber-requires-less-water-than-cotton-to-farm.md",
+      "lang": "pt"
+    },
+    "i00071": {
+      "source": "content/articles/hemp-reinforced-polypropylene-composites-in-automotive.md",
+      "lang": "pt"
+    },
+    "i00072": {
+      "source": "content/articles/how-heartland-uses-carbon-report-to-simplify-emissions-tracking-tds-sds-carbon-report.md",
+      "lang": "pt"
+    },
+    "i00073": {
+      "source": "content/articles/how-or-why-your-brand-equity-is-tied-to-your-sustainability.md",
+      "lang": "pt"
+    },
+    "i00074": {
+      "source": "content/articles/how-sustainability-can-build-more-brand-value.md",
+      "lang": "pt"
+    },
+    "i00075": {
+      "source": "content/articles/hurd-milled-not-good-for-plastic-compounders.md",
+      "lang": "pt"
+    },
+    "i00076": {
+      "source": "content/articles/imperium-fiber-polyhemp-as-a-sustainable-lower-cost-alternative-to-polycotton.md",
+      "lang": "pt"
+    },
+    "i00077": {
+      "source": "content/articles/imperium-filler-vs-hemp-filler-performance-cost-comparison-palmer-holland-hemp-for-engineered-plastic.md",
+      "lang": "pt"
+    },
+    "i00078": {
+      "source": "content/articles/imperium-reinforced-hdpe-to-replace-pp-applications.md",
+      "lang": "pt"
+    },
+    "i00079": {
+      "source": "content/articles/implementing-the-new-sec-goals-a-pathway-to-sustainable.md",
+      "lang": "pt"
+    },
+    "i00080": {
+      "source": "content/articles/industrial-hemp-additives-create-blue-ocean-in-the-plastics.md",
+      "lang": "pt"
+    },
+    "i00081": {
+      "source": "content/articles/industrial-hemp-as-the-feedstock-to-make-new-chemicals-protein-fatty-acids-cellulose-lignin.md",
+      "lang": "pt"
+    },
+    "i00082": {
+      "source": "content/articles/industrial-hemp-creates-a-circular-economy-for-local-manufacturers.md",
+      "lang": "pt"
+    },
+    "i00083": {
+      "source": "content/articles/industrial-hemp-farm-season-for-heartland-in-michigan.md",
+      "lang": "pt"
+    },
+    "i00084": {
+      "source": "content/articles/industrial-hemp-farming.md",
+      "lang": "pt"
+    },
+    "i00085": {
+      "source": "content/articles/industrial-hemp-in-a-world-of-natural-materials-its-the-new-super-fiber.md",
+      "lang": "pt"
+    },
+    "i00086": {
+      "source": "content/articles/industrial-hemp-marketplace.md",
+      "lang": "pt"
+    },
+    "i00087": {
+      "source": "content/articles/industrial-hemp-planting-2024-the-year-of-growth-and-standardization.md",
+      "lang": "pt"
+    },
+    "i00088": {
+      "source": "content/articles/industrial-hemp-processing.md",
+      "lang": "pt"
+    },
+    "i00089": {
+      "source": "content/articles/industrial-hemp-research.md",
+      "lang": "pt"
+    },
+    "i00090": {
+      "source": "content/articles/industrial-hemp-supply-chain-mobility.md",
+      "lang": "pt"
+    },
+    "i00091": {
+      "source": "content/articles/industrial-packaging-the-entry-point-for-sustainability.md",
+      "lang": "pt"
+    },
+    "i00092": {
+      "source": "content/articles/industry-5-0-a-students-guide-to-sustainable-success.md",
+      "lang": "pt"
+    },
+    "i00093": {
+      "source": "content/articles/industry-5-0-the-bridge-between-capitalism-and-sustainability.md",
+      "lang": "pt"
+    },
+    "i00094": {
+      "source": "content/articles/industry-5-0-the-first-proactive-industrial-revolution.md",
+      "lang": "pt"
+    },
+    "i00095": {
+      "source": "content/articles/industry-50-the-sustainability-revolution.md",
+      "lang": "pt"
+    },
+    "i00096": {
+      "source": "content/articles/innovations-in-the-auto-industry-are-speeding-our-way.md",
+      "lang": "pt"
+    },
+    "i00097": {
+      "source": "content/articles/international-hemp-partners-with-heartland-to-develop-americas-industrial-hemp-supply-chain.md",
+      "lang": "pt"
+    },
+    "i00098": {
+      "source": "content/articles/investing-in-manufacturing-innovations-pioneering-a-sustainable-future.md",
+      "lang": "pt"
+    },
+    "i00099": {
+      "source": "content/articles/is-the-world-entering-a-recycled-plastic-shortage.md",
+      "lang": "pt"
+    },
+    "i00100": {
+      "source": "content/articles/jesse-henry-on-the-future-of-mobility-podcast-with-brandon-bartneck.md",
+      "lang": "pt"
+    },
+    "i00101": {
+      "source": "content/articles/john-ely-appointed-ceo-of-heartland-industries.md",
+      "lang": "pt"
+    },
+    "i00102": {
+      "source": "content/articles/kdm-and-the-mbda-partner-with-heartland.md",
+      "lang": "pt"
+    },
+    "i00103": {
+      "source": "content/articles/lethal-ventures-heartland-partner-to-launch-carbon-report.md",
+      "lang": "pt"
+    },
+    "i00104": {
+      "source": "content/articles/lets-celebrate-heartland-industries-banner-year-in-2023.md",
+      "lang": "pt"
+    },
+    "i00105": {
+      "source": "content/articles/lightweighting-in-transportation.md",
+      "lang": "pt"
+    },
+    "i00106": {
+      "source": "content/articles/local-materials-for-us-manufacturing-imperium-supply-chain.md",
+      "lang": "pt"
+    },
+    "i00107": {
+      "source": "content/articles/magna-x-basf-x-heartland-altair-enlighten-award-finalists-for-low-carbon-polyamide-6.md",
+      "lang": "pt"
+    },
+    "i00108": {
+      "source": "content/articles/manufacturers-tightening-rd-initiatives-focus-on-cost-savings.md",
+      "lang": "pt"
+    },
+    "i00109": {
+      "source": "content/articles/manufacturings-missing-link-an-industrial-hemp-supply-chain.md",
+      "lang": "pt"
+    },
+    "i00110": {
+      "source": "content/articles/map-collective-and-heartland-partner-to-create-new-opportunities-for-underserved-american-farmers.md",
+      "lang": "pt"
+    },
+    "i00111": {
+      "source": "content/articles/natural-alternative-to-nylon-fabric-future-fashion-by-heartland.md",
+      "lang": "pt"
+    },
+    "i00112": {
+      "source": "content/articles/navigating-complex-scope-3-emissions-strategies-for-manufacturing.md",
+      "lang": "pt"
+    },
+    "i00113": {
+      "source": "content/articles/net-zero-potential-where-can-we-go-from-here.md",
+      "lang": "pt"
+    },
+    "i00114": {
+      "source": "content/articles/opening-up-the-industrial-hemp-supply-chain.md",
+      "lang": "pt"
+    },
+    "i00115": {
+      "source": "content/articles/oxidative-stress-from-static-generated-by-polyester-nylon-clothing.md",
+      "lang": "pt"
+    },
+    "i00116": {
+      "source": "content/articles/planting-hemp-fiber-in-the-summer-behind-winter-wheat.md",
+      "lang": "pt"
+    },
+    "i00117": {
+      "source": "content/articles/polyethylene-manufacturing-in-the-us-post-china-tariffs.md",
+      "lang": "pt"
+    },
+    "i00118": {
+      "source": "content/articles/problems-solutions-compounding-natural-fibers-into-plastics.md",
+      "lang": "pt"
+    },
+    "i00119": {
+      "source": "content/articles/replacing-nylon-fabric-with-hemp-lyocell-same-great-strength-no-microplastics.md",
+      "lang": "pt"
+    },
+    "i00120": {
+      "source": "content/articles/roots-carbon-credit-checkout-integration-for-conscious-brand-owners.md",
+      "lang": "pt"
+    },
+    "i00121": {
+      "source": "content/articles/scope-3-emissions-the-good-the-bad-and-the-ripple-effect.md",
+      "lang": "pt"
+    },
+    "i00122": {
+      "source": "content/articles/sec-proposes-climate-related-disclosures.md",
+      "lang": "pt"
+    },
+    "i00123": {
+      "source": "content/articles/separation-of-planting-seed-and-pesticide-an-economic-ip-goliath.md",
+      "lang": "pt"
+    },
+    "i00124": {
+      "source": "content/articles/sustainability-in-the-textile-industry-challenges-and-opportunities.md",
+      "lang": "pt"
+    },
+    "i00125": {
+      "source": "content/articles/sustainability-is-the-foundational-investment-thesis-of-the-future.md",
+      "lang": "pt"
+    },
+    "i00126": {
+      "source": "content/articles/sustainability-through-the-lens-of-a-brand-manager.md",
+      "lang": "pt"
+    },
+    "i00127": {
+      "source": "content/articles/sustainable-plastics-for-industrial-packaging-crates-pallets.md",
+      "lang": "pt"
+    },
+    "i00128": {
+      "source": "content/articles/sustainable-supply-chain-for-automotive.md",
+      "lang": "pt"
+    },
+    "i00129": {
+      "source": "content/articles/tariffs-are-shifting-buying-habits-to-localization-similar-to-covid.md",
+      "lang": "pt"
+    },
+    "i00130": {
+      "source": "content/articles/the-benefits-of-hemp-reinforced-polypropylene-for-automotive.md",
+      "lang": "pt"
+    },
+    "i00131": {
+      "source": "content/articles/the-case-for-minority-owned-farms-in-america.md",
+      "lang": "pt"
+    },
+    "i00132": {
+      "source": "content/articles/the-chief-sustainability-officer-cso.md",
+      "lang": "pt"
+    },
+    "i00133": {
+      "source": "content/articles/the-dark-side-of-wood-pallets-for-international-shipments.md",
+      "lang": "pt"
+    },
+    "i00134": {
+      "source": "content/articles/the-difference-between-industrial-hemp-cbd-and-cannabis.md",
+      "lang": "pt"
+    },
+    "i00135": {
+      "source": "content/articles/the-foundation-of-the-graphene-revolution-is-bio-based-materials.md",
+      "lang": "pt"
+    },
+    "i00136": {
+      "source": "content/articles/the-future-of-materials-innovation.md",
+      "lang": "pt"
+    },
+    "i00137": {
+      "source": "content/articles/the-green-economy-will-prosper-through-americas-agricultural-engine.md",
+      "lang": "pt"
+    },
+    "i00138": {
+      "source": "content/articles/the-manufacturers-guide-to-sustainable-materials.md",
+      "lang": "pt"
+    },
+    "i00139": {
+      "source": "content/articles/the-new-sustainable-leadership-era-why-its-here-to-stay.md",
+      "lang": "pt"
+    },
+    "i00140": {
+      "source": "content/articles/the-road-to-net-zero-paving-the-way-for-a-sustainable-future.md",
+      "lang": "pt"
+    },
+    "i00141": {
+      "source": "content/articles/the-scope-3-carbon-footprint-of-a-plastic-automotive-part.md",
+      "lang": "pt"
+    },
+    "i00142": {
+      "source": "content/articles/the-strengths-and-weaknesses-of-industrial-hemps-weight.md",
+      "lang": "pt"
+    },
+    "i00143": {
+      "source": "content/articles/the-time-for-new-materials-in-manufacturing-is-now.md",
+      "lang": "pt"
+    },
+    "i00144": {
+      "source": "content/articles/the-ultimate-guide-to-plastics-of-the-future-part-1.md",
+      "lang": "pt"
+    },
+    "i00145": {
+      "source": "content/articles/the-ultimate-guide-to-plastics-of-the-future-part-10-plastics-sustainability-and-esg-mandates.md",
+      "lang": "pt"
+    },
+    "i00146": {
+      "source": "content/articles/the-ultimate-guide-to-plastics-of-the-future-part-11-plastics-innovation-materials-innovation.md",
+      "lang": "pt"
+    },
+    "i00147": {
+      "source": "content/articles/the-ultimate-guide-to-plastics-of-the-future-part-12-the-bridge-between-capitalism-and-sustainability.md",
+      "lang": "pt"
+    },
+    "i00148": {
+      "source": "content/articles/the-ultimate-guide-to-plastics-of-the-future-part-2-the-big-issue-carbon.md",
+      "lang": "pt"
+    },
+    "i00149": {
+      "source": "content/articles/the-ultimate-guide-to-plastics-of-the-future-part-3-plastics-and-recycling.md",
+      "lang": "pt"
+    },
+    "i00150": {
+      "source": "content/articles/the-ultimate-guide-to-plastics-of-the-future-part-4-bioplastics.md",
+      "lang": "pt"
+    },
+    "i00151": {
+      "source": "content/articles/the-ultimate-guide-to-plastics-of-the-future-part-5-biodegradable-and-compostable-plastics.md",
+      "lang": "pt"
+    },
+    "i00152": {
+      "source": "content/articles/the-ultimate-guide-to-plastics-of-the-future-part-6-the-move-towards-bio-based-plastic-additives.md",
+      "lang": "pt"
+    },
+    "i00153": {
+      "source": "content/articles/the-ultimate-guide-to-plastics-of-the-future-part-7-the-potential-for-hemp-additives.md",
+      "lang": "pt"
+    },
+    "i00154": {
+      "source": "content/articles/the-ultimate-guide-to-plastics-of-the-future-part-8-engineering-hemp-additives-for-plastics.md",
+      "lang": "pt"
+    },
+    "i00155": {
+      "source": "content/articles/the-ultimate-guide-to-plastics-of-the-future-part-9-sustainable-plastics-for-packaging.md",
+      "lang": "pt"
+    },
+    "i00156": {
+      "source": "content/articles/the-ultimate-guide-to-regenerative-agriculture.md",
+      "lang": "pt"
+    },
+    "i00157": {
+      "source": "content/articles/tips-and-tricks-to-compounding-hemp-filler-with-nylon.md",
+      "lang": "pt"
+    },
+    "i00158": {
+      "source": "content/articles/tips-and-tricks-to-compounding-hemp-filler-with-polyethylene.md",
+      "lang": "pt"
+    },
+    "i00159": {
+      "source": "content/articles/tips-and-tricks-to-compounding-hemp-filler-with-polypropylene.md",
+      "lang": "pt"
+    },
+    "i00160": {
+      "source": "content/articles/tips-and-tricks-to-compounding-hemp-filler-with-pvc.md",
+      "lang": "pt"
+    },
+    "i00161": {
+      "source": "content/articles/top-3-ways-manufacturers-can-decarbonize-plastic-products.md",
+      "lang": "pt"
+    },
+    "i00162": {
+      "source": "content/articles/ultimate-guide-to-hemp-cotton-blends-composition-uses-and-benefits.md",
+      "lang": "pt"
+    },
+    "i00163": {
+      "source": "content/articles/ultimate-guide-to-hemp-linen-blends-uses-and-benefits.md",
+      "lang": "pt"
+    },
+    "i00164": {
+      "source": "content/articles/ultimate-guide-to-hemp-lyocell-blends-uses-and-benefits.md",
+      "lang": "pt"
+    },
+    "i00165": {
+      "source": "content/articles/ultimate-guide-to-hemp-polyester-blends-uses-and-benefits-copy.md",
+      "lang": "pt"
+    },
+    "i00166": {
+      "source": "content/articles/ultimate-guide-to-hemp-silk-blends-uses-and-benefits.md",
+      "lang": "pt"
+    },
+    "i00167": {
+      "source": "content/articles/ultimate-guide-to-hemp-wool-blends-uses-and-benefits.md",
+      "lang": "pt"
+    },
+    "i00168": {
+      "source": "content/articles/what-5-0-means-to-investors-in-the-new-era-of-sustainability.md",
+      "lang": "pt"
+    },
+    "i00169": {
+      "source": "content/articles/what-is-hemp-seed-oil-and-how-can-it-benefit-the-chemicals-market.md",
+      "lang": "pt"
+    },
+    "i00170": {
+      "source": "content/articles/what-is-hemp-stalk-how-is-it-processed-into-different-applications.md",
+      "lang": "pt"
+    },
+    "i00171": {
+      "source": "content/articles/what-is-mass-balance-understanding-carbon-neutrality-and-science-based-targets.md",
+      "lang": "pt"
+    },
+    "i00172": {
+      "source": "content/articles/what-is-polyhemp-how-can-it-be-used-and-where-do-i-get-it.md",
+      "lang": "pt"
+    },
+    "i00173": {
+      "source": "content/articles/what-is-the-difference-between-bioplastics-and-bio-based-additives.md",
+      "lang": "pt"
+    },
+    "i00174": {
+      "source": "content/articles/why-future-investors-will-focus-on-materials-innovation.md",
+      "lang": "pt"
+    },
+    "i00175": {
+      "source": "content/articles/why-innovation-is-crucial-to-a-5-0-world.md",
+      "lang": "pt"
+    },
+    "i00176": {
+      "source": "content/articles/why-innovation-is-crucial-to-our-carbon-neutral-future.md",
+      "lang": "pt"
+    },
+    "i00177": {
+      "source": "content/articles/wood-flour-alternative-cutting-down-trees-is-not-sustainable.md",
+      "lang": "pt"
+    }
+  }
+}

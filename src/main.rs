@@ -41,7 +41,7 @@ use pages::{
     landing::Landing,
     lca::Lca,
     marine::Marine,
-    news::News,
+    news::{News, LangNews},
     not_found::NotFound,
     plastic_additives::PlasticAdditives,
     portfolio_item::{all_portfolio_slugs, PortfolioItem},
@@ -189,6 +189,10 @@ pub enum Route {
         // (or falls back to English if a translation for that slug doesn't exist).
         #[route("/:lang/sustainability-news/:slug")]
         LangArticle { lang: String, slug: String },
+
+        // Translated news index — lists the articles available in this language.
+        #[route("/:lang/sustainability-news")]
+        LangNews { lang: String },
 
         // Branded 404 — catch-all, must be last
         #[route("/:..segments")]

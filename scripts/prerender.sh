@@ -85,14 +85,17 @@ fi
 
 # Append the translated article routes for every language we have markdown for.
 # Each non-English language dir under content/articles/ becomes a set of routes
-# at /<lang>/sustainability-news/<slug>. Article components fall back to English
-# when a specific translation is missing, so it's safe to enumerate by directory.
+# at /<lang>/sustainability-news/<slug>, plus a /<lang>/sustainability-news index.
+# Article components fall back to English when a specific translation is missing,
+# so it's safe to enumerate by directory.
 if [ -d content/articles ]; then
   for langdir in content/articles/*/; do
     [ -d "$langdir" ] || continue
     lang=$(basename "$langdir")
     # Skip dot/underscore dirs (none today, but defensive).
     case "$lang" in .*|_*) continue ;; esac
+    # Per-language news index.
+    ROUTES+=("/${lang}/sustainability-news")
     for f in "$langdir"*.md; do
       [ -e "$f" ] || continue
       slug=$(basename "$f" .md)

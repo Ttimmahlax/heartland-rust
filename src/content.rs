@@ -142,7 +142,32 @@ pub fn find_lang(lang: &str, slug: &str) -> Option<&'static Article> {
 }
 
 pub fn recent(n: usize) -> Vec<&'static Article> {
-    parsed().iter().filter(|a| a.lang == "en").take(n).collect()
+    recent_lang("en", n)
+}
+
+/// Top-N most recent articles filtered to the requested language.
+/// Falls back to English entries if there aren't enough translations
+/// for that language (so a carousel on a Spanish page can still fill 4
+/// slots even before every article has a Spanish translation).
+pub fn recent_lang(lang: &str, n: usize) -> Vec<&'static Article> {
+    let same_lang: Vec<&'static Article> =
+        parsed().iter().filter(|a| a.lang == lang).take(n).collect();
+    if same_lang.len() >= n || lang == "en" {
+        return same_lang;
+    }
+    // Backfill with English entries for slugs we haven't translated yet.
+    let seen: std::collections::HashSet<&str> =
+        same_lang.iter().map(|a| a.slug.as_str()).collect();
+    let mut out = same_lang;
+    for a in parsed().iter().filter(|a| a.lang == "en") {
+        if out.len() >= n {
+            break;
+        }
+        if !seen.contains(a.slug.as_str()) {
+            out.push(a);
+        }
+    }
+    out
 }
 
 /// All English articles assigned to a given category slug. Used by the

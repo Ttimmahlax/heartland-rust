@@ -257,17 +257,14 @@ def cache_key(source: Path, lang_code: str) -> str:
     return f"{rel}::{lang_code}"
 
 
-# Map between batch custom_id <-> (source path, lang_code). Slugs use hyphens
-# so we use `::` as the separator. Format: `<lang_code>::<slug>`. The slug
-# implies `content/articles/<slug>.md` as the source.
-def batch_custom_id(source: Path, lang_code: str) -> str:
-    return f"{lang_code}::{source.stem}"
+# Anthropic's Batch API caps custom_id at 64 characters and some of our slugs
+# exceed that on their own. We assign each (source, lang) pair a sequential
+# index (`i0001`, `i0002`, ...) at submit time, and persist the mapping
+# alongside the batch ID. The poll path reads the mapping back to route each
+# result to the right output file.
 
-
-def parse_batch_custom_id(custom_id: str) -> tuple[str, Path]:
-    """Returns (lang_code, source_path)."""
-    lang_code, slug = custom_id.split("::", 1)
-    return lang_code, ARTICLES_DIR / f"{slug}.md"
+def batch_mapping_path(batch_id: str) -> Path:
+    return REPO_ROOT / ".translation-batches" / f"{batch_id}.json"
 
 
 def build_work_list(args, cache: dict) -> list[tuple[Path, str, str]]:
@@ -335,10 +332,12 @@ def submit_batch_mode(args) -> int:
 
     client = anthropic.Anthropic()
     requests = []
-    for source, lang_code, lang_name in work:
+    mapping: dict[str, dict[str, str]] = {}  # custom_id -> {source: ..., lang: ...}
+    for idx, (source, lang_code, lang_name) in enumerate(work):
+        cid = f"i{idx:05d}"
         text = source.read_text()
         requests.append({
-            "custom_id": batch_custom_id(source, lang_code),
+            "custom_id": cid,
             "params": {
                 "model": MODEL,
                 "max_tokens": 8192,
@@ -350,21 +349,28 @@ def submit_batch_mode(args) -> int:
                 "messages": [{"role": "user", "content": text}],
             },
         })
+        mapping[cid] = {
+            "source": source.relative_to(REPO_ROOT).as_posix(),
+            "lang": lang_code,
+        }
 
     batch = client.messages.batches.create(requests=requests)
     batch_id = batch.id
 
-    # Note the batch ID to a tracking file so CI / next run can pick it up.
+    # Persist the custom_id → (source, lang) mapping so --batch-poll can route
+    # each result back to the right file.
     tracking_dir = REPO_ROOT / ".translation-batches"
     tracking_dir.mkdir(exist_ok=True)
-    (tracking_dir / f"{batch_id}.txt").write_text(
-        f"Submitted: {len(requests)} pairs\n"
-        f"Created at: {batch.created_at}\n"
-    )
+    batch_mapping_path(batch_id).write_text(json.dumps({
+        "batch_id": batch_id,
+        "submitted_at": str(batch.created_at),
+        "pairs": mapping,
+    }, indent=2))
 
     print(f"\nBatch submitted: {batch_id}")
     print(f"Status: {batch.processing_status}")
     print(f"Pairs in batch: {len(requests)}")
+    print(f"Mapping saved: {batch_mapping_path(batch_id).relative_to(REPO_ROOT)}")
     print(f"\nPoll with: ./scripts/translate.py --batch-poll {batch_id}")
     print(f"Or wait: anthropic typically completes within minutes for ~thousand-request batches.")
     return 0
@@ -394,20 +400,28 @@ def poll_batch_mode(args) -> int:
     done = 0
     failed: list[tuple[str, str]] = []
 
+    mapping_file = batch_mapping_path(batch_id)
+    if not mapping_file.exists():
+        print(f"FAIL: mapping file not found at {mapping_file}.", file=sys.stderr)
+        print("If you submitted this batch from another machine, copy the mapping JSON over before polling.", file=sys.stderr)
+        return 2
+    pairs = json.loads(mapping_file.read_text())["pairs"]
+
     for result in client.messages.batches.results(batch_id):
         cid = result.custom_id
-        try:
-            lang_code, source = parse_batch_custom_id(cid)
-        except Exception as e:
-            print(f"  skip malformed custom_id {cid!r}: {e}", file=sys.stderr)
+        entry = pairs.get(cid)
+        if not entry:
+            print(f"  skip unknown custom_id {cid!r} (not in mapping)", file=sys.stderr)
             continue
+        source = REPO_ROOT / entry["source"]
+        lang_code = entry["lang"]
 
         rtype = result.result.type
         if rtype != "succeeded":
             err = getattr(result.result, "error", None)
             err_msg = getattr(err, "message", None) or str(rtype)
             failed.append((cid, err_msg))
-            print(f"  FAIL  {cid}: {err_msg}", file=sys.stderr)
+            print(f"  FAIL  {source.name} -> {lang_code}: {err_msg}", file=sys.stderr)
             continue
 
         text = result.result.message.content[0].text
@@ -424,10 +438,10 @@ def poll_batch_mode(args) -> int:
 
     save_cache(cache)
 
-    # Clean up the tracking file now that we've consumed it.
-    tracking_file = REPO_ROOT / ".translation-batches" / f"{batch_id}.txt"
-    if tracking_file.exists():
-        tracking_file.unlink()
+    # Leave the mapping file in place if there were failures; remove only on
+    # full success so subsequent retries have what they need.
+    if not failed:
+        mapping_file.unlink()
 
     print(f"\nDownloaded {done} translation(s). Failed: {len(failed)}.")
     return 0 if not failed else 1

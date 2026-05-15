@@ -170,6 +170,9 @@ if [ -d content/articles ]; then
     {
       echo '<?xml version="1.0" encoding="UTF-8"?>'
       echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+      # Per-language news index page.
+      printf '  <url>\n    <loc>%s/%s/sustainability-news</loc>\n    <lastmod>%s</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>\n' \
+        "$BASE" "$lang" "$TODAY"
       for f in "$langdir"*.md; do
         [ -e "$f" ] || continue
         slug=$(basename "$f" .md)

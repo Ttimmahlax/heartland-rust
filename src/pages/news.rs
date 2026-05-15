@@ -69,14 +69,56 @@ const SEARCH_JS: &str = r#"
 
 #[component]
 pub fn News() -> Element {
-    let articles = content::all();
+    NewsInner(NewsInnerProps { lang: "en".to_string() })
+}
+
+/// Translated news index. Lists articles available in the requested language
+/// (with English fallback for slugs that don't have a translation yet).
+#[component]
+pub fn LangNews(lang: String) -> Element {
+    NewsInner(NewsInnerProps { lang })
+}
+
+#[derive(Props, Clone, PartialEq)]
+struct NewsInnerProps {
+    lang: String,
+}
+
+#[component]
+fn NewsInner(props: NewsInnerProps) -> Element {
+    let lang = props.lang;
+    // Pick the article in the requested language; fall back to English for
+    // any slug that doesn't have a translation yet. Each slug appears once.
+    let articles: Vec<&'static content::Article> = {
+        let mut by_slug: std::collections::BTreeMap<&str, &'static content::Article> =
+            std::collections::BTreeMap::new();
+        // English first (baseline).
+        for a in content::all().iter().filter(|a| a.lang == "en") {
+            by_slug.insert(a.slug.as_str(), a);
+        }
+        // Translated entries override the English fallback.
+        if lang != "en" {
+            for a in content::all().iter().filter(|a| a.lang == lang) {
+                by_slug.insert(a.slug.as_str(), a);
+            }
+        }
+        let mut v: Vec<&'static content::Article> = by_slug.into_values().collect();
+        v.sort_by(|a, b| b.front.published_at.cmp(&a.front.published_at));
+        v
+    };
     let total = articles.len();
+
+    let path = if lang == "en" {
+        "/sustainability-news".to_string()
+    } else {
+        format!("/{}/sustainability-news", lang)
+    };
 
     rsx! {
         Seo {
             title: "Sustainability News & Articles",
             description: "Heartland's library of articles on industrial hemp, sustainable plastics, regenerative agriculture, supply-chain decarbonization, and the future of material innovation.",
-            path: "/sustainability-news",
+            path: "{path}",
         }
 
         section { class: "bg-mesh-hero section-soft-bottom",
@@ -149,6 +191,7 @@ pub fn News() -> Element {
                         ArticleCard {
                             key: "{article.slug}",
                             index: i,
+                            lang: lang.clone(),
                             slug: article.slug.clone(),
                             title: article.front.title.clone(),
                             excerpt: article.front.excerpt.clone(),
@@ -173,6 +216,7 @@ pub fn News() -> Element {
 #[component]
 fn ArticleCard(
     index: usize,
+    lang: String,
     slug: String,
     title: String,
     excerpt: String,
@@ -196,40 +240,58 @@ fn ArticleCard(
         s
     };
 
-    rsx! {
-        Link {
-            to: Route::Article { slug: slug.clone() },
-            class: "group block surface-glass overflow-hidden hover:translate-y-[-2px] transition-transform animate-fade-in-up",
-            style: "animation-delay: {index * 30}ms",
-            "data-search": "{haystack}",
-            div { class: "aspect-[16/9] overflow-hidden bg-[color:var(--color-surface)]",
-                img {
-                    src: "{hero}",
-                    alt: "{title}",
-                    loading: "lazy",
-                    class: "w-full h-full object-cover transition-transform duration-300 group-hover:scale-105",
-                }
+    let card_class = "group block surface-glass overflow-hidden hover:translate-y-[-2px] transition-transform animate-fade-in-up";
+    let card_style = format!("animation-delay: {}ms", index * 30);
+    let body = rsx! {
+        div { class: "aspect-[16/9] overflow-hidden bg-[color:var(--color-surface)]",
+            img {
+                src: "{hero}",
+                alt: "{title}",
+                loading: "lazy",
+                class: "w-full h-full object-cover transition-transform duration-300 group-hover:scale-105",
             }
-            div { class: "p-5",
-                if !tags.is_empty() {
-                    div { class: "flex flex-wrap gap-2 mb-2",
-                        for tag in tags.iter().take(3) {
-                            span {
-                                key: "{tag}",
-                                class: "text-xs px-2 py-0.5 rounded-full bg-[color:var(--color-accent-quiet)] text-[color:var(--color-accent)]",
-                                "{tag}"
-                            }
+        }
+        div { class: "p-5",
+            if !tags.is_empty() {
+                div { class: "flex flex-wrap gap-2 mb-2",
+                    for tag in tags.iter().take(3) {
+                        span {
+                            key: "{tag}",
+                            class: "text-xs px-2 py-0.5 rounded-full bg-[color:var(--color-accent-quiet)] text-[color:var(--color-accent)]",
+                            "{tag}"
                         }
                     }
                 }
-                h2 { class: "font-display font-semibold text-lg leading-snug group-hover:text-[color:var(--color-accent)]",
-                    "{title}"
+            }
+            h2 { class: "font-display font-semibold text-lg leading-snug group-hover:text-[color:var(--color-accent)]",
+                "{title}"
+            }
+            if !excerpt.is_empty() {
+                p { class: "mt-2 text-sm text-[color:var(--color-fg-muted)] line-clamp-3",
+                    "{excerpt}"
                 }
-                if !excerpt.is_empty() {
-                    p { class: "mt-2 text-sm text-[color:var(--color-fg-muted)] line-clamp-3",
-                        "{excerpt}"
-                    }
-                }
+            }
+        }
+    };
+
+    if lang == "en" {
+        rsx! {
+            Link {
+                to: Route::Article { slug: slug.clone() },
+                class: "{card_class}",
+                style: "{card_style}",
+                "data-search": "{haystack}",
+                {body}
+            }
+        }
+    } else {
+        rsx! {
+            Link {
+                to: Route::LangArticle { lang: lang.clone(), slug: slug.clone() },
+                class: "{card_class}",
+                style: "{card_style}",
+                "data-search": "{haystack}",
+                {body}
             }
         }
     }
