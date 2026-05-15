@@ -13,8 +13,10 @@
 # Skips:
 #   - SVG / GIF (already vector / animated)
 #   - WebP companions of WebP files (no-op)
-#   - assets/videos/*-poster.jpg — those are video posters, not page
-#     content; serving them as WebP wouldn't shrink LCP.
+#
+# Video posters under assets/videos/*-poster.{jpg,png} ARE encoded — the
+# `<video poster>` attribute accepts WebP in all modern browsers and we no
+# longer ship JPG fallbacks.
 set -euo pipefail
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 

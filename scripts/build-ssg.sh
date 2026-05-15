@@ -22,11 +22,24 @@ echo "==> Pre-rendering every route via the server binary"
 echo "==> Compiling Tailwind v4 CSS"
 ./scripts/build-tailwind.sh "$OUT"
 
-echo "==> Copying assets/ → $OUT/assets"
+echo "==> Copying assets/ → $OUT/assets (skipping raw raster/MP4 sources)"
 mkdir -p "$OUT/assets"
-cp -R assets/. "$OUT/assets/" 2>/dev/null || true
+# Only ship optimized formats — .webp/.webm are canonical, .svg/.gif/.ico
+# pass through unchanged. Source .png/.jpg/.jpeg/.mp4 are dev-only and
+# deliberately excluded so SEO crawlers can't index duplicate raster URLs.
+#
+# Exception: assets/brand/** keeps its PNGs — favicons, apple-touch-icon,
+# Organization JSON-LD logo, and og:image URLs all need PNG for crawler /
+# OS-icon-consumer compatibility. wrap-webp.py has the matching exemption.
+rsync -a \
+  --include 'brand/***' \
+  --exclude '*.png' --exclude '*.PNG' \
+  --exclude '*.jpg' --exclude '*.JPG' \
+  --exclude '*.jpeg' --exclude '*.JPEG' \
+  --exclude '*.mp4' --exclude '*.MP4' \
+  assets/ "$OUT/assets/"
 
-echo "==> Wrapping <img> tags in <picture>+webp (browsers get the smaller file)"
+echo "==> Rewriting <img src> to .webp directly (no <picture> fallback)"
 python3 ./scripts/wrap-webp.py "$OUT"
 
 echo "==> Generating sitemap.xml + robots.txt"
