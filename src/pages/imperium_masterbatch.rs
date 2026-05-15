@@ -111,7 +111,7 @@ fn SolvingProblems() -> Element {
                 // Left: image (farming hemp)
                 div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
-                        src: "/assets/pages/imperium-masterbatch/farming-hemp.jpeg",
+                        src: "/assets/pages/heartland-farmers/farming-hemp-michigan.webp",
                         alt: "Farming hemp — Heartland's industrial hemp supply chain",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

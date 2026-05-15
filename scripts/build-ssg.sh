@@ -39,6 +39,13 @@ rsync -a \
   --exclude '*.mp4' --exclude '*.MP4' \
   assets/ "$OUT/assets/"
 
+# Sweep stale rasters/MP4s left behind by prior builds (rsync above doesn't
+# --delete, since other build steps write tailwind*.css into $OUT/assets/).
+# brand/** is preserved — it's the only place we ship PNG.
+find "$OUT/assets" -type f \( \
+    -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.mp4' \
+  \) -not -path "$OUT/assets/brand/*" -delete
+
 echo "==> Rewriting <img src> to .webp directly (no <picture> fallback)"
 python3 ./scripts/wrap-webp.py "$OUT"
 
