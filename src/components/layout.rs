@@ -158,19 +158,21 @@ fn ColumnHeading(label: &'static str) -> Element {
 fn ProductsDropdown() -> Element {
     rsx! {
         div { class: "relative group",
-            button { class: "inline-flex items-center gap-1 font-bold hover:text-[color:var(--color-accent)]", r#type: "button", aria_haspopup: "true",
+            button {
+                class: "inline-flex items-center gap-1 font-bold hover:text-[color:var(--color-accent)]",
+                r#type: "button",
+                aria_haspopup: "true",
                 "Products"
                 svg { width: "12", height: "12", view_box: "0 0 24 24", fill: "none", stroke: "currentColor", stroke_width: "2",
                     polyline { points: "6 9 12 15 18 9" }
                 }
             }
-            div { class: "absolute left-0 top-full pt-2 invisible group-hover:visible group-focus-within:visible",
+            div { class: "absolute left-0 top-full pt-2 invisible group-hover:visible group-has-[:focus-visible]:visible",
                 div { class: "nav-dropdown-panel min-w-60 rounded-lg bg-[color:var(--color-surface)] border border-[color:var(--color-border)] p-2 shadow-xl",
+                    DropdownItem { to: Route::ImperiumFibers {}, title: "Imperium Textile" }
                     DropdownItem { to: Route::ImperiumMasterbatch {}, title: "Imperium Masterbatch" }
                     DropdownItem { to: Route::ImperiumFilledResin {}, title: "Performance Plastics" }
-                    DropdownItem { to: Route::ImperiumFiller {}, title: "Imperium Filler" }
-                    DropdownItem { to: Route::ImperiumFibers {}, title: "Imperium Textile Fiber" }
-                    DropdownItem { to: Route::ImperiumAnimalFeed {}, title: "Imperium Animal Feed" }
+                    DropdownItem { to: Route::CarbonNeutralPackaging {}, title: "Pallets & Bins" }
                 }
             }
         }
@@ -181,13 +183,16 @@ fn ProductsDropdown() -> Element {
 fn IndustriesDropdown() -> Element {
     rsx! {
         div { class: "relative group",
-            button { class: "inline-flex items-center gap-1 font-bold hover:text-[color:var(--color-accent)]", r#type: "button", aria_haspopup: "true",
+            button {
+                class: "inline-flex items-center gap-1 font-bold hover:text-[color:var(--color-accent)]",
+                r#type: "button",
+                aria_haspopup: "true",
                 "Industries"
                 svg { width: "12", height: "12", view_box: "0 0 24 24", fill: "none", stroke: "currentColor", stroke_width: "2",
                     polyline { points: "6 9 12 15 18 9" }
                 }
             }
-            div { class: "absolute left-0 top-full pt-2 invisible group-hover:visible group-focus-within:visible",
+            div { class: "absolute left-0 top-full pt-2 invisible group-hover:visible group-has-[:focus-visible]:visible",
                 div { class: "nav-dropdown-panel rounded-lg bg-[color:var(--color-surface)] border border-[color:var(--color-border)] p-2 shadow-xl grid grid-cols-2 gap-2 min-w-[28rem]",
                     div {
                         ColumnHeading { label: "Markets" }
@@ -197,6 +202,7 @@ fn IndustriesDropdown() -> Element {
                         DropdownItem { to: Route::SustainableBuilding {}, title: "Construction" }
                         DropdownItem { to: Route::Marine {}, title: "Marine" }
                         DropdownItem { to: Route::Government {}, title: "Government" }
+                        DropdownItem { to: Route::ImperiumAnimalFeed {}, title: "Animal Feed" }
                     }
                     div {
                         ColumnHeading { label: "Materials" }
@@ -217,13 +223,16 @@ fn IndustriesDropdown() -> Element {
 fn ResourcesDropdown() -> Element {
     rsx! {
         div { class: "relative group",
-            button { class: "inline-flex items-center gap-1 font-bold hover:text-[color:var(--color-accent)]", r#type: "button", aria_haspopup: "true",
+            button {
+                class: "inline-flex items-center gap-1 font-bold hover:text-[color:var(--color-accent)]",
+                r#type: "button",
+                aria_haspopup: "true",
                 "Resources"
                 svg { width: "12", height: "12", view_box: "0 0 24 24", fill: "none", stroke: "currentColor", stroke_width: "2",
                     polyline { points: "6 9 12 15 18 9" }
                 }
             }
-            div { class: "absolute right-0 top-full pt-2 invisible group-hover:visible group-focus-within:visible",
+            div { class: "absolute right-0 top-full pt-2 invisible group-hover:visible group-has-[:focus-visible]:visible",
                 div { class: "nav-dropdown-panel rounded-lg bg-[color:var(--color-surface)] border border-[color:var(--color-border)] p-2 shadow-xl grid grid-cols-3 gap-2 min-w-[42rem]",
                     div {
                         ColumnHeading { label: "Innovation" }
@@ -253,13 +262,16 @@ fn ResourcesDropdown() -> Element {
 fn AboutDropdown() -> Element {
     rsx! {
         div { class: "relative group",
-            button { class: "inline-flex items-center gap-1 font-bold hover:text-[color:var(--color-accent)]", r#type: "button", aria_haspopup: "true",
+            button {
+                class: "inline-flex items-center gap-1 font-bold hover:text-[color:var(--color-accent)]",
+                r#type: "button",
+                aria_haspopup: "true",
                 "About Us"
                 svg { width: "12", height: "12", view_box: "0 0 24 24", fill: "none", stroke: "currentColor", stroke_width: "2",
                     polyline { points: "6 9 12 15 18 9" }
                 }
             }
-            div { class: "absolute right-0 top-full pt-2 invisible group-hover:visible group-focus-within:visible",
+            div { class: "absolute right-0 top-full pt-2 invisible group-hover:visible group-has-[:focus-visible]:visible",
                 div { class: "nav-dropdown-panel min-w-60 rounded-lg bg-[color:var(--color-surface)] border border-[color:var(--color-border)] p-2 shadow-xl",
                     DropdownItem { to: Route::Team {}, title: "Team" }
                     DropdownItem { to: Route::Farmers {}, title: "Our Farmers" }
@@ -278,11 +290,10 @@ fn MobileMenu(close: EventHandler<()>) -> Element {
                 MobileLink { to: Route::WhyImperium {}, label: "Why Imperium", close }
 
                 MobileSectionLabel { label: "Products" }
+                MobileLink { to: Route::ImperiumFibers {}, label: "Imperium Textile", close }
                 MobileLink { to: Route::ImperiumMasterbatch {}, label: "Imperium Masterbatch", close }
                 MobileLink { to: Route::ImperiumFilledResin {}, label: "Performance Plastics", close }
-                MobileLink { to: Route::ImperiumFiller {}, label: "Imperium Filler", close }
-                MobileLink { to: Route::ImperiumFibers {}, label: "Imperium Textile Fiber", close }
-                MobileLink { to: Route::ImperiumAnimalFeed {}, label: "Imperium Animal Feed", close }
+                MobileLink { to: Route::CarbonNeutralPackaging {}, label: "Pallets & Bins", close }
 
                 MobileSectionLabel { label: "Industries — Markets" }
                 MobileLink { to: Route::SustainablePlastic {}, label: "Plastic Compounding", close }
@@ -291,6 +302,7 @@ fn MobileMenu(close: EventHandler<()>) -> Element {
                 MobileLink { to: Route::SustainableBuilding {}, label: "Construction", close }
                 MobileLink { to: Route::Marine {}, label: "Marine", close }
                 MobileLink { to: Route::Government {}, label: "Government", close }
+                MobileLink { to: Route::ImperiumAnimalFeed {}, label: "Animal Feed", close }
 
                 MobileSectionLabel { label: "Industries — Materials" }
                 MobileLink { to: Route::SustainablePlastic {}, label: "Plastic", close }
@@ -400,7 +412,7 @@ pub fn Footer() -> Element {
                 FooterColumn {
                     title: "Products",
                     items: vec![
-                        ("Imperium Filler",        Route::ImperiumFiller {}),
+                        ("Imperium Masterbatch",   Route::ImperiumMasterbatch {}),
                         ("Imperium Textile Fiber", Route::ImperiumFibers {}),
                         ("Imperium Filled Resin",  Route::ImperiumFilledResin {}),
                         ("Why Imperium",           Route::WhyImperium {}),

@@ -17,8 +17,8 @@ pub fn ImperiumFibers() -> Element {
         }
 
         Hero {}
-        LogoCarousel { heading: "" }
         Section2 {}
+        LogoCarousel { heading: "" }
         Section4 {}
         DecarbSolutions {}
         SupplyChainSection6 {}
@@ -51,7 +51,15 @@ fn Hero() -> Element {
 #[component]
 fn Section2() -> Element {
     rsx! {
-        section { class: "container-content py-16 md:py-20",
+        section { class: "container-content pt-16 md:pt-24 pb-16 md:pb-20",
+            div { class: "flex justify-center mb-20 md:mb-24",
+                img {
+                    src: "/assets/brand/imperium-logo.png",
+                    alt: "Imperium",
+                    loading: "lazy",
+                    class: "h-20 md:h-24 w-auto",
+                }
+            }
             div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
                 // Left: text
                 div { class: "animate-fade-in-up md:order-1 order-2",

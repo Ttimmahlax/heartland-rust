@@ -4,6 +4,7 @@ use dioxus::prelude::*;
 
 mod components;
 mod content;
+mod i18n;
 mod pages;
 mod seo;
 mod tracking;

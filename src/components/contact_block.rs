@@ -140,10 +140,10 @@ pub fn ContactBlock(props: ContactBlockProps) -> Element {
                 OfficesMap {}
 
                 // RIGHT: HubSpot form
-                div { class: "surface-glass rounded-xl p-6 md:p-8 h-full flex flex-col",
+                div { class: "surface-glass rounded-xl p-6 md:p-8 h-full",
                     div {
                         id: "{target_id}",
-                        class: "hbspt-form-container min-h-[300px] flex-1",
+                        class: "hbspt-form-container min-h-[300px]",
                         // Fallback while JS hasn't loaded yet
                         p { class: "text-sm text-[color:var(--color-fg-muted)] italic",
                             "Loading contact form…"
@@ -177,49 +177,108 @@ pub fn ContactBlock(props: ContactBlockProps) -> Element {
 
 #[component]
 fn OfficesMap() -> Element {
-    // City positions are percentages of the world-map.svg viewBox (the
-    // Wikimedia "World_map_-_low_resolution.svg" uses Equirectangular-ish
-    // projection over a 950×620 viewBox). Adjust if the map source changes.
+    // Map and pin overlay share the same `viewBox`, so pin positions are
+    // in the source SVG's equirectangular pixel space — not CSS percentages
+    // of the rendered box. Office coordinates were derived from a 10-country
+    // linear fit (R² ≈ 0.998 for longitude, 0.994 for latitude); see
+    // /tmp/probe_projection2.py in the git history.
+    //
+    //   x_pixel ≈ 2.708 · lon + 453.8
+    //   y_pixel ≈ -3.377 · lat + 342.3
     rsx! {
-        // Outer container fills the form's column height (parent uses
-        // `items-stretch`). The inner wrapper preserves the SVG's natural
-        // 950×620 aspect ratio so pin percentages stay accurate, while
-        // centering inside the taller outer box.
-        div { class: "relative rounded-xl overflow-hidden bg-[color:var(--color-surface)] border border-[color:var(--color-border)] h-full min-h-[400px] lg:min-h-[500px] flex items-center justify-center p-4 md:p-6",
-            div { class: "relative w-full aspect-[950/620] max-h-full",
+        // Bubble fills the form column's height (`h-full` + parent grid's
+        // `items-stretch`). The map and the pin overlay both fill the inner
+        // box and both crop with the SAME anchor (xMidYMid = center) — the
+        // `<img>` via `object-cover`, the overlay `<svg>` via
+        // `preserveAspectRatio="xMidYMid slice"`. Same crop, same viewBox,
+        // so the pins stay glued to their countries regardless of column
+        // aspect ratio.
+        div { class: "relative rounded-xl overflow-hidden bg-[color:var(--color-surface)] border border-[color:var(--color-border)] p-4 md:p-6 h-full",
+            div { class: "relative w-full h-full min-h-[300px]",
                 img {
                     src: "/assets/brand/world-map.svg",
                     alt: "Heartland office locations: Detroit, New York, and Paris.",
-                    class: "block w-full h-full object-contain opacity-90 dark:opacity-80 dark:invert",
+                    class: "block w-full h-full object-cover opacity-90 dark:opacity-80 dark:invert select-none",
                     loading: "lazy",
+                    draggable: "false",
                 }
-                // Pins are positioned in percent space relative to the
-                // inner wrapper, which exactly matches the image's natural
-                // aspect — so the coordinates land on the right city
-                // regardless of the outer container's size.
-                MapPin { top_pct: "31%", left_pct: "23%", city: "Detroit" }
-                MapPin { top_pct: "32%", left_pct: "26%", city: "New York" }
-                MapPin { top_pct: "23%", left_pct: "48%", city: "Paris" }
+                svg {
+                    class: "absolute inset-0 w-full h-full pointer-events-none",
+                    view_box: "0 0 950 620",
+                    preserve_aspect_ratio: "xMidYMid slice",
+
+                    // Detroit (label to the left so it doesn't collide with NYC's)
+                    OfficeMarker {
+                        cx: 229, cy: 199,
+                        label: "Detroit",
+                        label_x: 210, label_y: 207, label_anchor: "end",
+                    }
+                    // New York (label to the right)
+                    OfficeMarker {
+                        cx: 253, cy: 205,
+                        label: "New York",
+                        label_x: 272, label_y: 213, label_anchor: "start",
+                    }
+                    // Paris (label to the right)
+                    OfficeMarker {
+                        cx: 460, cy: 177,
+                        label: "Paris",
+                        label_x: 479, label_y: 185, label_anchor: "start",
+                    }
+                }
             }
         }
     }
 }
 
 #[component]
-fn MapPin(top_pct: &'static str, left_pct: &'static str, city: &'static str) -> Element {
-    let style = format!("top: {top_pct}; left: {left_pct}; transform: translate(-50%, -50%);");
+fn OfficeMarker(
+    cx: i32, cy: i32,
+    label: &'static str,
+    label_x: i32, label_y: i32,
+    label_anchor: &'static str,
+) -> Element {
     rsx! {
-        div {
-            class: "absolute z-10 pointer-events-none",
-            style: "{style}",
-            // Outer pulse ring (animated via Tailwind's animate-ping)
-            span { class: "absolute inset-0 rounded-full bg-[color:var(--color-accent)] opacity-40 animate-ping w-4 h-4" }
-            // Solid dot
-            span { class: "relative block w-3 h-3 rounded-full bg-[color:var(--color-accent)] ring-2 ring-white shadow-md" }
-            // Inline city label
-            span { class: "absolute left-4 top-1/2 -translate-y-1/2 text-xs md:text-sm font-bold text-[color:var(--color-fg)] whitespace-nowrap drop-shadow",
-                "{city}"
+        // Radii and font are sized in viewBox units (0..950 × 0..620). At a
+        // typical 520px-wide column the SVG renders at ~0.55× scale, so the
+        // numbers below produce ~7–8px dots and ~15px label text on desktop,
+        // ~5–6px dots and ~10–11px labels on mobile.
+        //
+        // Pulse ring — SMIL animation (universally supported in evergreen
+        // browsers; Chromium rolled back its 2016 deprecation).
+        circle {
+            cx: "{cx}", cy: "{cy}", r: "12",
+            fill: "var(--color-accent)",
+            opacity: "0.5",
+            animate {
+                attribute_name: "r",
+                values: "12; 26; 26",
+                dur: "2.1s",
+                repeat_count: "indefinite",
             }
+            animate {
+                attribute_name: "opacity",
+                values: "0.5; 0; 0",
+                dur: "2.1s",
+                repeat_count: "indefinite",
+            }
+        }
+        // Solid dot
+        circle {
+            cx: "{cx}", cy: "{cy}", r: "14",
+            fill: "var(--color-accent)",
+            stroke: "white", stroke_width: "2.5",
+        }
+        // Label — paint-order puts the stroke behind the fill as a halo so
+        // the label stays readable on both the light and the inverted-dark map.
+        text {
+            x: "{label_x}", y: "{label_y}",
+            font_size: "28", font_weight: "700",
+            text_anchor: "{label_anchor}",
+            fill: "var(--color-fg)",
+            stroke: "var(--color-bg)", stroke_width: "6",
+            paint_order: "stroke",
+            "{label}"
         }
     }
 }

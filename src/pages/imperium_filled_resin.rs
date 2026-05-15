@@ -19,9 +19,9 @@ pub fn ImperiumFilledResin() -> Element {
         }
 
         Hero {}
+        Section3 {}
         LogoCarousel { heading: "" }
         TitleBlock2 {}
-        Section3 {}
         Section4 {}
         Section5 {}
         MatsAmplify {}
@@ -74,7 +74,15 @@ fn TitleBlock2() -> Element {
 #[component]
 fn Section3() -> Element {
     rsx! {
-        section { class: "container-content py-16 md:py-20",
+        section { class: "container-content pt-16 md:pt-24 pb-16 md:pb-20",
+            div { class: "flex justify-center mb-20 md:mb-24",
+                img {
+                    src: "/assets/brand/imperium-logo.png",
+                    alt: "Imperium",
+                    loading: "lazy",
+                    class: "h-20 md:h-24 w-auto",
+                }
+            }
             div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
                 // Left: text
                 div { class: "animate-fade-in-up md:order-1 order-2",
@@ -108,8 +116,17 @@ fn Section4() -> Element {
     rsx! {
         section { class: "container-content py-16 md:py-20",
             div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
-                // Left: text
+                // Left: image
                 div { class: "animate-fade-in-up md:order-1 order-2",
+                    img {
+                        src: "/assets/pages/imperium-filled-resin/imperium-filled-resin-2.webp",
+                        alt: "",
+                        loading: "lazy",
+                        class: "w-full rounded-xl shadow-lg",
+                    }
+                }
+                // Right: text
+                div { class: "animate-fade-in-up md:order-2 order-1",
                     p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
                         "Sustainability Engineered For Mass Manufacturing"
                     }
@@ -122,15 +139,6 @@ fn Section4() -> Element {
                     }
                     p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
                         "Heartland's team has spent years understanding how bio-based materials bond and perform inside synthetic materials. We transfer this knowledge to our clients to speed up the time from proof of concept to commercialization."
-                    }
-                }
-                // Right: image
-                div { class: "animate-fade-in-up md:order-2 order-1",
-                    img {
-                        src: "/assets/pages/imperium-filled-resin/imperium-filled-resin-2.webp",
-                        alt: "",
-                        loading: "lazy",
-                        class: "w-full rounded-xl shadow-lg",
                     }
                 }
             }

@@ -18,7 +18,6 @@ pub fn ImperiumMasterbatch() -> Element {
         }
 
         Hero {}
-        ImperiumLogoStrip {}
         UnlockingSection {}
         LogoCarousel { heading: "" }
         SolvingProblems {}
@@ -53,10 +52,9 @@ fn Hero() -> Element {
 }
 
 #[component]
-fn ImperiumLogoStrip() -> Element {
+fn UnlockingSection() -> Element {
     rsx! {
-        section { class: "container-content pt-16 md:pt-24 pb-4 md:pb-8",
-            // Same logo + spacing pattern as the why-imperium ItsInOurRoots header.
+        section { class: "container-content pt-16 md:pt-24 pb-16 md:pb-20",
             div { class: "flex justify-center mb-20 md:mb-24",
                 img {
                     src: "/assets/brand/imperium-logo.png",
@@ -65,14 +63,6 @@ fn ImperiumLogoStrip() -> Element {
                     class: "h-20 md:h-24 w-auto",
                 }
             }
-        }
-    }
-}
-
-#[component]
-fn UnlockingSection() -> Element {
-    rsx! {
-        section { class: "container-content py-16 md:py-20",
             // Text LEFT, image RIGHT — matches the other product pages.
             div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
                 // Left: text
