@@ -2,23 +2,21 @@ use dioxus::prelude::*;
 
 use crate::components::logo_carousel::LogoCarousel;
 use crate::components::news_carousel::NewsCarousel;
-use crate::components::video_hero::VideoBackground;
 use crate::seo::Seo;
-use crate::Route;
 
 #[component]
 pub fn Team() -> Element {
     rsx! {
         Seo {
             title: "Heartland Team",
-            description: "Heartland's team is building Earth's most sustainable company by enabling our customers to exceed their sustainability goals.",
+            description: "Meet the Heartland Industries team — executives and advisors building the future of carbon-negative materials and sustainable supply chains.",
             path: "/heartland-team",
         }
 
         Hero {}
         LogoCarousel { heading: "" }
-        Body {}
-        ClosingCta {}
+        Executives {}
+        Advisors {}
         NewsCarousel { heading: "Related Articles" }
     }
 }
@@ -26,21 +24,70 @@ pub fn Team() -> Element {
 #[component]
 fn Hero() -> Element {
     rsx! {
+        // Reuses .video-hero-section / .video-hero-scrim / .video-hero-content
+        // so the header / scrim / animations behave identically to other pages.
+        // The video element is swapped for a static <img> filling the section.
         section {
             class: "video-hero-section section-soft-bottom min-h-[110vh] flex items-center pb-[20vh]",
-            VideoBackground { slug: "landing".to_string() }
+            img {
+                class: "video-hero-bg",
+                src: "/assets/pages/heartland-team/team-hero.png",
+                alt: "Heartland's Detroit, Michigan headquarters",
+                loading: "eager",
+            }
             div { class: "video-hero-scrim" }
             div { class: "video-hero-content container-content w-full py-24 md:py-32 text-center",
                 p { class: "text-[0.7438rem] uppercase tracking-[0.25em] text-white/90 mb-4 animate-fade-in",
-                    "Heartland Team"
+                    "Our Heartland To Yours"
                 }
                 h1 {
                     class: "text-3xl md:text-5xl font-extrabold leading-tight uppercase tracking-tight text-white max-w-4xl mx-auto animate-fade-in-up",
-                    "Heartland team"
+                    "The Heartland"
+                    br {}
+                    "Team"
                 }
-                p {
-                    class: "mt-5 max-w-2xl mx-auto text-base md:text-lg text-white/85 animate-fade-in-up delay-1",
-                    "Heartland’s values are grounded in education, innovation, and collaboration. Every day we work alongside our partners to build a more sustainable future."
+            }
+        }
+    }
+}
+
+/// Compile-time data table of teammates. Order = display order.
+#[derive(Clone, Copy, PartialEq)]
+struct Person {
+    slug: &'static str,
+    name: &'static str,
+    role: &'static str,
+}
+
+const EXECUTIVES: &[Person] = &[
+    Person { slug: "john-ely",        name: "John Ely",        role: "Chief Executive Officer" },
+    Person { slug: "tim-almond",      name: "Tim Almond",      role: "Chairman & Chief Operating Officer" },
+    Person { slug: "robby-dameron",   name: "Robby Dameron",   role: "Materials Science" },
+    Person { slug: "markus-von-graf", name: "Markus Von Graf", role: "Strategy & Capital Markets" },
+];
+
+const ADVISORS: &[Person] = &[
+    Person { slug: "eric-austermann", name: "Eric Austermann", role: "Engineering Advisor" },
+    Person { slug: "roger-blackwell", name: "Roger Blackwell", role: "Senior Advisor" },
+    Person { slug: "deborah-labelle", name: "Deborah Labelle", role: "General Counsel" },
+];
+
+#[component]
+fn Executives() -> Element {
+    rsx! {
+        section { class: "container-content py-16 md:py-20",
+            div { class: "text-center mb-12 max-w-3xl mx-auto",
+                p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                    "Leadership"
+                }
+                h2 { class: "text-3xl md:text-5xl font-bold leading-tight",
+                    "Heartland "
+                    span { class: "text-gradient-red", "Executives" }
+                }
+            }
+            div { class: "grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8",
+                for p in EXECUTIVES.iter() {
+                    TeamCard { key: "{p.slug}", person: *p }
                 }
             }
         }
@@ -48,47 +95,48 @@ fn Hero() -> Element {
 }
 
 #[component]
-fn Body() -> Element {
+fn Advisors() -> Element {
     rsx! {
-        section { class: "container-content py-16 md:py-20",
-            div { class: "max-w-3xl mx-auto mb-16 animate-fade-in-up",
-                h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 text-center", "Our Heartland To Yours" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland’s values are grounded in education, innovation, and collaboration. Every day we work alongside our partners to build a more sustainable future." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Become Earth's Most Sustainable Company" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Streamline Sustainable Material Innovation" }
-            }
-            figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/heartland-team/untitled-design-6.png", alt: "heartland executive tim almond", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
-            }
-            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
-                div { class: "md:order-2",
-                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Throughout The Supply Chain" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland has a team of scientists, engineers, and technologists working alongside our executive team and advisors to fulfill our commitment to sustainable innovation." }
+        section { class: "container-content pb-16 md:pb-24",
+            div { class: "text-center mb-12 max-w-3xl mx-auto",
+                p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                    "Supply Chain & Strategy"
                 }
-                div { class: "md:order-1",
-                    img {
-                        src: "/assets/pages/heartland-team/untitled-design-6.png",
-                        alt: "Eric Austermann",
-                        loading: "lazy",
-                        class: "w-full rounded-xl shadow-lg",
-                    }
+                h2 { class: "text-3xl md:text-5xl font-bold leading-tight",
+                    "Heartland "
+                    span { class: "text-gradient-red", "Advisors" }
                 }
             }
-            figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/heartland-team/foam-7.png", alt: "greentown labs heartland", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
-            }        }
+            div { class: "grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto",
+                for p in ADVISORS.iter() {
+                    TeamCard { key: "{p.slug}", person: *p }
+                }
+            }
+        }
     }
 }
 
 #[component]
-fn ClosingCta() -> Element {
+fn TeamCard(person: Person) -> Element {
+    let img_src = format!("/assets/pages/heartland-team/{}.png", person.slug);
+    let alt = format!("{} — {}", person.name, person.role);
     rsx! {
-        section { class: "bg-mesh-dramatic py-20 my-12 section-soft-edges",
-            div { class: "container-content text-center",
-                h2 { class: "text-3xl md:text-4xl font-bold mb-6 max-w-2xl mx-auto",
-                    "Learn more about Heartland"
+        div { class: "group surface-glass rounded-xl overflow-hidden text-center animate-fade-in-up",
+            div { class: "aspect-[3/4] overflow-hidden bg-[color:var(--color-surface)]",
+                img {
+                    src: "{img_src}",
+                    alt: "{alt}",
+                    loading: "lazy",
+                    class: "w-full h-full object-cover transition-transform duration-300 group-hover:scale-105",
                 }
-                Link { to: Route::Contact {}, class: "btn-accent-gradient", "Get in touch" }
+            }
+            div { class: "p-4 md:p-5",
+                h3 { class: "text-base md:text-lg font-display font-bold mb-1 group-hover:text-[color:var(--color-accent)]",
+                    "{person.name}"
+                }
+                p { class: "text-xs md:text-sm text-[color:var(--color-fg-muted)] leading-snug",
+                    "{person.role}"
+                }
             }
         }
     }

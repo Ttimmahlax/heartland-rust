@@ -20,11 +20,14 @@ pub struct MarketsAmplifyProps {
 #[component]
 pub fn MarketsAmplify(props: MarketsAmplifyProps) -> Element {
     let has_blurb = !props.blurb.is_empty();
+    let has_eyebrow = !props.eyebrow.is_empty();
     rsx! {
         section { class: "container-content py-16 md:py-20",
             div { class: "text-center mb-12 max-w-3xl mx-auto",
-                p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
-                    "{props.eyebrow}"
+                if has_eyebrow {
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "{props.eyebrow}"
+                    }
                 }
                 h2 { class: "text-3xl md:text-4xl font-bold mb-4",
                     "{props.heading}"

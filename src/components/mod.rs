@@ -1,3 +1,4 @@
+pub mod carbon_calculator;
 pub mod contact_block;
 pub mod decarb_solutions;
 pub mod layout;
@@ -7,4 +8,5 @@ pub mod markets_amplify;
 pub mod mats_amplify;
 pub mod news_carousel;
 pub mod stat_counters;
+pub mod supply_chain;
 pub mod video_hero;

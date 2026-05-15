@@ -1,10 +1,13 @@
 use dioxus::prelude::*;
 
+use crate::components::carbon_calculator::CarbonCalculator;
+use crate::components::decarb_solutions::DecarbSolutions;
 use crate::components::logo_carousel::LogoCarousel;
+use crate::components::mats_amplify::MatsAmplify;
 use crate::components::news_carousel::NewsCarousel;
+use crate::components::supply_chain::{SupplyChainStep, SupplyIcon};
 use crate::components::video_hero::VideoBackground;
 use crate::seo::Seo;
-use crate::Route;
 
 #[component]
 pub fn ImperiumFilledResin() -> Element {
@@ -17,8 +20,14 @@ pub fn ImperiumFilledResin() -> Element {
 
         Hero {}
         LogoCarousel { heading: "" }
-        Body {}
-        ClosingCta {}
+        TitleBlock2 {}
+        Section3 {}
+        Section4 {}
+        Section5 {}
+        MatsAmplify {}
+        SupplyChainSection7 {}
+        DecarbSolutions {}
+        CarbonCalculator {}
         NewsCarousel { heading: "Related Articles" }
     }
 }
@@ -36,11 +45,9 @@ fn Hero() -> Element {
                 }
                 h1 {
                     class: "text-3xl md:text-5xl font-extrabold leading-tight uppercase tracking-tight text-white max-w-4xl mx-auto animate-fade-in-up",
-                    "Low carbon footprint plastic"
-                }
-                p {
-                    class: "mt-5 max-w-2xl mx-auto text-base md:text-lg text-white/85 animate-fade-in-up delay-1",
-                    "Brands and suppliers can now replace talc and calcium-filled plastics with Imperium-filled resin. Heartland's natural fiber-filled plastic allows brands and suppliers to quickly prototype with resins…"
+                    "Low carbon"
+                    br {}
+                    "footprint plastic"
                 }
             }
         }
@@ -48,84 +55,169 @@ fn Hero() -> Element {
 }
 
 #[component]
-fn Body() -> Element {
+fn TitleBlock2() -> Element {
+    rsx! {
+        section { class: "container-content py-12 md:py-16",
+            div { class: "max-w-3xl mx-auto text-center",
+                p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                    "Carbon Negative Reinforcement"
+                }
+                h2 { class: "text-3xl md:text-5xl font-bold leading-tight",
+                    "Powered "
+                    span { class: "text-gradient-red", "To Perform" }
+                }
+            }
+        }
+    }
+}
+
+#[component]
+fn Section3() -> Element {
     rsx! {
         section { class: "container-content py-16 md:py-20",
-            figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/imperium-filled-resin/20-imperium-reinforced-polypropylene.png", alt: "20% imperium reinforced Polypropylene", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
-            }
-            figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/imperium-filled-resin/20-glass-fiber-20-imperium-reinforced-pp.png", alt: "20% glass fiber 20% imperium reinforced PP", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
-            }
-            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
-                div { class: "md:order-2",
-                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Same Resin. Lower Cost. Made With Imperium Masterbatch" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Brands and suppliers can now replace talc and calcium-filled plastics with Imperium-filled resin. Heartland's natural fiber-filled plastic allows brands and suppliers to quickly prototype with resins that exceed sustainability mandates." }
+            div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
+                // Left: text
+                div { class: "animate-fade-in-up md:order-1 order-2",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Natural Fiber-Filled Plastic"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "Same Resin. Lower Cost. "
+                        span { class: "text-gradient-red", "Made With Imperium Masterbatch" }
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
+                        "Brands and suppliers can now replace talc and calcium-filled plastics with Imperium-filled resin. Heartland's natural fiber-filled plastic allows brands and suppliers to quickly prototype with resins that exceed sustainability mandates."
+                    }
                 }
-                div { class: "md:order-1",
+                // Right: image
+                div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
                         src: "/assets/pages/imperium-filled-resin/imperium-filled-resin-2-1.png",
-                        alt: "Same Resin. Lower Cost. Made With Imperium Masterbatch",
+                        alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
                     }
                 }
             }
-            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
-                div { class: "md:order-1",
-                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Years of Sustainable Material Innovation in Weeks" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "As a sustainability partner, Heartland supports brands and suppliers with proven formulas and processes." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland's team has spent years understanding how bio-based materials bond and perform inside synthetic materials. We transfer this knowledge to our clients to speed up the time from proof of concept to commercialization." }
+        }
+    }
+}
+
+#[component]
+fn Section4() -> Element {
+    rsx! {
+        section { class: "container-content py-16 md:py-20",
+            div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
+                // Left: text
+                div { class: "animate-fade-in-up md:order-1 order-2",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Sustainability Engineered For Mass Manufacturing"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "Years of Sustainable "
+                        span { class: "text-gradient-red", "Material Innovation in Weeks" }
+                    }
+                    p { class: "text-lg font-medium text-[color:var(--color-accent)] mb-4",
+                        "As a sustainability partner, Heartland supports brands and suppliers with proven formulas and processes."
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
+                        "Heartland's team has spent years understanding how bio-based materials bond and perform inside synthetic materials. We transfer this knowledge to our clients to speed up the time from proof of concept to commercialization."
+                    }
                 }
-                div { class: "md:order-2",
+                // Right: image
+                div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
                         src: "/assets/pages/imperium-filled-resin/imperium-filled-resin-2.png",
-                        alt: "Years of Sustainable Material Innovation in Weeks",
+                        alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
                     }
                 }
             }
-            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
-                div { class: "md:order-2",
-                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Unlocking The Sustainable Future We Need And Deserve" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland's materials replace and augment additives like talc, calcium carbonate, fiberglass, and carbon black." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "We work with global brands and their suppliers to predictably reduce the carbon footprint of everyday products without any retooling costs." }
+        }
+    }
+}
+
+#[component]
+fn Section5() -> Element {
+    rsx! {
+        section { class: "container-content py-16 md:py-20",
+            div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
+                // Left: text
+                div { class: "animate-fade-in-up md:order-1 order-2",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Augmenting Mined & Synthetic Additives"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "Unlocking The Sustainable Future "
+                        span { class: "text-gradient-red", "We Need And Deserve" }
+                    }
+                    p { class: "text-lg font-medium text-[color:var(--color-accent)] mb-4",
+                        "Heartland's materials replace and augment additives like talc, calcium carbonate, fiberglass, and carbon black."
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
+                        "We work with global brands and their suppliers to predictably reduce the carbon footprint of everyday products without any retooling costs."
+                    }
                 }
-                div { class: "md:order-1",
+                // Right: image
+                div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/imperium-masterbatch/sustainable-future-heartland.png",
+                        src: "/assets/pages/landing/sustainable-future-heartland.png",
                         alt: "sustainable future heartland",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
                     }
                 }
             }
-            figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/why-imperium/heartland-plastic-picture-3.png", alt: "Markets We Amplify", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
-            }
-            figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/why-imperium/heartland-packaging-plastic-pallets.png", alt: "", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
-            }
-            div { class: "max-w-3xl mx-auto mb-16 animate-fade-in-up",
-                h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 text-center", "Throughout The Supply Chain" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland partners with corn, wheat, and soy farmers to embed industrial hemp into their crop rotation. Our USDA Grant has given us unique insights into industrial hemp farming, regenerative agriculture, and carbon sequestration." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Compounder Heartland partners with plastic compounders to augment talc, calcium, and glass without any retooling costs. Our Imperium masterbatch solves dust, flammability, bonding, and bulk density problems typically associated with bio-based additives." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Converter Heartland partners with plastic converters to ensure the hemp-filled resin is processed properly. Our team works alongside component part manufacturers to process natural fiber-filled plastic with the same molds used today." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Brand Heartland is the sustainability partner for brands on their journey to reduce their carbon footprint. Our team helps create stakeholder alignment so companies can effectively communicate the value of sustainable material innovation." }
-            }        }
+        }
     }
 }
 
 #[component]
-fn ClosingCta() -> Element {
+fn SupplyChainSection7() -> Element {
     rsx! {
-        section { class: "bg-mesh-dramatic py-20 my-12 section-soft-edges",
-            div { class: "container-content text-center",
-                h2 { class: "text-3xl md:text-4xl font-bold mb-6 max-w-2xl mx-auto",
-                    "Learn more about Low"
+        section { class: "bg-mesh-dramatic py-20 md:py-28 my-12 section-soft-edges",
+            div { class: "container-content",
+                div { class: "text-center mb-16 max-w-3xl mx-auto",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Your Sustainability Partner"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight",
+                        "Throughout The "
+                        span { class: "text-gradient-red", "Supply Chain" }
+                    }
                 }
-                Link { to: Route::Contact {}, class: "btn-accent-gradient", "Get in touch" }
+                div { class: "relative",
+                    div { class: "hidden md:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-px bg-gradient-to-b from-transparent via-[color:var(--color-accent)] to-transparent opacity-40" }
+                    SupplyChainStep {
+                        number: 1,
+                        icon: SupplyIcon::Tractor,
+                        heading: "Farmer",
+                        body: "Heartland partners with corn, wheat, and soy farmers to embed industrial hemp into their crop rotation. Our USDA Grant has given us unique insights into industrial hemp farming, regenerative agriculture, and carbon sequestration.",
+                        align_right: false,
+                    }
+                    SupplyChainStep {
+                        number: 2,
+                        icon: SupplyIcon::Blender,
+                        heading: "Compounder",
+                        body: "Heartland partners with plastic compounders to augment talc, calcium, and glass without any retooling costs. Our Imperium masterbatch solves dust, flammability, bonding, and bulk density problems typically associated with bio-based additives.",
+                        align_right: true,
+                    }
+                    SupplyChainStep {
+                        number: 3,
+                        icon: SupplyIcon::Gears,
+                        heading: "Converter",
+                        body: "Heartland partners with plastic converters to ensure the hemp-filled resin is processed properly. Our team works alongside component part manufacturers to process natural fiber-filled plastic with the same molds used today.",
+                        align_right: false,
+                    }
+                    SupplyChainStep {
+                        number: 4,
+                        icon: SupplyIcon::Store,
+                        heading: "Brand",
+                        body: "Heartland is the sustainability partner for brands on their journey to reduce their carbon footprint. Our team helps create stakeholder alignment so companies can effectively communicate the value of sustainable material innovation.",
+                        align_right: true,
+                    }
+                }
             }
         }
     }

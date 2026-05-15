@@ -546,9 +546,9 @@ body:has(.video-hero-section) .site-header:not([data-scrolled]) .site-header-cta
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .video-hero-bg {
-    /* Pause autoplay; the poster stays visible because the video element
-       falls back to its `poster` attribute when not playing. */
+  /* Pause autoplay for video heroes only — image heroes (e.g. /heartland-team)
+     also use .video-hero-bg but should remain visible. */
+  video.video-hero-bg {
     display: none;
   }
 }

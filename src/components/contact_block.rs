@@ -181,22 +181,26 @@ fn OfficesMap() -> Element {
     // Wikimedia "World_map_-_low_resolution.svg" uses Equirectangular-ish
     // projection over a 950×620 viewBox). Adjust if the map source changes.
     rsx! {
-        // Container stretches to match the form column height (parent uses
-        // `items-stretch`). The map image fills the entire box with
-        // `object-cover` so it visually balances the form on the right.
-        div { class: "relative rounded-xl overflow-hidden bg-[color:var(--color-surface)] border border-[color:var(--color-border)] h-full min-h-[400px] lg:min-h-[500px]",
-            img {
-                src: "/assets/brand/world-map.svg",
-                alt: "Heartland office locations: Detroit, New York, and Paris.",
-                class: "absolute inset-0 w-full h-full object-cover opacity-90 dark:opacity-80 dark:invert",
-                loading: "lazy",
+        // Outer container fills the form's column height (parent uses
+        // `items-stretch`). The inner wrapper preserves the SVG's natural
+        // 950×620 aspect ratio so pin percentages stay accurate, while
+        // centering inside the taller outer box.
+        div { class: "relative rounded-xl overflow-hidden bg-[color:var(--color-surface)] border border-[color:var(--color-border)] h-full min-h-[400px] lg:min-h-[500px] flex items-center justify-center p-4 md:p-6",
+            div { class: "relative w-full aspect-[950/620] max-h-full",
+                img {
+                    src: "/assets/brand/world-map.svg",
+                    alt: "Heartland office locations: Detroit, New York, and Paris.",
+                    class: "block w-full h-full object-contain opacity-90 dark:opacity-80 dark:invert",
+                    loading: "lazy",
+                }
+                // Pins are positioned in percent space relative to the
+                // inner wrapper, which exactly matches the image's natural
+                // aspect — so the coordinates land on the right city
+                // regardless of the outer container's size.
+                MapPin { top_pct: "31%", left_pct: "23%", city: "Detroit" }
+                MapPin { top_pct: "32%", left_pct: "26%", city: "New York" }
+                MapPin { top_pct: "23%", left_pct: "48%", city: "Paris" }
             }
-            // Pin overlay — positioned in percent space relative to the
-            // container (which matches the image's coordinate system since
-            // both use object-cover with the same aspect).
-            MapPin { top_pct: "37%", left_pct: "23%", city: "Detroit" }
-            MapPin { top_pct: "39%", left_pct: "27%", city: "New York" }
-            MapPin { top_pct: "30%", left_pct: "49%", city: "Paris" }
         }
     }
 }

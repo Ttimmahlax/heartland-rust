@@ -1,10 +1,11 @@
 use dioxus::prelude::*;
 
+use crate::components::decarb_solutions::DecarbSolutions;
 use crate::components::logo_carousel::LogoCarousel;
 use crate::components::news_carousel::NewsCarousel;
+use crate::components::supply_chain::{SupplyChainStep, SupplyIcon};
 use crate::components::video_hero::VideoBackground;
 use crate::seo::Seo;
-use crate::Route;
 
 #[component]
 pub fn SustainableConcrete() -> Element {
@@ -17,8 +18,11 @@ pub fn SustainableConcrete() -> Element {
 
         Hero {}
         LogoCarousel { heading: "" }
-        Body {}
-        ClosingCta {}
+        Section1 {}
+        Section2 {}
+        DecarbSolutions {}
+        Section4 {}
+        SupplyChainSection5 {}
         NewsCarousel { heading: "Related Articles" }
     }
 }
@@ -36,11 +40,9 @@ fn Hero() -> Element {
                 }
                 h1 {
                     class: "text-3xl md:text-5xl font-extrabold leading-tight uppercase tracking-tight text-white max-w-4xl mx-auto animate-fade-in-up",
-                    "Sustainable Concrete additives"
-                }
-                p {
-                    class: "mt-5 max-w-2xl mx-auto text-base md:text-lg text-white/85 animate-fade-in-up delay-1",
-                    "One of the most consumed materials on the planet is concrete. Today, traditional concrete includes aggregate, cement, and other materials. Heartland's partners are formulating lower-carbon-footprint concrete."
+                    "Sustainable"
+                    br {}
+                    "Concrete additives"
                 }
             }
         }
@@ -48,59 +50,95 @@ fn Hero() -> Element {
 }
 
 #[component]
-fn Body() -> Element {
+fn Section1() -> Element {
     rsx! {
         section { class: "container-content py-16 md:py-20",
-            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
-                div { class: "md:order-2",
-                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Natural Fiber Reinforced Concrete" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "One of the most consumed materials on the planet is concrete. Today, traditional concrete includes aggregate, cement, and other materials. Heartland's partners are formulating lower-carbon-footprint concrete." }
+            div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
+                // Left: text
+                div { class: "animate-fade-in-up md:order-1 order-2",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Carbon-Negative Additives"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "Natural Fiber "
+                        span { class: "text-gradient-red", "Reinforced Concrete" }
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
+                        "One of the most consumed materials on the planet is concrete. Today, traditional concrete includes aggregate, cement, and other materials. Heartland's partners are formulating lower-carbon-footprint concrete."
+                    }
                 }
-                div { class: "md:order-1",
+                // Right: image
+                div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
                         src: "/assets/pages/sustainable-concrete-additives/hemp-filled-concrete-curved-wall.png",
-                        alt: "Natural Fiber Reinforced Concrete",
+                        alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
                     }
                 }
             }
-            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
-                div { class: "md:order-1",
-                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Building A Sustainable Future From The Ground Up" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland supports local farming and construction by working with local leaders in building material supply chains." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Our team works alongside engineers, architects, building material suppliers, general contractors, and software suppliers to embed natural fiber additives into concrete with no retooling costs." }
+        }
+    }
+}
+
+#[component]
+fn Section2() -> Element {
+    rsx! {
+        section { class: "container-content py-16 md:py-20",
+            div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
+                // Left: text
+                div { class: "animate-fade-in-up md:order-1 order-2",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "The Smartest Cities"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "Building A Sustainable Future "
+                        span { class: "text-gradient-red", "From The Ground Up" }
+                    }
+                    p { class: "text-lg font-medium text-[color:var(--color-accent)] mb-4",
+                        "Heartland supports local farming and construction by working with local leaders in building material supply chains."
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
+                        "Our team works alongside engineers, architects, building material suppliers, general contractors, and software suppliers to embed natural fiber additives into concrete with no retooling costs."
+                    }
                 }
-                div { class: "md:order-2",
+                // Right: image
+                div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
                         src: "/assets/pages/sustainable-concrete-additives/hemp-filled-concrete-tunnel.png",
-                        alt: "Building A Sustainable Future From The Ground Up",
+                        alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
                     }
                 }
             }
-            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
-                div { class: "md:order-2",
-                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "For The Construction Industry" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland supplies lower-carbon-footprint materials to help builders and suppliers create stronger, lighter, cheaper, and more sustainable products." }
-                }
-                div { class: "md:order-1",
-                    img {
-                        src: "/assets/pages/imperium-masterbatch/imperium-filler.png",
-                        alt: "Imperium Filler",
-                        loading: "lazy",
-                        class: "w-full rounded-xl shadow-lg",
+        }
+    }
+}
+
+#[component]
+fn Section4() -> Element {
+    rsx! {
+        section { class: "container-content py-16 md:py-20",
+            div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
+                // Left: text
+                div { class: "animate-fade-in-up md:order-1 order-2",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Augmenting Mined & Synthetic Additives"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "Unlocking The Sustainable Future "
+                        span { class: "text-gradient-red", "We Need And Deserve" }
+                    }
+                    p { class: "text-lg font-medium text-[color:var(--color-accent)] mb-4",
+                        "Heartland's additives replace and augment mined and synthetic materials like cement and aggregate."
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
+                        "We work with global brands and their suppliers to predictably reduce the carbon footprint of everyday products without any retooling costs."
                     }
                 }
-            }
-            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
-                div { class: "md:order-1",
-                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Unlocking The Sustainable Future We Need And Deserve" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland's additives replace and augment mined and synthetic materials like cement and aggregate." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "We work with global brands and their suppliers to predictably reduce the carbon footprint of everyday products without any retooling costs." }
-                }
-                div { class: "md:order-2",
+                // Right: image
+                div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
                         src: "/assets/pages/imperium-filler/talc-mining.png",
                         alt: "talc mining",
@@ -109,28 +147,55 @@ fn Body() -> Element {
                     }
                 }
             }
-            div { class: "max-w-3xl mx-auto mb-16 animate-fade-in-up",
-                h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 text-center", "Throughout The Supply Chain" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland partners with corn, wheat, and soy farmers to embed industrial hemp into their crop rotation. Our USDA Grant has given us unique insights into industrial hemp farming, regenerative agriculture, and carbon sequestration." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Architect & Engineer Heartland partners with architect's and engineer's to specify hemp filled concrete in future projects." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Building Material Supplier Heartland partners with building material suppliers to ensure the hemp-filled concrete is distributed properly. Our team works alongside the suppliers to ensure natural fiber-filled concrete is used in the same way it is used today." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ General Contractor Heartland is the sustainability partner for leaders in construction focused on reducing their carbon footprint. Our team helps create stakeholder alignment so companies can effectively communicate the value of sustainable innovation." }
-            }
-            figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/sustainable-concrete-additives/turtle-stuck-on-plastic.png", alt: "turtle stuck on plastic", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
-            }        }
+        }
     }
 }
 
 #[component]
-fn ClosingCta() -> Element {
+fn SupplyChainSection5() -> Element {
     rsx! {
-        section { class: "bg-mesh-dramatic py-20 my-12 section-soft-edges",
-            div { class: "container-content text-center",
-                h2 { class: "text-3xl md:text-4xl font-bold mb-6 max-w-2xl mx-auto",
-                    "Learn more about Sustainable"
+        section { class: "bg-mesh-dramatic py-20 md:py-28 my-12 section-soft-edges",
+            div { class: "container-content",
+                div { class: "text-center mb-16 max-w-3xl mx-auto",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Your Sustainability Partner"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight",
+                        "Throughout The "
+                        span { class: "text-gradient-red", "Supply Chain" }
+                    }
                 }
-                Link { to: Route::Contact {}, class: "btn-accent-gradient", "Get in touch" }
+                div { class: "relative",
+                    div { class: "hidden md:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-px bg-gradient-to-b from-transparent via-[color:var(--color-accent)] to-transparent opacity-40" }
+                    SupplyChainStep {
+                        number: 1,
+                        icon: SupplyIcon::Tractor,
+                        heading: "Farmer",
+                        body: "Heartland partners with corn, wheat, and soy farmers to embed industrial hemp into their crop rotation. Our USDA Grant has given us unique insights into industrial hemp farming, regenerative agriculture, and carbon sequestration.",
+                        align_right: false,
+                    }
+                    SupplyChainStep {
+                        number: 2,
+                        icon: SupplyIcon::Blender,
+                        heading: "Architect & Engineer",
+                        body: "Heartland partners with architect's and engineer's to specify hemp filled concrete in future projects.",
+                        align_right: true,
+                    }
+                    SupplyChainStep {
+                        number: 3,
+                        icon: SupplyIcon::Gears,
+                        heading: "Building Material Supplier",
+                        body: "Heartland partners with building material suppliers to ensure the hemp-filled concrete is distributed properly. Our team works alongside the suppliers to ensure natural fiber-filled concrete is used in the same way it is used today.",
+                        align_right: false,
+                    }
+                    SupplyChainStep {
+                        number: 4,
+                        icon: SupplyIcon::Store,
+                        heading: "General Contractor",
+                        body: "Heartland is the sustainability partner for leaders in construction focused on reducing their carbon footprint. Our team helps create stakeholder alignment so companies can effectively communicate the value of sustainable innovation.",
+                        align_right: true,
+                    }
+                }
             }
         }
     }

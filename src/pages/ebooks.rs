@@ -1,10 +1,10 @@
 use dioxus::prelude::*;
 
+use crate::components::carbon_calculator::CarbonCalculator;
 use crate::components::logo_carousel::LogoCarousel;
 use crate::components::news_carousel::NewsCarousel;
 use crate::components::video_hero::VideoBackground;
 use crate::seo::Seo;
-use crate::Route;
 
 #[component]
 pub fn Ebooks() -> Element {
@@ -17,8 +17,11 @@ pub fn Ebooks() -> Element {
 
         Hero {}
         LogoCarousel { heading: "" }
-        Body {}
-        ClosingCta {}
+        TitleBlock1 {}
+        Section2 {}
+        Section3 {}
+        Section4 {}
+        CarbonCalculator {}
         NewsCarousel { heading: "Related Articles" }
     }
 }
@@ -36,11 +39,9 @@ fn Hero() -> Element {
                 }
                 h1 {
                     class: "text-3xl md:text-5xl font-extrabold leading-tight uppercase tracking-tight text-white max-w-4xl mx-auto animate-fade-in-up",
-                    "Our sustainable future together"
-                }
-                p {
-                    class: "mt-5 max-w-2xl mx-auto text-base md:text-lg text-white/85 animate-fade-in-up delay-1",
-                    "Heartland's team has developed sector-specific intelligence in materials, agriculture, chemicals, manufacturing, supply chain, and sustainability. With that knowledge, our team has taken the time to…"
+                    "Our sustainable"
+                    br {}
+                    "future together"
                 }
             }
         }
@@ -48,20 +49,45 @@ fn Hero() -> Element {
 }
 
 #[component]
-fn Body() -> Element {
+fn TitleBlock1() -> Element {
+    rsx! {
+        section { class: "container-content py-12 md:py-16",
+            div { class: "max-w-3xl mx-auto text-center",
+                p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                    "Thought Leadership"
+                }
+                h2 { class: "text-3xl md:text-5xl font-bold leading-tight",
+                    "From "
+                    span { class: "text-gradient-red", "The Heartland" }
+                }
+            }
+        }
+    }
+}
+
+#[component]
+fn Section2() -> Element {
     rsx! {
         section { class: "container-content py-16 md:py-20",
-            div { class: "max-w-3xl mx-auto mb-16 animate-fade-in-up",
-                h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 text-center", "From The Heartland" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland's team has developed sector-specific intelligence in materials, agriculture, chemicals, manufacturing, supply chain, and sustainability. With that knowledge, our team has taken the time to write these e-books for you." }
-            }
-            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
-                div { class: "md:order-1",
-                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Industry 5.0 - Sustainability Throughout The Value Chain" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Innovations like big data, machine learning, smartphones, and IoT devices defined the fourth industrial revolution. In this next industrial revolution, leaders will start to put sustainability at the front and center of the decision-making process. This will create positive ripple effects across the world." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "In this e-book, you will learn:" }
+            div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
+                // Left: text
+                div { class: "animate-fade-in-up md:order-1 order-2",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "A Sustainable Industrial Revolution"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "Industry 5.0 - Sustainability "
+                        span { class: "text-gradient-red", "Throughout The Value Chain" }
+                    }
+                    p { class: "text-lg font-medium text-[color:var(--color-accent)] mb-4",
+                        "Innovations like big data, machine learning, smartphones, and IoT devices defined the fourth industrial revolution. In this next industrial revolution, leaders will start to put sustainability at the front and center of the decision-making process. This will create positive ripple effects across the world."
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
+                        "In this e-book, you will learn:"
+                    }
                 }
-                div { class: "md:order-2",
+                // Right: image
+                div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
                         src: "/assets/pages/e-books/heartland-ebook-cover-industry-5.0.jpg",
                         alt: "Heartland eBook Cover Industry 5.0",
@@ -70,14 +96,36 @@ fn Body() -> Element {
                     }
                 }
             }
-            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
-                div { class: "md:order-2",
-                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "One Farm At A Time" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland has unlocked the secrets to practical, proven, and profitable regenerative farming practices." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Regenerative agriculture practices have been around for 10,000+ years. But, over time, we have increased our consumption and reliance on chemicals. This has removed our need for the traditional practices our ancestors relied on for generations." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "In this e-book, you will learn:" }
+        }
+    }
+}
+
+#[component]
+fn Section3() -> Element {
+    rsx! {
+        section { class: "container-content py-16 md:py-20",
+            div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
+                // Left: text
+                div { class: "animate-fade-in-up md:order-1 order-2",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Engineering Earth"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "One Farm "
+                        span { class: "text-gradient-red", "At A Time" }
+                    }
+                    p { class: "text-lg font-medium text-[color:var(--color-accent)] mb-4",
+                        "Heartland has unlocked the secrets to practical, proven, and profitable regenerative farming practices."
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
+                        "Regenerative agriculture practices have been around for 10,000+ years. But, over time, we have increased our consumption and reliance on chemicals. This has removed our need for the traditional practices our ancestors relied on for generations."
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
+                        "In this e-book, you will learn:"
+                    }
                 }
-                div { class: "md:order-1",
+                // Right: image
+                div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
                         src: "/assets/pages/e-books/heartland-ebook-cover-regen-ag.jpg",
                         alt: "Heartland eBook Cover Regen Ag",
@@ -86,13 +134,33 @@ fn Body() -> Element {
                     }
                 }
             }
-            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
-                div { class: "md:order-1",
-                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Lower Carbon Footprint & Lightweight Plastics" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Our society moved from metal to plastic to create stronger, lighter, and cheaper products. Now that we have commoditized plastics, what's next? Through data, it has become clear which resins will win long term." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "In this e-book, you will learn:" }
+        }
+    }
+}
+
+#[component]
+fn Section4() -> Element {
+    rsx! {
+        section { class: "container-content py-16 md:py-20",
+            div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
+                // Left: text
+                div { class: "animate-fade-in-up md:order-1 order-2",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Sustainable Plastic"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "Lower Carbon Footprint "
+                        span { class: "text-gradient-red", "& Lightweight Plastics" }
+                    }
+                    p { class: "text-lg font-medium text-[color:var(--color-accent)] mb-4",
+                        "Our society moved from metal to plastic to create stronger, lighter, and cheaper products. Now that we have commoditized plastics, what's next? Through data, it has become clear which resins will win long term."
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
+                        "In this e-book, you will learn:"
+                    }
                 }
-                div { class: "md:order-2",
+                // Right: image
+                div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
                         src: "/assets/pages/e-books/heartland-ebook-cover-pof.jpg",
                         alt: "Heartland eBook Cover POF",
@@ -100,23 +168,6 @@ fn Body() -> Element {
                         class: "w-full rounded-xl shadow-lg",
                     }
                 }
-            }
-            h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 mt-12 text-center", "Try Our Carbon Footprint Calculator" }
-            figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/why-imperium/paper-8-14.png", alt: "recycled plastic", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
-            }        }
-    }
-}
-
-#[component]
-fn ClosingCta() -> Element {
-    rsx! {
-        section { class: "bg-mesh-dramatic py-20 my-12 section-soft-edges",
-            div { class: "container-content text-center",
-                h2 { class: "text-3xl md:text-4xl font-bold mb-6 max-w-2xl mx-auto",
-                    "Learn more about Our"
-                }
-                Link { to: Route::Contact {}, class: "btn-accent-gradient", "Get in touch" }
             }
         }
     }

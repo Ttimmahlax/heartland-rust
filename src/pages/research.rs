@@ -1,10 +1,12 @@
 use dioxus::prelude::*;
 
+use crate::components::carbon_calculator::CarbonCalculator;
 use crate::components::logo_carousel::LogoCarousel;
+use crate::components::mats_amplify::MatsAmplify;
 use crate::components::news_carousel::NewsCarousel;
+use crate::components::supply_chain::{SupplyChainStep, SupplyIcon};
 use crate::components::video_hero::VideoBackground;
 use crate::seo::Seo;
-use crate::Route;
 
 #[component]
 pub fn Research() -> Element {
@@ -17,8 +19,12 @@ pub fn Research() -> Element {
 
         Hero {}
         LogoCarousel { heading: "" }
-        Body {}
-        ClosingCta {}
+        Section1 {}
+        Section2 {}
+        TitleBlock3 {}
+        SupplyChainSection4 {}
+        MatsAmplify {}
+        CarbonCalculator {}
         NewsCarousel { heading: "Related Articles" }
     }
 }
@@ -36,11 +42,9 @@ fn Hero() -> Element {
                 }
                 h1 {
                     class: "text-3xl md:text-5xl font-extrabold leading-tight uppercase tracking-tight text-white max-w-4xl mx-auto animate-fade-in-up",
-                    "sustainable material innovation"
-                }
-                p {
-                    class: "mt-5 max-w-2xl mx-auto text-base md:text-lg text-white/85 animate-fade-in-up delay-1",
-                    "Global efforts to embed natural fibers into plastics and other materials have been in the works for decades. Leaders of industry and academia have been turning their attention toward hemp fiber as a…"
+                    "sustainable"
+                    br {}
+                    "material innovation"
                 }
             }
         }
@@ -48,15 +52,25 @@ fn Hero() -> Element {
 }
 
 #[component]
-fn Body() -> Element {
+fn Section1() -> Element {
     rsx! {
         section { class: "container-content py-16 md:py-20",
-            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
-                div { class: "md:order-2",
-                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Federal Legalization of Hemp in 2018" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Global efforts to embed natural fibers into plastics and other materials have been in the works for decades. Leaders of industry and academia have been turning their attention toward hemp fiber as a reinforcement agent to make stronger, lighter, cheaper, and more sustainable products." }
+            div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
+                // Left: text
+                div { class: "animate-fade-in-up md:order-1 order-2",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "A Global Transition"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "Federal Legalization of "
+                        span { class: "text-gradient-red", "Hemp in 2018" }
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
+                        "Global efforts to embed natural fibers into plastics and other materials have been in the works for decades. Leaders of industry and academia have been turning their attention toward hemp fiber as a reinforcement agent to make stronger, lighter, cheaper, and more sustainable products."
+                    }
                 }
-                div { class: "md:order-1",
+                // Right: image
+                div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
                         src: "/assets/pages/imperium-filler/1210x786-px-4.png",
                         alt: "heartland hemp bales",
@@ -65,13 +79,33 @@ fn Body() -> Element {
                     }
                 }
             }
-            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
-                div { class: "md:order-1",
-                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Inconsistencies In Industrial Hemp Research" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland is creating relationships with universities and businesses to set the standard for hemp fiber research." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "The format of hemp fiber matters. Unfortunately, researchers have suffered from a lack of consistency in the hemp materials they're testing. Heartland will provide top researchers with the resources they need to unlock the endless capabilities of industrial hemp fiber." }
+        }
+    }
+}
+
+#[component]
+fn Section2() -> Element {
+    rsx! {
+        section { class: "container-content py-16 md:py-20",
+            div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
+                // Left: text
+                div { class: "animate-fade-in-up md:order-1 order-2",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Fragmented Research"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight mb-6",
+                        "Inconsistencies In "
+                        span { class: "text-gradient-red", "Industrial Hemp Research" }
+                    }
+                    p { class: "text-lg font-medium text-[color:var(--color-accent)] mb-4",
+                        "Heartland is creating relationships with universities and businesses to set the standard for hemp fiber research."
+                    }
+                    p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
+                        "The format of hemp fiber matters. Unfortunately, researchers have suffered from a lack of consistency in the hemp materials they're testing. Heartland will provide top researchers with the resources they need to unlock the endless capabilities of industrial hemp fiber."
+                    }
                 }
-                div { class: "md:order-2",
+                // Right: image
+                div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
                         src: "/assets/pages/natural-fiber-research/plastic-pallets-1.png",
                         alt: "heartland cnc",
@@ -80,49 +114,71 @@ fn Body() -> Element {
                     }
                 }
             }
-            div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
-                div { class: "md:order-2",
-                    h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5", "Same Results" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Regardless of the lack of continuity, the research is clear: hemp additives have a huge opportunity to positively impact the materials we use across industries." }
-                }
-                div { class: "md:order-1",
-                    img {
-                        src: "/assets/pages/natural-fiber-research/building-materials-5.png",
-                        alt: "heartland automotive",
-                        loading: "lazy",
-                        class: "w-full rounded-xl shadow-lg",
-                    }
-                }
-            }
-            figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/natural-fiber-research/natural-fiber-filled-polypropylene-pp-3-1.png", alt: "sheet molding", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
-            }
-            div { class: "max-w-3xl mx-auto mb-16 animate-fade-in-up",
-                h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 text-center", "Throughout The Supply Chain" }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland partners with corn, wheat, and soy farmers to embed industrial hemp into their crop rotation. Our USDA Grant has given us unique insights into industrial hemp farming, regenerative agriculture, and carbon sequestration." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Compounder Heartland partners with plastic compounders to augment talc, calcium, and glass without any retooling costs. Our Imperium masterbatch solves dust, flammability, bonding, and bulk density problems typically associated with bio-based additives." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Converter Heartland partners with plastic converters to ensure the hemp-filled resin is processed properly. Our team works alongside component part manufacturers to process natural fiber-filled plastic with the same molds used today." }
-                            p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Brand Heartland is the sustainability partner for brands on their journey to reduce their carbon footprint. Our team helps create stakeholder alignment so companies can effectively communicate the value of sustainable material innovation." }
-            }
-            figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/why-imperium/heartland-plastic-picture-3.png", alt: "Markets We Amplify", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
-            }
-            figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/why-imperium/heartland-packaging-plastic-pallets.png", alt: "", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
-            }
-            h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 mt-12 text-center", "Try Our Carbon Footprint Calculator" }        }
+        }
     }
 }
 
 #[component]
-fn ClosingCta() -> Element {
+fn TitleBlock3() -> Element {
     rsx! {
-        section { class: "bg-mesh-dramatic py-20 my-12 section-soft-edges",
-            div { class: "container-content text-center",
-                h2 { class: "text-3xl md:text-4xl font-bold mb-6 max-w-2xl mx-auto",
-                    "Learn more about sustainable"
+        section { class: "container-content py-12 md:py-16",
+            div { class: "max-w-3xl mx-auto text-center",
+                p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                    "Different Data"
                 }
-                Link { to: Route::Contact {}, class: "btn-accent-gradient", "Get in touch" }
+                h2 { class: "text-3xl md:text-5xl font-bold leading-tight",
+                    "Same Results"
+                }
+            }
+        }
+    }
+}
+
+#[component]
+fn SupplyChainSection4() -> Element {
+    rsx! {
+        section { class: "bg-mesh-dramatic py-20 md:py-28 my-12 section-soft-edges",
+            div { class: "container-content",
+                div { class: "text-center mb-16 max-w-3xl mx-auto",
+                    p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
+                        "Your Sustainability Partner"
+                    }
+                    h2 { class: "text-3xl md:text-5xl font-bold leading-tight",
+                        "Throughout The "
+                        span { class: "text-gradient-red", "Supply Chain" }
+                    }
+                }
+                div { class: "relative",
+                    div { class: "hidden md:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-px bg-gradient-to-b from-transparent via-[color:var(--color-accent)] to-transparent opacity-40" }
+                    SupplyChainStep {
+                        number: 1,
+                        icon: SupplyIcon::Tractor,
+                        heading: "Farmer",
+                        body: "Heartland partners with corn, wheat, and soy farmers to embed industrial hemp into their crop rotation. Our USDA Grant has given us unique insights into industrial hemp farming, regenerative agriculture, and carbon sequestration.",
+                        align_right: false,
+                    }
+                    SupplyChainStep {
+                        number: 2,
+                        icon: SupplyIcon::Blender,
+                        heading: "Compounder",
+                        body: "Heartland partners with plastic compounders to augment talc, calcium, and glass without any retooling costs. Our Imperium masterbatch solves dust, flammability, bonding, and bulk density problems typically associated with bio-based additives.",
+                        align_right: true,
+                    }
+                    SupplyChainStep {
+                        number: 3,
+                        icon: SupplyIcon::Gears,
+                        heading: "Converter",
+                        body: "Heartland partners with plastic converters to ensure the hemp-filled resin is processed properly. Our team works alongside component part manufacturers to process natural fiber-filled plastic with the same molds used today.",
+                        align_right: false,
+                    }
+                    SupplyChainStep {
+                        number: 4,
+                        icon: SupplyIcon::Store,
+                        heading: "Brand",
+                        body: "Heartland is the sustainability partner for brands on their journey to reduce their carbon footprint. Our team helps create stakeholder alignment so companies can effectively communicate the value of sustainable material innovation.",
+                        align_right: true,
+                    }
+                }
             }
         }
     }
