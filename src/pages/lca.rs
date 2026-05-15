@@ -58,7 +58,7 @@ fn Body() -> Element {
                 }
                 div { class: "md:order-1",
                     img {
-                        src: "/assets/pages/lca/foam-7.png",
+                        src: "/assets/pages/lca/foam-7.webp",
                         alt: "problems with natural fibers",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -73,7 +73,7 @@ fn Body() -> Element {
                 }
                 div { class: "md:order-2",
                     img {
-                        src: "/assets/pages/lca/lca-pr-pictures-1.png",
+                        src: "/assets/pages/lca/lca-pr-pictures-1.webp",
                         alt: "heartland LCA",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -87,7 +87,7 @@ fn Body() -> Element {
                 }
                 div { class: "md:order-1",
                     img {
-                        src: "/assets/pages/imperium-masterbatch/imperium-filler.png",
+                        src: "/assets/pages/imperium-masterbatch/imperium-filler.webp",
                         alt: "Imperium Filler",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -102,7 +102,7 @@ fn Body() -> Element {
                 }
                 div { class: "md:order-2",
                     img {
-                        src: "/assets/pages/lca/heartland-powder.png",
+                        src: "/assets/pages/lca/heartland-powder.webp",
                         alt: "Developing SEC Climate Disclosure Readiness",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -117,10 +117,10 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Brand Heartland is the sustainability partner for brands on their journey to reduce their carbon footprint. Our team helps create stakeholder alignment so companies can effectively communicate the value of sustainable material innovation." }
             }
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/why-imperium/heartland-plastic-picture-3.png", alt: "Markets We Amplify", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/why-imperium/heartland-plastic-picture-3.webp", alt: "Markets We Amplify", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/why-imperium/heartland-packaging-plastic-pallets.png", alt: "", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/why-imperium/heartland-packaging-plastic-pallets.webp", alt: "", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }
             h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 mt-12 text-center", "Try Our Carbon Footprint Calculator" }        }
     }

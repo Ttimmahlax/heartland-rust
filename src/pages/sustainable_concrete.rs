@@ -70,7 +70,7 @@ fn Section1() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/sustainable-concrete-additives/hemp-filled-concrete-curved-wall.png",
+                        src: "/assets/pages/sustainable-concrete-additives/hemp-filled-concrete-curved-wall.webp",
                         alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -105,7 +105,7 @@ fn Section2() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
-                        src: "/assets/pages/sustainable-concrete-additives/hemp-filled-concrete-tunnel.png",
+                        src: "/assets/pages/sustainable-concrete-additives/hemp-filled-concrete-tunnel.webp",
                         alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -140,7 +140,7 @@ fn Section4() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/imperium-filler/talc-mining.png",
+                        src: "/assets/pages/imperium-filler/talc-mining.webp",
                         alt: "talc mining",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

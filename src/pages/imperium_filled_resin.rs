@@ -92,7 +92,7 @@ fn Section3() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/imperium-filled-resin/imperium-filled-resin-2-1.png",
+                        src: "/assets/pages/imperium-filled-resin/imperium-filled-resin-2-1.webp",
                         alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -127,7 +127,7 @@ fn Section4() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/imperium-filled-resin/imperium-filled-resin-2.png",
+                        src: "/assets/pages/imperium-filled-resin/imperium-filled-resin-2.webp",
                         alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -162,7 +162,7 @@ fn Section5() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/landing/sustainable-future-heartland.png",
+                        src: "/assets/pages/landing/sustainable-future-heartland.webp",
                         alt: "sustainable future heartland",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

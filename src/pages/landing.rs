@@ -139,7 +139,7 @@ fn EngineeringEarthSection() -> Element {
                 // Left: image
                 div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
-                        src: "/assets/pages/landing/industrial-hemp-farm-michigan.png",
+                        src: "/assets/pages/landing/industrial-hemp-farm-michigan.webp",
                         alt: "Industrial hemp farm — Michigan",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -219,7 +219,7 @@ fn UnlockingSustainableFuture() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up",
                     img {
-                        src: "/assets/pages/landing/sustainable-future-heartland.png",
+                        src: "/assets/pages/landing/sustainable-future-heartland.webp",
                         alt: "Sustainable future — Heartland Industries",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -238,7 +238,7 @@ fn BrightFutureManufacturing() -> Element {
                 // Left: image
                 div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
-                        src: "/assets/pages/landing/sustainable-manufacturing.png",
+                        src: "/assets/pages/landing/sustainable-manufacturing.webp",
                         alt: "Sustainable manufacturing materials — Heartland Industries",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

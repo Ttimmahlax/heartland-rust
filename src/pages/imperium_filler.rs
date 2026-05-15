@@ -74,7 +74,7 @@ fn Section3() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/imperium-filler/heartland-powder.png",
+                        src: "/assets/pages/imperium-filler/heartland-powder.webp",
                         alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -109,7 +109,7 @@ fn Section4() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
-                        src: "/assets/pages/imperium-filler/1210x786-px-4.png",
+                        src: "/assets/pages/imperium-filler/1210x786-px-4.webp",
                         alt: "heartland hemp bales",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -144,7 +144,7 @@ fn Section6() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/imperium-filler/talc-mining.png",
+                        src: "/assets/pages/imperium-filler/talc-mining.webp",
                         alt: "talc mining",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

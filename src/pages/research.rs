@@ -72,7 +72,7 @@ fn Section1() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/imperium-filler/1210x786-px-4.png",
+                        src: "/assets/pages/imperium-filler/1210x786-px-4.webp",
                         alt: "heartland hemp bales",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -107,7 +107,7 @@ fn Section2() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/natural-fiber-research/plastic-pallets-1.png",
+                        src: "/assets/pages/natural-fiber-research/plastic-pallets-1.webp",
                         alt: "heartland cnc",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

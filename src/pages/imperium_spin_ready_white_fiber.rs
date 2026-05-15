@@ -57,7 +57,7 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium Spin-Ready White Fiber is for yarn manufacturers looking for low cost, high performance hemp fiber with a great origin story." }
                 }
                 div { class: "md:order-1",
-                    img { src: "/assets/pages/imperium-spin-ready-white-fiber/imperium-white-fiber.png", alt: "Imperium White Fiber", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/imperium-spin-ready-white-fiber/imperium-white-fiber.webp", alt: "Imperium White Fiber", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 mt-12 text-center", "Connect With Our Team" }
@@ -69,14 +69,14 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium hemp fiber can be used in textiles or composites." }
                 }
                 div { class: "md:order-1",
-                    img { src: "/assets/pages/wood-products/1210x786-px-4.png", alt: "heartland hemp bales", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/wood-products/1210x786-px-4.webp", alt: "heartland hemp bales", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/imperium-spin-ready-white-fiber/imperium-bulk-spin-ready-fiber.png", alt: "Imperium Bulk Spin Ready Fiber", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/imperium-spin-ready-white-fiber/imperium-bulk-spin-ready-fiber.webp", alt: "Imperium Bulk Spin Ready Fiber", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/imperium-spin-ready-white-fiber/heartland-aureo-partnership.png", alt: "From The Heartland", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/imperium-spin-ready-white-fiber/heartland-aureo-partnership.webp", alt: "From The Heartland", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }        }
     }
 }

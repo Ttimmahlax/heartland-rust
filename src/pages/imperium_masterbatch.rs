@@ -92,7 +92,7 @@ fn UnlockingSection() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/why-imperium/heartland-masterbatch.png",
+                        src: "/assets/pages/why-imperium/heartland-masterbatch.webp",
                         alt: "Heartland Imperium masterbatch — pellets ready for compounding",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -160,7 +160,7 @@ fn UnlockingFutureSection() -> Element {
                 }
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/imperium-masterbatch/sustainable-future-heartland.png",
+                        src: "/assets/pages/imperium-masterbatch/sustainable-future-heartland.webp",
                         alt: "Sustainable future — Heartland Imperium masterbatch",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

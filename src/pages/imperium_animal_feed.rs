@@ -69,7 +69,7 @@ fn Section2() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/imperium-animal-feed/imperium-animal-feed-hemp-grain.png",
+                        src: "/assets/pages/imperium-animal-feed/imperium-animal-feed-hemp-grain.webp",
                         alt: "imperium animal feed hemp grain",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -107,7 +107,7 @@ fn Section4() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
-                        src: "/assets/pages/imperium-animal-feed/imperium-animal-feed-hemp-grain-silo.png",
+                        src: "/assets/pages/imperium-animal-feed/imperium-animal-feed-hemp-grain-silo.webp",
                         alt: "imperium animal feed hemp grain silo",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

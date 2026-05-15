@@ -62,7 +62,7 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "In this case study, you will find:" }
                 }
                 div { class: "md:order-2",
-                    img { src: "/assets/pages/case-studies/pvc-case-studies.png", alt: "A Leap Forward In Sustainable Material Innovation", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/case-studies/pvc-case-studies.webp", alt: "A Leap Forward In Sustainable Material Innovation", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
@@ -73,12 +73,12 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "In this case study, you will find:" }
                 }
                 div { class: "md:order-1",
-                    img { src: "/assets/pages/case-studies/polypropylene-case-study-1.png", alt: "Upgrading The World's Commodity Thermoplastic", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/case-studies/polypropylene-case-study-1.webp", alt: "Upgrading The World's Commodity Thermoplastic", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 mt-12 text-center", "Try Our Hemp Filled Plastic Calculator" }
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/case-studies/rubber-11.png", alt: "plastic of the future", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/case-studies/rubber-11.webp", alt: "plastic of the future", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }
             h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 mt-12 text-center", "PROJECTS COMPLATED" }        }
     }

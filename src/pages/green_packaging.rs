@@ -77,7 +77,7 @@ fn Section1() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/green-packaging-initiative/heartland-lca-1.png",
+                        src: "/assets/pages/green-packaging-initiative/heartland-lca-1.webp",
                         alt: "green packaging initiative",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -112,7 +112,7 @@ fn Section3() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/green-packaging-initiative/heartland-lca.png",
+                        src: "/assets/pages/green-packaging-initiative/heartland-lca.webp",
                         alt: "green packaging initiative pallets",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -167,7 +167,7 @@ fn Section5() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/green-packaging-initiative/heartland-lca-2.png",
+                        src: "/assets/pages/green-packaging-initiative/heartland-lca-2.webp",
                         alt: "green packaging initiative pallets",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -202,7 +202,7 @@ fn Section6() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/why-imperium/paper-8-7.png",
+                        src: "/assets/pages/why-imperium/paper-8-7.webp",
                         alt: "hemp baling drone",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -301,7 +301,7 @@ fn Section9() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/why-imperium/regenerative-agriculture-hemp-vertical-tilling-4.png",
+                        src: "/assets/pages/why-imperium/regenerative-agriculture-hemp-vertical-tilling-4.webp",
                         alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

@@ -104,7 +104,7 @@ fn Section2() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
-                        src: "/assets/pages/heartland-farmers/hemp-fiber-bale.png",
+                        src: "/assets/pages/heartland-farmers/hemp-fiber-bale.webp",
                         alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

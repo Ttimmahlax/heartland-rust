@@ -73,7 +73,7 @@ fn Section1() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/marine/hemp-filled-plastic-boat-riding-in-the-wake.png",
+                        src: "/assets/pages/marine/hemp-filled-plastic-boat-riding-in-the-wake.webp",
                         alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -108,7 +108,7 @@ fn Section2() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
-                        src: "/assets/pages/marine/hemp-additives-in-sailboats-bridges-and-buildings.png",
+                        src: "/assets/pages/marine/hemp-additives-in-sailboats-bridges-and-buildings.webp",
                         alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

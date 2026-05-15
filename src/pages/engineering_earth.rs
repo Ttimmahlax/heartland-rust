@@ -74,7 +74,7 @@ fn Section1() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/engineering-earth/mining.png",
+                        src: "/assets/pages/engineering-earth/mining.webp",
                         alt: "rainforest",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -109,7 +109,7 @@ fn Section2() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/engineering-earth/mining-1.png",
+                        src: "/assets/pages/engineering-earth/mining-1.webp",
                         alt: "farmland 1",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -144,7 +144,7 @@ fn Section4() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/engineering-earth/mining-2.png",
+                        src: "/assets/pages/engineering-earth/mining-2.webp",
                         alt: "farmhouse",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -176,7 +176,7 @@ fn Section5() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/engineering-earth/mining-3.png",
+                        src: "/assets/pages/engineering-earth/mining-3.webp",
                         alt: "tesla",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

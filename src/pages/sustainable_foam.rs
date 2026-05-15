@@ -57,7 +57,7 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland's natural fiber additives can be used in styrenes to expand supply and reduce carbon footprint. Many of today's applications use unfilled styrene. This makes it easy to reduce the cost and carbon footprint of traditional materials with sustainable additives." }
                 }
                 div { class: "md:order-1",
-                    img { src: "/assets/pages/sustainable-foam/hemp-filled-foam-food-trays-2.png", alt: "Functional Carbon Negative Additives", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/sustainable-foam/hemp-filled-foam-food-trays-2.webp", alt: "Functional Carbon Negative Additives", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
@@ -67,7 +67,7 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland's additives are being used by styrene producers, compounders, and molders to extend supply, alter performance, and go green." }
                 }
                 div { class: "md:order-2",
-                    img { src: "/assets/pages/sustainable-foam/hemp-filled-foam-sheets.png", alt: "Product Consistency Through Farming & Processing", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/sustainable-foam/hemp-filled-foam-sheets.webp", alt: "Product Consistency Through Farming & Processing", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
@@ -76,7 +76,7 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Heartland supplies lower-carbon-footprint materials to help manufacturers create stronger, lighter, cheaper, and more sustainable products." }
                 }
                 div { class: "md:order-1",
-                    img { src: "/assets/pages/hemp-fiber-and-hurd/imperium-filler.png", alt: "Imperium Filler", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/hemp-fiber-and-hurd/imperium-filler.webp", alt: "Imperium Filler", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
@@ -86,14 +86,14 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "We work with global brands and their suppliers to predictably reduce the carbon footprint of everyday products without any retooling costs." }
                 }
                 div { class: "md:order-2",
-                    img { src: "/assets/pages/hemp-fiber-and-hurd/talc-mining.png", alt: "talc mining", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/hemp-fiber-and-hurd/talc-mining.webp", alt: "talc mining", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/hemp-fiber-and-hurd/heartland-plastic-picture-3.png", alt: "Markets We Amplify", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/hemp-fiber-and-hurd/heartland-plastic-picture-3.webp", alt: "Markets We Amplify", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/hemp-fiber-and-hurd/heartland-packaging-plastic-pallets.png", alt: "", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/hemp-fiber-and-hurd/heartland-packaging-plastic-pallets.webp", alt: "", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }
             div { class: "max-w-3xl mx-auto mb-16 animate-fade-in-up",
                 h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 text-center", "Throughout The Supply Chain" }
@@ -103,7 +103,7 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "_ Brand Heartland is the sustainability partner for brands on their journey to reduce their carbon footprint. Our team helps create stakeholder alignment so companies can effectively communicate the value of sustainable material innovation." }
             }
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/hemp-fiber-and-hurd/plastic.png", alt: "plastic", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/hemp-fiber-and-hurd/plastic.webp", alt: "plastic", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }        }
     }
 }

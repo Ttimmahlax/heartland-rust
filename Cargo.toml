@@ -9,7 +9,7 @@ dioxus = { version = "0.7", features = ["router", "fullstack"] }
 serde = { version = "1", features = ["derive"] }
 toml = "0.8"
 pulldown-cmark = { version = "0.12", default-features = false, features = ["html"] }
-chrono = { version = "0.4", default-features = false, features = ["clock", "serde"] }
+chrono = { version = "0.4", default-features = false, features = ["clock", "serde", "wasmbind"] }
 
 [features]
 default = []

@@ -32,7 +32,7 @@ fn Hero() -> Element {
             class: "video-hero-section section-soft-bottom min-h-[110vh] flex items-center pb-[20vh]",
             img {
                 class: "video-hero-bg",
-                src: "/assets/pages/heartland-team/team-hero.png",
+                src: "/assets/pages/heartland-team/team-hero.webp",
                 alt: "Heartland's Detroit, Michigan headquarters",
                 loading: "eager",
             }
@@ -206,7 +206,7 @@ fn Advisors() -> Element {
 
 #[component]
 fn TeamCard(person: Person) -> Element {
-    let img_src = format!("/assets/pages/heartland-team/{}.png", person.slug);
+    let img_src = format!("/assets/pages/heartland-team/{}.webp", person.slug);
     let alt = format!("{} — {}", person.name, person.role);
     rsx! {
         div { class: "group surface-glass rounded-xl overflow-hidden text-center animate-fade-in-up",

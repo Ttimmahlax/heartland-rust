@@ -74,7 +74,7 @@ fn Section1() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/sustainable-rubber-additives/hemp-filled-rubber-tires-big.png",
+                        src: "/assets/pages/sustainable-rubber-additives/hemp-filled-rubber-tires-big.webp",
                         alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -109,7 +109,7 @@ fn Section2() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
-                        src: "/assets/pages/sustainable-rubber-additives/hemp-filled-rubber-bands-2.png",
+                        src: "/assets/pages/sustainable-rubber-additives/hemp-filled-rubber-bands-2.webp",
                         alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -144,7 +144,7 @@ fn Section4() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/imperium-filler/talc-mining.png",
+                        src: "/assets/pages/imperium-filler/talc-mining.webp",
                         alt: "talc mining",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

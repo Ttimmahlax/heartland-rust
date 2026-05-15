@@ -37,27 +37,27 @@ pub fn MatsAmplify(props: MatsAmplifyProps) -> Element {
             }
 
             div { class: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6",
-                MatCard { image: "/assets/pages/landing/plastic.png",
+                MatCard { image: "/assets/pages/landing/plastic.webp",
                           alt:   "Plastic — Imperium-filled plastic compounding",
                           label: "Plastic",
                           route: Route::SustainablePlastic {} }
-                MatCard { image: "/assets/pages/landing/imperium-fabric-hemp-fiber.png",
+                MatCard { image: "/assets/pages/landing/imperium-fabric-hemp-fiber.webp",
                           alt:   "Imperium fabric hemp fiber — textiles",
                           label: "Textiles",
                           route: Route::ImperiumFibers {} }
-                MatCard { image: "/assets/pages/landing/rubber.png",
+                MatCard { image: "/assets/pages/landing/rubber.webp",
                           alt:   "Rubber — bio-based rubber additives",
                           label: "Rubber",
                           route: Route::SustainableRubber {} }
-                MatCard { image: "/assets/pages/landing/asphalt.png",
+                MatCard { image: "/assets/pages/landing/asphalt.webp",
                           alt:   "Asphalt — hemp-pulp asphalt additive",
                           label: "Asphalt",
                           route: Route::SustainableAsphalt {} }
-                MatCard { image: "/assets/pages/landing/paper.png",
+                MatCard { image: "/assets/pages/landing/paper.webp",
                           alt:   "Paper — hemp pulp additive",
                           label: "Paper",
                           route: Route::SustainablePaper {} }
-                MatCard { image: "/assets/pages/landing/concrete.png",
+                MatCard { image: "/assets/pages/landing/concrete.webp",
                           alt:   "Concrete — hemp fiber concrete additive",
                           label: "Concrete",
                           route: Route::SustainableConcrete {} }

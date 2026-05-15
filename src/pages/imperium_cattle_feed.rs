@@ -57,7 +57,7 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium Cattle Feed is for ranchers looking for natural nutrition to raise more resilient and healthy livestock." }
                 }
                 div { class: "md:order-1",
-                    img { src: "/assets/pages/imperium-pork-feed/imperium-animal-feed-hemp-grain.png", alt: "imperium animal feed hemp grain", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/imperium-pork-feed/imperium-animal-feed-hemp-grain.webp", alt: "imperium animal feed hemp grain", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
@@ -68,15 +68,15 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium Cattle Feed can be used for raising cattle." }
                 }
                 div { class: "md:order-2",
-                    img { src: "/assets/pages/wood-products/1210x786-px-4.png", alt: "heartland hemp bales", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/wood-products/1210x786-px-4.webp", alt: "heartland hemp bales", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 mt-12 text-center", "Connect With Our Team" }
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/imperium-pork-feed/imperium-cattle-feed.png", alt: "Imperium Cattle Feed", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/imperium-pork-feed/imperium-cattle-feed.webp", alt: "Imperium Cattle Feed", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/imperium-cattle-feed/untitled-design-1-1.png", alt: "Heartland Climate Disclosures Engage", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/imperium-cattle-feed/untitled-design-1-1.webp", alt: "Heartland Climate Disclosures Engage", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }        }
     }
 }

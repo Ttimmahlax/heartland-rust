@@ -48,7 +48,7 @@ fn Body() -> Element {
     rsx! {
         section { class: "container-content py-16 md:py-20",
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/portfolios/carbon-neutral-plastic-pallet-47.2-x-47.2-imperium-inside-nest-a5-od-9f.png", alt: "Carbon Neutral Plastic Pallet 47.2 x 47.2 Imperium Inside Nest A5 OD-9F", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/portfolios/carbon-neutral-plastic-pallet-47.2-x-47.2-imperium-inside-nest-a5-od-9f.webp", alt: "Carbon Neutral Plastic Pallet 47.2 x 47.2 Imperium Inside Nest A5 OD-9F", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }        }
     }
 }

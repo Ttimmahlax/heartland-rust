@@ -40,27 +40,27 @@ pub fn MarketsAmplify(props: MarketsAmplifyProps) -> Element {
             }
 
             div { class: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6",
-                MarketCard { image: "/assets/pages/landing/market-plastic.png",
+                MarketCard { image: "/assets/pages/landing/market-plastic.webp",
                              alt:   "Plastic compounders — sustainable plastic compounding",
                              label: "Plastic Compounders",
                              route: Route::SustainablePlastic {} }
-                MarketCard { image: "/assets/pages/landing/market-automotive.png",
+                MarketCard { image: "/assets/pages/landing/market-automotive.webp",
                              alt:   "Automotive — lightweight, low-carbon parts",
                              label: "Automotive",
                              route: Route::Automotive {} }
-                MarketCard { image: "/assets/pages/landing/market-textiles.png",
+                MarketCard { image: "/assets/pages/landing/market-textiles.webp",
                              alt:   "Imperium hemp textile market",
                              label: "Textiles",
                              route: Route::ImperiumFibers {} }
-                MarketCard { image: "/assets/pages/landing/market-packaging.png",
+                MarketCard { image: "/assets/pages/landing/market-packaging.webp",
                              alt:   "Packaging — carbon-neutral pallets and bins",
                              label: "Packaging",
                              route: Route::SustainablePackaging {} }
-                MarketCard { image: "/assets/pages/landing/market-building-materials.png",
+                MarketCard { image: "/assets/pages/landing/market-building-materials.webp",
                              alt:   "Heartland building materials",
                              label: "Building Materials",
                              route: Route::SustainableBuilding {} }
-                MarketCard { image: "/assets/pages/landing/market-marine.png",
+                MarketCard { image: "/assets/pages/landing/market-marine.webp",
                              alt:   "Heartland marine — yacht and dock applications",
                              label: "Marine",
                              route: Route::Marine {} }

@@ -75,7 +75,7 @@ fn Section1() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/sustainable-plastic-compounding/1210x786-px-5.png",
+                        src: "/assets/pages/sustainable-plastic-compounding/1210x786-px-5.webp",
                         alt: "heartland hemp bales 2",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -110,7 +110,7 @@ fn Section2() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
-                        src: "/assets/pages/sustainable-building-materials/regenerative-agriculture-hemp-fiber-3.png",
+                        src: "/assets/pages/sustainable-building-materials/regenerative-agriculture-hemp-fiber-3.webp",
                         alt: "regenerative agriculture hemp fiber 3",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -145,7 +145,7 @@ fn Section4() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/sustainable-plastic-compounding/blue-plastic-pellets.png",
+                        src: "/assets/pages/sustainable-plastic-compounding/blue-plastic-pellets.webp",
                         alt: "blue plastic pellets",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

@@ -38,19 +38,19 @@ pub fn DecarbSolutions(props: DecarbSolutionsProps) -> Element {
 
             div { class: "grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8",
                 DecarbCard {
-                    image:  "/assets/pages/landing/imperium-textiles.png",
+                    image:  "/assets/pages/landing/imperium-textiles.webp",
                     alt:    "Imperium textiles",
                     label:  "Imperium Textiles",
                     route:  Route::ImperiumFibers {},
                 }
                 DecarbCard {
-                    image:  "/assets/pages/landing/imperium-masterbatch.png",
+                    image:  "/assets/pages/landing/imperium-masterbatch.webp",
                     alt:    "Imperium Masterbatch",
                     label:  "Imperium Masterbatch",
                     route:  Route::ImperiumMasterbatch {},
                 }
                 DecarbCard {
-                    image:  "/assets/pages/landing/imperium-reinforced-plastic.png",
+                    image:  "/assets/pages/landing/imperium-reinforced-plastic.webp",
                     alt:    "Imperium-reinforced plastic",
                     label:  "Imperium Reinforced Plastic",
                     route:  Route::ImperiumFilledResin {},

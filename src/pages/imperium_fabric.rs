@@ -57,7 +57,7 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium Fabric is for Brands and their cut & sow manufacturers looking for low-cost, high performance hemp fiber with a great origin story." }
                 }
                 div { class: "md:order-1",
-                    img { src: "/assets/pages/imperium-fabric/heartland-hemp-fiber-textile-fabric.png", alt: "heartland hemp fiber textile fabric", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/imperium-fabric/heartland-hemp-fiber-textile-fabric.webp", alt: "heartland hemp fiber textile fabric", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
@@ -68,15 +68,15 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium hemp fiber can be used in textiles or composites." }
                 }
                 div { class: "md:order-2",
-                    img { src: "/assets/pages/hemp-fiber-and-hurd/1210x786-px-4.png", alt: "heartland hemp bales", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/hemp-fiber-and-hurd/1210x786-px-4.webp", alt: "heartland hemp bales", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 mt-12 text-center", "Connect With Our Team" }
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/imperium-yarn/imperium-bulk-spin-ready-fiber.png", alt: "Imperium Bulk Spin Ready Fiber", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/imperium-yarn/imperium-bulk-spin-ready-fiber.webp", alt: "Imperium Bulk Spin Ready Fiber", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/carbon-neutral-packaging-with-imperium-inside/rubber-11.png", alt: "plastic of the future", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/carbon-neutral-packaging-with-imperium-inside/rubber-11.webp", alt: "plastic of the future", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }        }
     }
 }

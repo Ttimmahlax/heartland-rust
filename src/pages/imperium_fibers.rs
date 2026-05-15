@@ -69,7 +69,7 @@ fn Section2() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/imperium-fibers/heartland-hemp-fiber-textile-fabric.png",
+                        src: "/assets/pages/imperium-fibers/heartland-hemp-fiber-textile-fabric.webp",
                         alt: "heartland hemp fiber textile fabric",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -107,7 +107,7 @@ fn Section4() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
-                        src: "/assets/pages/imperium-filler/1210x786-px-4.png",
+                        src: "/assets/pages/imperium-filler/1210x786-px-4.webp",
                         alt: "heartland hemp bales",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

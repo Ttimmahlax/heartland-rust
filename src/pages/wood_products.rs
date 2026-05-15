@@ -57,7 +57,7 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium Fibers make better wood products than wood." }
                 }
                 div { class: "md:order-1",
-                    img { src: "/assets/pages/wood-products/heartland-powder.png", alt: "Unearthing Natural Fibers True Potential", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/wood-products/heartland-powder.webp", alt: "Unearthing Natural Fibers True Potential", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
@@ -68,7 +68,7 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "Imperium Fibers make wood products less expensive, a lot stronger, better for the world, and frankly, way cooler. Not wood, remember it." }
                 }
                 div { class: "md:order-2",
-                    img { src: "/assets/pages/wood-products/1210x786-px-4.png", alt: "heartland hemp bales", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/wood-products/1210x786-px-4.webp", alt: "heartland hemp bales", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             div { class: "grid md:grid-cols-2 gap-10 items-center mb-16 md:mb-24 animate-fade-in-up",
@@ -78,15 +78,15 @@ fn Body() -> Element {
                             p { class: "text-[color:var(--color-fg-muted)] mb-4 last:mb-0", "We work with global brands and their suppliers to predictably reduce the carbon footprint of everyday products without any retooling costs." }
                 }
                 div { class: "md:order-1",
-                    img { src: "/assets/pages/wood-products/untitled-1027-768-px-1210-768-px.png", alt: "heartland wood products replacing forestry", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                    img { src: "/assets/pages/wood-products/untitled-1027-768-px-1210-768-px.webp", alt: "heartland wood products replacing forestry", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
                 }
             }
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/wood-products/heartland-marine-1.png", alt: "heartland building materials 2", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/wood-products/heartland-marine-1.webp", alt: "heartland building materials 2", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }
             h2 { class: "text-2xl md:text-3xl font-display font-bold mb-5 mt-12 text-center", "PROJECTS COMPLATED" }
             figure { class: "mb-16 animate-fade-in-up",
-                img { src: "/assets/pages/wood-products/heartland-lca.png", alt: "heartland magnolia partners", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
+                img { src: "/assets/pages/wood-products/heartland-lca.webp", alt: "heartland magnolia partners", loading: "lazy", class: "w-full rounded-xl shadow-lg" }
             }        }
     }
 }

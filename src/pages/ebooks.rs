@@ -89,7 +89,7 @@ fn Section2() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/e-books/heartland-ebook-cover-industry-5.0.jpg",
+                        src: "/assets/pages/e-books/heartland-ebook-cover-industry-5.0.webp",
                         alt: "Heartland eBook Cover Industry 5.0",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -127,7 +127,7 @@ fn Section3() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/e-books/heartland-ebook-cover-regen-ag.jpg",
+                        src: "/assets/pages/e-books/heartland-ebook-cover-regen-ag.webp",
                         alt: "Heartland eBook Cover Regen Ag",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -162,7 +162,7 @@ fn Section4() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/e-books/heartland-ebook-cover-pof.jpg",
+                        src: "/assets/pages/e-books/heartland-ebook-cover-pof.webp",
                         alt: "Heartland eBook Cover POF",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

@@ -84,7 +84,7 @@ fn ItsInOurRoots() -> Element {
                 // Left: image
                 div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
-                        src: "/assets/pages/why-imperium/heartland-masterbatch.png",
+                        src: "/assets/pages/why-imperium/heartland-masterbatch.webp",
                         alt: "Heartland masterbatch — Imperium-filled pellets ready for compounding",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -138,7 +138,7 @@ fn SuperchargingBiology() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/why-imperium/cellulose-research.png",
+                        src: "/assets/pages/why-imperium/cellulose-research.webp",
                         alt: "Cellulose research — Imperium-grade fiber engineering",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -175,7 +175,7 @@ fn OneNaturalFiber() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/why-imperium/hemp-reinforced-polypropylene.png",
+                        src: "/assets/pages/why-imperium/hemp-reinforced-polypropylene.webp",
                         alt: "Hemp-reinforced polypropylene — automotive interior part",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -194,7 +194,7 @@ fn LetsChangeTheTune() -> Element {
                 // Left: image
                 div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
-                        src: "/assets/pages/why-imperium/paper-8-7.png",
+                        src: "/assets/pages/why-imperium/paper-8-7.webp",
                         alt: "Hemp baling drone — Heartland's fiber supply chain",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -299,7 +299,7 @@ fn LocalFarmingLocalManufacturing() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/why-imperium/regenerative-agriculture-hemp-vertical-tilling-4.png",
+                        src: "/assets/pages/why-imperium/regenerative-agriculture-hemp-vertical-tilling-4.webp",
                         alt: "Regenerative agriculture — hemp vertical tilling on the Heartland farm network",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",

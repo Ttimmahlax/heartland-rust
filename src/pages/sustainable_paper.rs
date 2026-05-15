@@ -75,7 +75,7 @@ fn Section1() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/sustainable-paper-additives/hemp-reinforced-boxes-in-a-storage-facility.png",
+                        src: "/assets/pages/sustainable-paper-additives/hemp-reinforced-boxes-in-a-storage-facility.webp",
                         alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -110,7 +110,7 @@ fn Section2() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-1 order-2",
                     img {
-                        src: "/assets/pages/sustainable-paper-additives/hemp-reinforced-paper-bowls.png",
+                        src: "/assets/pages/sustainable-paper-additives/hemp-reinforced-paper-bowls.webp",
                         alt: "",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
@@ -145,7 +145,7 @@ fn Section4() -> Element {
                 // Right: image
                 div { class: "animate-fade-in-up md:order-2 order-1",
                     img {
-                        src: "/assets/pages/sustainable-paper-additives/plastic-pallets-6-1.png",
+                        src: "/assets/pages/sustainable-paper-additives/plastic-pallets-6-1.webp",
                         alt: "hemps saving the forest",
                         loading: "lazy",
                         class: "w-full rounded-xl shadow-lg",
