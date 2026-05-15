@@ -1,7 +1,7 @@
 +++
 title = "Why Innovation is Crucial to a 5.0 World for Businesses to Survive"
 excerpt = "When [Thomas Edison](https://www.britannica.com/biography/Thomas-Edison) famously invented the lightbulb in 1879, it was truly a miracle of science. Up until then, to get light, we needed to burn something and create a flame, such as k"
-hero_image = "13-1.png"
+hero_image = "13-1.webp"
 hero_alt = "Image showing a computer screen with a lightbulb and a plant inside"
 published_at = "2024-08-05"
 author = "Heartland Industries"

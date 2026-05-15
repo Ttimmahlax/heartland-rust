@@ -1,7 +1,7 @@
 +++
 title = "How (or Why) Your Brand Equity is Tied to Your Sustainability Initiatives"
 excerpt = "A company derives its brand equity from the court of public opinion and sustainability matters. Collectively, investors, customers, employees, industries, and communities decide what something is worth."
-hero_image = "green-technology-to-green-materials.png"
+hero_image = "green-technology-to-green-materials.webp"
 hero_alt = "green technology to green materials"
 published_at = "2022-08-19"
 author = "Heartland Industries"

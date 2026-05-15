@@ -1,7 +1,7 @@
 +++
 title = "Engineering Earth: Rethinking Agriculture After 100 Years of Innovation"
 excerpt = "Over the last 100 years, we have begun Engineering Earth as mechanization has enabled our farming community to do the unthinkable. Farmers can cover thousands of acres on a single tractor, making food more accessible than ever. Through"
-hero_image = "paper-8.png"
+hero_image = "paper-8.webp"
 hero_alt = "bio continuity"
 published_at = "2024-01-22"
 author = "Heartland Industries"

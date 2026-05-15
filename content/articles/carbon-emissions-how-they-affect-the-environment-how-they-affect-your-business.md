@@ -1,7 +1,7 @@
 +++
 title = "Carbon Emissions - How They Affect Your Business In 2026"
 excerpt = "Carbon emissions are the gases that enter the atmosphere when fuels are burned. They are a component of overall [Greenhouse Gas Emissions](https://www.epa.gov/ghgemissions/sources-greenhouse-gas-emissions)(GHGs) and are a major contrib"
-hero_image = "carbon-emissions.jpg"
+hero_image = "carbon-emissions.webp"
 hero_alt = "Carbon Emissions"
 published_at = "2022-10-25"
 author = "Heartland Industries"

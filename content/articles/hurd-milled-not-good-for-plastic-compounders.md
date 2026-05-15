@@ -1,7 +1,7 @@
 +++
 title = "Hurd Milled Presents Uncessesary Challenges For Compounders"
 excerpt = "The hemp stalk can be separated into two parts. The fiber is used as a reinforcement agent and the hurd can be used as a filler. These fillers can be milled to meet specifications, but do not provide any performance"
-hero_image = "regenerative-agriculture-hemp-fiber-3.png"
+hero_image = "regenerative-agriculture-hemp-fiber-3.webp"
 hero_alt = "regenerative agriculture hemp fiber 3"
 published_at = "2023-07-28"
 author = "Heartland Industries"

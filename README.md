@@ -105,16 +105,19 @@ Inventory of every shared UI surface and third-party integration on the live hea
 
 ### Popups & Forms
 
-None on this build. The source site exposed HubSpot popups and forms via `_hsq` runtime — all of that is dropped per the Phase 1c integration triage.
+**HubSpot forms v2** (portal `8084764`) are embedded on the contact block, which appears on every page anchored at `#contact`. Per-page form IDs live in [src/components/contact_block.rs](src/components/contact_block.rs) `PAGE_FORM_IDS`. The HubSpot CMS, `_hsq` analytics runtime, and HubSpot popups are dropped — forms-only is intentional. No standalone popups (Klaviyo popup.rs was deleted during migration).
 
 ### Analytics & Tracking Integrations
 
 | Service | ID | Source URL | Purpose |
 | --- | --- | --- | --- |
 | Google Analytics 4 | `G-CFVBK0N6L6` | `https://www.googletagmanager.com/gtag/js?id=G-CFVBK0N6L6` | Pageviews, sessions, attribution |
+| Google Floodlight | (GA4 collection shard) | `https://stats.g.doubleclick.net` | GA4 conversion-collection endpoint |
+| HubSpot Forms v2 | Portal `8084764` | `https://js.hsforms.net/forms/v2.js` | Contact + demo-request lead capture (`contact_block.rs`) |
+| Retool Calculator | (public embed) | `https://heartland.retool.com/embedded/public/...` | Carbon calculator iframe (`carbon_calculator.rs`) |
 
 - **Not present** (explicitly removed during migration so future agents don't re-add by accident):
-  - HubSpot Analytics + `_hsq` runtime — dropped with WordPress
+  - HubSpot Analytics + `_hsq` runtime — CMS/analytics dropped (forms-only is intentional)
   - Hotjar (`hjid:2032509`) — session replay, out of scope by default
   - Klaviyo — not on source site, popup.rs component deleted
 - **Inbound query params captured + persisted:** `utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content`, `ref`, `hsLang` — stored in `localStorage["heartland.attribution"]` so any later form submission carries attribution.
@@ -324,6 +327,89 @@ cd target/dx/heartland-website/release/web/public && python3 -m http.server 3000
 Hosted on AWS Amplify. The build runs entirely from [amplify.yml](amplify.yml). Headers are configured via [customHttp.yml](customHttp.yml). The SPA rewrite rule must include `.md` in the static-extension allowlist so the AEO `/sustainability-news/<slug>.md` siblings serve as Markdown instead of being rewritten to the SPA shell — full details in [docs/AMPLIFY.md](docs/AMPLIFY.md).
 
 DNS configuration (apex + www) is set at launch time — see [docs/replicate.md §6](docs/replicate.md).
+
+## Website Hardening
+
+Static, no-auth, no-PII frontend — the attack surface is small, but the hardening below is non-negotiable. All response headers are enforced by [customHttp.yml](customHttp.yml) and must be re-verified on every deploy.
+
+### Response headers (enforced on every path)
+
+| Header | Value | Rationale |
+| --- | --- | --- |
+| `Strict-Transport-Security` | `max-age=63072000; includeSubDomains; preload` | 2-year HSTS, preload-eligible. Submit apex to [hstspreload.org](https://hstspreload.org) after DNS cutover. |
+| `Content-Security-Policy` | scoped allowlist — see below | Locks scripts/connects/frames/forms to known tracker hosts only. |
+| `X-Frame-Options` | `DENY` | Belt-and-suspenders alongside `frame-ancestors 'none'` for legacy clients. |
+| `X-Content-Type-Options` | `nosniff` | Blocks MIME-sniffing of `.md` / `.txt` AEO surfaces into executable contexts. |
+| `Referrer-Policy` | `strict-origin-when-cross-origin` | Strips path + query from outbound referrers. |
+| `Permissions-Policy` | `camera=(), microphone=(), geolocation=(), payment=(), usb=()` | We never use these — explicitly denied so injected iframes can't either. |
+| `Cross-Origin-Opener-Policy` | `same-origin` | Isolates browsing context — neutralizes `window.opener` attacks. |
+| `Cross-Origin-Resource-Policy` | `same-origin` | Prevents off-site embedding of our static assets. |
+
+### CSP — what's whitelisted and why
+
+The CSP is intentionally narrow. Every host in the allowlist must correspond to a tracker or form provider actually shipped in [src/tracking.rs](src/tracking.rs) or [src/components/contact_block.rs](src/components/contact_block.rs):
+
+- `script-src` includes `'wasm-unsafe-eval'` — **required** for Dioxus WASM hydration. Without it every `onclick` is dead (mobile hamburger, all interactive components). See [docs/replicate.md §5c](docs/replicate.md).
+- `'unsafe-inline'` survives only because HubSpot Forms v2 injects inline `<style>` and inline event attributes. We do **not** ship `'unsafe-eval'`.
+- Tracker hosts: `googletagmanager.com`, `*.google-analytics.com`, `stats.g.doubleclick.net` (GA4); `*.hsforms.com` / `*.hsforms.net` / `*.hubspot.com` / `*.hs-scripts.com` / `*.hs-analytics.net` (HubSpot Forms v2); `*.retool.com` (Carbon Calculator iframe).
+- Always-on lockdowns: `frame-ancestors 'none'`, `object-src 'none'`, `base-uri 'self'`, `form-action 'self' https://forms.hsforms.com https://*.hsforms.com`, `upgrade-insecure-requests`, `default-src 'self'`.
+
+**CSP hygiene rules:**
+
+1. **Adding a tracker = updating CSP in three places**: `script-src`, `connect-src`, and (if it iframes) `frame-src`. A new form provider also needs `form-action`.
+2. **Dropping a tracker = removing every CSP entry that referenced it.** Orphan hosts are pure attack surface.
+3. **Never add `'unsafe-eval'`.** If a library demands it, find another library.
+4. **Never widen `default-src` past `'self'`.** Always extend the specific directive.
+
+### TLS & transport
+
+- HTTPS-only. `upgrade-insecure-requests` auto-rewrites any stray `http://` reference at the browser.
+- HSTS is 2 years + `preload`. Submit `heartland.io` to [hstspreload.org](https://hstspreload.org) after DNS cutover so browsers enforce HTTPS before the first request.
+- Amplify terminates TLS. No service worker, by design — keeps the cache simple and removes a known persistence/poisoning vector.
+
+### Static-content & cache hygiene
+
+- `/assets/**` and `/wasm/**` ship `Cache-Control: public, max-age=31536000, immutable` — safe because filenames are content-hashed by `dx build`.
+- HTML is `must-revalidate, max-age=0` so a revert deploys instantly with no stale-window.
+- AEO surfaces (`/llms.txt`, `/llms-full.txt`, `/sustainability-news/*.md`) ship a 5-minute `must-revalidate` cache with explicit `Content-Type` so they can never be coerced into being interpreted as scripts (combined with the global `nosniff`).
+
+### Forms & user input
+
+- No auth, no user accounts, no first-party cookies, no server-side input handling. All form POSTs go out-of-band to HubSpot.
+- `form-action` in CSP restricts where forms can POST, so an injected `<form action="evil.com">` cannot ever leave the browser.
+- **No `dangerous_inner_html` anywhere.** Markdown is parsed with `pulldown-cmark` and walked into Dioxus elements ([src/components/markdown.rs](src/components/markdown.rs)). Reject any PR that introduces `dangerous_inner_html`.
+
+### Dependency hygiene
+
+- **`cargo audit` + `cargo deny` run on every PR** via [.github/workflows/audit.yml](.github/workflows/audit.yml) (`cargo audit --deny warnings`). Failures block merge.
+- **Dependabot** ([.github/dependabot.yml](.github/dependabot.yml)) opens weekly PRs for Rust crates and monthly PRs for GitHub Actions, with a supply-chain **cooldown** (patch: 3 days, minor: 7 days, major: 14 days) so freshly-published versions sit before we adopt them — mitigates typosquatting and hijacked-maintainer publishes. Security advisories (CVE-tagged) bypass cooldown.
+- `dioxus-cli` is **version-pinned** (`0.7.7 --locked`) in [scripts/build-ssg.sh](scripts/build-ssg.sh), [amplify.yml](amplify.yml), and the README quickstart — floating versions risk supply-chain drift.
+- Python helpers (`generate_icons.py`, `scripts/generate-aeo.py`) are stdlib + Pillow only. Pin Pillow if/when CI adopts it.
+
+### Deploy & infrastructure
+
+- **DNS hardening at launch** (⏳ pending cutover — site still serves WordPress today): DNSSEC at the registrar, CAA records limiting cert issuance to Amazon (`0 issue "amazon.com"`), Amplify-assigned ACM cert covering apex + www. Details in [docs/replicate.md §6](docs/replicate.md).
+- Amplify build is wired from [amplify.yml](amplify.yml) on `main`. **PR previews should be disabled in the Amplify Console** so arbitrary branch code never executes in our build environment — confirm in App settings → Previews before launch.
+- **Headers do not apply to Amplify's default error page.** The 404 rewrite (manual Amplify Console step, see [docs/AMPLIFY.md](docs/AMPLIFY.md)) must be configured so unknown paths serve our branded [src/pages/not_found.rs](src/pages/not_found.rs) (which inherits all headers), not Amplify's default 404. Re-verify on every deploy.
+
+### Verification (run after each deploy)
+
+⏳ **The Rust site is not yet at `heartland.io` — that DNS still points at the WordPress origin.** Until cutover, run these against the Amplify-assigned preview URL (e.g. `https://main.<app-id>.amplifyapp.com`).
+
+```bash
+SITE=https://heartland.io   # or the Amplify preview URL pre-cutover
+
+# 1. All hardening headers present
+curl -sI "$SITE/" | grep -iE "strict-transport-security|x-frame-options|x-content-type-options|content-security-policy|referrer-policy|permissions-policy|cross-origin"
+
+# 2. CSP allows wasm-unsafe-eval (otherwise every onclick is dead)
+curl -sI "$SITE/" | grep -i content-security-policy | grep -o "wasm-unsafe-eval" || echo "MISSING — site will not hydrate"
+
+# 3. 404 rewrite is wired (must return branded 404 WITH headers)
+curl -sI "$SITE/__definitely_not_a_page__" | grep -iE "content-security-policy|strict-transport-security"
+```
+
+External grade-card check: [securityheaders.com](https://securityheaders.com/?q=heartland.io) should return **A or A+**. Anything below is a regression.
 
 ## SOP for new articles
 

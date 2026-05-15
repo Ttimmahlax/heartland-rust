@@ -1,7 +1,7 @@
 +++
 title = "Imperium Reinforced HDPE to Replace PP Applications With Improved Stiffness"
 excerpt = "Virgin High-Density Polyethylene (HDPE) and Polypropylene (PP) are two widely used [thermoplastics](https://www.libertyplasticsinc.com/blog/how-does-hdpe-stack-up-to-pp-corrugated-plastic/#:~:text=HDPE%20and%20PP%20have%20their,lifespa"
-hero_image = "hdpe-to-replace-pp.png"
+hero_image = "hdpe-to-replace-pp.webp"
 hero_alt = "hdpe to replace pp"
 published_at = "2025-04-23"
 author = "Heartland Industries"

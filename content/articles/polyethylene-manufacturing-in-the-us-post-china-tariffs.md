@@ -1,7 +1,7 @@
 +++
 title = "Polyethylene Manufacturing in the US Post China Tariffs"
 excerpt = "In 2022, despite global market fluctuations, US ethylene exports to China remained robust, supporting the production of plastics integral to both domestic and international supply chains. To sustain this demand, US manufacturers have…"
-hero_image = "copy-of-articles-standard-sizing.png"
+hero_image = "copy-of-articles-standard-sizing.webp"
 hero_alt = "us post tariff"
 published_at = "2025-04-22"
 author = "Heartland Industries"

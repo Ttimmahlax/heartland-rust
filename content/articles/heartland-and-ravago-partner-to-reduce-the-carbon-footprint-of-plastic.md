@@ -1,7 +1,7 @@
 +++
 title = "Heartland and Ravago Agree to Develop Products Reducing Carbon Footprint"
 excerpt = "By leveraging carbon-negative and renewable plastic additives like industrial hemp, Ravago can offer composite products that are stronger, lighter, cheaper, and more sustainable. Not only will these plastics have enhanced thermal and…"
-hero_image = "paper-8-17.png"
+hero_image = "paper-8-17.webp"
 hero_alt = "ravago carbon footprint"
 published_at = "2022-08-19"
 author = "Heartland Industries"

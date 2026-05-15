@@ -18,6 +18,16 @@ pub struct SeoProps {
     pub path: String,
     #[props(default = String::new())]
     pub image: String,
+    /// Image pixel width as a string. Defaults to the brand-icon size (512);
+    /// article pages override to their hero dimensions (1210×786 standard).
+    #[props(default = String::from(DEFAULT_OG_IMAGE_WIDTH))]
+    pub image_width: String,
+    #[props(default = String::from(DEFAULT_OG_IMAGE_HEIGHT))]
+    pub image_height: String,
+    /// Image alt text. Defaults to the brand alt; article pages should pass
+    /// the per-image `hero_alt` so screen readers + social previews are accurate.
+    #[props(default = String::from(DEFAULT_OG_IMAGE_ALT))]
+    pub image_alt: String,
     #[props(default = String::from("website"))]
     pub og_type: String,
 }
@@ -57,13 +67,14 @@ pub fn Seo(props: SeoProps) -> Element {
         document::Meta { property: "og:title", content: "{props.title}" }
         document::Meta { property: "og:description", content: "{props.description}" }
         document::Meta { property: "og:image", content: "{image}" }
-        document::Meta { property: "og:image:width", content: DEFAULT_OG_IMAGE_WIDTH }
-        document::Meta { property: "og:image:height", content: DEFAULT_OG_IMAGE_HEIGHT }
-        document::Meta { property: "og:image:alt", content: DEFAULT_OG_IMAGE_ALT }
+        document::Meta { property: "og:image:width", content: "{props.image_width}" }
+        document::Meta { property: "og:image:height", content: "{props.image_height}" }
+        document::Meta { property: "og:image:alt", content: "{props.image_alt}" }
         document::Meta { name: "twitter:card", content: "summary_large_image" }
         document::Meta { name: "twitter:title", content: "{props.title}" }
         document::Meta { name: "twitter:description", content: "{props.description}" }
         document::Meta { name: "twitter:image", content: "{image}" }
+        document::Meta { name: "twitter:image:alt", content: "{props.image_alt}" }
     }
 }
 

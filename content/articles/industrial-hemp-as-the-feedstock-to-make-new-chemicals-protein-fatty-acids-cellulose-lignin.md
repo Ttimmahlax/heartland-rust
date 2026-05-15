@@ -1,7 +1,7 @@
 +++
 title = "Industrial Hemp As The Feedstock To Make New Chemicals"
 excerpt = "Petrochemicals became the [foundation of modern chemistry](https://www.petro-online.com/news/fuel-for-thought/13/breaking-news/what-is-petrochemistry-nbsp/35676) because their molecules are simple and consistent, making them easy to wo"
-hero_image = "industrial-hemp-as-the-feedstock-to-make-new-chemicals-protein-fatty-acids-cellulose-lignin.png"
+hero_image = "industrial-hemp-as-the-feedstock-to-make-new-chemicals-protein-fatty-acids-cellulose-lignin.webp"
 hero_alt = "Industrial Hemp As The Feedstock To Make New Chemicals Protein, Fatty Acids, Cellulose, Lignin"
 published_at = "2025-01-21"
 author = "Heartland Industries"

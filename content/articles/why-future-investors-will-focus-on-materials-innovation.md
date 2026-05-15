@@ -1,7 +1,7 @@
 +++
 title = "Why Future Investors will Focus on Materials Innovation"
 excerpt = "Let’s start at the beginning. Investors, no matter what type they are, angel, debt, equity, investment banker, fund manager, venture capitalist, are all looking for the same thing – Return on their investment, or ROI. A former boss of"
-hero_image = "paper-8-23.png"
+hero_image = "paper-8-23.webp"
 hero_alt = "polyproplyene reinforced hemp plastic"
 published_at = "2022-08-21"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "The Ultimate Guide to Plastics of the Future Part 6 - Bio-Based Additives"
 excerpt = "Most of the plastics we see around us use additives to modify performance. There are additives that add strength, stability, flexibility, color, impact resistance, UV protection, and dozens of other characteristics. These different typ"
-hero_image = "rubber-11.png"
+hero_image = "rubber-11.webp"
 hero_alt = "plastic of the future"
 published_at = "2022-08-22"
 author = "Heartland Industries"

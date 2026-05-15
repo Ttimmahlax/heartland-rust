@@ -1,7 +1,7 @@
 +++
 title = "European Automotive Companies Use Hemp. Why Doesn't America?"
 excerpt = "Although hemp has been around for over 10,000 years, Americans make it out to be a new, novel, and revolutionary material. Manufacturers in America are just starting to become familiarized with hemp’s properties. But, in Europe, many m"
-hero_image = "plastic-pallets-2-2.png"
+hero_image = "plastic-pallets-2-2.webp"
 hero_alt = "european automotive hemp"
 published_at = "2022-08-17"
 author = "Heartland Industries"

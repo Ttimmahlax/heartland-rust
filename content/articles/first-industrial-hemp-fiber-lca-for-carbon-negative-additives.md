@@ -1,7 +1,7 @@
 +++
 title = "First Industrial Hemp Fiber LCA For Carbon Negative Additives"
 excerpt = "Today, Heartland announced the completion of its Life Cycle Assessment. This represents a shift in how manufacturers can look at the effectiveness of carbon-negative plastic additives."
-hero_image = "heartland-lca.png"
+hero_image = "heartland-lca.webp"
 hero_alt = "heartland LCA"
 published_at = "2022-11-08"
 author = "Heartland Industries"

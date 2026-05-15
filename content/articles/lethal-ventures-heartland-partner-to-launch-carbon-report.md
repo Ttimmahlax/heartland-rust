@@ -1,7 +1,7 @@
 +++
 title = "Lethal Ventures & Heartland Partner To Launch Carbon Report"
 excerpt = "DETROIT, MI, UNITED STATES, November 12, 2024 /[EINPresswire.com](https://www.einpresswire.com/)/ -- [Heartland Industries](/), a leading innovator in sustainable materials and technology, is partnering with [Lethal Ventures](https://w"
-hero_image = "lethal-ventures-heartland-carbon-report.png"
+hero_image = "lethal-ventures-heartland-carbon-report.webp"
 hero_alt = "lethal ventures heartland carbon report"
 published_at = "2024-11-20"
 author = "Heartland Industries"

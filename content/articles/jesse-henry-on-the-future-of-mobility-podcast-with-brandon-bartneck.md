@@ -1,7 +1,7 @@
 +++
 title = "Jesse Henry on The Future of Mobility Podcast with Brandon Bartneck"
 excerpt = "The Future of Mobility podcast is hosted by Brandon Bartneck as a means of showcasing all of the work being done to improve sustainability for everyone."
-hero_image = "jesse-henry-brandon-bartneck-future-of-mobility.png"
+hero_image = "jesse-henry-brandon-bartneck-future-of-mobility.webp"
 hero_alt = "jesse henry brandon bartneck future of mobility"
 published_at = "2023-11-22"
 author = "Heartland Industries"

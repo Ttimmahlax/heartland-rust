@@ -1,7 +1,7 @@
 +++
 title = "Scope 3 Emissions - The Good, The Bad, and The Ripple Effect"
 excerpt = "The Pressure to Report Scope 3 Emissions Last week we touched on the new SEC rules for reporting emissions and as we covered, the new rules only apply to Scope 1 & 2 emissions. But looming in the not to distant future, those arduous…"
-hero_image = "industry-5.0-article-series-1210-x-786-px.png"
+hero_image = "industry-5.0-article-series-1210-x-786-px.webp"
 hero_alt = "Article #2 from Heartland's Industry 5.0 Series - Scope 3 Emissions"
 published_at = "2024-06-17"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "The Benefits of Hemp Fiber Reinforced Polypropylene for the Automotive Industry"
 excerpt = "Heartland Industries produces hemp-reinforced polypropylene with our plastic additives that can be used in the automotive industry. Whereas most plastic fillers in automotive applications consist of talc or fiberglass, our Imperium ind"
-hero_image = "mining-3.png"
+hero_image = "mining-3.webp"
 hero_alt = "tesla"
 published_at = "2022-08-22"
 author = "Heartland Industries"

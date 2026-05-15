@@ -1,7 +1,7 @@
 +++
 title = "Investing in Manufacturing Innovations: Pioneering a Sustainable Future"
 excerpt = "Manufacturers produce many types of goods, relying heavily on raw materials such as wood, steel, and [petrochemicals](https://en.wikipedia.org/wiki/Petrochemical)—materials that have seen little change in the past 50 years. While these"
-hero_image = "industry-5.0-article-series-1210-x-786-px-2.png"
+hero_image = "industry-5.0-article-series-1210-x-786-px-2.webp"
 hero_alt = "Image of a computer screen with the Earth and a tree being held in hands"
 published_at = "2024-07-15"
 author = "Heartland Industries"

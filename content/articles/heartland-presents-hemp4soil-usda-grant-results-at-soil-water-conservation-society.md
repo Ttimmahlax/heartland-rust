@@ -1,7 +1,7 @@
 +++
 title = "Heartland Presents Hemp4Soil USDA Grant Results At SWCS"
 excerpt = "The Hemp4Soil Grant was awarded to Heartland in 2022 to explore the integration of hemp fiber in conventional crop rotations throughout the United States. The farmers involved in this program raise corn, soybeans, wheat, and other comm"
-hero_image = "hemp4soil-heartland-usda-grant.png"
+hero_image = "hemp4soil-heartland-usda-grant.webp"
 hero_alt = "hemp4soil heartland usda grant"
 published_at = "2025-08-06"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "Industrial Hemp Creates A Circular Economy For Local Manufacturers"
 excerpt = "The global economy is made up of thousands of little micro-economies across the world. These micro-economies exist in towns and cities that are right down the street from you."
-hero_image = "paper-8-13.png"
+hero_image = "paper-8-13.webp"
 hero_alt = "circular economy"
 published_at = "2022-08-18"
 author = "Heartland Industries"

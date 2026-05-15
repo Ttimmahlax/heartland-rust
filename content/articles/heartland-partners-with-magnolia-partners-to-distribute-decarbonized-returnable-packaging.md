@@ -1,7 +1,7 @@
 +++
 title = "Heartland & Magnolia Partners - Decarbonized Industrial Packaging"
 excerpt = "Heartland Industries is the leading natural fiber producer developing new technologies, including industrial packaging, that can help manufacturers around the world reduce scope 3 emissions."
-hero_image = "heartland-lca.png"
+hero_image = "heartland-lca.webp"
 hero_alt = "heartland magnolia partners"
 published_at = "2023-05-16"
 author = "Heartland Industries"

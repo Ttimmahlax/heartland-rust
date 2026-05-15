@@ -1,7 +1,7 @@
 +++
 title = "Plastics of the Future Part 5 - Biodegradable and Compostable Plastics"
 excerpt = "Single-use plastics are definitely one of the many key contributors to the current solid waste crisis. While they may be used for a short time, they cause a lot of harm because of how quickly they pile up in landfills."
-hero_image = "rubber-11.png"
+hero_image = "rubber-11.webp"
 hero_alt = "plastic of the future"
 published_at = "2022-08-22"
 author = "Heartland Industries"

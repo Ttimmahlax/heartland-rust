@@ -1,7 +1,7 @@
 +++
 title = "Heartland Puts Industrial Hemp Headquarters in Detroit"
 excerpt = "Heartland plans to put its Industrial Hemp Headquarters in Detroit Originally, the Heartland team was focused on Kansas. They had access to a prime location with strong tax incentives and political capital. Being at the center point…"
-hero_image = "plastic-pallets-1-1.png"
+hero_image = "plastic-pallets-1-1.webp"
 hero_alt = "heartland detroit"
 published_at = "2022-08-17"
 author = "Heartland Industries"

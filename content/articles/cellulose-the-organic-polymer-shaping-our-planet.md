@@ -1,7 +1,7 @@
 +++
 title = "Cellulose Fiber: The Organic Polymer Shaping Our Planet and Future"
 excerpt = "Every plastic and resin on the planet is a polymer. Quite simply, a polymer is just a series of repeating subunits (monomers). These repeating units are all connected through a process called polymerization. Cellulose fiber is one of t"
-hero_image = "plastic-pallets-2-1.png"
+hero_image = "plastic-pallets-2-1.webp"
 hero_alt = "cellulose fiber"
 published_at = "2022-08-17"
 author = "Heartland Industries"

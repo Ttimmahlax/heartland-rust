@@ -1,7 +1,7 @@
 +++
 title = "Resin Additives - The Move Towards Sustainable Bio-Based Materials"
 excerpt = "Resin (polymer) additives are a group of materials that are used as a binder to solidify resinous materials, which in raw form have the consistency of pitch or tar. Plastics compounding is the process of combining polymers and additive"
-hero_image = "blue-plastic-pellets.png"
+hero_image = "blue-plastic-pellets.webp"
 hero_alt = "blue plastic pellets"
 published_at = "2022-08-19"
 author = "Heartland Industries"

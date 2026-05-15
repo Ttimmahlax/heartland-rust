@@ -1,7 +1,7 @@
 +++
 title = "What Is Hemp Seed Oil And How Can It Benefit The Chemicals Market?"
 excerpt = "Hemp seed oil, the green gold of the plant world, is a versatile powerhouse extracted from the tiny seeds of the Cannabis sativa plant. A primer on its industrial applications."
-hero_image = "what-is-hemp-seed-oil-how-can-it-benefit-chemical-market.png"
+hero_image = "what-is-hemp-seed-oil-how-can-it-benefit-chemical-market.webp"
 hero_alt = "what is hemp seed oil how can it benefit chemical market"
 published_at = "2025-03-04"
 author = "Heartland Industries"

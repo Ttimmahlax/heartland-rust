@@ -1,7 +1,7 @@
 +++
 title = "Manufacturers Tightening R&D, Cost Savings in Economic Uncertainty"
 excerpt = "Economic uncertainty in 2024 created significant headwinds for the manufacturing sector, with growth slowing as companies faced rising costs and volatile demand. Global supply chain disruptions, lingering effects from the pandemic, and"
-hero_image = "manufacturers-tightening-rd-initiatives-focusing-on-cost-savings-in-economic-uncertainty.png"
+hero_image = "manufacturers-tightening-rd-initiatives-focusing-on-cost-savings-in-economic-uncertainty.webp"
 hero_alt = "Manufacturers Tightening R&D Initiatives, Focusing On Cost Savings in Economic Uncertainty"
 published_at = "2025-01-28"
 author = "Heartland Industries"

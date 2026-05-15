@@ -1,7 +1,7 @@
 +++
 title = "Challenging Fast Fashion As Prices Shift Upward For Clothing"
 excerpt = "Major fast fashion retailers, like Zara, H&M, and Shein, rely on quick trend cycles to keep consumers buying. This model thrives on mass production, often in low-wage countries, leading to ethical concerns about labor conditions."
-hero_image = "challenging-fast-fashion-imperium-hemp-fiber.png"
+hero_image = "challenging-fast-fashion-imperium-hemp-fiber.webp"
 hero_alt = "challenging fast fashion imperium hemp fiber"
 published_at = "2025-05-28"
 author = "Heartland Industries"

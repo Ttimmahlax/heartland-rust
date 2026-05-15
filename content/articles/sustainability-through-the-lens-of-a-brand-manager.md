@@ -1,7 +1,7 @@
 +++
 title = "Marketing Sustainability through the Lens of a Brand Manager"
 excerpt = "Sustainability is rapidly becoming a cornerstone of building [brand value](/sustainability-news/green-is-the-new-gold-how-sustainability-elevates-brand-value/). While the term \"sustainable\" has various interpretations—ranging from ener"
-hero_image = "industry-5.0-article-series-1210-x-786-px-6-720.png"
+hero_image = "industry-5.0-article-series-1210-x-786-px-6-720.webp"
 hero_alt = "Image of computer screen with title image Green Brand Managing"
 published_at = "2024-08-17"
 author = "Heartland Industries"

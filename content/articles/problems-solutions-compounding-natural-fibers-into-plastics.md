@@ -1,7 +1,7 @@
 +++
 title = "Problems & Solutions - Compounding Natural Fibers Into Plastics"
 excerpt = "Plastic compounders have been trying to figure out how to integrate sustainable materials into their products for years. The problem is, that sustainable materials feel like some made-up fairytale to a plastics industry professional wh"
-hero_image = "foam-7.png"
+hero_image = "foam-7.webp"
 hero_alt = "problems with natural fibers"
 published_at = "2022-09-06"
 author = "Heartland Industries"

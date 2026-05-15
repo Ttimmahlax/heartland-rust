@@ -1,7 +1,7 @@
 +++
 title = "Navigating Complex Scope 3 Emissions - Strategies for Manufacturing"
 excerpt = "We read about Greenhouse Gas Emissions (GHGs), Corporate Carbon Footprints and the overall journey towards Net Zero almost every day. Many companies now have entire departments and/or executive direction to achieve some lofty goals on"
-hero_image = "scope-3-emissions.jpg"
+hero_image = "scope-3-emissions.webp"
 hero_alt = "Scope 3 Emissions Represent the most Difficult Challenge for Manufacturers"
 published_at = "2023-11-30"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "Heartland Partners with Aureo To Derive New Insights From Data Lake"
 excerpt = "In the modern era of industrial innovation, manufacturing and farming equipment generate some of the most intricate and voluminous data streams in the world. High-tech machinery, from precision agricultural tools to advanced manufactur"
-hero_image = "heartland-aureo-partnership.png"
+hero_image = "heartland-aureo-partnership.webp"
 hero_alt = "Heartland Partners with Aureo To Derive New Insights From Data Lake"
 published_at = "2025-06-05"
 author = "Heartland Industries"

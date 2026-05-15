@@ -1,7 +1,7 @@
 +++
 title = "Heartland Increases Hemp Fiber Farming in Michigan Winter Wheat"
 excerpt = "Hemp production in the United States is on the rise, albeit still on a small scale compared to staple crops like wheat, corn, and soy. But any increase in hemp and more specifically industrial hemp is a good thing! Not"
-hero_image = "michigan-farm-article-1-1210--786-px.jpg"
+hero_image = "michigan-farm-article-1-1210--786-px.webp"
 hero_alt = "Image of Heartland's tractors in action planting hemp in Michigan"
 published_at = "2023-03-21"
 author = "Heartland Industries"

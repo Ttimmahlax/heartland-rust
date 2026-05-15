@@ -1,7 +1,7 @@
 +++
 title = "The New Sustainable Leadership Era - Why It's Here to Stay"
 excerpt = "Leadership matters. We hear this all the time, but why? Because all organizations follow the mindset of the leaders in charge. We follow leaders for direction. We follow them for guidance in uncertain times. We also follow them for ins"
-hero_image = "leadership.jpg"
+hero_image = "leadership.webp"
 hero_alt = "The word leadership highlighted in a dictionary"
 published_at = "2024-01-31"
 author = "Heartland Industries"

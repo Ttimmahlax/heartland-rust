@@ -1,7 +1,7 @@
 +++
 title = "Tips and Tricks To Compounding Hemp Filler with Polyethylene"
 excerpt = "Hemp fiber is an incredible crop with a long history of performing in rigorous environments. Plastic compounding is one of those environments in that hemp fillers have an opportunity to thrive. In order to successfully use hemp fillers"
-hero_image = "untitled-1027--768-px-1210--768-px-1.png"
+hero_image = "untitled-1027--768-px-1210--768-px-1.webp"
 hero_alt = "hemp filler polyethylene"
 published_at = "2023-07-03"
 author = "Heartland Industries"

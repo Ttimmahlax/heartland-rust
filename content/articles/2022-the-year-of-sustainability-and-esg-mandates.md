@@ -1,7 +1,7 @@
 +++
 title = "2022: The Year of Sustainability and ESG Mandates"
 excerpt = "The effects of 2020 are unquantifiable today. The implications on our health physically, mentally, emotionally, financially, and socially will unfold over the coming years. The world has fundamentally shifted, and many of our business"
-hero_image = "plastic-pallets-4-2.png"
+hero_image = "plastic-pallets-4-2.webp"
 hero_alt = "sustainable 2022"
 published_at = "2022-08-17"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "Innovations in the Auto Industry are Speeding Our Way"
 excerpt = "A good way to predict the future is to look at what the innovative industries, which are generally on the leading edge of technology and advancement, are working on. One of our favorites is of course the innovations in the"
-hero_image = "future-car.png"
+hero_image = "future-car.webp"
 hero_alt = "Futuristic image of a car streaming through blue lights"
 published_at = "2023-07-05"
 author = "Heartland Industries"

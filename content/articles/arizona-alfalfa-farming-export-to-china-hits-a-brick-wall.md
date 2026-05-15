@@ -1,7 +1,7 @@
 +++
 title = "Arizona Alfalfa Farming & Exports To China Hit A Brick Wall With Tariffs"
 excerpt = "Over the past century, [Arizona’s farming history](https://www.azfb.org/Advocacy/Issues/Arizonas-Essential-Alfalfa) has evolved dramatically, shaped by its arid climate and innovative irrigation systems. In the early 1900s, agriculture"
-hero_image = "arizona-alfalfa-farming-hemp-fiber-and-grain.png"
+hero_image = "arizona-alfalfa-farming-hemp-fiber-and-grain.webp"
 hero_alt = "arizona alfalfa farming hemp fiber and grain"
 published_at = "2025-05-06"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "Declouding Customer Data and Hemp Supply Chain Data To Improve Privacy"
 excerpt = "The rapid integration of artificial intelligence into every layer of business is transforming cloud services — but not always for the better. While AI unlocks unprecedented capabilities in data analysis, automation, and customer insigh"
-hero_image = "declouding-customer-data-and-hemp-supply-chain-data-to-improve-privacy.png"
+hero_image = "declouding-customer-data-and-hemp-supply-chain-data-to-improve-privacy.webp"
 hero_alt = "Declouding Customer Data and Hemp Supply Chain Data To Improve Privacy"
 published_at = "2026-05-12"
 author = "Heartland Industries"

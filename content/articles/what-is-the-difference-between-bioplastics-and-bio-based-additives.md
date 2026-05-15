@@ -1,7 +1,7 @@
 +++
 title = "What is the Difference Between Bioplastics and Bio-Based Additives?"
 excerpt = "The story starts with petroleum and the number of markets that rely on it. Politicians today are fighting over oil regulations, but many of them don’t realize all the downstream effects that their legislation creates. When oil supplies"
-hero_image = "assorted-plastic-pellets.png"
+hero_image = "assorted-plastic-pellets.webp"
 hero_alt = "assorted plastic pellets"
 published_at = "2022-08-18"
 author = "Heartland Industries"

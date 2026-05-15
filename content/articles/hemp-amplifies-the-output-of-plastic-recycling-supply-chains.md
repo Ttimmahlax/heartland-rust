@@ -1,7 +1,7 @@
 +++
 title = "Hemp Amplifies The Output of Plastic Recycling Supply Chains"
 excerpt = "The recycling industry is currently booming. As the cost of virgin plastic shoots through the roof, the demand and price for recycled plastics are trending in the same direction."
-hero_image = "turtle-stuck-on-plastic.png"
+hero_image = "turtle-stuck-on-plastic.webp"
 hero_alt = "turtle stuck on plastic"
 published_at = "2022-08-18"
 author = "Heartland Industries"

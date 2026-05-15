@@ -1,7 +1,7 @@
 +++
 title = "Heartland Raises Seed Capital For Detroit Facility For Processing"
 excerpt = "July 2020 – The Heartland team has raised their first round of seed capital from a local power player in the [Detroit community.](/sustainability-news/industry-50-the-sustainability-revolution/)This financing brings with it tremendous"
-hero_image = "plastic-pallets-2.png"
+hero_image = "plastic-pallets-2.webp"
 hero_alt = "raising capital"
 published_at = "2022-08-17"
 author = "Heartland Industries"

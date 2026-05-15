@@ -1,7 +1,7 @@
 +++
 title = "Top 3 Ways Manufacturers Can Decarbonize Plastic Products"
 excerpt = "Over the last 100 years, plastic has evolved in every way. New, high-performance plastic has been identified by researchers searching for the next molecule."
-hero_image = "untitled-1027--768-px-1210--768-px-1.png"
+hero_image = "untitled-1027--768-px-1210--768-px-1.webp"
 hero_alt = "natural fiber filled plastic"
 published_at = "2023-08-11"
 author = "Heartland Industries"

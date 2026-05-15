@@ -1,7 +1,7 @@
 +++
 title = "The Strengths And Weaknesses of Industrial Hemp’s Weight"
 excerpt = "As our team has sent out sample materials to manufacturers across automotive, plastics, and other downstream markets, we have gotten some amazing feedback. The information provided to us about the strength and lightweight nature of ind"
-hero_image = "paper-8-1.png"
+hero_image = "paper-8-1.webp"
 hero_alt = "hemp light as a feather"
 published_at = "2022-08-18"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "Alternative to Talc & Calcium Carbonate in Plastic: Hemp Additives"
 excerpt = "If you take a look around, you’ll see that plastics make up much of the world around you. However, very little of what you see is pure plastic. That’s because most plastics include a combination of additives that provide the"
-hero_image = "plastic-pallets-4-1.png"
+hero_image = "plastic-pallets-4-1.webp"
 hero_alt = "alternative to talc and calcium carbonate"
 published_at = "2023-05-31"
 author = "Heartland Industries"

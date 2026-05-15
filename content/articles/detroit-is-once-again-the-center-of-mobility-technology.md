@@ -1,7 +1,7 @@
 +++
 title = "Detroit is Once Again the Center of Mobility Technology"
 excerpt = "The automotive industry stands on the brink of a profound transformation, driven by pillars of innovation: electric vehicle (EV) technology, autonomous vehicles (AV) or self-driving vehicles, and new materials science. We hear a lot ab"
-hero_image = "detroit.jpg"
+hero_image = "detroit.webp"
 hero_alt = "Detroit is once again becoming the new technology center for all things mobility"
 published_at = "2024-02-19"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "The Ultimate Guide to Plastics of the Future Part 2 The Big Issue - Carbon!"
 excerpt = "Carbon is one of the most important elements for life on Earth and it is created through natural processes like volcanic eruptions, forest fires, decomposition of plants, animals, and other natural events."
-hero_image = "rubber-11.png"
+hero_image = "rubber-11.webp"
 hero_alt = "plastic of the future"
 published_at = "2022-08-21"
 author = "Heartland Industries"

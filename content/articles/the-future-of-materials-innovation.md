@@ -1,7 +1,7 @@
 +++
 title = "The Future of Materials - A Chance to Change the World Forever"
 excerpt = "Materials innovation is constantly on the move. From the beginning of recorded history, humans have been working with tools and their associated materials. We fashioned stone axes, knives, and spears to level the playing field with str"
-hero_image = "untitled-1210--786-px-3.png"
+hero_image = "untitled-1210--786-px-3.webp"
 hero_alt = "The Future of Materials - A Chance to Change the World Forever"
 published_at = "2022-12-12"
 author = "Heartland Industries"

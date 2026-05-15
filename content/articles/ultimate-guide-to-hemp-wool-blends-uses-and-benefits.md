@@ -1,7 +1,7 @@
 +++
 title = "Ultimate Guide to Hemp-Wool Blends: Uses, and Benefits"
 excerpt = "Hemp-wool blends are an exceptional choice for sustainable, high-performance textiles, combining the rugged durability, eco-friendliness, and natural strength of hemp with the superior warmth, insulation, and luxurious softness of wool"
-hero_image = "ultimate-guide-to-hemp-wool-blends-composition-uses-and-benefits.png"
+hero_image = "ultimate-guide-to-hemp-wool-blends-composition-uses-and-benefits.webp"
 hero_alt = "Ultimate Guide to Hemp-Wool Blends: Uses, and Benefits"
 published_at = "2025-04-28"
 author = "Heartland Industries"

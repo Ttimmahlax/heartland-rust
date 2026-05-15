@@ -1,7 +1,7 @@
 +++
 title = "Minority-Owned Farms in America - Moving our Economy Forward"
 excerpt = "In an era of social justice and a focus on leveling the economic playing field for minorities in the United States, you might be shocked at some statistics on minority businesses and minority-owned farms, in particular. You might think"
-hero_image = "plastic-pallets-5.png"
+hero_image = "plastic-pallets-5.webp"
 hero_alt = "hemp farming"
 published_at = "2022-08-19"
 author = "Heartland Industries"

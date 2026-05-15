@@ -1,7 +1,7 @@
 +++
 title = "Industry 5.0 – Why Sustainability Will Be The Next Revolution"
 excerpt = "The Industrial Revolution of the 19th century transformed lives all over the world. It made life easier and more comfortable for many people, but it also created a new kind of misery as well as an economic divide that would"
-hero_image = "lower-carbon-footprint-hemp-farming.png"
+hero_image = "lower-carbon-footprint-hemp-farming.webp"
 hero_alt = "fifth industrial revolution (industry 5.0) sustainability capitalism"
 published_at = "2022-08-21"
 author = "Heartland Industries"

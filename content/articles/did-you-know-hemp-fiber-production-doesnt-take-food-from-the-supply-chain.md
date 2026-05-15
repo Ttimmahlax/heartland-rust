@@ -1,7 +1,7 @@
 +++
 title = "Did You Know Farming Hemp Fiber Doesn't Remove Food From The Supply Chain?"
 excerpt = "Heartland is one of the largest hemp fiber producers in North America, and the largest hemp fiber producer in the US. What people don't fully understand, is that during our farming process, we have an opportunity to harvest the grain"
-hero_image = "untitled-1027--768-px-1210--768-px-2.png"
+hero_image = "untitled-1027--768-px-1210--768-px-2.webp"
 hero_alt = "hemp seed protein"
 published_at = "2023-08-18"
 author = "Heartland Industries"

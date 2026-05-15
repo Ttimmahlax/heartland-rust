@@ -1,7 +1,7 @@
 +++
 title = "The Scope 3 Carbon Footprint Of A Plastic Automotive Part"
 excerpt = "In recent years, the automotive industry has witnessed a significant shift towards the [use of plastics](https://www.npr.org/2019/07/09/735848489/plastic-has-a-big-carbon-footprint-but-that-isnt-the-whole-story)in various vehicle compo"
-hero_image = "scope-3-plastic-carbon-footprint.png"
+hero_image = "scope-3-plastic-carbon-footprint.webp"
 hero_alt = "scope 3 plastic carbon footprint"
 published_at = "2023-09-24"
 author = "Heartland Industries"

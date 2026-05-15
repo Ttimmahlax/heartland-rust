@@ -1,7 +1,7 @@
 +++
 title = "TDS, SDS, Carbon Report | Using Carbon Report To Simplify Tracking CO2"
 excerpt = "The Heartland team has been sending [carbon emissions data](http://carbon-report.com) with TDS and SDS when bidding on new programs for 5 years. One of our sales points when asking customers to change from an existing material like Tal"
-hero_image = "sds-tds-carbon-report-simplified-emissions-tracking.png"
+hero_image = "sds-tds-carbon-report-simplified-emissions-tracking.webp"
 hero_alt = "SDS, TDS, Carbon Report Simplified Emissions Tracking"
 published_at = "2025-03-18"
 author = "Heartland Industries"

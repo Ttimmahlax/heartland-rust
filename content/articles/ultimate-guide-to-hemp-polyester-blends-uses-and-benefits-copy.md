@@ -1,7 +1,7 @@
 +++
 title = "Ultimate Guide to Hemp-Polyester Blends: Uses, and Benefits"
 excerpt = "Hemp-polyester blends are a forward-thinking choice in sustainable performance textiles, combining the natural strength, eco-friendliness, and durability of hemp with the quick-drying, wrinkle-resistant, and shape-holding properties of"
-hero_image = "ultimate-guide-to-hemp-polyester-blends-composition-uses-and-benefits.png"
+hero_image = "ultimate-guide-to-hemp-polyester-blends-composition-uses-and-benefits.webp"
 hero_alt = "Ultimate Guide to Hemp-Polyester Blends: Uses, and Benefits"
 published_at = "2025-07-24"
 author = "Heartland Industries"

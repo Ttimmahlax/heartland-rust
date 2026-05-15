@@ -1,7 +1,7 @@
 +++
 title = "Heartland Augments Glass Fiber in Plastics with Hemp Alternatives"
 excerpt = "Glass is one of the most common raw materials we see in use today. It can be made into anything from windows to tableware to furniture, and the list goes on. It is also a material that has changed significantly"
-hero_image = "plastic-pallets-1-2.png"
+hero_image = "plastic-pallets-1-2.webp"
 hero_alt = "glass fiber alternative"
 published_at = "2022-10-10"
 author = "Heartland Industries"

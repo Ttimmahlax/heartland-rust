@@ -1,7 +1,7 @@
 +++
 title = "Opening Up the New Industrial Hemp Supply Chain in America"
 excerpt = "Under the CSA, the cultivation, production, and commercialization of hemp was illegal, regardless of its THC content. This prohibition included both the plant itself and its derivatives, including products such as hemp-derived CBD…"
-hero_image = "truck-supply-chain.jpg"
+hero_image = "truck-supply-chain.webp"
 hero_alt = "Two opposing trucks on a highway with sunset in the background"
 published_at = "2023-06-12"
 author = "Heartland Industries"

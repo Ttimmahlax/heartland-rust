@@ -1,7 +1,7 @@
 +++
 title = "The Ultimate Guide to Plastics of the Future Part 4 - Bioplastics"
 excerpt = "Bioplastics are a new type of plastic that is made totally from renewable resources. Different from bio-based additives which this ebook focuses on in a later chapter, bioplastics are made from plant materials that decompose without le"
-hero_image = "rubber-11.png"
+hero_image = "rubber-11.webp"
 hero_alt = "plastic of the future"
 published_at = "2022-08-22"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "What Is Mass Balance? Carbon Neutrality and Science Based Targets"
 excerpt = "Mass balance is a straightforward method used to track and manage carbon emissions across complex systems. It operates on the principle of combining the impact of each ingredient in your product's formulation."
-hero_image = "understanding-mass-balance-and-carbon-neutrality.png"
+hero_image = "understanding-mass-balance-and-carbon-neutrality.webp"
 hero_alt = "understanding mass balance and carbon neutrality"
 published_at = "2024-10-16"
 author = "Heartland Industries"

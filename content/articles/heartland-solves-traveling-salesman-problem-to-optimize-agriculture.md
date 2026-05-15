@@ -1,7 +1,7 @@
 +++
 title = "Heartland Solves Traveling Salesman Problem For Agriculture"
 excerpt = "Detroit, Michigan – Heartland has revolutionized plot mapping technology to drive efficiency for farming operations across the world. This technology will reduce the time, money, energy, and carbon footprint required to plant, harvest,"
-hero_image = "untitled-design.png"
+hero_image = "untitled-design.webp"
 hero_alt = "travelling salesman heartland"
 published_at = "2022-08-19"
 author = "Heartland Industries"

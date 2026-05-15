@@ -1,7 +1,7 @@
 +++
 title = "Heartland’s Imperium Fiber Setting New Standard For Soft Hemp Fiber"
 excerpt = "Hemp fiber is celebrated for its [sustainability](https://www.sciencedirect.com/topics/materials-science/hemp-fiber), requiring up to 95% less water than cotton during cultivation, making it a highly water-efficient crop. Unlike conven"
-hero_image = "imperium-fibers-soft-hemp-fiber.png"
+hero_image = "imperium-fibers-soft-hemp-fiber.webp"
 hero_alt = "imperium fibers soft hemp fiber"
 published_at = "2025-06-23"
 author = "Heartland Industries"

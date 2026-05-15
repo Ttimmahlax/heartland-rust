@@ -1,7 +1,7 @@
 +++
 title = "Heartland Designs State-of-the-Art Technology for Industrial Hemp Processing"
 excerpt = "The executive team at Heartland Industries has traveled throughout the Midwest during the months of August and September to secure state-of-the-art technology that will unlock manufacturing capabilities and capacities that have never b"
-hero_image = "industry-5.0-manufacturing.png"
+hero_image = "industry-5.0-manufacturing.webp"
 hero_alt = "industry 5.0 manufacturing"
 published_at = "2022-08-17"
 author = "Heartland Industries"

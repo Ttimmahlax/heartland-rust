@@ -1,7 +1,7 @@
 +++
 title = "Sustainability in the Textile Industry: Challenges and Opportunities"
 excerpt = "The [textile and clothing industry](https://link.springer.com/conference/itdm), a cornerstone of global economies valued at over $1.7 trillion, faces mounting pressure to adopt sustainable practices amid escalating environmental concer"
-hero_image = "sustainability-in-the-textile-industry-challenges-and-opportunities.png"
+hero_image = "sustainability-in-the-textile-industry-challenges-and-opportunities.webp"
 hero_alt = "Sustainability in the Textile Industry Challenges and Opportunities"
 published_at = "2025-08-22"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "Heartland Industries Sets Sights on Global Economic Shift"
 excerpt = "Heartland Industries is focused on sustainable and safe business practices to usher in the future of US manufacturing and materials. In order to lead this revolution, our products must be significantly stronger, lighter, and cheaper th"
-hero_image = "plastic-pallets-3.png"
+hero_image = "plastic-pallets-3.webp"
 hero_alt = "globe"
 published_at = "2022-08-17"
 author = "Heartland Industries"

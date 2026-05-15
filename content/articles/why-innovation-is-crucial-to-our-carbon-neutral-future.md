@@ -1,7 +1,7 @@
 +++
 title = "Why Innovation is Crucial to Our Collective Carbon Neutral Future"
 excerpt = "Innovation will be a critical element of the next business revolution, that’s not really up for debate as almost everyone agrees. What we may not all agree on is where that innovation will come from. Innovation many times comes from"
-hero_image = "innovation-lab.jpg"
+hero_image = "innovation-lab.webp"
 hero_alt = "Image of scientist working in a lab"
 published_at = "2023-05-22"
 author = "Heartland Industries"

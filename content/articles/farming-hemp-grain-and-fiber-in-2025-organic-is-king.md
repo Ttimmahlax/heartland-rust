@@ -1,7 +1,7 @@
 +++
 title = "Farming Hemp Grain and Fiber In 2025: Organic is King"
 excerpt = "Entering into 2025, corn and soybean producers are grappling with [persistently low commodity prices](https://www.cmegroup.com/openmarkets/agriculture/2024/For-Farmers-Lower-Grain-Prices-Could-be-Sign-of-Things-to-Come.html), making pr"
-hero_image = "farming-hemp-grain-and-fiber-in-2025-organic-is-king.png"
+hero_image = "farming-hemp-grain-and-fiber-in-2025-organic-is-king.webp"
 hero_alt = "Farming Hemp Grain and Fiber In 2025 Organic is King"
 published_at = "2025-01-14"
 author = "Heartland Industries"

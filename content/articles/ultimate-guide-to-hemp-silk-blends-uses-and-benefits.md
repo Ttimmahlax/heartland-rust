@@ -1,7 +1,7 @@
 +++
 title = "Ultimate Guide to Hemp-Silk Blends: Uses, and Benefits"
 excerpt = "Hemp-silk blends represent the pinnacle of sustainable luxury textiles, marrying the exceptional durability, strength, and eco-friendliness of hemp with the unparalleled smoothness, luster, and elegant drape of silk. At Heartland, our"
-hero_image = "ultimate-guide-to-hemp-silk-blends-composition-uses-and-benefits.png"
+hero_image = "ultimate-guide-to-hemp-silk-blends-composition-uses-and-benefits.webp"
 hero_alt = "Ultimate Guide to Hemp-Silk Blends: Uses, and Benefits"
 published_at = "2025-01-26"
 author = "Heartland Industries"

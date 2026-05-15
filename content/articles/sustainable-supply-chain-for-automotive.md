@@ -1,7 +1,7 @@
 +++
 title = "The Future of Automotive is Reliable Supply Chains of Sustainable Materials"
 excerpt = "Every automotive company on earth is researching new materials that can reduce weight while maintaining performance characteristics. The problem the auto manufacturers have faced is that hitting all these targets while reducing price…"
-hero_image = "plastic-pallets-3-2.png"
+hero_image = "plastic-pallets-3-2.webp"
 hero_alt = "sustainable supply chain"
 published_at = "2022-08-17"
 author = "Heartland Industries"

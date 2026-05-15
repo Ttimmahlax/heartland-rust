@@ -1,7 +1,7 @@
 +++
 title = "The Ultimate Guide to Plastics of the Future Part 3 - Plastics and Recycling"
 excerpt = "Over the last decade, the push for people and companies to become more sustainable has been at the forefront of conversation. Recycling plastic waste has been the easiest opportunity for anyone to start becoming more sustainable. This"
-hero_image = "rubber-11.png"
+hero_image = "rubber-11.webp"
 hero_alt = "plastic of the future"
 published_at = "2022-08-22"
 author = "Heartland Industries"

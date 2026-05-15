@@ -1,7 +1,7 @@
 +++
 title = "Heartland Accepted To Amazon Devices Climate Tech Accelerator"
 excerpt = "We are thrilled to announce that Heartland has been selected to participate in the prestigious [Amazon Devices Climate Tech](https://solve.mit.edu/amazon-devices-climate-tech-accelerator)Accelerator, an equity-free program designed to"
-hero_image = "heartland-joins-amazon-devices-climate-tech-accelerator.png"
+hero_image = "heartland-joins-amazon-devices-climate-tech-accelerator.webp"
 hero_alt = "Heartland Joins Amazon Devices Climate Tech Accelerator"
 published_at = "2025-07-10"
 author = "Heartland Industries"

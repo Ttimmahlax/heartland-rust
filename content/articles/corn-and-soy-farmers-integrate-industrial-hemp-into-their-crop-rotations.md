@@ -1,7 +1,7 @@
 +++
 title = "Corn, Wheat, and Soy Farmers Add Industrial Hemp into Their Rotations"
 excerpt = "The crops that big agriculture has relied on for generations are inviting a new opportunity to the table: industrial hemp."
-hero_image = "corn-for-ethanol.png"
+hero_image = "corn-for-ethanol.webp"
 hero_alt = "corn for ethanol"
 published_at = "2022-08-18"
 author = "Heartland Industries"

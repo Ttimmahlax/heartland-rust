@@ -1,7 +1,7 @@
 +++
 title = "Climate Commodities and Heartland Partner To Develop New Asset Class"
 excerpt = "Detroit, Michigan – [Climate Commodities](https://www.climate-commodities.com/) and [Heartland Industries](/) have created a partnership to commoditize industrial hemp. Their partnership will create standards that usher in the next gen"
-hero_image = "paper-8-20.png"
+hero_image = "paper-8-20.webp"
 hero_alt = "partnership heartland"
 published_at = "2022-08-19"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "Hemp Fiber and Grain Association Joins Forces With Heartland"
 excerpt = "The Hemp Fiber and Grain Association (HFGA) is a dedicated organization that serves as a key resource for American farmers interested in growing industrial hemp specifically for fiber and grain production. Founded to support the resurg"
-hero_image = "heartland-hemp-fiber-and-grain-association.png"
+hero_image = "heartland-hemp-fiber-and-grain-association.webp"
 hero_alt = "heartland hemp fiber and grain association"
 published_at = "2026-03-17"
 author = "Heartland Industries"

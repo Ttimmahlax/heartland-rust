@@ -1,7 +1,7 @@
 +++
 title = "Heartland Unmasks The CBD Catastrophe That’s Put Many Out of Business"
 excerpt = "The Heartland Industries team has spent months focusing on the supply chain bottlenecks in the hemp industry. After extensive research, it has become obvious why no company has been able to create a supply chain that manufacturers acro"
-hero_image = "plastic-pallets-6.png"
+hero_image = "plastic-pallets-6.webp"
 hero_alt = "cbd"
 published_at = "2022-08-17"
 author = "Heartland Industries"

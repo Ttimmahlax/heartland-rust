@@ -1,7 +1,7 @@
 +++
 title = "Ultimate Guide to Hemp-Linen Blends: Uses, and Benefits"
 excerpt = "Hemp-linen blends are a timeless favorite in sustainable textiles, uniting the exceptional durability, strength, and eco-friendliness of hemp with the luxurious breathability, natural drape, and crisp elegance of linen (from flax). At"
-hero_image = "ultimate-guide-to-hemp-linen-blends-composition-uses-and-benefits.png"
+hero_image = "ultimate-guide-to-hemp-linen-blends-composition-uses-and-benefits.webp"
 hero_alt = "Ultimate Guide to Hemp-Linen Blends: Uses, and Benefits"
 published_at = "2025-04-24"
 author = "Heartland Industries"

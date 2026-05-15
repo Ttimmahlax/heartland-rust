@@ -1,7 +1,7 @@
 +++
 title = "The Separation Of Planting Seed and Pesticide: An Economic & IP Goliath"
 excerpt = "In a bold move signaling potential shifts in the agricultural landscape, the Wall Street Journal reported on September 12, 2025, that [Corteva](https://www.wsj.com/business/deals/corteva-a-50-billion-seed-and-pesticide-maker-is-explori"
-hero_image = "the-separation-of-planting-seed-and-pesticide-an-economic-ip-goliath.png"
+hero_image = "the-separation-of-planting-seed-and-pesticide-an-economic-ip-goliath.webp"
 hero_alt = "The Separation Of Planting Seed and Pesticide An Economic & IP Goliath"
 published_at = "2025-09-14"
 author = "Heartland Industries"

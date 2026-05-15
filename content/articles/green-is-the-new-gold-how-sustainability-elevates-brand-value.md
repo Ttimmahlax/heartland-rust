@@ -1,7 +1,7 @@
 +++
 title = "Green is the New Gold: How Sustainability Elevates Brand Value"
 excerpt = "Brand value is a difficult concept to put boundaries around. It encompasses a blend of tangible and intangible elements, from financial performance and market share to customer loyalty and perception. At its core, brand value is the cu"
-hero_image = "industry-5.0-article-series-1210-x-786-px.png"
+hero_image = "industry-5.0-article-series-1210-x-786-px.webp"
 hero_alt = "Image of a computer monitor with the title \"Let's talk about Brand\""
 published_at = "2024-07-01"
 author = "Heartland Industries"

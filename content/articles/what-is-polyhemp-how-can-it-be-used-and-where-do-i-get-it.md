@@ -1,7 +1,7 @@
 +++
 title = "What Is PolyHemp, How Can It Be Used, And Where Do I get It?"
 excerpt = "PolyHemp is a hybrid fabric that blends hemp, a natural and sustainable fiber, with polyester to create a versatile textile. This combination merges hemp’s eco-friendly, breathable, and antibacterial properties with polyester’s durabil"
-hero_image = "what-is-polyhemp-how-is-it-different-than-polycotton-1.png"
+hero_image = "what-is-polyhemp-how-is-it-different-than-polycotton-1.webp"
 hero_alt = "What Is PolyHemp? How Is It Different Than PolyCotton?"
 published_at = "2025-06-27"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "Implementing the New SEC Goals: A Pathway to Sustainable Development"
 excerpt = "To kick off the 5.0 series, we are starting with a topic that affects all publicly traded companies: the new SEC mandates for reporting emissions. The [SEC's new emissions reporting mandates](https://www.sec.gov/news/press-release/2024"
-hero_image = "industry-5.0-article-series-1210-x-786-px-6.png"
+hero_image = "industry-5.0-article-series-1210-x-786-px-6.webp"
 hero_alt = "Industry 5.0 Article Series"
 published_at = "2024-06-10"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "Imperium Filler vs Hemp Filler Performance & Cost Comparison"
 excerpt = "Hemp fibers exhibit remarkable tensile strength, making them extremely durable. Tensile strength refers to a material's ability to withstand stretching or pulling forces without breaking. Hemp fibers are known to be stronger than many"
-hero_image = "palmer-holland-hemp-fiber-plastic.png"
+hero_image = "palmer-holland-hemp-fiber-plastic.webp"
 hero_alt = "Palmer Holland Hemp Fiber Plastic"
 published_at = "2023-06-17"
 author = "Heartland Industries"

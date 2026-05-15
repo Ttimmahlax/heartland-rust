@@ -1,7 +1,7 @@
 +++
 title = "Heartland Presents The Results of Magna & BASF Trials"
 excerpt = "The GoMove program is an automotive partnership between BASF and Magna to develop sustainable products. There were over 100 applicants and ultimately 5 startups were accepted into the program."
-hero_image = "foam-7.png"
+hero_image = "foam-7.webp"
 hero_alt = "greentown labs heartland"
 published_at = "2023-04-19"
 author = "Heartland Industries"

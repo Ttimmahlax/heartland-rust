@@ -1,7 +1,7 @@
 +++
 title = "Heartland Hemp Additives Transform Plastic While Reducing Cost"
 excerpt = "The plastic [market is a $568B annual revenue](https://www.grandviewresearch.com/industry-analysis/global-plastics-market) industry that has sprouted from nothing over the last four decades. The petroleum industry played a major role i"
-hero_image = "plastic-pallets-3-1.png"
+hero_image = "plastic-pallets-3-1.webp"
 hero_alt = "hemp filled pp"
 published_at = "2022-08-17"
 author = "Heartland Industries"

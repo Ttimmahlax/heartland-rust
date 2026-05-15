@@ -1,7 +1,7 @@
 +++
 title = "The Ultimate Guide to Plastics of the Future Part 12 Capitalism & Sustainability"
 excerpt = "Innovation alone will not get us to the necessary sustainable levels to save the planet. It will require regulations, collaboration and assigning a “value” to carbon and waste materials."
-hero_image = "rubber-11.png"
+hero_image = "rubber-11.webp"
 hero_alt = "plastic of the future"
 published_at = "2022-08-22"
 author = "Heartland Industries"

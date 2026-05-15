@@ -1,7 +1,7 @@
 +++
 title = "John Ely Appointed CEO of Heartland Industries As The Company Grows"
 excerpt = "DETROIT, MICHIGAN, USA, July 8, 2024 /[EINPresswire.com](https://www.einpresswire.com/)/ -- [Heartland Industries](/), a material science company that engineers [natural fiber additives](/why-imperium/) for plastics, is pleased to anno"
-hero_image = "1210x786.png"
+hero_image = "1210x786.webp"
 hero_alt = "Heartland Tim Almond Founder"
 published_at = "2024-07-08"
 author = "Heartland Industries"

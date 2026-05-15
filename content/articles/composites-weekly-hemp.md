@@ -1,7 +1,7 @@
 +++
 title = "Composites Weekly Dives Deep Into Hemp-Based Additives"
 excerpt = "Jonathan Taylor, founder and producer at Composites Weekly, spent time this week interviewing our CEO Jesse Henry to discuss biocomposites and the future of the plastics industry."
-hero_image = "plastic-pallets-1-3.png"
+hero_image = "plastic-pallets-1-3.webp"
 hero_alt = "composites weekly hemp"
 published_at = "2022-08-17"
 author = "Heartland Industries"

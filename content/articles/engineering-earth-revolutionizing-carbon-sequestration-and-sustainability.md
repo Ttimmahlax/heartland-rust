@@ -1,7 +1,7 @@
 +++
 title = "Engineering Earth: Revolutionizing Carbon Sequestration"
 excerpt = "The pressing challenge of our era is not carbon itself but its imbalance—excessive carbon in our atmosphere and insufficient carbon in our soil. The solution lies in a groundbreaking concept we call \"Engineering Earth,\" a central compo"
-hero_image = "industry-5.0-article-series-1210-x-786-px-5.png"
+hero_image = "industry-5.0-article-series-1210-x-786-px-5.webp"
 hero_alt = "Image of computer screen with Heartland article title \"Engineering Earth\""
 published_at = "2024-08-12"
 author = "Heartland Industries"

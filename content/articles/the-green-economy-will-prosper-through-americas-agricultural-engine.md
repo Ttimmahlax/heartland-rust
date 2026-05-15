@@ -1,7 +1,7 @@
 +++
 title = "How The Green Economy Will Prosper Through America's Farming Engine"
 excerpt = "The agriculture industry can create more economic opportunities than any other sector because of sustainability mandates."
-hero_image = "paper-8-12.png"
+hero_image = "paper-8-12.webp"
 hero_alt = "green economy"
 published_at = "2022-08-18"
 author = "Heartland Industries"

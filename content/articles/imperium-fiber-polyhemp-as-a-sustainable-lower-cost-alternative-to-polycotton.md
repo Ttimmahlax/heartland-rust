@@ -1,7 +1,7 @@
 +++
 title = "Imperium Fiber PolyHemp As A Lower Cost Alternative To PolyCotton"
 excerpt = "PolyHemp is an alternative to [PolyCotton](https://icefabrics.com/blogs/news/what-is-polycotton-fabric?srsltid=AfmBOoqv5il-XdowiivTHvRzNLN_h0zs5v7nrXoweBt18HeAV56mwC_4); both are hybrid fabrics that blend natural fibers with synthetic"
-hero_image = "polyhemp-as-alternative-to-polycotton.png"
+hero_image = "polyhemp-as-alternative-to-polycotton.webp"
 hero_alt = "Polyhemp As Alternative To PolyCotton"
 published_at = "2025-06-27"
 author = "Heartland Industries"

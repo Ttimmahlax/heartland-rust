@@ -1,7 +1,7 @@
 +++
 title = "The Foundation of The Graphene Revolution Is Bio-Based Materials"
 excerpt = "Researchers around the world have been looking for the next material that will create a paradigm shift in product development and innovation. Universities and large corporations have sunk billions of dollars into working with rare mate"
-hero_image = "imperium-carbon.png"
+hero_image = "imperium-carbon.webp"
 hero_alt = "imperium carbon"
 published_at = "2022-08-18"
 author = "Heartland Industries"

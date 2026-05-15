@@ -1,7 +1,7 @@
 +++
 title = "The Ultimate Guide to Plastics of the Future Part 10 - Plastics and ESG Mandates"
 excerpt = "For more than twenty years, the World Economic Forum has been providing a platform for international dialogue for leaders around the globe. One of the most crucial issues that they discuss is sustainability. They define sustainable dev"
-hero_image = "rubber-11.png"
+hero_image = "rubber-11.webp"
 hero_alt = "plastic of the future"
 published_at = "2022-08-22"
 author = "Heartland Industries"

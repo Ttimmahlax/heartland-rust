@@ -1,7 +1,7 @@
 +++
 title = "The Ultimate Guide to Regenerative Agriculture And Soil Health"
 excerpt = "Regenerative farming is a holistic, regenerative system of agriculture that embraces the principles of ecology. It can be seen as a new agricultural revolution or a revitalization of ancient practices that have been upgraded over time."
-hero_image = "paper-8-18.png"
+hero_image = "paper-8-18.webp"
 hero_alt = "heartland regenerative agriculture"
 published_at = "2022-08-19"
 author = "Heartland Industries"

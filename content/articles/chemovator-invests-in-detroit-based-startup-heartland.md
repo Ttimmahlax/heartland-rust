@@ -1,7 +1,7 @@
 +++
 title = "Chemovator invests in Detroit-based startup Heartland"
 excerpt = "Detroit (Michigan) and Mannheim (Germany), May 02, 2024 – Chemovator, the business incubator and early-stage investor of BASF, has successfully finalized an investment in Heartland. The Detroit-based startup is a frontrunner in the pro"
-hero_image = "fasdf-1.png"
+hero_image = "fasdf-1.webp"
 hero_alt = "basf heartland investment"
 published_at = "2024-05-02"
 author = "Heartland Industries"

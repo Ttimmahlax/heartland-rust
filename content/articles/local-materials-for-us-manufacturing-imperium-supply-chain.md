@@ -1,7 +1,7 @@
 +++
 title = "Local Materials For US Manufacturing: Imperium Supply Chain"
 excerpt = "The [U.S. has vast natural resources](https://www.commerce.gov/sites/default/files/2024-07/OUSEA-Issue-Brief-Made-in-America.pdf), but some critical materials simply don’t exist in abundance within its borders. Lithium, a key component"
-hero_image = "local-materials-for-us-manufacturing-imperium-supply-chain.png"
+hero_image = "local-materials-for-us-manufacturing-imperium-supply-chain.webp"
 hero_alt = "Local Materials For US Manufacturing Imperium Supply Chain"
 published_at = "2025-02-03"
 author = "Heartland Industries"

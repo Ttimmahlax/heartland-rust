@@ -1,7 +1,7 @@
 +++
 title = "Ultimate Guide to Hemp-Cotton Blends: Uses, and Benefits"
 excerpt = "In this article, we'll explore why hemp-cotton blends are gaining traction in the fashion and utility sectors, their technical specifications, and how they can enhance your projects or wardrobe. Whether you're a designer,…"
-hero_image = "ultimate-guide-to-hemp-cotton-blends-uses-and-benefits.png"
+hero_image = "ultimate-guide-to-hemp-cotton-blends-uses-and-benefits.webp"
 hero_alt = "Ultimate Guide to Hemp-Cotton Blends: Uses, and Benefits"
 published_at = "2026-01-19"
 author = "Heartland Industries"

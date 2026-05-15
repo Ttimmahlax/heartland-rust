@@ -1,7 +1,7 @@
 +++
 title = "The Ultimate Guide to Plastics of the Future Part 11 - Materials Innovation"
 excerpt = "Plastic has been the most widely-used material in manufacturing for the last 70 years. In fact estimates show that we have produced nearly 10 billion tonnes of plastics since 1950."
-hero_image = "rubber-11.png"
+hero_image = "rubber-11.webp"
 hero_alt = "plastic of the future"
 published_at = "2022-08-22"
 author = "Heartland Industries"

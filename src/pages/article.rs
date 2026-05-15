@@ -40,8 +40,12 @@ pub fn Article(slug: String) -> Element {
             description: "{seo_description}",
             path: "{url_path}",
             image: "{hero}",
+            image_width: "1210",
+            image_height: "786",
+            image_alt: "{alt}",
             og_type: "article",
         }
+        document::Meta { property: "article:published_time", content: "{published}" }
         document::Link {
             rel: "alternate",
             r#type: "text/markdown",

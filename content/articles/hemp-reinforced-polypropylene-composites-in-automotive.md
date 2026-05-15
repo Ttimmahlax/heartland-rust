@@ -1,7 +1,7 @@
 +++
 title = "Hemp Reinforced Polypropylene Composites For Automotive"
 excerpt = "Heartland Industries produces carbon negative plastic additives to help companies reduce their carbon footprint.. Whereas most plastic fillers in automotive applications consist of talc or fiberglass, having [Imperium Inside](/imperium"
-hero_image = "paper-8-6.png"
+hero_image = "paper-8-6.webp"
 hero_alt = "hemp reinforced polypropylene"
 published_at = "2022-08-18"
 author = "Heartland Industries"

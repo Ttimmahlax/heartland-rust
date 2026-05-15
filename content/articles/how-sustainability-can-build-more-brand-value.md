@@ -1,7 +1,7 @@
 +++
 title = "How Sustainability Builds Brand Value and Gives You a Competitive Advantage"
 excerpt = "In an earlier article, we looked at how[brand equity is tied to your company's sustainability initiatives](/sustainability-news/how-or-why-your-brand-equity-is-tied-to-your-sustainability/). Here we will take a deeper look at the risin"
-hero_image = "untitled-1210--786-px.png"
+hero_image = "untitled-1210--786-px.webp"
 hero_alt = "How Sustainability Builds Brand Value"
 published_at = "2022-11-02"
 author = "Heartland Industries"

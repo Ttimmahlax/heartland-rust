@@ -1,7 +1,7 @@
 +++
 title = "Map-Collective and Heartland Partner to Create Opportunities for Farmers"
 excerpt = "Detroit, Michigan – ([BUSINESS WIRE](https://www.businesswire.com/)) – Map-Collective, a woman-owned tech company based in Washington DC that provides carbon baselining (Scope 1, 2, 3) utilizing blockchain technology, has partnered wit"
-hero_image = "american-wheat-farmers.png"
+hero_image = "american-wheat-farmers.webp"
 hero_alt = "american wheat farmers"
 published_at = "2022-08-19"
 author = "Heartland Industries"

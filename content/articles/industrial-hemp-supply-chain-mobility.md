@@ -1,7 +1,7 @@
 +++
 title = "Industrial Hemp Supply Chain Unlocks The Future of Mobility"
 excerpt = "Transportation is foundational to the human experience. Humanity has evolved from carriages, buggies, and bicycles into dozens of different types of scalable motorized activities. Cars, boats, and planes are 3 specific vehicles that ha"
-hero_image = "plastic-pallets-8.png"
+hero_image = "plastic-pallets-8.webp"
 hero_alt = "automotive plastic hemp"
 published_at = "2022-08-17"
 author = "Heartland Industries"

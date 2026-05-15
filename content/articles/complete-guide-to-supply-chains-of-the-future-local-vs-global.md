@@ -1,7 +1,7 @@
 +++
 title = "Complete Guide to Supply Chains of the Future - Local vs. Global"
 excerpt = "Two Southern California ports account for nearly 40% of all goods entering the United States and as of the writing of this article, there are serious delays in and out of both (Los Angeles and Long Beach). NY/Newark, Savanna, Seattle,"
-hero_image = "international-supply-chain-shortages.png"
+hero_image = "international-supply-chain-shortages.webp"
 hero_alt = "international supply chain shortages"
 published_at = "2022-08-19"
 author = "Heartland Industries"

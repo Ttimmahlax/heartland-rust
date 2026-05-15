@@ -1,7 +1,7 @@
 +++
 title = "The Manufacturers Guide To Sustainable Materials To Reduce Carbon Footprint"
 excerpt = "Sustainable materials — we hear this term nearly every day. Manufacturers worldwide face increased pressure from investors, customers, and stakeholders to go green. This guide is for them."
-hero_image = "lower-carbon-footprint-terraforming.png"
+hero_image = "lower-carbon-footprint-terraforming.webp"
 hero_alt = "lower carbon footprint terraforming"
 published_at = "2022-08-18"
 author = "Heartland Industries"

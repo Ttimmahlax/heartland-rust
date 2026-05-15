@@ -1,7 +1,7 @@
 +++
 title = "Addressing Phyto Sanitation Risks Importing and Exporting Wood Pallets"
 excerpt = "Importing wood pallets comes with stringent [phyto sanitation measures](https://www.aphis.usda.gov/plant-imports/wood-packaging-material), including mandatory heat treatment to eliminate pests and prevent the spread of invasive species"
-hero_image = "phyto-sanitation-wood-pallet.png"
+hero_image = "phyto-sanitation-wood-pallet.webp"
 hero_alt = "phyto sanitation wood pallet"
 published_at = "2024-11-02"
 author = "Heartland Industries"

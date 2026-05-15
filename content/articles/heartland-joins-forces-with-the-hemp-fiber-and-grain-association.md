@@ -1,7 +1,7 @@
 +++
 title = "Heartland Joins Forces With The Hemp Fiber and Grain Association"
 excerpt = "An association plays a pivotal role in the [industrial hemp market](http://hfga.io) by serving as a unifying force that brings together stakeholders, cultivators, processors, and enthusiasts under a common umbrella. In a rapidly evolvi"
-hero_image = "heartland-and-hemp-fiber-and-grain-association.png"
+hero_image = "heartland-and-hemp-fiber-and-grain-association.webp"
 hero_alt = "heartland and hemp fiber and grain association"
 published_at = "2023-12-05"
 author = "Heartland Industries"

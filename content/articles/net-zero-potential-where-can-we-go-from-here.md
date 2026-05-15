@@ -1,7 +1,7 @@
 +++
 title = "Net Zero and the Future Potential – Where Can We Go from Here?"
 excerpt = "We are on the cusp of a Net Zero world. As we stand on the brink of transformative change, the horizon reveals the promise of a sustainable world where innovation, collaboration, and conscious stewardship create a tapestry of unprecede"
-hero_image = "14.png"
+hero_image = "14.webp"
 hero_alt = "Computer screen with Industry 5.0 Title- Where Can We Go From Here?"
 published_at = "2024-09-30"
 author = "Heartland Industries"

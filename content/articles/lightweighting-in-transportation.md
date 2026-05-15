@@ -1,7 +1,7 @@
 +++
 title = "Driving Towards Sustainability - Shedding Pounds to Save Energy!"
 excerpt = "Transportation is foundational to human experience. Humanity has evolved from [carriages](https://en.wikipedia.org/wiki/Horse_and_buggy), buggies, and bicycles into dozens of different types of scalable motorized activities. Cars, boat"
-hero_image = "light-car.jpg"
+hero_image = "light-car.webp"
 hero_alt = "Graphic of a computerized light weight car"
 published_at = "2023-10-03"
 author = "Heartland Industries"

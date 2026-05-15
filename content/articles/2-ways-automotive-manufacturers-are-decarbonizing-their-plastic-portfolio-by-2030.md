@@ -1,7 +1,7 @@
 +++
 title = "2 Ways Automotive Manufacturers Are Decarbonizing Their Plastic"
 excerpt = "Plastic manufacturers have a harder challenge than steel because to reduce their carbon footprint they must change their entire supply chain. This is almost impossible to start because of the costs associated with that change, not…"
-hero_image = "decarbonize-plastic-automotive.png"
+hero_image = "decarbonize-plastic-automotive.webp"
 hero_alt = "decarbonize plastic automotive"
 published_at = "2023-09-11"
 author = "Heartland Industries"

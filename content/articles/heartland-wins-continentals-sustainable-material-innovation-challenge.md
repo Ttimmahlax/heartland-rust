@@ -1,7 +1,7 @@
 +++
 title = "Heartland Wins Continental’s Material Innovation Challenge"
 excerpt = "Heartland Industries has [won the innovation challenge](https://www.inam.berlin/post/winners-continental-open-innovation-challenge-announced) for sustainable material solutions in manufacturing. This international challenge was put on"
-hero_image = "paper-8-11.png"
+hero_image = "paper-8-11.webp"
 hero_alt = "continental tire sustainability"
 published_at = "2022-08-18"
 author = "Heartland Industries"

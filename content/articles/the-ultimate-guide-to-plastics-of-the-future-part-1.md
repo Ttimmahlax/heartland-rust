@@ -1,7 +1,7 @@
 +++
 title = "The Ultimate Guide to Plastics of the Future Part 1-The History of Plastics"
 excerpt = "Over the past 100 years, our society has become increasingly reliant on plastic to manufacture the products we use every day. The use of plastics boomed in the early 1900s as an alternative to metal. The world was looking for"
-hero_image = "rubber-11.png"
+hero_image = "rubber-11.webp"
 hero_alt = "plastic of the future"
 published_at = "2022-08-21"
 author = "Heartland Industries"

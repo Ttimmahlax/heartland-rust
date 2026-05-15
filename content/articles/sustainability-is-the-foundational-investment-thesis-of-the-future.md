@@ -1,7 +1,7 @@
 +++
 title = "The Foundational Investment Thesis of The Future is Sustainability"
 excerpt = "Companies and investors have a fiduciary responsibility to make good decisions that benefit their organization in the long run about sustainability. This means they must create a thesis on investing that determines how the decisions th"
-hero_image = "regenerative-agriculture-hemp-fiber-3.png"
+hero_image = "regenerative-agriculture-hemp-fiber-3.webp"
 hero_alt = "regenerative agriculture hemp fiber 3"
 published_at = "2022-08-18"
 author = "Heartland Industries"

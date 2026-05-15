@@ -1,7 +1,7 @@
 +++
 title = "Farmers Are Reducing Water Usage By Adopting Hemp Fiber and Grain"
 excerpt = "Rice tops the list, often demanding 2,500–3,000 liters of water per kilogram of yield, as it thrives in flooded paddies that maintain constant submersion. Sugarcane follows closely, needing around 1,500–2,000 liters per kilogram,…"
-hero_image = "hemp-fiber-water-conservation.png"
+hero_image = "hemp-fiber-water-conservation.webp"
 hero_alt = "hemp fiber water conservation"
 published_at = "2025-05-19"
 author = "Heartland Industries"

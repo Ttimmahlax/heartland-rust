@@ -1,7 +1,7 @@
 +++
 title = "Alfalfa to Hemp Farming in Arizona - ASU & Heartland Study Water Conservation"
 excerpt = "This heavy reliance on groundwater, particularly in unregulated rural areas, has raised concerns about depleting aquifers, with some local wells drying up near large alfalfa operations. Arizona’s favorable climate allows for up to…"
-hero_image = "alfalfa-to-hemp-farming-in-arizona-asu-heartland-study-water-conservation.png"
+hero_image = "alfalfa-to-hemp-farming-in-arizona-asu-heartland-study-water-conservation.webp"
 hero_alt = "Alfalfa to Hemp Farming in Arizona - ASU & Heartland Study Water Conservation"
 published_at = "2025-07-29"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "3 Reasons Talc Fillers Will Go Extinct Over The Next Decade￼"
 excerpt = "The movement against toxic materials has been gaining momentum over the past few years. The problem is, that companies are stuck using the same raw materials that they’ve been using for decades."
-hero_image = "talc-mining.png"
+hero_image = "talc-mining.webp"
 hero_alt = "talc mining"
 published_at = "2022-08-18"
 author = "Heartland Industries"

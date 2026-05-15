@@ -1,7 +1,7 @@
 +++
 title = "Heartland Industries - 2023: A Year of Sustainability, Innovation, and Growth"
 excerpt = "As we step into a new year, we'd like to take a moment to reflect on the remarkable journey that was 2023 for Heartland Industries. This past year was marked by groundbreaking achievements, significant partnerships, and an unwavering c"
-hero_image = "2023-in-review.jpg"
+hero_image = "2023-in-review.webp"
 hero_alt = "Heartland's 2023 Year in Review Article"
 published_at = "2024-01-02"
 author = "Heartland Industries"

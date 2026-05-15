@@ -1,7 +1,7 @@
 +++
 title = "What 5.0 Means to Investors in the New Era of Sustainability"
 excerpt = "Investors, regardless of type—be it angel, debt, equity, investment banker, fund manager, or venture capitalist—share a common goal: achieving a [return on their investment (ROI)](https://www.investopedia.com/terms/r/returnoninvestment"
-hero_image = "industry-5.0-article-series-1210-x-786-px-3.png"
+hero_image = "industry-5.0-article-series-1210-x-786-px-3.webp"
 hero_alt = "What 5.0 Means to Investors in the New Era of Sustainability"
 published_at = "2024-07-22"
 author = "Heartland Industries"

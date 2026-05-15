@@ -1,7 +1,7 @@
 +++
 title = "KDM and the Minority Business (MBDA) Partner with Heartland"
 excerpt = "Detroit, Michigan – May 16, 2022 – KDM & Associates, Operator of the Nation’s only MBDA Federal Procurement Center – www.mbdafpcenter.com, has partnered with Heartland Industries to advance regenerative agriculture practices and climat"
-hero_image = "paper-8-21.png"
+hero_image = "paper-8-21.webp"
 hero_alt = "minority farming"
 published_at = "2022-08-19"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "The Dark Side of Wood Pallets For International Shipments"
 excerpt = "International shipping often treats wood pallets as disposable commodities, but their overlooked importance can lead to significant consequences. These cheap wooden supports are the unsung heroes of global logistics, bearing the brunt"
-hero_image = "wood-pallets-international-shipping-dark-side.png"
+hero_image = "wood-pallets-international-shipping-dark-side.webp"
 hero_alt = "wood pallets international shipping dark side"
 published_at = "2024-11-20"
 author = "Heartland Industries"

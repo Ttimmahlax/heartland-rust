@@ -1,7 +1,7 @@
 +++
 title = "BASF Regenerative Farming Program Cuts Emissions By 90%"
 excerpt = "The BASF team is known for innovation throughout their chemical and agricultural division, and their team is providing more conclusive results that the future of farming is regenerative. Andy Beadle and his team have shown that impleme"
-hero_image = "basf-regenerative-farming-program-cuts-emissions-by-90.png"
+hero_image = "basf-regenerative-farming-program-cuts-emissions-by-90.webp"
 hero_alt = "BASF Regenerative Farming Program Cuts Emissions By 90%"
 published_at = "2025-03-18"
 author = "Heartland Industries"

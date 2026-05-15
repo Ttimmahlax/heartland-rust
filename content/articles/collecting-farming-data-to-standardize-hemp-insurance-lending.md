@@ -1,7 +1,7 @@
 +++
 title = "Heartland Collects Data to Standardize Industrial Hemp Crop"
 excerpt = "Over the past few years, farmers have been excited about the opportunity to grow industrial hemp. But, among the many roadblocks that have prevented the mass adoption of industrial hemp, insurance & lending are at the top of the list."
-hero_image = "ultimate-guide-to-regenerative-agriculture.png"
+hero_image = "ultimate-guide-to-regenerative-agriculture.webp"
 hero_alt = "ultimate guide to regenerative agriculture"
 published_at = "2022-08-18"
 author = "Heartland Industries"

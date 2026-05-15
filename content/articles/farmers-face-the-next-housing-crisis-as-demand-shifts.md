@@ -1,7 +1,7 @@
 +++
 title = "Farmers Face The Next Housing Crisis As Demand Shifts From Ethanol￼"
 excerpt = "Corn is the most common crop grown by American farmers. In 2019, [America grew 91,700,000 acres](https://www.usda.gov/media/blog/2019/07/29/corn-americas-largest-crop-2019#:~:text=did%20last%20year.-,U.S.%20farmers%20have%20planted%209"
-hero_image = "transporting-bales-of-hemp-fiber.png"
+hero_image = "transporting-bales-of-hemp-fiber.webp"
 hero_alt = "transporting bales of hemp fiber"
 published_at = "2022-08-18"
 author = "Heartland Industries"

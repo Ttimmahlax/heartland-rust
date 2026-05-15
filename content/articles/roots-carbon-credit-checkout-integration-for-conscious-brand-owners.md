@@ -1,7 +1,7 @@
 +++
 title = "Roots Carbon Credit Checkout Integration For Conscious Brand Owners"
 excerpt = "As sustainability becomes a cornerstone of modern business, environmentally conscious brand owners are increasingly turning to innovative solutions like [Roots Carbon Credit Checkout](http://growroots.co) Integration to align their ope"
-hero_image = "roots-carbon-credit-checkout-local-farming.png.png"
+hero_image = "roots-carbon-credit-checkout-local-farming.png.webp"
 hero_alt = "roots carbon credit checkout local farming"
 published_at = "2025-03-10"
 author = "Heartland Industries"

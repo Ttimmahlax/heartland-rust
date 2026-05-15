@@ -1,7 +1,7 @@
 +++
 title = "The Ultimate Guide to Plastics of the Future Part 8 - Engineering Hemp Additives"
 excerpt = "The performance characteristics of biomaterials have been known for generations. When Henry Ford built a car that used hemp materials in plastics to replace steel, the world was able to see a commercially viable application for these n"
-hero_image = "rubber-11.png"
+hero_image = "rubber-11.webp"
 hero_alt = "plastic of the future"
 published_at = "2022-08-22"
 author = "Heartland Industries"

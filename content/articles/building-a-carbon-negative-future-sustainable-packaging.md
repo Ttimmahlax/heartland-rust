@@ -1,7 +1,7 @@
 +++
 title = "Building a Carbon-Negative Future: Sustainable Packaging"
 excerpt = "The journey toward [carbon-neutral packaging](https://cabka.com/en-us/pallets) marks a pivotal shift in the global push for sustainability. As industries grapple with the environmental impact of traditional packaging, companies are inc"
-hero_image = "carbon-neutral-plastic-pallets-heartland.png"
+hero_image = "carbon-neutral-plastic-pallets-heartland.webp"
 hero_alt = "carbon neutral plastic pallets Heartland"
 published_at = "2024-10-11"
 author = "Heartland Industries"

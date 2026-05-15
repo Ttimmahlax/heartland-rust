@@ -1,7 +1,7 @@
 +++
 title = "First In Class Natural Fiber Reinforced PC/ABS For Electronics"
 excerpt = "PC/ABS is a high-performance thermoplastic blend that combines polycarbonate (PC), known for its exceptional impact resistance, heat tolerance, and optical clarity, with acrylonitrile butadiene styrene (ABS), which contributes excellen"
-hero_image = "copy-of-articles-standard-sizing.png"
+hero_image = "copy-of-articles-standard-sizing.webp"
 hero_alt = "First In Class Natural Fiber Reinforced PC/ABS For Electronics"
 published_at = "2025-12-04"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "The Chief Sustainability Officer (CSO)- The Rising Star in the C-Suite"
 excerpt = "A little newer to the [C-suite](https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-the-c-suite) is the role of Chief Sustainability Officer (CSO). In some cases, the position has existed for over a decade. For insta"
-hero_image = "industry-5.0-article-series-1210-x-786-px-8.png"
+hero_image = "industry-5.0-article-series-1210-x-786-px-8.webp"
 hero_alt = "Image of a computer screen with the title, Chief Sustainability Officer displayed"
 published_at = "2024-08-23"
 author = "Heartland Industries"

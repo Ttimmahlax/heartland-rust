@@ -1,7 +1,7 @@
 +++
 title = "SEC Proposes Rules to Standardize Climate Disclosures"
 excerpt = "When the stock market crashed in October 1929, so did public confidence in the U.S. markets. Congress held hearings to identify the problems and search for solutions. The eventual solution came in the form of Federal oversight over the"
-hero_image = "untitled-design-1-1.png"
+hero_image = "untitled-design-1-1.webp"
 hero_alt = "Heartland Climate Disclosures Engage"
 published_at = "2022-10-18"
 author = "Heartland Industries"

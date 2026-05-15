@@ -1,7 +1,7 @@
 +++
 title = "Sustainability/Industry 5.0 - The First Proactive Industrial Revolution"
 excerpt = "The alarming facts highlight the urgency for action: These data points underscore the imperative to not only halt but reverse the course set by the previous industrial revolutions. Lao Tzu famously said, \"The journey of a thousand…"
-hero_image = "5-0-correcting-the-ills.png"
+hero_image = "5-0-correcting-the-ills.webp"
 hero_alt = "Image of computer screen with title - Correcting the Ills of Industries 1-4"
 published_at = "2024-09-09"
 author = "Heartland Industries"

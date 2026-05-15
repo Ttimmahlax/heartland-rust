@@ -1,7 +1,7 @@
 +++
 title = "Manufacturing’s Missing Link: An Industrial Hemp Supply Chain￼"
 excerpt = "Every industry is rapidly changing in ways that no one could have predicted. COVID has created a clear separation between businesses that were stuck in their old ways, and ones that were eager to innovate."
-hero_image = "plastic-pallets-5-2.png"
+hero_image = "plastic-pallets-5-2.webp"
 hero_alt = "manufacturing"
 published_at = "2022-08-17"
 author = "Heartland Industries"

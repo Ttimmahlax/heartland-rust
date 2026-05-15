@@ -1,7 +1,7 @@
 +++
 title = "Replacing Nylon Fabric With Hemp & Lyocell, No Microplastics"
 excerpt = "Nylon is almost everywhere. Nylon fabrics are a cornerstone of women's hosiery and stockings, prized for their sheer elegance, exceptional durability, and elastic recovery that ensures a flawless fit throughout the day. In activewear,…"
-hero_image = "replacing-nylon-fabric-with-hemp-lyocell-same-great-strength-no-microplastics.png"
+hero_image = "replacing-nylon-fabric-with-hemp-lyocell-same-great-strength-no-microplastics.webp"
 hero_alt = "Replacing Nylon Fabric With Hemp & Lyocell, Same Great Strength No Microplastics"
 published_at = "2025-11-10"
 author = "Heartland Industries"

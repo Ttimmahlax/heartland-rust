@@ -1,7 +1,7 @@
 +++
 title = "How the Conflict in Ukraine and Russia Impacts the Plastic Industry"
 excerpt = "Disclaimer: We stand with the people of Ukraine and hope that this conflict can be resolved peacefully. Our team supports the Ukrainian people, their rights, and international diplomacy. This article is meant to discuss the domino…"
-hero_image = "paper-8-19.png"
+hero_image = "paper-8-19.webp"
 hero_alt = "global supply chain hemp"
 published_at = "2022-08-19"
 author = "Heartland Industries"

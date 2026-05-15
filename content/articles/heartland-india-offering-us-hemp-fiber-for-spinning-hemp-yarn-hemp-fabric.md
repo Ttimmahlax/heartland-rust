@@ -1,7 +1,7 @@
 +++
 title = "Heartland India Offering US Hemp Fiber For Spinning, Hemp Yarn, & Hemp Fabric"
 excerpt = "Heartland Industries is thrilled to announce our developments in India to support Indian yarn and fabric mills with a consistent and reliable supply chain of hemp fiber"
-hero_image = "heartland-hemp-textiles-yarn-fabric-india-delhi.png"
+hero_image = "heartland-hemp-textiles-yarn-fabric-india-delhi.webp"
 hero_alt = "Heartland India Offering US Hemp Fiber For Spinning, Hemp Yarn, & Hemp Fabric"
 published_at = "2026-01-08"
 author = "Heartland Industries"

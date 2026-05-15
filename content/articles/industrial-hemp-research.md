@@ -1,7 +1,7 @@
 +++
 title = "Heartland Industries Leads Industrial Hemp Supply Chain Data Collection"
 excerpt = "Building an agricultural supply chain is one of the biggest undertakings that any team or leader can take on. The success in establishing an industrial hemp supply chain will set a brand apart from everyone else in the industry."
-hero_image = "hemp-fiber-bale.png"
+hero_image = "hemp-fiber-bale.webp"
 hero_alt = "Heartland Industries Leads Industrial Hemp Supply Chain Data Collection"
 published_at = "2022-08-18"
 author = "Heartland Industries"

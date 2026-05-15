@@ -1,7 +1,7 @@
 +++
 title = "Hemp Fiber Requires Less Water Than Cotton To Farm, Up To 95% Less"
 excerpt = "Hemp is emerging as a revolutionary crop in the textile industry, requiring only [300 to 500 liters of water](/wp-content/uploads/2024/12/OSU-Hemp-Techno-Economic-Analysis-TEA.pdf) to produce one kilogram of fiber, compared to the stag"
-hero_image = "hemp-fiber-requires-less-water-than-cotton-95.png"
+hero_image = "hemp-fiber-requires-less-water-than-cotton-95.webp"
 hero_alt = "Hemp Fiber Requires Less Water Than Cotton 95%"
 published_at = "2024-12-12"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "Heartland Presents The Green Packaging Initiative at The SPE Event in Ohio"
 excerpt = "Packaging is a core component of shipping goods around the world. Everything from pallets and crates to cardboard boxes and protective wrap."
-hero_image = "untitled-1027--768-px-1210--768-px.png"
+hero_image = "untitled-1027--768-px-1210--768-px.webp"
 hero_alt = "heartland SPE event ohio state"
 published_at = "2023-08-09"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "52% of US Soybean Bought By China in 2024, Now Is Not The Time To Plant Soybean"
 excerpt = "At the time of this article, soybeans were [hovering under $10/bushe](https://www.barrons.com/articles/soybean-prices-tank-china-retaliatory-tariff-df65235a)l, which is near or below the break-even point for farmers. In addition to tha"
-hero_image = "52-of-us-soybean-bought-by-china-in-2024-now-is-not-the-time-to-plant-soybean.png"
+hero_image = "52-of-us-soybean-bought-by-china-in-2024-now-is-not-the-time-to-plant-soybean.webp"
 hero_alt = "52% of US Soybean Bought By China in 2024, Now Is Not The Time To Plant Soybean"
 published_at = "2025-04-07"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "3 Important Questions to Ask Your Resin Supplier or Plastics Compounder"
 excerpt = "Plastic resin is one of the most commonly used raw materials in manufacturing across every industry. Today, plastic is used because it is strong, cheap (sometimes), and lightweight. But, plastic has one of the steepest carbon footprint"
-hero_image = "heartland-natural-fiber-filled-black-plastic-pellets.png"
+hero_image = "heartland-natural-fiber-filled-black-plastic-pellets.webp"
 hero_alt = "3 Important Questions to Ask Your Resin Supplier or Plastics Compounder"
 published_at = "2022-08-19"
 author = "Heartland Industries"

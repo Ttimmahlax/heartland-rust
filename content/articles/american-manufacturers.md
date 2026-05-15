@@ -1,7 +1,7 @@
 +++
 title = "Heartland Creates New Opportunity for American Manufacturers"
 excerpt = "For the longest time, American manufacturers had a simple and straightforward positioning statement."
-hero_image = "heartland-altering-the-fabric-of-democracy-1.png"
+hero_image = "heartland-altering-the-fabric-of-democracy-1.webp"
 hero_alt = "Heartland - altering the fabric of democracy"
 published_at = "2022-08-17"
 author = "Heartland Industries"

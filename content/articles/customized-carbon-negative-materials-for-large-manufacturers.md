@@ -1,7 +1,7 @@
 +++
 title = "Carbon-Negative Materials: A Solution for Large Manufacturers"
 excerpt = "The top leaders in manufacturing all rely on the same raw materials. Most of the supply chains that provide these raw materials have been established for decades. The problem is, many manufacturers want to change from the toxic raw mat"
-hero_image = "paper-8-4.png"
+hero_image = "paper-8-4.webp"
 hero_alt = "carbon negative materials"
 published_at = "2022-08-18"
 author = "Heartland Industries"

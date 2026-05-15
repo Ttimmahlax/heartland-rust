@@ -1,7 +1,7 @@
 +++
 title = "Magna Exteriors x BASF x Heartland - ALTAIR Enlighten Award Finalists"
 excerpt = "The ALTAIR Enlighten Award is a globally recognized accolade that celebrates groundbreaking advancements in automotive sustainability and lightweighting. Presented annually in collaboration with the Center for Automotive Research (CAR)"
-hero_image = "magna-x-basf-x-heartland-altair-enlighten-award-finalists-for-low-carbon-polyamide-6.png"
+hero_image = "magna-x-basf-x-heartland-altair-enlighten-award-finalists-for-low-carbon-polyamide-6.webp"
 hero_alt = "Magna x BASF x Heartland - ALTAIR Enlighten Award Finalists For Low Carbon Polyamide 6"
 published_at = "2025-08-01"
 author = "Heartland Industries"

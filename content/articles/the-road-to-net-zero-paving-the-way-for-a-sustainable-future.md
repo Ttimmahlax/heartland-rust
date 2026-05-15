@@ -1,7 +1,7 @@
 +++
 title = "The Road to Net Zero: Paving the Way for a Sustainable Future"
 excerpt = "The question of whether we can achieve a net zero economy is very complex. A more insightful question to ask might be: “What has doing very little to combat our assault on the environment done to get us to a"
-hero_image = "the-road-to-net-zero-title-image.png"
+hero_image = "the-road-to-net-zero-title-image.webp"
 hero_alt = "A computer screen with the title, Net Zero Economy. Images on the screen are of stylized skyscrapers"
 published_at = "2024-07-08"
 author = "Heartland Industries"

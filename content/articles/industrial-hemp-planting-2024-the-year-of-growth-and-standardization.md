@@ -1,7 +1,7 @@
 +++
 title = "Industrial Hemp Planting 2024: The Year of Growth and Standardization"
 excerpt = "As we roll into 2024, many farmers are scratching their heads, looking for more reliable options than the old standbys of corn and soybeans. These crops, once the backbone of many farms, are getting trickier to count on. Between unpred"
-hero_image = "hemp-fiber-farming-2024.png"
+hero_image = "hemp-fiber-farming-2024.webp"
 hero_alt = "engineering earth farming hemp"
 published_at = "2023-12-19"
 author = "Heartland Industries"

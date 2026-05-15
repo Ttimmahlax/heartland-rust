@@ -1,7 +1,7 @@
 +++
 title = "Heartland Awarded $360,000 USDA Grant to Study Industrial Hemp"
 excerpt = "Heartland Industries is proud to announce that their team has secured a grant from the [USDA’s Natural Resources Conservation Service (NRCS).](https://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/newsroom/releases/?cid=nrcseprd185"
-hero_image = "paper-8-15.png"
+hero_image = "paper-8-15.webp"
 hero_alt = "leaf ground"
 published_at = "2022-08-19"
 author = "Heartland Industries"

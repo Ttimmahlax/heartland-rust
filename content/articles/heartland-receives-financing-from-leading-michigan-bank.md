@@ -1,7 +1,7 @@
 +++
 title = "Heartland Receives Financing From Leading Michigan Bank"
 excerpt = "Throughout the last 6 months, the Heartland team has made huge leaps forward as we establish our industrial hemp supply chain. Focusing on **using industrial hemp as an additive to plastics** has allowed our team to work with top compa"
-hero_image = "paper-8-3.png"
+hero_image = "paper-8-3.webp"
 hero_alt = "ann arbor michigan hemp"
 published_at = "2022-08-18"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "The Difference Between Industrial Hemp, CBD and Cannabis"
 excerpt = "We understand that there are some established connotations about hemp, CBD, and cannabis. The most common is that they come from the same plant and as such, they fall into the same categories of use, regulations, and restrictions. The"
-hero_image = "female-hemp-farmer.jpg"
+hero_image = "female-hemp-farmer.webp"
 hero_alt = "The Difference Between Industrial Hemp, CBD and Cannabis"
 published_at = "2023-02-27"
 author = "Heartland Industries"

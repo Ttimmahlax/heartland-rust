@@ -1,7 +1,7 @@
 +++
 title = "Hemp – Of All Natural Materials, It's The Natural Fiber of Choice!"
 excerpt = "Natural fibers are experiencing a renaissance as we move towards creating a more sustainable future. These materials are gaining favor over synthetics and man-made fibers such as polyester, rayon, and even spandex, which have high carb"
-hero_image = "hemp-fiber-close-up.png"
+hero_image = "hemp-fiber-close-up.webp"
 hero_alt = "Close up view of industrial hemp fibers"
 published_at = "2023-04-26"
 author = "Heartland Industries"

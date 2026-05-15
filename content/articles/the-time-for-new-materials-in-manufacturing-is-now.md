@@ -1,7 +1,7 @@
 +++
 title = "The Time For New Sustainable Materials in Manufacturing is Now"
 excerpt = "The price of raw materials across the world is shooting up every week. Wood, metal, and plastic prices have all more than [doubled over the last 12 months](https://www.wsj.com/articles/record-lumber-prices-lift-sawmills-while-homeowner"
-hero_image = "injection-molding.png"
+hero_image = "injection-molding.webp"
 hero_alt = "injection molding"
 published_at = "2022-08-18"
 author = "Heartland Industries"

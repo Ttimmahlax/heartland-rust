@@ -1,7 +1,7 @@
 +++
 title = "Bio Continuity - The Secret to Reliable Bio-Based Supply Chains"
 excerpt = "Raw material supply chains provide the foundation to the manufacturing industry. These are the solids and liquids that are used to make all the products you see around you."
-hero_image = "paper-8.png"
+hero_image = "paper-8.webp"
 hero_alt = "bio continuity"
 published_at = "2022-08-18"
 author = "Heartland Industries"

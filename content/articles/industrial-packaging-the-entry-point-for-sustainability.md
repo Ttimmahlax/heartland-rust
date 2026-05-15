@@ -1,7 +1,7 @@
 +++
 title = "Industrial Packaging - The Best Business Entry Point for Sustainability"
 excerpt = "We hear the question a lot. “I want my company to be more sustainable, but where do I start?” It’s understandable. Sustainability has been a topic of business discussion for many years, however recently the ramp up in concern has"
-hero_image = "earth-in-a-box.jpg"
+hero_image = "earth-in-a-box.webp"
 hero_alt = "Industrial Packaging - The Best Business Entry Point for Sustainability"
 published_at = "2023-02-01"
 author = "Heartland Industries"

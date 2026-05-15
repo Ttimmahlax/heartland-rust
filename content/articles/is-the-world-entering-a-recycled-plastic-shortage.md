@@ -1,7 +1,7 @@
 +++
 title = "Is The World Entering A Recycled Plastic Shortage? If So, Why?"
 excerpt = "Over the last decade, the push for people and companies to become more sustainable has been at the forefront of the conversation. Recycling plastic waste has been the easiest opportunity for anyone to start becoming more sustainable. T"
-hero_image = "paper-8-14.png"
+hero_image = "paper-8-14.webp"
 hero_alt = "recycled plastic"
 published_at = "2022-08-19"
 author = "Heartland Industries"

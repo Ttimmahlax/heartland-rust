@@ -1,7 +1,7 @@
 +++
 title = "Carbon Credits for the Global Industrial Hemp Value Chain"
 excerpt = "Carbon Credits are gaining interest in the industrial hemp marketplace, but not without significant confusion. It’s time to set the record straight. Today, we are discussing what carbon credits are and how they apply to the industrial"
-hero_image = "growth-from-systems.png"
+hero_image = "growth-from-systems.webp"
 hero_alt = "growth from systems"
 published_at = "2022-08-18"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "Heartland Industries Cracks The Code On Industrial Hemp Farming"
 excerpt = "American manufacturers have always known that hemp could help them build their products stronger, lighter, cheaper, and more sustainable."
-hero_image = "transporting-bales-of-hemp-fiber.png"
+hero_image = "transporting-bales-of-hemp-fiber.webp"
 hero_alt = "transporting bales of hemp fiber"
 published_at = "2022-08-17"
 author = "Heartland Industries"

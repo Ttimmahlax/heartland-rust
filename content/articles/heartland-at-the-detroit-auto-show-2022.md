@@ -1,7 +1,7 @@
 +++
 title = "Heartland Presenting Hemp Fiber At The Detroit Auto Show 2022"
 excerpt = "The Detroit Automotive Show is finally back after a few-year hiatus. The Big 3 American OEMs and their suppliers were out to show the world the innovations they’ve been working on for years."
-hero_image = "untitled-design-2.png"
+hero_image = "untitled-design-2.webp"
 hero_alt = "detroit auto show 2022 lincoln"
 published_at = "2022-09-22"
 author = "Heartland Industries"

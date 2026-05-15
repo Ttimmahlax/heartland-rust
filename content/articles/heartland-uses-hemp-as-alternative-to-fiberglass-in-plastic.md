@@ -1,7 +1,7 @@
 +++
 title = "Heartland Augments Glass Fiber in Plastics with Hemp to Reduce Cost & Weight"
 excerpt = "Glass is one of the most common additives for plastics because it increases strength, durability, and performance. Because of its availability, glass is the most commonly used fiber in fiber-reinforced plastics (FRP). A glass fiber mix"
-hero_image = "plastic-pallets-1-2.png"
+hero_image = "plastic-pallets-1-2.webp"
 hero_alt = "glass fiber alternative"
 published_at = "2022-08-17"
 author = "Heartland Industries"

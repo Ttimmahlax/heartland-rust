@@ -1,7 +1,7 @@
 +++
 title = "Hemp Additives Create A Blue Ocean in the Plastic Supply Chain"
 excerpt = "Industry-wide, people are starting to see successful applications for hemp-filled plastics. What was once revolutionary (any natural fiber-filled resin) is now starting to become normalized in manufacturing R&D labs."
-hero_image = "plastic-pallets.png"
+hero_image = "plastic-pallets.webp"
 hero_alt = "plastic pallets"
 published_at = "2022-08-19"
 author = "Heartland Industries"

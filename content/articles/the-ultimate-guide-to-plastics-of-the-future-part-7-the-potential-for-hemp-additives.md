@@ -1,7 +1,7 @@
 +++
 title = "The Ultimate Guide to Plastics of the Future Part 7 - The Path for Hemp Additives"
 excerpt = "As we mentioned in the previous section, bio-based additives are becoming increasingly popular as plastics additives, and one of the most promising is industrial hemp. Let’s look at why in detail."
-hero_image = "rubber-11.png"
+hero_image = "rubber-11.webp"
 hero_alt = "plastic of the future"
 published_at = "2022-08-22"
 author = "Heartland Industries"

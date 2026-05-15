@@ -1,7 +1,7 @@
 +++
 title = "Hemp Based Materials Engineered As Additives For Polymers"
 excerpt = "The performance characteristics of hemp materials have been known for generations. When Henry Ford built a car that used hemp materials in plastics to replace steel, the world was able to see a commercially viable application of natura"
-hero_image = "paper-8-7.png"
+hero_image = "paper-8-7.webp"
 hero_alt = "hemp baling drone"
 published_at = "2022-08-18"
 author = "Heartland Industries"

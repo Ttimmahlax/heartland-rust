@@ -1,7 +1,7 @@
 +++
 title = "Wood Flour Alternatives - Why Cutting Down Trees Is Not Sustainable"
 excerpt = "Business leaders have been trying to figure out how to make plastics more sustainable for generations. Unfortunately, with regards to the materials we use on a daily basis this has driven us further away from the sustainable future we’"
-hero_image = "paper-8-10.png"
+hero_image = "paper-8-10.webp"
 hero_alt = "wood flour alternative"
 published_at = "2022-08-18"
 author = "Heartland Industries"

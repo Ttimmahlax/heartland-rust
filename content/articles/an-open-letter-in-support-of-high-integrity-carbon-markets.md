@@ -1,7 +1,7 @@
 +++
 title = "An Open Letter In Support of High-Integrity Carbon Markets"
 excerpt = "The following letter was penned by Sylvera in response to the urgent need for the wide-spread adoption of carbon credits. This open letter was signed by over 50 of Sylvera's partners, who are linked at the bottom. We at Heartland were…"
-hero_image = "sylvera-letter-image.jpg"
+hero_image = "sylvera-letter-image.webp"
 hero_alt = "An Open Letter In Support of High-Integrity Carbon Markets"
 published_at = "2023-02-09"
 author = "Heartland Industries"

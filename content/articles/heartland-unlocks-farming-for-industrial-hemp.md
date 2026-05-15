@@ -1,7 +1,7 @@
 +++
 title = "Heartland Unlocks Farming Infrastructure for Industrial Hemp"
 excerpt = "Most people around the world know that farmers have it rough. They put in the work across the agriculture industry to produce the goods that we consume every day. But, recently, the going has gotten tougher for farmers who are"
-hero_image = "plastic-pallets-5.png"
+hero_image = "plastic-pallets-5.webp"
 hero_alt = "hemp farming"
 published_at = "2022-08-17"
 author = "Heartland Industries"

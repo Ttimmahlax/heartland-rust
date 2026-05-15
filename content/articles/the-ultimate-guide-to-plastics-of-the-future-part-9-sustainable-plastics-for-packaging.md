@@ -1,7 +1,7 @@
 +++
 title = "The Ultimate Guide to Plastics of the Future Part 9 - Sustainable Packaging"
 excerpt = "There are countless types of product packaging in use today and unsurprisingly, plastic makes up the majority of packaging materials (up to 90% by some estimates). From the consumer-scale boxes, plastic bottles and containers in brande"
-hero_image = "rubber-11.png"
+hero_image = "rubber-11.webp"
 hero_alt = "plastic of the future"
 published_at = "2022-08-22"
 author = "Heartland Industries"

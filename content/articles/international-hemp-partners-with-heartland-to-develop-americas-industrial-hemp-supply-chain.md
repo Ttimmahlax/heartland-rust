@@ -1,7 +1,7 @@
 +++
 title = "IH Partners With Heartland To Develop America’s Hemp Supply Chain"
 excerpt = "Detroit, Michigan – ([BUSINESS WIRE](https://www.businesswire.com/)) – [International Hemp](https://www.international-hemp.com/), a global leader in the production and distribution of certified industrial hemp seed, has partnered with"
-hero_image = "heartland-altering-the-fabric-of-democracy-1.png"
+hero_image = "heartland-altering-the-fabric-of-democracy-1.webp"
 hero_alt = "Heartland - altering the fabric of democracy"
 published_at = "2022-08-19"
 author = "Heartland Industries"

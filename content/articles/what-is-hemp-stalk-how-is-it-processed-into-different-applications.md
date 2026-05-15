@@ -1,7 +1,7 @@
 +++
 title = "What Is Hemp Stalk & How Is It Processed Into Different Applications?"
 excerpt = "The hemp stalk stands as a remarkable example of nature’s ingenuity, offering a wealth of resources packed into a single plant structure. At its core, the stalk is divided into two primary components: the tough outer bast fiber and the"
-hero_image = "what-is-hemp-stalk-how-is-it-processed-into-different-applications.png"
+hero_image = "what-is-hemp-stalk-how-is-it-processed-into-different-applications.webp"
 hero_alt = "What Is Hemp Stalk & How Is It Processed Into Different Applications?"
 published_at = "2025-02-24"
 author = "Heartland Industries"

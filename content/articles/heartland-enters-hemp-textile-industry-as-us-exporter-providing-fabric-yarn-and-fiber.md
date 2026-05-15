@@ -1,7 +1,7 @@
 +++
 title = "Heartland Enters Hemp Textile Industry As US Exporter of Hemp Fiber"
 excerpt = "Heartland Industries is thrilled to announce the launch of our new line of premium hemp yarns and fabrics, specially engineered for knitwear, woven textiles, activewear, and high-performance functional fabrics."
-hero_image = "heartland-industries-textiles-fabric-yarn-fiber.png"
+hero_image = "heartland-industries-textiles-fabric-yarn-fiber.webp"
 hero_alt = "heartland industries textiles fabric yarn fiber"
 published_at = "2025-12-30"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "It is Industrial Hemp Planting Season for the Heartland Team"
 excerpt = "Farming is the foundation of the industrial hemp supply chain. This means that to provide manufacturers with the highest quality products, the Heartland team must go all the way to the source to understand seed genetics, fertilizer, pl"
-hero_image = "paper-8-5.png"
+hero_image = "paper-8-5.webp"
 hero_alt = "heartland hemp farm"
 published_at = "2022-08-18"
 author = "Heartland Industries"

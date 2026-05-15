@@ -1,7 +1,7 @@
 +++
 title = "Industry 5.0: The Bridge Between Capitalism And Sustainability"
 excerpt = "Business leaders are always trying to predict the innovations that will put them on the bleeding edge of their industries. But, now that Industry 4.0 has played out, people are asking themselves, what’s next?"
-hero_image = "paper-8-8.png"
+hero_image = "paper-8-8.webp"
 hero_alt = "industry 5.0: sustainability"
 published_at = "2022-08-18"
 author = "Heartland Industries"

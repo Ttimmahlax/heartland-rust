@@ -1,7 +1,7 @@
 +++
 title = "Bio-Based Materials Stretch The Inventory of The Plastics Supply Chain"
 excerpt = "The plastics supply chain is in the middle of a massive, global change. The price of plastics is [currently shooting through the roof](https://www.ptonline.com/articles/prices-up-for-major-volume-resins), and this is leaving manufactur"
-hero_image = "paper-8-2.png"
+hero_image = "paper-8-2.webp"
 hero_alt = "plastic production"
 published_at = "2022-08-18"
 author = "Heartland Industries"

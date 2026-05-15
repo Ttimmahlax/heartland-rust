@@ -1,7 +1,7 @@
 +++
 title = "Tariffs Are Shifting Buying Habits To Localization, Similar To COVID"
 excerpt = "The COVID-19 pandemic hit global supply chains like a [sledgehammer](https://www.nature.com/articles/s41578-020-00247-y), revealing just how fragile decades of offshoring had made essential industries. As ports clogged, factories shutt"
-hero_image = "shifting-buying-habits.png"
+hero_image = "shifting-buying-habits.webp"
 hero_alt = "Shifting Buying Habits"
 published_at = "2025-03-31"
 author = "Heartland Industries"

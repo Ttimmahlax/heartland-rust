@@ -11,7 +11,7 @@ pub fn Contact() -> Element {
     rsx! {
         Seo {
             title: "Contact",
-            description: "Contact",
+            description: "Get in touch with Heartland Industries — discuss Imperium materials for plastic, rubber, concrete, asphalt, paper, or textile compounding. Headquartered in Detroit. Hello@heartland.io.",
             path: "/contact",
         }
 

@@ -1,7 +1,7 @@
 +++
 title = "Planting Hemp Fiber in the Summer Behind Winter Wheat"
 excerpt = "Winter wheat is a common crop in a farmer's rotation. Typically planted at the end of the season in fall and harvested in early summer, around July."
-hero_image = "plant-hemp-fiber-winter-wheat.png"
+hero_image = "plant-hemp-fiber-winter-wheat.webp"
 hero_alt = "plant hemp fiber winter wheat"
 published_at = "2023-12-13"
 author = "Heartland Industries"

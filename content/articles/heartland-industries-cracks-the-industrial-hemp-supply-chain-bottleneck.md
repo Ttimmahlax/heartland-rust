@@ -1,7 +1,7 @@
 +++
 title = "Heartland Cracks the Code to the Industrial Hemp Supply Chain"
 excerpt = "The [2018 Farm Bill](https://www.agriculture.senate.gov/2018-farm-bill) opened the doors for hemp farming across the heartland of America. Since then, the world has seen dozens of different approaches from entrepreneurs who are looking"
-hero_image = "plastic-pallets-4.png"
+hero_image = "plastic-pallets-4.webp"
 hero_alt = "heartland industrial hemp supply chain"
 published_at = "2022-08-17"
 author = "Heartland Industries"

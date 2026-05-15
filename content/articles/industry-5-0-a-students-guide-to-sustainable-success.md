@@ -1,7 +1,7 @@
 +++
 title = "Industry 5.0: A Student's Guide to Sustainable Success"
 excerpt = "For students poised to enter the workforce, understanding and adapting to this new industrial revolution with a focus on sustainability is crucial. This guide to sustainable success is a great tool for students who want to thrive in th"
-hero_image = "industry-5.0-article-series-1210-x-786-px-4.png"
+hero_image = "industry-5.0-article-series-1210-x-786-px-4.webp"
 hero_alt = "Industry 5.0 Article Series based on the book \"Industry 5.0\" by John Ely"
 published_at = "2024-07-29"
 author = "Heartland Industries"

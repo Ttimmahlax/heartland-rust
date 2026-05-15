@@ -41,7 +41,10 @@ rsync -a \
 
 # Sweep stale rasters/MP4s left behind by prior builds (rsync above doesn't
 # --delete, since other build steps write tailwind*.css into $OUT/assets/).
-# brand/** is preserved — it's the only place we ship PNG.
+# brand/** is preserved — it's the only place we ship PNG (favicons + OG logo).
+# Everything else ships as WebP — including og:image and twitter:image surfaces,
+# which modern crawlers (Twitter since 2020, Facebook, LinkedIn, Discord, Slack,
+# iMessage) all accept.
 find "$OUT/assets" -type f \( \
     -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.mp4' \
   \) -not -path "$OUT/assets/brand/*" -delete

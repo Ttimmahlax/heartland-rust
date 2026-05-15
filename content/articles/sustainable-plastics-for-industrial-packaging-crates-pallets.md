@@ -1,7 +1,7 @@
 +++
 title = "Sustainable Plastics for Industrial Packaging: Crates & Pallets"
 excerpt = "There are countless types of product packaging in use today. From the consumer-scale cardboard boxes, clear plastic bottles and containers in branded shapes and colors, to industrial crates and heavy-duty packaging meant to protect lar"
-hero_image = "paper-8-16.png"
+hero_image = "paper-8-16.webp"
 hero_alt = "sustainable plastic pallet"
 published_at = "2022-08-19"
 author = "Heartland Industries"

@@ -1,7 +1,7 @@
 +++
 title = "Ultimate Guide to Hemp-Lyocell Blends: Uses, and Benefits"
 excerpt = "The magic of a hemp-lyocell blend comes from its thoughtful ratio. Heartland blends hemp with lyocell at 20–35% hemp, harmonizing hemp's tensile strength, UV resistance, and natural antimicrobial benefits with lyocell's buttery…"
-hero_image = "ultimate-guide-to-hemp-lyocell-blends-composition-uses-and-benefits.png"
+hero_image = "ultimate-guide-to-hemp-lyocell-blends-composition-uses-and-benefits.webp"
 hero_alt = "Ultimate Guide to Hemp-Lyocell Blends: Uses, and Benefits"
 published_at = "2025-11-19"
 author = "Heartland Industries"

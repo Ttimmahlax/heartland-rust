@@ -1,7 +1,7 @@
 +++
 title = "Carbon Farming: It’s Not About Carbon Footprint It’s About Food and Water"
 excerpt = "Carbon farming represents a significant ideological shift toward regenerative agriculture, emphasizing the restoration and enhancement of natural ecosystems. Rather than simply minimizing damage, it focuses on healing the land by captu"
-hero_image = "carbon-farming-benefits.png"
+hero_image = "carbon-farming-benefits.webp"
 hero_alt = "carbon farming benefits"
 published_at = "2024-10-16"
 author = "Heartland Industries"
