@@ -1,28 +1,28 @@
 +++
 title = "Heartland Raises Seed Capital For Detroit Facility For Processing"
-excerpt = "July 2020 – The Heartland team has raised their first round of seed capital from a local power player in the [Detroit community.](/sustainability-news/industry-50-the-sustainability-revolution/)This financing brings with it tremendous"
+excerpt = "Julho de 2020 – A equipe da Heartland levantou sua primeira rodada de capital semente de um player de peso local na [comunidade de Detroit.](/sustainability-news/industry-50-the-sustainability-revolution/)Este financiamento traz consigo um tremendo"
 hero_image = "plastic-pallets-2.webp"
-hero_alt = "captação de capital"
+hero_alt = "levantamento de capital"
 published_at = "2022-08-17"
 author = "Heartland Industries"
 categories = ["hemp-processing"]
 tags = ["building-materials", "detroit", "innovation", "michigan", "plastic", "raising-capital", "sustainability", "technology"]
 +++
 
-July 2020 – The Heartland team has raised their first round of seed capital from a local power player in the [Detroit community.](/sustainability-news/industry-50-the-sustainability-revolution/)This financing brings with it tremendous value in terms of local partnerships and political capital.
+Julho de 2020 – A equipe da Heartland levantou sua primeira rodada de capital semente de um player de peso local na [comunidade de Detroit.](/sustainability-news/industry-50-the-sustainability-revolution/)Este financiamento traz consigo um tremendo valor em termos de parcerias locais e capital político.
 
-This round of seed capital will be used to validate the scalable technologies that Heartland Industries will use to build one of the largest industrial hemp processing facilities in America.
+Esta rodada de capital semente será utilizada para validar as tecnologias escaláveis que a Heartland Industries usará para construir uma das maiores instalações de processamento de cânhamo industrial da América.
 
-The Heartland team is working with the proper legal counsel to finalize the documentation necessary for a larger capital raise down the road.
+A equipe da Heartland está trabalhando com assessoria legal apropriada para finalizar a documentação necessária para um levantamento de capital maior no futuro.
 
-## What happens for Heartland After Raising Capital
+## O que acontece para a Heartland Após Levantamento de Capital
 
-Because of COVID-19, the Heartland team is starting the technology vetting process virtually. Fortunately, Heartlands technology partners are flexible and are happy to send out samples, videos, and other forms of documentation.
+Devido à COVID-19, a equipe da Heartland está iniciando o processo de validação de tecnologia virtualmente. Felizmente, os parceiros de tecnologia da Heartland são flexíveis e estão felizes em enviar amostras, vídeos e outras formas de documentação.
 
-In the coming months, the Heartland team will work to create a robust data room that creates certainty that investors are putting money into a strong investment. Before Heartland takes their deal out to market, they will have properly validated all technology, and have the documentation to properly execute the business plan.
+Nos próximos meses, a equipe da Heartland trabalhará para criar uma sala de dados robusta que crie certeza de que os investidores estão colocando dinheiro em um investimento sólido. Antes de a Heartland levar seu negócio ao mercado, eles terão validado adequadamente toda a tecnologia e terão a documentação para executar adequadamente o plano de negócios.
 
-– [Heartland](/tea)[Team](/team)
+– [Equipe](/tea) [da Heartland](/team)
 
-## Heartland Company Description
+## Descrição da Empresa Heartland
 
-Heartland is a material science company that engineers hemp fibers as additives for plastics. Their team is building America's first reliable industrial hemp supply chain to provide additives for manufacturers that use plastic resins. As an industrial hemp material processor, they work with farmers and manufacturers to ensure the product consistency of bio-based additives that can be used across raw material supply chains. Heartland's products help companies manufacture stronger, lighter, cheaper, and more sustainable materials. For more information, visit [https://heartland.io](https://heartland.io).
+Heartland é uma empresa de ciência de materiais que engenheira fibras de cânhamo como aditivos para plásticos. Sua equipe está construindo a primeira cadeia confiável de suprimento de cânhamo industrial da América para fornecer aditivos para fabricantes que usam resinas plásticas. Como processadora de material de cânhamo industrial, ela trabalha com agricultores e fabricantes para garantir a consistência de produto de aditivos à base biológica que podem ser usados em cadeias de suprimento de matérias-primas. Os produtos da Heartland ajudam as empresas a fabricar materiais mais fortes, mais leves, mais baratos e mais sustentáveis. Para mais informações, visite [https://heartland.io](https://heartland.io).

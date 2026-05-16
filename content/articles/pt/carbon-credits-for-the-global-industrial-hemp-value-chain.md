@@ -1,6 +1,6 @@
 +++
-title = "Carbon Credits for the Global Industrial Hemp Value Chain"
-excerpt = "Carbon Credits are gaining interest in the industrial hemp marketplace, but not without significant confusion. It's time to set the record straight. Today, we are discussing what carbon credits are and how they apply to the industrial"
+title = "Créditos de Carbono para a Cadeia de Valor Global do Cânhamo Industrial"
+excerpt = "Créditos de Carbono estão ganhando interesse no mercado de cânhamo industrial, mas não sem confusão significativa. É hora de esclarecer os fatos. Hoje, estamos discutindo o que são créditos de carbono e como eles se aplicam à cadeia de"
 hero_image = "growth-from-systems.webp"
 hero_alt = "crescimento a partir de sistemas"
 published_at = "2022-08-18"
@@ -9,68 +9,68 @@ categories = ["supply-chain", "sustainable-plastics"]
 tags = ["agriculture", "automotive", "detroit", "innovation", "michigan", "plastic", "sustainability"]
 +++
 
-Carbon Credits are gaining interest in the industrial hemp marketplace, but not without significant confusion. It's time to set the record straight. Today, we are discussing what carbon credits are and how they apply to the industrial hemp supply chain.
+Créditos de Carbono estão ganhando interesse no mercado de cânhamo industrial, mas não sem confusão significativa. É hora de esclarecer os fatos. Hoje, estamos discutindo o que são créditos de carbono e como eles se aplicam à cadeia de suprimentos de cânhamo industrial.
 
-Carbon credits are generated from **verified projects** that pull Carbon Dioxide (CO2) out of the atmosphere. When one tonne of CO2 is avoided or destroyed, one carbon credit is created. The credit is a tradable permit that provides the holder of the credit the right to emit one tonne of CO2. Carbon credits are one half of cap-and-trade programs, where companies are required to purchase credits if they exceed the regulated cap for CO2. Carbon credits are also purchased to support a company's voluntary reduction commitments.
+Créditos de carbono são gerados a partir de **projetos verificados** que removem Dióxido de Carbono (CO2) da atmosfera. Quando uma tonelada de CO2 é evitada ou destruída, um crédito de carbono é criado. O crédito é um permissão comercializável que fornece ao detentor do crédito o direito de emitir uma tonelada de CO2. Créditos de carbono são uma metade dos programas de cap-and-trade, onde as empresas são obrigadas a comprar créditos se excederem o limite regulamentado de CO2. Créditos de carbono também são adquiridos para apoiar os compromissos voluntários de redução de uma empresa.
 
-## **Does industrial hemp qualify for carbon credits?**
+## **O cânhamo industrial se qualifica para créditos de carbono?**
 
-The answer is yes, if you do it right.
+A resposta é sim, se você fizer corretamente.
 
-As we begin discussing how carbon credits impact the industrial hemp value chain, there are a few important topics to keep in mind:
+Conforme começamos a discutir como os créditos de carbono impactam a cadeia de valor do cânhamo industrial, há alguns tópicos importantes a manter em mente:
 
-- Where in the value chain, do we create valid carbon credits?
+- Onde na cadeia de valor criamos créditos de carbono válidos?
 
-- The increasing importance of co-benefits.
+- A importância crescente dos co-benefícios.
 
-- How do we execute?
+- Como executamos?
 
-Hemp is scientifically proven to absorb more CO2 per acre than any forest or commercial crop and Hemp is the fastest CO2-to-Biomass conversion tool available. An acre of Hemp has the potential to sequester upwards of 10-30 tonnes of CO2, depending on the number of harvest cycles and overall farming performance.
+O cânhamo é comprovado cientificamente absorver mais CO2 por acre do que qualquer floresta ou cultura comercial, e o cânhamo é a ferramenta de conversão de CO2 para biomassa mais rápida disponível. Um acre de cânhamo tem o potencial de sequestrar entre 10-30 toneladas de CO2, dependendo do número de ciclos de colheita e do desempenho geral da fazenda.
 
-## **It starts with the soil and our farming partners**.
+## **Começa com o solo e nossos parceiros agrícolas**.
 
-Sustainable farming practices converging with the benefits of a rotational crop with deep roots and superior planting density delivers optimal carbon sequestration in the soil. This is the starting point, but not the end, when generating highly credible carbon credits for our clients and the open market.
+Práticas agrícolas sustentáveis convergindo com os benefícios de uma cultura rotacional com raízes profundas e densidade de plantio superior entregam sequestro de carbono ótimo no solo. Este é o ponto de partida, mas não o fim, ao gerar créditos de carbono altamente credíveis para nossos clientes e o mercado aberto.
 
-Accretive to the creditability of Hemp carbon credits is its **co-benefits**. Many Credit issuers focus on the co-benefits of a project and Hemp crushes it! From regenerative farming practices that improve biodiversity to local economic boon to removing toxic CO2 intensive materials from end products.
+Acrescentando à credibilidade dos créditos de carbono do cânhamo estão seus **co-benefícios**. Muitos emissores de créditos focam nos co-benefícios de um projeto e o cânhamo se destaca! Desde práticas agrícolas regenerativas que melhoram a biodiversidade até o benefício econômico local e a remoção de materiais intensivos em CO2 tóxico dos produtos finais.
 
-It's important to know which materials are being replaced by industrial hemp. This allows us to fully calculate the impact of the removal of these materials from products produced by manufacturers today.
+É importante saber quais materiais estão sendo substituídos pelo cânhamo industrial. Isso nos permite calcular plenamente o impacto da remoção desses materiais dos produtos produzidos pelos fabricantes hoje.
 
-At Heartland, our business is replacing toxic fillers that are used in all plastics. These fillers are either mined or synthetic goods that give the plastic certain performance benefits. The main fillers on the market include talc, calcium carbonate, glass fiber, and carbon fiber.
+Na Heartland, nosso negócio é substituir enchimentos tóxicos que são usados em todos os plásticos. Esses enchimentos são bens minerados ou sintéticos que dão ao plástico certos benefícios de desempenho. Os principais enchimentos no mercado incluem talco, carbonato de cálcio, fibra de vidro e fibra de carbono.
 
-When we remove these toxic fillers from the plastic, we also reduce the amount of plastic required to produce the same volume of plastic (measured in cubic feet). This is why hemp has such great lightweighting capabilities; the same amount of plastic can now weigh less.
+Quando removemos esses enchimentos tóxicos do plástico, também reduzimos a quantidade de plástico necessária para produzir o mesmo volume de plástico (medido em pés cúbicos). É por isso que o cânhamo tem tais grandes capacidades de redução de peso; a mesma quantidade de plástico agora pode pesar menos.
 
-**Example**: If we replace the 20% talc in a plastic with 20% hemp, we have removed all the talc and a portion of the plastic required to make the same product. We can now quantify carbon reduction from embedding a carbon-negative material like hemp while removing talc and plastic.
+**Exemplo**: Se substituirmos os 20% de talco em um plástico por 20% de cânhamo, removemos todo o talco e uma parte do plástico necessário para fazer o mesmo produto. Agora podemos quantificar a redução de carbono ao incorporar um material com carbono negativo como o cânhamo enquanto removemos talco e plástico.
 
 ## Engineering Earth
 
-The Heartland team has spent the last two years developing an in-house method for [regenerative agriculture](/engineering-earth), that provides additionality to the soil by banking carbon. This set of methods is simple and practical, allowing for the industry-wide adoption for traditional row crop farmers. Our goal is to help provide access to farmers by developing the tools necessary for them to create revenue from carbon credits and use their existing financial tools.
+O time da Heartland passou os últimos dois anos desenvolvendo um método interno para [agricultura regenerativa](/engineering-earth), que fornece adicionalidade ao solo ao depositar carbono. Este conjunto de métodos é simples e prático, permitindo adoção em toda a indústria para agricultores tradicionais de cultivos em fileiras. Nosso objetivo é ajudar a fornecer acesso aos agricultores desenvolvendo as ferramentas necessárias para que eles criem receita a partir de créditos de carbono e usem suas ferramentas financeiras existentes.
 
-## Regenerative Farming Expectations
+## Expectativas de Agricultura Regenerativa
 
-Regenerative farming is a dirty word in the industry. It is clouded in mystery and there have been a lot of faults in the past.
+Agricultura regenerativa é uma palavra de má conotação na indústria. Está envolta em mistério e houve muitos problemas no passado.
 
-By developing the Engineering Earth platform, Heartland makes it simple for farmers to understand exactly what is required to begin earning carbon credits, and ultimately more income per acre.
+Ao desenvolver a plataforma Engineering Earth, Heartland torna simples para os agricultores entender exatamente o que é necessário para começar a ganhar créditos de carbono e, em última análise, mais renda por acre.
 
-Simple changes to everyday operations, no new equipment unlocks a new stream of income on the same acerage.
+Mudanças simples nas operações cotidianas, nenhum novo equipamento desbloqueará um novo fluxo de renda na mesma metragem.
 
-## More revenue throughout the supply chain
+## Mais receita em toda a cadeia de suprimentos
 
-It is important to see the full picture of the impact industrial hemp materials can have on your product **because all of this information can translate into extra cash flow for your business**.
+É importante ver o quadro completo do impacto que os materiais de cânhamo industrial podem ter no seu produto **porque todas essas informações podem se traduzir em fluxo de caixa extra para sua empresa**.
 
-The last part is to understand how to file for and acquire carbon credits. Anyone can file for these benefits, but this process is designed to be time-consuming and meticulous. You must validate your claims with the information we gathered above and confirm it with a validated third-party entity. This makes it difficult for the everyday farmer to apply for carbon credits and see value in these resources.
+A última parte é entender como solicitar e adquirir créditos de carbono. Qualquer pessoa pode solicitar esses benefícios, mas esse processo é projetado para ser demorado e meticuloso. Você deve validar suas afirmações com as informações que coletamos acima e confirmar com uma entidade terceirizada validada. Isso torna difícil para o agricultor comum solicitar créditos de carbono e ver valor nesses recursos.
 
-Most industrial hemp companies will not take the time to understand these numbers. Even less will create the structure required to ensure farmers qualify to receive revenue from carbon credits.
+A maioria das empresas de cânhamo industrial não dedicará tempo para entender esses números. Ainda menos criarão a estrutura necessária para garantir que os agricultores se qualifiquem para receber receita de créditos de carbono.
 
-"At Heartland, we embrace the opportunity to lead the realization of verified carbon credits generated in the industrial hemp supply chain." [Said Eric Austermann](/team), Chief Sustainability Officer of Heartland.
+"Na Heartland, abraçamos a oportunidade de liderar a realização de créditos de carbono verificados gerados na cadeia de suprimentos de cânhamo industrial." [Disse Eric Austermann](/team), Chief Sustainability Officer da Heartland.
 
-The Heartland team believes that access to this revenue stream is an important part of our value chain. We have centralized the complex procedures necessary to begin quantifying our entire supply chain so Heartland farmers and clients can reap the benefits of carbon credits.
+O time da Heartland acredita que o acesso a este fluxo de receita é uma parte importante de nossa cadeia de valor. Centralizamos os procedimentos complexos necessários para começar a quantificar toda a nossa cadeia de suprimentos para que agricultores e clientes da Heartland possam colher os benefícios dos créditos de carbono.
 
-Heartland's network of farmers will have an additional revenue stream on top of their fiber and grain harvests because we spent the time to get the job done right.
+A rede de agricultores da Heartland terá um fluxo de receita adicional além de suas colheitas de fibra e grãos porque gastamos o tempo para fazer o trabalho corretamente.
 
-Heartland's clients and partners will have access to carbon credits that no other raw material suppliers could provide.
+Os clientes e parceiros da Heartland terão acesso a créditos de carbono que nenhum outro fornecedor de matérias-primas poderia fornecer.
 
-Carbon credits are the tool we will use to quantify our ability to become the most sustainable company on the planet.
+Créditos de carbono são a ferramenta que usaremos para quantificar nossa capacidade de nos tornar a empresa mais sustentável do planeta.
 
-Join us as we make a world out of hemp.
+Junte-se a nós enquanto fazemos um mundo de cânhamo.
 
 — [Heartland Team](/team)

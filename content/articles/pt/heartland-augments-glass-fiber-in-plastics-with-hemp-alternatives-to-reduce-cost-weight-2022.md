@@ -1,74 +1,74 @@
 +++
-title = "Heartland Augments Glass Fiber in Plastics with Hemp Alternatives"
-excerpt = "Glass is one of the most common raw materials we see in use today. It can be made into anything from windows to tableware to furniture, and the list goes on. It is also a material that has changed significantly"
+title = "Heartland Aumenta o Desempenho de Fibra de Vidro em Plásticos com Alternativas de Cânhamo"
+excerpt = "O vidro é uma das matérias-primas mais comuns em uso atualmente. Pode ser transformado em qualquer coisa, desde janelas a utensílios de mesa e móveis, entre muitas outras aplicações. É também um material que mudou significativamente"
 hero_image = "plastic-pallets-1-2.webp"
-hero_alt = "alternativa de fibra de vidro"
+hero_alt = "alternativa à fibra de vidro"
 published_at = "2022-10-10"
 author = "Heartland Industries"
 categories = ["sustainable-plastics"]
 tags = ["agriculture", "detroit", "glass-fiber", "innovation", "manufacturers", "michigan", "sustainability"]
 +++
 
-## The Lowdown on Glass and Glass Fiber
+## O que Você Precisa Saber sobre o Vidro e a Fibra de Vidro
 
-Glass is one of the most common raw materials we see in use today. It can be made into anything from windows to tableware to furniture, and the list goes on. It is also a material that has changed significantly over time. One big advancement was adding glass fibers to plastics (known as fiberglass) in 1932. So let's explore the history of this very versatile material, and look at the glass fiber alternatives of today.
+O vidro é uma das matérias-primas mais comuns em uso atualmente. Pode ser transformado em qualquer coisa, desde janelas a utensílios de mesa e móveis, entre muitas outras aplicações. É também um material que mudou significativamente ao longo do tempo. Um grande avanço foi a adição de fibras de vidro aos plásticos (conhecido como fibra de vidro) em 1932. Vamos explorar a história desse material bastante versátil e analisar as alternativas à fibra de vidro disponíveis hoje.
 
-While sometimes glass is referred to as a mineral, glass itself technically is not. However, the materials that make up glass are mineral in nature, and many times are mined.
+Embora o vidro seja às vezes referido como um mineral, tecnicamente não é. No entanto, os materiais que compõem o vidro são de natureza mineral e, muitas vezes, são extraídos por mineração.
 
-Traditionally, commercial glass is made from three basic ingredients—sand, limestone and soda ash. These are heated until they melt and then cooled quickly before they have time to form crystals in the glass.
+Tradicionalmente, o vidro comercial é feito de três ingredientes básicos — areia, calcário e carbonato de sódio. Esses ingredientes são aquecidos até derreterem e depois resfriados rapidamente antes que tenham tempo de formar cristais no vidro.
 
-Along with being lightweight and strong, glass is recyclable and cost effective. Glass also comes in many forms. According to Simplicable, there are no less than [38 tipos de vidro](https://simplicable.com/new/glass)! However for our purposes we're focusing on glass fibers, and more specifically, glass fibers added to plastics.
+Além de ser leve e resistente, o vidro é reciclável e econômico. O vidro também se apresenta em muitas formas. De acordo com a Simplicable, existem não menos de [38 tipos de vidro](https://simplicable.com/new/glass)! No entanto, para os nossos propósitos, estamos focando nas fibras de vidro e, mais especificamente, nas fibras de vidro adicionadas aos plásticos.
 
-Glass fiber is one of the most common additives for plastics as it adds many benefits. These benefits include increasing strength, durability, and performance. Because of its availability, glass is the most commonly used fiber in fiber-reinforced plastics (FRP). A glass fiber mixed with plastic is commonly referred to as 'fiberglass'. This type of composite is typically used in use cases for mobility (cars, boats, planes, rockets, etc.).
+A fibra de vidro é um dos aditivos mais comuns para plásticos, pois agrega muitos benefícios. Entre esses benefícios estão o aumento de resistência, durabilidade e desempenho. Devido à sua disponibilidade, o vidro é a fibra mais utilizada em plásticos reforçados com fibra (FRP, na sigla em inglês). Uma fibra de vidro misturada com plástico é comumente chamada de "fibra de vidro" (ou fiberglass). Esse tipo de composto é tipicamente utilizado em aplicações de mobilidade (carros, barcos, aviões, foguetes, etc.).
 
-## Why the Automotive Industry Embraces Fiberglass
+## Por que a Indústria Automotiva Adota a Fibra de Vidro
 
-There are many industry sectors looking for for stronger, lighter and more cost effective materials. As the world becomes more and more technologically advanced, one of the industries that has been profoundly impacted is the transportation industry. This is due to a number of factors, namely that as vehicles become heavier and more complex, they require a new type of material to handle their demands. Not only do these new materials need to be stronger, but they also have to be lighter than ever before in order for them to meet [padrões de eficiência de veículos](https://www.c2es.org/content/regulating-transportation-sector-carbon-emissions/) here in the U.S. Because of these challenges, the [future of the transportation industry](/automotive/)will certainly look to new materials.
+Muitos setores industriais buscam materiais mais resistentes, mais leves e mais econômicos. À medida que o mundo se torna cada vez mais tecnologicamente avançado, uma das indústrias mais profundamente impactadas é a de transportes. Isso se deve a uma série de fatores, principalmente ao fato de que, à medida que os veículos ficam mais pesados e complexos, eles exigem um novo tipo de material para atender às suas demandas. Esses novos materiais precisam não apenas ser mais resistentes, mas também mais leves do que nunca para cumprir os [padrões de eficiência veicular](https://www.c2es.org/content/regulating-transportation-sector-carbon-emissions/) nos EUA. Por causa desses desafios, o [futuro da indústria de transportes](/automotive/) certamente buscará novos materiais.
 
-Since companies that produce moving vehicles are always looking for new ways to reduce cost and weight. One of the ways they're doing this is through the additives that they're using in the plastic and metal components of the products they're manufacturing. As the [fiber reinforced plastic](https://en.wikipedia.org/wiki/Fibre-reinforced_plastic)(FRP) industry has evolved, there have been various segments have come about. One of these segments is Glass-Reinforced Plastic (GRP), which has traditionally produced stronger, lighter, and cheaper products. This, along with a seemingly unlimited supply, has created widespread adoption across markets.
+Como as empresas que produzem veículos estão sempre buscando novas maneiras de reduzir custos e peso, uma das formas de fazer isso é por meio dos aditivos utilizados nos componentes plásticos e metálicos dos produtos que fabricam. À medida que o setor de [plásticos reforçados com fibra](https://en.wikipedia.org/wiki/Fibre-reinforced_plastic) (FRP) evoluiu, surgiram diversos segmentos. Um desses segmentos é o Plástico Reforçado com Vidro (GRP, na sigla em inglês), que tradicionalmente produziu produtos mais resistentes, mais leves e mais baratos. Isso, aliado a um fornecimento aparentemente ilimitado, gerou uma adoção generalizada em diversos mercados.
 
-Even with all the added benefits, Glass-Reinforced Plastic (GRP) has many downsides that manufacturers tend to overlook. Because the ingredients that make glass have such a high molten temperature (over 3,000 degrees F, necessary for extruding it into fibers) making fiberglass is considered a synthesized process, and the heat for that typically comes from petroleum-based products. Hence, there are significant environmental consequences and bottlenecks related to the production and distribution of glass fibers.
+Mesmo com todos os benefícios adicionais, o Plástico Reforçado com Vidro (GRP) apresenta muitas desvantagens que os fabricantes tendem a ignorar. Como os ingredientes que compõem o vidro exigem uma temperatura de fusão muito alta (acima de 1.650 °C, necessária para a extrusão em fibras), a fabricação de fibra de vidro é considerada um processo sintetizado, e o calor para isso geralmente provém de produtos à base de petróleo. Portanto, há consequências ambientais significativas e gargalos relacionados à produção e distribuição de fibras de vidro.
 
-## Heartland Uncovers the Benefits of Using Hemp Fiber as a Glass Fiber Alternative
+## Heartland Descobre os Benefícios do Uso de Fibra de Cânhamo como Alternativa à Fibra de Vidro
 
-The world is searching for an additive in manufacturing that creates stronger, lighter, cheaper, and more sustainable products. Heartland has been researching viable alternatives for glass fibers for years, and hemp is the best alternative. The company is the first to commercialize hemp-based fiberglass composites, which are lighter and cheaper than traditional fiberglass.
+O mundo busca um aditivo para a fabricação que crie produtos mais resistentes, mais leves, mais baratos e mais sustentáveis. A Heartland pesquisa alternativas viáveis às fibras de vidro há anos, e o cânhamo é a melhor alternativa. A empresa é a primeira a comercializar compósitos de fibra de vidro à base de cânhamo, que são mais leves e mais baratos do que a fibra de vidro tradicional.
 
-Over generations, [hemp fibers](/hemp-fiber-and-hurd) have been proven to be a superior replacement to glass fibers. Not only are they stronger, lighter and less costly, hemp is a carbon negative material. Meaning that growing hemp and using it in everyday products actually benefits our environment.
+Ao longo de gerações, as [fibras de cânhamo](/hemp-fiber-and-hurd) provaram ser um substituto superior às fibras de vidro. Além de serem mais resistentes, mais leves e mais econômicas, o cânhamo é um material com balanço negativo de carbono — ou seja, cultivar cânhamo e utilizá-lo em produtos do dia a dia beneficia ativamente o nosso meio ambiente.
 
-### Hemp Fiber Increases Strength in plastic
+### A Fibra de Cânhamo Aumenta a Resistência do Plástico
 
-Hemp fibers have a strong tensile strength when compared to glass fibers, allowing manufacturers to use fewer products to accomplish the same results. They are known for their durability, making them an attractive option for manufacturers and it has a tensile strength that is twice as high as glass fiber.
+As fibras de cânhamo apresentam alta resistência à tração em comparação com as fibras de vidro, permitindo que os fabricantes utilizem menos material para obter os mesmos resultados. Conhecidas pela sua durabilidade, elas são uma opção atraente para os fabricantes e possuem uma resistência à tração duas vezes superior à da fibra de vidro.
 
-### Hemp Fiber Reduces Weight of plastic
+### A Fibra de Cânhamo Reduz o Peso do Plástico
 
-Hemp fiber is often used for many things, including paper, textiles, insulation and more. However, manufacturers are now finding that hemp is being used for products such as car parts and plastics. It's easy to see why. Hemp fibers have a lower molecular weight than glass fibers, which means when manufacturers use the same amount of fibers, they can reduce the weight of their end product by up to 44%
+A fibra de cânhamo é frequentemente utilizada em muitas aplicações, incluindo papel, têxteis, isolamento e muito mais. No entanto, os fabricantes estão descobrindo que o cânhamo também é empregado em produtos como peças automotivas e plásticos. É fácil entender o porquê. As fibras de cânhamo têm uma massa molecular menor do que as fibras de vidro, o que significa que, ao utilizar a mesma quantidade de fibras, os fabricantes podem reduzir o peso do produto final em até 44%.
 
-### Hemp Fiber Reduces Cost of plastic
+### A Fibra de Cânhamo Reduz o Custo do Plástico
 
-Glass fibers come with a hefty price increase over virgin plastic material with traditional fillers. Hemp fibers reduce the cost of goods sold (COGS) while maintaining superior attributes.
+As fibras de vidro geram um aumento considerável de custo em relação ao plástico virgem com cargas tradicionais. As fibras de cânhamo reduzem o custo dos produtos vendidos (COGS) enquanto mantêm atributos superiores.
 
-With hemp fiber production rising in the United States, fiberglass may no longer be the only option for manufacturers. Manufacturers, retailers and consumers are going to have to prepare for a shift in how they value fabrics.
+Com o aumento da produção de fibra de cânhamo nos Estados Unidos, a fibra de vidro pode não ser mais a única opção para os fabricantes. Fabricantes, varejistas e consumidores terão de se preparar para uma mudança na forma como valorizam os materiais fibrosos.
 
-### Hemp Fiber is a Carbon Negative additive
+### A Fibra de Cânhamo é um Aditivo com Balanço Negativo de Carbono
 
-The growing and processing of hemp fibers remove 2.85 tons of carbon from the atmosphere for every 1 ton grown. Glass fibers have a net negative impact on the environment that has been overlooked because of petroleum interests driving its adoption.
+O cultivo e o processamento de fibras de cânhamo removem 2,85 toneladas de carbono da atmosfera para cada tonelada produzida. As fibras de vidro têm um impacto líquido negativo no meio ambiente que tem sido ignorado devido aos interesses do setor petrolífero que impulsionam a sua adoção.
 
-## Why Hemp Fiber is an Important Glass Fiber Alternative to the Future of Manufacturing
+## Por que a Fibra de Cânhamo é uma Alternativa Importante à Fibra de Vidro para o Futuro da Fabricação
 
-Hemp is an environmentally-friendly alternative to plastic that has the potential to reduce the weight of a product while maintaining its structural integrity. The hemp plant can be used as a raw material in plastics, composites, construction materials and textiles. The fibers are also used in insulation and paper products.
+O cânhamo é uma alternativa ambientalmente amigável ao plástico, com potencial para reduzir o peso de um produto mantendo sua integridade estrutural. A planta de cânhamo pode ser usada como matéria-prima em plásticos, compósitos, materiais de construção e têxteis. As fibras também são utilizadas em produtos de isolamento e papel.
 
-Companies such as [Ford](http://ford.com/)utilize these materials to ensure the highest safety standards while adding strength and lowering weight compared to unreinforced plastics and metals. In today's Ford Explorer, there are 700 pounds of plastic reinforced with glass. This requires a glass fiber supply chain that could easily be replaced with a hemp fiber supply chain. The ability to leverage hemp materials will help to reduce the weight of plastic while maintaining the structural integrity of the end product.
+Empresas como a [Ford](http://ford.com/) utilizam esses materiais para garantir os mais altos padrões de segurança, adicionando resistência e reduzindo o peso em comparação com plásticos e metais não reforçados. No Ford Explorer atual, há 320 quilos de plástico reforçado com vidro. Isso exige uma cadeia de suprimentos de fibra de vidro que poderia facilmente ser substituída por uma cadeia de suprimentos de fibra de cânhamo. A capacidade de aproveitar os materiais de cânhamo ajudará a reduzir o peso do plástico mantendo a integridade estrutural do produto final.
 
-Hemp material is an excellent substitute for plastic in the manufacturing process because hemp is a much less dense material. This means that hemp would not have to be as thick as plastic to achieve the same structural integrity. Additionally, hemp is biodegradable and can be fully composted whereas plastic can take hundreds of years to decompose.
+O material de cânhamo é um excelente substituto para o plástico no processo de fabricação porque o cânhamo é um material muito menos denso. Isso significa que o cânhamo não precisaria ser tão espesso quanto o plástico para atingir a mesma integridade estrutural. Além disso, o cânhamo é biodegradável e pode ser totalmente compostado, enquanto o plástico pode levar centenas de anos para se decompor.
 
-Hemp is a renewable resource that has very high tensile strength and durability. The fibers are also increasingly being used due to their lack of odor, high resistance to the elements, how quickly the material can be cut and processed, and their ability to be blended with other materials.
+O cânhamo é um recurso renovável com alta resistência à tração e durabilidade. As fibras também são cada vez mais utilizadas devido à ausência de odor, alta resistência às intempéries, rapidez com que o material pode ser cortado e processado, e à capacidade de ser misturado com outros materiais.
 
-Manufacturers who integrate Heartland's [hemp materials](/imperium-filler/) into their production practices will not require retooling or changes to existing equipment. Since there is not a significant transition for manufacturers, the products of tomorrow can easily integrate newfound competitive advantages. As our world shifts toward a more environmentally friendly future, there will be a separation between manufacturers who leverage eco-friendly supply chains, and manufacturers who don't.
+Os fabricantes que integrarem os [materiais de cânhamo](/imperium-filler/) da Heartland em suas práticas de produção não precisarão de readaptação ou mudanças nos equipamentos existentes. Como a transição não é significativa para os fabricantes, os produtos do futuro podem facilmente incorporar novas vantagens competitivas. À medida que o mundo avança em direção a um futuro mais sustentável, haverá uma distinção clara entre fabricantes que aproveitam cadeias de suprimentos ecologicamente corretas e aqueles que não o fazem.
 
-[As the world begins transitioning to more sustainable](https://www.blackrock.com/ch/individual/en/about-us/corporate-sustainability)fuel sources, there will be a corresponding movement toward sustainable materials. Heartland will have the only reliable hemp supply chain in America as manufacturers begin to adopt stronger, lighter, cheaper, and more eco-friendly materials.
+[À medida que o mundo começa a transitar para fontes de energia mais sustentáveis](https://www.blackrock.com/ch/individual/en/about-us/corporate-sustainability), haverá um movimento correspondente em direção a materiais sustentáveis. A Heartland terá a única cadeia de suprimentos de cânhamo confiável na América à medida que os fabricantes começam a adotar materiais mais resistentes, mais leves, mais baratos e mais ecologicamente corretos.
 
-Ask us at [Heartland](heartland.io) about how the products you are manufacturing can benefit from hemp-based additives. The future starts right now.
+Pergunte-nos na [Heartland](heartland.io) sobre como os produtos que você fabrica podem se beneficiar de aditivos à base de cânhamo. O futuro começa agora.
 
-Join us as we make a world out of hemp.
+Junte-se a nós enquanto construímos um mundo feito de cânhamo.
 
-– [Heartland Team](/team)[](/News/solving-the-travelling-salesman-problem-improves-efficiency-for-farmers/)[](/News/walmart-corporate-sustainability-report-carbon-footprint-heartland-hemp/)[](/News/heartland-is-awarded-a-360000-usda-grant-to-study-soil-health-carbon-sequestration-hemp/)
+– [Equipe Heartland](/team)[](/News/solving-the-travelling-salesman-problem-improves-efficiency-for-farmers/)[](/News/walmart-corporate-sustainability-report-carbon-footprint-heartland-hemp/)[](/News/heartland-is-awarded-a-360000-usda-grant-to-study-soil-health-carbon-sequestration-hemp/)
