@@ -1853,4 +1853,93 @@ Target wall-clock for an experienced operator: **6–10 hours** for a migration 
 
 ---
 
+## Phase 9 — Multilingual rollout (optional)
+
+The translation pipeline is decoupled from migration: you can ship an English-only site, then add languages later without re-touching anything else. Done with [`scripts/translate.py`](../scripts/translate.py), Anthropic's Claude Haiku 4.5, and the Anthropic Batch API.
+
+### 9a. Pick languages
+
+Edit `LANGUAGES` in [`scripts/translate.py`](../scripts/translate.py) AND the `Language` enum + `Language::ALL` in [`src/i18n.rs`](../src/i18n.rs). Both lists must stay in sync (manual — no codegen yet). Map client operating regions to BCP-47 codes:
+
+```
+US / UK / AU / etc.         → en (canonical, no prefix)
+LatAm + Spain               → es
+Germany / Austria           → de
+France / Belgium / Lux      → fr
+Italy                       → it
+Brazil + Portugal           → pt
+Netherlands                 → nl
+Poland                      → pl
+India (B2B)                 → en + hi
+Bangladesh                  → bn
+Pakistan                    → ur + pa
+UAE / KSA                   → ar
+China (mainland)            → zh-CN
+Vietnam                     → vi
+Japan                       → ja
+Korea                       → ko
+Turkey                      → tr
+```
+
+### 9b. Build & wire-up (one-time per repo)
+
+Already in place for heartland-rust — for new sites mirror these files:
+
+- [`build.rs`](../build.rs) — walks `content/articles/<lang>/` subdirs, emits `(slug, lang, src)` manifest tuples.
+- [`src/content.rs`](../src/content.rs) — adds `find_lang()` (English fallback), `recent_lang()`, `translations_for()`.
+- [`src/main.rs`](../src/main.rs) — `#[route("/:lang/sustainability-news/:slug")] LangArticle` + `#[route("/:lang/sustainability-news")] LangNews`.
+- [`src/pages/article.rs`](../src/pages/article.rs) + [`src/pages/news.rs`](../src/pages/news.rs) — `LangArticle` / `LangNews` thin wrappers around shared `*_Inner` components.
+- [`src/seo.rs`](../src/seo.rs) — `HreflangAlternates` component for `<link rel="alternate" hreflang="...">` tags.
+- [`scripts/prerender.sh`](../scripts/prerender.sh) — enumerates `/<lang>/...` routes; post-processes `<html>` to inject `lang=` + `dir=`.
+- [`scripts/generate-sitemap.sh`](../scripts/generate-sitemap.sh) — emits `/<lang>/sitemap_index.xml` per language, advertises them in `robots.txt`.
+
+### 9c. Translation commands
+
+```bash
+# One-time setup
+pip install -r scripts/requirements.txt
+export ANTHROPIC_API_KEY=sk-ant-...
+
+# First-time bulk run — real-time, ~$3/lang, ~15 min/lang at concurrency 5.
+./scripts/translate.py --lang pt
+
+# Cheaper batch path — ~$1.50/lang, results in minutes-to-hours.
+./scripts/translate.py --batch --lang pt    # submit
+./scripts/translate.py --batch-poll <id>    # download + auto-scan + auto-retry
+
+# Full multi-language batch — about $25 for 17 languages × ~228 routes.
+./scripts/translate.py --batch              # all unfilled langs/files
+
+# Quality audit (line-overlap + non-ASCII heuristics, auto-retry on suspects).
+./scripts/translate.py --audit              # everything
+./scripts/translate.py --audit --lang ja    # one language
+```
+
+### 9d. Quality gates worth knowing about
+
+Haiku 4.5 occasionally returns a partial translation — frontmatter + inline link text translated but body paragraphs stay English. Rate on heartland-rust's PT run was 2/178 ≈ 1.1%. Caught by two heuristics in the script:
+
+- **Line overlap** — >25% of body lines verbatim in the English source (the strongest signal).
+- **Non-ASCII ratio** — body >800 chars with <0.5% non-ASCII (works for every target language since each has accents, CJK, or non-Latin script).
+
+`--batch-poll` runs this scan automatically after download and auto-retries with Haiku → Sonnet 4.6 escalation. The `--audit` mode runs the same scan on a fixed corpus.
+
+### 9e. Cost reference (Haiku 4.5 + Batch API)
+
+| Volume | Real-time | Batch (50% off) |
+|---|---|---|
+| 178 articles × 1 language | ~$3 | ~$1.50 |
+| 178 articles × 17 languages | ~$51 | ~$25 |
+| Incremental per new article × 17 langs | ~$0.20 | ~$0.10 |
+
+### 9f. CI automation
+
+[`.github/workflows/translate.yml`](../.github/workflows/translate.yml) — triggers on any push that touches `content/articles/*.md`, runs `translate.py`, commits results back to `main` with `[skip ci]`. Requires `ANTHROPIC_API_KEY` set as a repo secret. Manual trigger via GitHub Actions UI also supported (with `--force` and `--lang` overrides).
+
+### 9g. GSC reflection
+
+Existing GSC sitemap submissions stay valid: our build emits `sitemap_index.xml` (matching Yoast's filename) at both the apex and each `/<lang>/` path. If the client had per-language sitemaps submitted to GSC under WordPress + Yoast, they continue working unchanged.
+
+---
+
 *Last updated from learnings on the HFGA migration (2026-05). Update this file after every client engagement with anything you wish you'd known on day one.*

@@ -1,84 +1,84 @@
 +++
-title = "Arizona Alfalfa Farming & Exports To China Hit A Brick Wall With Tariffs"
-excerpt = "Over the past century, [Arizona's farming history](https://www.azfb.org/Advocacy/Issues/Arizonas-Essential-Alfalfa) has evolved dramatically, shaped by its arid climate and innovative irrigation systems. In the early 1900s, agriculture"
+title = "La agricultura de alfalfa de Arizona y las exportaciones a China golpean un muro de aranceles"
+excerpt = "Durante el último siglo, [la historia agrícola de Arizona](https://www.azfb.org/Advocacy/Issues/Arizonas-Essential-Alfalfa) ha evolucionado dramáticamente, moldeada por su clima árido y sus innovadores sistemas de riego. A principios de 1900, la agricultura"
 hero_image = "arizona-alfalfa-farming-hemp-fiber-and-grain.webp"
-hero_alt = "agricultura de alfalfa de Arizona, fibra de cáñamo y grano"
+hero_alt = "agricultura de alfalfa de Arizona fibra de cáñamo y grano"
 published_at = "2025-05-06"
 author = "Heartland Industries"
 categories = ["sustainable-plastics"]
 tags = []
 +++
 
-## The Farming History of Arizona Over The Last 100 Years
+## La historia agrícola de Arizona durante los últimos 100 años
 
-Over the past century, [Arizona's farming history](https://www.azfb.org/Advocacy/Issues/Arizonas-Essential-Alfalfa) has evolved dramatically, shaped by its arid climate and innovative irrigation systems. In the early 1900s, agriculture relied heavily on cattle, cotton, and citrus, with alfalfa emerging as a key crop due to its drought tolerance and demand for livestock feed.
+Durante el último siglo, [la historia agrícola de Arizona](https://www.azfb.org/Advocacy/Issues/Arizonas-Essential-Alfalfa) ha evolucionado dramáticamente, moldeada por su clima árido y sus innovadores sistemas de riego. A principios de los años 1900, la agricultura dependía fuertemente del ganado, algodón y cítricos, con la alfalfa emergiendo como un cultivo clave debido a su tolerancia a la sequía y demanda para alimento de ganado.
 
-The construction of Roosevelt Dam in 1911 and subsequent water management projects enabled farmers to irrigate vast desert lands, boosting alfalfa production. By the 1920s, Gilbert was dubbed the "Hay Capital of the World," as alfalfa could be harvested up to six times a year. The Great Depression slowed growth, but federal programs and the Agricultural Adjustment Act helped stabilize prices and support farmers. Post-World War II, Arizona's population boom reduced farmland for citrus and cotton, yet alfalfa remained a staple due to its export potential.
+La construcción de la Presa Roosevelt en 1911 y los posteriores proyectos de gestión del agua permitieron a los agricultores irrigar vastas tierras desérticas, impulsando la producción de alfalfa. Para los años 1920, Gilbert fue denominado la "Capital mundial del heno", ya que la alfalfa podía cosecharse hasta seis veces al año. La Gran Depresión ralentizó el crecimiento, pero los programas federales y la Ley de Ajuste Agrícola ayudaron a estabilizar los precios y apoyar a los agricultores. Post-Segunda Guerra Mundial, el boom demográfico de Arizona redujo las tierras agrícolas para cítricos y algodón, pero la alfalfa siguió siendo un cultivo básico debido a su potencial de exportación.
 
-In the mid-20th century, advancements in irrigation technology and mechanized farming increased yields, with alfalfa acreage peaking in the 1980s. Today, Arizona's alfalfa industry thrives, with over 15,000 farms contributing to a $12.4 billion agricultural economy, driven by global demand. Despite challenges like water scarcity and urban sprawl, Arizona's efficient irrigation systems ensure alfalfa's prominence in international markets.
+A mediados del siglo XX, los avances en tecnología de riego y la mecanización agrícola aumentaron los rendimientos, con el cultivo de alfalfa alcanzando su punto máximo en los años 1980. Hoy, la industria de la alfalfa de Arizona prospera, con más de 15,000 granjas contribuyendo a una economía agrícola de 12.4 mil millones de dólares, impulsada por la demanda global. A pesar de desafíos como la escasez de agua y la expansión urbana, los eficientes sistemas de riego de Arizona aseguran la prominencia de la alfalfa en los mercados internacionales.
 
-The state's ability to adapt to environmental and economic shifts has solidified its role as a leading alfalfa exporter.
+La capacidad del estado de adaptarse a los cambios ambientales y económicos ha solidificado su rol como exportador líder de alfalfa.
 
-## How Many Acres of Arizona Alfalfa Are Farmed Annually? Who Buys Arizona Alfalfa?
+## ¿Cuántos acres de alfalfa de Arizona se cultivan anualmente? ¿Quién compra alfalfa de Arizona?
 
-In Arizona, alfalfa is a cornerstone of agriculture, with approximately 260,000 acres farmed annually as of 2022, down from a peak of 300,000 acres in 2015. The state's warm climate and efficient irrigation systems allow for high yields, averaging 8.4 tons per acre, the highest in the nation.
+En Arizona, la alfalfa es una piedra angular de la agricultura, con aproximadamente 260,000 acres cultivados anualmente a partir de 2022, una disminución desde su pico de 300,000 acres en 2015. El clima cálido del estado y sus eficientes sistemas de riego permiten rendimientos altos, promediando 8.4 toneladas por acre, el más alto de la nación.
 
-About 15-20% of Arizona's alfalfa is exported, while the majority, 80-85%, supports local dairy and livestock industries, particularly for feeding dairy cows and beef cattle. The exported portion, roughly 200,000 metric tons annually, is a significant contributor to global markets.
+Aproximadamente 15-20% de la alfalfa de Arizona se exporta, mientras que la mayoría, 80-85%, apoya las industrias locales de productos lácteos y ganadería, particularmente para alimentar vacas lecheras y ganado de carne. La porción exportada, aproximadamente 200,000 toneladas métricas anuales, es un contribuyente significativo a los mercados globales.
 
-China is the largest importer of U.S. alfalfa, receiving over 40% of total U.S. exports, followed by Saudi Arabia and the United Arab Emirates. Japan and South Korea also import substantial amounts, driven by their expanding dairy industries and limited domestic water resources. Arizona's high-quality alfalfa, priced at $320 per ton in 2022, fetches a premium compared to the national average of $260 per ton.
+China es el mayor importador de alfalfa estadounidense, recibiendo más del 40% de las exportaciones totales de EE.UU., seguida por Arabia Saudita y los Emiratos Árabes Unidos. Japón y Corea del Sur también importan cantidades sustanciales, impulsados por sus industrias lácteas en expansión y limitados recursos hídricos domésticos. La alfalfa de alta calidad de Arizona, con precio de $320 por tonelada en 2022, obtiene una prima comparada con el promedio nacional de $260 por tonelada.
 
-The state's ability to produce multiple cuttings—up to nine per year—enhances its appeal for both domestic and international buyers. However, concerns over water usage, especially for exports, have sparked debates about sustainability in Arizona's arid environment. Despite this, alfalfa remains a vital economic driver, balancing local needs with global demand.
+La capacidad del estado de producir múltiples cortes—hasta nueve por año—realza su atractivo para compradores tanto nacionales como internacionales. Sin embargo, las preocupaciones sobre el uso del agua, especialmente para exportaciones, han generado debates sobre la sostenibilidad en el entorno árido de Arizona. A pesar de esto, la alfalfa sigue siendo un motor económico vital, equilibrando necesidades locales con demanda global.
 
-## Why Is Alfalfa Farming Getting In Trouble In Arizona? Does This Apply Anywhere Else?
+## ¿Por qué la ganadería de alfalfa está en problemas en Arizona? ¿Esto se aplica en algún otro lugar?
 
-Alfalfa farming in Arizona is facing scrutiny primarily due to its high water consumption in a state grappling with severe drought and dwindling groundwater supplies. The crop, requiring up to 7 feet of water per acre annually (2,280,964 gallons per acre), is heavily irrigated using unregulated groundwater, especially in rural areas like La Paz County, where aquifers are depleting rapidly. Local residents report wells drying up, with water table depths dropping from 100 feet in the 1950s to over 540 feet today, partly attributed to large-scale alfalfa operations.
+La ganadería de alfalfa en Arizona enfrenta escrutinio principalmente debido a su alto consumo de agua en un estado lidiando con sequía severa y suministros de agua subterránea cada vez menores. El cultivo, requiriendo hasta 7 pies de agua por acre anuales (2,280,964 galones por acre), se riega fuertemente usando agua subterránea no regulada, especialmente en áreas rurales como el Condado de La Paz, donde los acuíferos se agotan rápidamente. Los residentes locales reportan pozos secándose, con profundidades de nivel freático cayendo de 100 pies en los años 1950 a más de 540 pies hoy, parcialmente atribuido a operaciones de alfalfa a gran escala.
 
-Foreign agribusinesses, such as Saudi Arabia's Fondomonte and the UAE's Al Dahra, exacerbate tensions by exporting water-intensive alfalfa to feed livestock in their water-scarce countries, where growing such crops is banned to conserve resources. These exports, particularly to Saudi Arabia and the UAE, have sparked political backlash, with Arizona officials like Governor Katie Hobbs terminating Fondomonte's land leases in 2023 to protect groundwater.
+Agronegocios extranjeros, como Fondomonte de Arabia Saudita y Al Dahra de los EAU, exacerban las tensiones exportando alfalfa intensiva en agua para alimentar ganado en sus países escasos de agua, donde cultivar tales cultivos está prohibido para conservar recursos. Estas exportaciones, particularmente a Arabia Saudita y los EAU, han generado reacción política, con funcionarios de Arizona como la Gobernadora Katie Hobbs rescindiendo los arriendos de tierras de Fondomonte en 2023 para proteger el agua subterránea.
 
-Critics argue that exporting alfalfa equates to shipping Arizona's scarce water abroad, fueling public outrage and calls for stricter regulations. Similar issues are emerging in California's Imperial Valley, where alfalfa consumes 80% of the Colorado River's dwindling supply, raising concerns about sustainability and export-driven water depletion.
+Los críticos argumentan que exportar alfalfa equivale a enviar el agua escasa de Arizona al extranjero, alimentando indignación pública y llamados para regulaciones más estrictas. Problemas similares están emergiendo en el Imperial Valley de California, donde la alfalfa consume 80% del suministro menguante del Río Colorado, elevando preocupaciones sobre sostenibilidad y agotamiento de agua impulsado por exportación.
 
-Political tensions with importing countries like China, which imposed 125% tariffs on U.S. alfalfa, further complicate the industry, as farmers in Arizona's Harquahala Valley report losing half their market. Elsewhere, states like Nevada and Utah face parallel challenges, with water-intensive agriculture straining local resources amid growing export demands. The combination of environmental strain and geopolitical friction underscores the broader unsustainability of alfalfa farming in water-scarce regions.
+Las tensiones políticas con países importadores como China, quien impuso aranceles del 125% en la alfalfa estadounidense, complican aún más la industria, ya que agricultores en el Harquahala Valley de Arizona reportan perder la mitad de su mercado. En otros lugares, estados como Nevada y Utah enfrentan desafíos paralelos, con la agricultura intensiva en agua tensionando recursos locales en medio de crecientes demandas de exportación. La combinación de tensión ambiental y fricción geopolítica subraya la mayor insostenibilidad de la ganadería de alfalfa en regiones escasas de agua.
 
-## Arizona Housing Expansion Is Stiffled By Alfalfa Farming
+## La expansión de vivienda de Arizona se ve obstaculizada por la ganadería de alfalfa
 
-Arizona's rapid population growth and housing expansion are increasingly constrained by the state's limited water resources, with alfalfa farming playing a significant role in this challenge. State law requires developers in urban areas to secure a 100-year assured water supply before building new subdivisions, a mandate enforced by the 1980 Groundwater Management Act to ensure long-term sustainability.
+El rápido crecimiento de la población de Arizona y la expansión de vivienda se ven cada vez más limitados por los limitados recursos hídricos del estado, con la ganadería de alfalfa jugando un papel significativo en este desafío. La ley estatal requiere que desarrolladores en áreas urbanas aseguren un suministro de agua garantizado de 100 años antes de construir nuevas subdivisiones, un mandato aplicado por la Ley de Gestión de Agua Subterránea de 1980 para asegurar sostenibilidad a largo plazo.
 
-Alfalfa, a water-intensive crop consuming up to 7 feet of water per acre annually, accounts for nearly 70% of groundwater use in rural Arizona, particularly in counties like La Paz and Cochise. This heavy irrigation depletes aquifers, reducing available groundwater for new housing developments and causing wells in nearby communities to dry up. For example, in Cochise County, over 8,000 new homes are stalled due to plummeting groundwater levels, partly attributed to alfalfa farms exporting to countries like Saudi Arabia.
+La alfalfa, un cultivo intensivo en agua consumiendo hasta 7 pies de agua por acre anuales, representa casi el 70% del uso de agua subterránea en Arizona rural, particularmente en condados como La Paz y Cochise. Este riego pesado agota los acuíferos, reduciendo el agua subterránea disponible para nuevos desarrollos de vivienda y causando que pozos en comunidades cercanas se sequen. Por ejemplo, en el Condado de Cochise, más de 8,000 nuevas casas están estancadas debido a los niveles de agua subterránea en caída libre, parcialmente atribuido a granjas de alfalfa exportando a países como Arabia Saudita.
 
-The competition for water has led to moratoriums on new subdivisions in areas like Rio Verde Foothills, where water scarcity is acute. Urban developers argue that alfalfa's low economic return—$1,200 per acre compared to housing's higher value—makes its water use inefficient, yet farmers counter that agriculture is vital to the state's economy.
+La competencia por el agua ha llevado a moratorios en nuevas subdivisiones en áreas como Rio Verde Foothills, donde la escasez de agua es aguda. Desarrolladores urbanos argumentan que la alfalfa tiene un bajo retorno económico—$1,200 por acre comparado con el valor más alto de la vivienda—haciendo su uso de agua ineficiente, pero los agricultores contraargumentan que la agricultura es vital para la economía del estado.
 
-Similar tensions are evident in California's Imperial Valley, where urban water demands clash with agricultural use. Arizona's housing crisis, with a projected need for 700,000 new homes by 2040, remains stifled unless water allocation prioritizes residential growth over water-heavy crops like alfalfa.
+Tensiones similares son evidentes en el Imperial Valley de California, donde las demandas de agua urbana chocan con el uso agrícola. La crisis de vivienda de Arizona, con una necesidad proyectada de 700,000 nuevas casas para 2040, sigue obstaculizada a menos que la asignación de agua priorice el crecimiento residencial sobre cultivos intensivos en agua como la alfalfa.
 
-## What Is The Future For Farming In Arizona
+## ¿Cuál es el futuro de la ganadería en Arizona?
 
-The future of farming in Arizona hinges on transitioning to sustainable crops like hemp fiber and grain to address the state's escalating water crisis while maintaining agricultural viability. Alfalfa, currently consuming up to 7 feet of water per acre annually, strains Arizona's aquifers, whereas hemp requires only about 2 feet per acre, saving over 1.2 million gallons of water per acre each year.
+El futuro de la ganadería en Arizona depende de la transición a cultivos sostenibles como fibra de cáñamo y grano para abordar la crisis hídrica cada vez mayor del estado mientras se mantiene la viabilidad agrícola. La alfalfa, actualmente consumiendo hasta 7 pies de agua por acre anuales, tensiona los acuíferos de Arizona, mientras que el cáñamo requiere solo alrededor de 2 pies por acre, ahorrando más de 1.2 millones de galones de agua por acre cada año.
 
-Hemp's versatility offers high-protein seeds for food and sellable stalks for fiber, used in textiles, construction, and bioplastics, potentially yielding higher economic returns than alfalfa's $1,200 per acre. Arizona's warm climate and long growing season are ideal for hemp, which can produce up to 10 tons of biomass per acre compared to alfalfa's 8.4 tons.
+La versatilidad del cáñamo ofrece semillas de alto contenido proteico para alimento y tallos vendibles para fibra, usados en textiles, construcción y bioplásticos, potencialmente rindiendo retornos económicos más altos que los $1,200 por acre de la alfalfa. El clima cálido de Arizona y su larga temporada de crecimiento son ideales para el cáñamo, que puede producir hasta 10 toneladas de biomasa por acre comparado con los 8.4 toneladas de la alfalfa.
 
-Legalized in 2018, hemp farming has grown slowly, with only 1,200 acres planted by 2023, but its low water needs align with state efforts to curb groundwater depletion. Converting just 20% of Arizona's 260,000 alfalfa acres, used for export to China, to hemp could save billions of gallons of water annually, supporting urban housing demands under the 100-year water supply rule.
+Legalizado en 2018, la ganadería de cáñamo ha crecido lentamente, con solo 1,200 acres plantados para 2023, pero sus necesidades de agua bajas se alinean con los esfuerzos estatales para reducir el agotamiento del agua subterránea. Convertir solo el 20% de los 260,000 acres de alfalfa de Arizona, usados para exportación a China, a cáñamo podría ahorrar miles de millones de galones de agua anuales, apoyando demandas de vivienda urbana bajo la regla de suministro de agua de 100 años.
 
-Hemp's protein-rich seeds could meet rising global demand for plant-based foods, offering a more sustainable export than water-intensive alfalfa sent to countries like Saudi Arabia. Pilot programs in Yuma County show hemp yields 20% more profit per acre than alfalfa when processed for fiber. However, challenges like market development and processing infrastructure must be addressed to scale hemp production. By prioritizing crops like hemp, Arizona can balance agricultural heritage with water conservation, ensuring a resilient farming future.
+Las semillas ricas en proteína del cáñamo podrían satisfacer la demanda global creciente para alimentos a base de plantas, ofreciendo una exportación más sostenible que la alfalfa intensiva en agua enviada a países como Arabia Saudita. Programas piloto en el Condado de Yuma muestran que el cáñamo rinde 20% más ganancia por acre que la alfalfa cuando se procesa para fibra. Sin embargo, desafíos como desarrollo de mercado e infraestructura de procesamiento deben abordarse para escalar la producción de cáñamo. Al priorizar cultivos como el cáñamo, Arizona puede equilibrar herencia agrícola con conservación de agua, asegurando un futuro agrícola resiliente.
 
-## Do Arizona Farmers Have The Right Equipment For Hemp?
+## ¿Tienen los agricultores de Arizona el equipo correcto para el cáñamo?
 
-Hemp fiber and grain farming use the same equipment already available to farming for the crops they currently harvest.
+La ganadería de fibra de cáñamo y grano usa el mismo equipo ya disponible para la ganadería de los cultivos que actualmente cosechan.
 
-Hemp fiber cuts, dries, and bales identically to hay production, enabling existing infrastructure to easily scale up production and create new market opportunities for farmers with a higher value.
+El cáñamo corta, seca, y emala idénticamente a la producción de heno, permitiendo que la infraestructura existente escale fácilmente la producción y cree nuevas oportunidades de mercado para agricultores con un valor más alto.
 
-Hemp grain farming is done in a similar manner to soybeans, with a conventional combine and storage bin for drying.
+La ganadería de grano de cáñamo se realiza de manera similar a la soja, con una cosechadora convencional y un silo de almacenamiento para secar.
 
-## The Impact Of Switching Arizona Alfalfa to Hemp Fiber and Grain
+## El impacto de cambiar la alfalfa de Arizona a fibra de cáñamo y grano
 
-Switching 20% of Arizona's 260,000 acres of alfalfa to hemp fiber and grain (all of our Saudi Arabia & China exports) would transform the state's agricultural landscape, saving substantial water and generating economic and market benefits.
+Cambiar el 20% de los 260,000 acres de alfalfa de Arizona a fibra de cáñamo y grano (todas nuestras exportaciones a Arabia Saudita y China) transformaría el paisaje agrícola del estado, ahorrando agua sustancial y generando beneficios económicos y de mercado.
 
-Alfalfa consumes about 7 feet of water per acre annually, while hemp requires only 2 feet, resulting in a savings of 5 feet per acre, or approximately 1.63 million gallons per acre. For 52,000 acres, this translates to roughly 84.76 billion gallons of water saved yearly, easing pressure on Arizona's depleted aquifers and supporting urban water needs.
+La alfalfa consume aproximadamente 7 pies de agua por acre anuales, mientras que el cáñamo requiere solo 2 pies, resultando en un ahorro de 5 pies por acre, o aproximadamente 1.63 millones de galones por acre. Para 52,000 acres, esto se traduce en aproximadamente 84.76 mil millones de galones de agua ahorrados anuales, aliviando presión en los acuíferos depletados de Arizona y apoyando necesidades de agua urbana.
 
-This newly available water would guarantee 100 years of water for almost 600,000 new homes, without compromising food or jobs for farmers.
+Esta agua recientemente disponible garantizaría 100 años de agua para casi 600,000 nuevas casas, sin comprometer alimento o empleos para agricultores.
 
-Economically, hemp could boost farmers' profits, as it yields up to $1,500-$2,000 per acre (from fiber and grain) compared to alfalfa's $1,200, potentially adding $15.6-$41.6 million in annual revenue across 52,000 acres.
+Económicamente, el cáñamo podría impulsar ganancias de agricultores, ya que rinde hasta $1,500-$2,000 por acre (de fibra y grano) comparado con los $1,200 de la alfalfa, potencialmente añadiendo $15.6-$41.6 millones en ingresos anuales a través de 52,000 acres.
 
-Hemp's high-protein seeds, containing 25-30% protein, could partially replace alfalfa in animal feed, providing a nutrient-rich alternative for Arizona's dairy and livestock industries. The remaining 80% of alfalfa would still supply 100% of local feed demand, ensuring stability for cattle and dairy markets while hemp grain supplements feed with higher protein content.
+Las semillas ricas en proteína del cáñamo, conteniendo 25-30% proteína, podrían reemplazar parcialmente la alfalfa en alimento animal, proporcionando una alternativa rica en nutrientes para las industrias lácteras y ganaderas de Arizona. El 80% restante de alfalfa aún suministraría el 100% de la demanda local de alimento, asegurando estabilidad para mercados de ganado y productos lácteos mientras el grano de cáñamo complementa el alimento con mayor contenido proteico.
 
-Hemp stalks, sold for fiber at $100-$200 per ton, could create a new revenue stream for automotive, textiles, and construction, diversifying farmer income.
+Los tallos de cáñamo, vendidos para fibra a $100-$200 por tonelada, podrían crear una nueva corriente de ingresos para automotor, textiles y construcción, diversificando ingresos de agricultores.
 
-Overall, converting half of Arizona's alfalfa to hemp would [conserve water](/sustainability-news/engineering-earth-rethinking-agriculture-after-100-years-of-innovation/), enhance farmer profitability, and stabilize animal feed markets with a sustainable, high-value crop.
+En general, convertir la mitad de la alfalfa de Arizona a cáñamo [conservaría agua](/sustainability-news/engineering-earth-rethinking-agriculture-after-100-years-of-innovation/), mejoraría rentabilidad de agricultores, y estabilizaría mercados de alimento animal con un cultivo sostenible y de alto valor.

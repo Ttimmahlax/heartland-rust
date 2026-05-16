@@ -88,6 +88,11 @@ LANGUAGES: dict[str, str] = {
     "zh-CN": "Chinese (Simplified)",
 }
 
+# Fallback model for stubborn translations. Smarter than Haiku, still cheap
+# enough for one-off retries (~$0.30 per article). Used by the post-batch
+# quality scan when Haiku produces a partial translation.
+FALLBACK_MODEL = "claude-sonnet-4-6"
+
 # Brand / product names that must NEVER be translated. Add to this list as
 # new products launch.
 GLOSSARY = [
@@ -309,6 +314,164 @@ def build_work_list(args, cache: dict) -> list[tuple[Path, str, str]]:
 
 
 # ----------------------------------------------------------------------------
+# Quality scan + retry
+# ----------------------------------------------------------------------------
+#
+# Haiku occasionally returns a partial translation — frontmatter or inline
+# link text gets translated but the body paragraphs stay English. We catch
+# this with two heuristics:
+#
+#   (a) Line overlap. If >25% of non-trivial body lines in the translated
+#       file appear verbatim in the English source, it's almost certainly
+#       a partial translation (real translations have ~0% line overlap with
+#       English source, even when the structure is identical).
+#
+#   (b) Body length / non-ASCII ratio. For every language we ship, the
+#       translated body has SOME amount of non-ASCII (accents, CJK glyphs,
+#       Arabic/Bengali/Hindi script). A body of >800 chars with <0.5%
+#       non-ASCII is suspicious.
+#
+# Either heuristic triggering counts as a fail.
+
+def _body(text: str) -> str:
+    """Return everything after the closing `+++` of TOML frontmatter."""
+    import re as _re
+    m = _re.search(r"\+\+\+\s*\n.*?\n\+\+\+\s*\n", text, flags=_re.DOTALL)
+    return text[m.end():] if m else text
+
+
+def quality_check(translated_text: str, source_text: str) -> tuple[bool, str]:
+    """Returns (ok, reason). ok=True means the translation looks healthy."""
+    tbody = _body(translated_text)
+    sbody = _body(source_text)
+
+    # Heuristic (a): line overlap.
+    en_lines = {ln.strip() for ln in sbody.splitlines() if len(ln.strip()) >= 30}
+    tx_lines = [ln.strip() for ln in tbody.splitlines() if len(ln.strip()) >= 30]
+    if tx_lines:
+        overlap = sum(1 for ln in tx_lines if ln in en_lines)
+        ratio = overlap / len(tx_lines)
+        if ratio > 0.25:
+            return False, f"{int(ratio * 100)}% of body lines match English source verbatim"
+
+    # Heuristic (b): non-ASCII ratio for non-trivial body.
+    body_len = len(tbody)
+    if body_len > 800:
+        non_ascii = sum(1 for c in tbody if ord(c) > 127)
+        if non_ascii / body_len < 0.005:
+            return False, f"only {non_ascii} non-ASCII chars in {body_len}-char body"
+
+    return True, "ok"
+
+
+def retranslate_one(
+    client: anthropic.Anthropic,
+    source: Path,
+    lang_code: str,
+    lang_name: str,
+    model: str,
+) -> str:
+    """One-off translation with an explicit model. Used by the quality scan
+    to retry partial translations on Sonnet when Haiku is stuck.
+    """
+    import time
+    backoff = 5.0
+    for attempt in range(4):
+        try:
+            response = client.messages.create(
+                model=model,
+                max_tokens=8192,
+                system=[{
+                    "type": "text",
+                    "text": build_system_prompt(lang_name),
+                    "cache_control": {"type": "ephemeral"},
+                }],
+                messages=[{"role": "user", "content": source.read_text()}],
+            )
+            out = response.content[0].text
+            out = re.sub(r"^```(?:markdown|md)?\s*\n", "", out)
+            out = re.sub(r"\n```\s*$", "", out)
+            return out
+        except anthropic.RateLimitError:
+            if attempt == 3:
+                raise
+            time.sleep(backoff)
+            backoff *= 2
+    raise RuntimeError("unreachable")
+
+
+def run_quality_scan(lang_filter: list[str] | None = None) -> list[tuple[Path, str]]:
+    """Scan translated files; return suspect (source, lang) pairs."""
+    if not ARTICLES_DIR.exists():
+        return []
+    suspect: list[tuple[Path, str]] = []
+    for langdir in ARTICLES_DIR.iterdir():
+        if not langdir.is_dir() or langdir.name.startswith((".", "_")):
+            continue
+        lang_code = langdir.name
+        if lang_filter and lang_code not in lang_filter:
+            continue
+        for translated in langdir.glob("*.md"):
+            source = ARTICLES_DIR / translated.name
+            if not source.exists():
+                continue
+            ok, reason = quality_check(translated.read_text(), source.read_text())
+            if not ok:
+                suspect.append((source, lang_code))
+                print(f"  SUSPECT  {lang_code}/{translated.name}: {reason}", file=sys.stderr)
+    return suspect
+
+
+def auto_retry_suspects(
+    client: anthropic.Anthropic,
+    suspects: list[tuple[Path, str]],
+    cache: dict,
+) -> tuple[int, list[tuple[Path, str]]]:
+    """Retry each suspect once with Haiku; if still bad, retry once with the
+    fallback model. Returns (fixed_count, remaining_failures).
+    """
+    fixed = 0
+    failures: list[tuple[Path, str]] = []
+    for source, lang_code in suspects:
+        lang_name = LANGUAGES.get(lang_code)
+        if not lang_name:
+            failures.append((source, lang_code))
+            continue
+        # Retry pass 1: same model (Haiku), explicit.
+        try:
+            out = retranslate_one(client, source, lang_code, lang_name, MODEL)
+        except Exception as e:
+            print(f"  retry-haiku FAIL  {lang_code}/{source.name}: {e}", file=sys.stderr)
+            out = None
+        if out:
+            ok, _ = quality_check(out, source.read_text())
+            if ok:
+                output_path(source, lang_code).write_text(out)
+                cache[cache_key(source, lang_code)] = content_hash(source.read_text())
+                fixed += 1
+                print(f"  fixed (haiku-retry)  {lang_code}/{source.name}")
+                continue
+
+        # Retry pass 2: Sonnet fallback.
+        try:
+            out = retranslate_one(client, source, lang_code, lang_name, FALLBACK_MODEL)
+        except Exception as e:
+            print(f"  retry-sonnet FAIL  {lang_code}/{source.name}: {e}", file=sys.stderr)
+            failures.append((source, lang_code))
+            continue
+        ok, reason = quality_check(out, source.read_text())
+        if ok:
+            output_path(source, lang_code).write_text(out)
+            cache[cache_key(source, lang_code)] = content_hash(source.read_text())
+            fixed += 1
+            print(f"  fixed (sonnet-retry)  {lang_code}/{source.name}")
+        else:
+            failures.append((source, lang_code))
+            print(f"  STILL SUSPECT  {lang_code}/{source.name}: {reason}", file=sys.stderr)
+    return fixed, failures
+
+
+# ----------------------------------------------------------------------------
 # Batch API (50% cheaper, up to 24h latency)
 # ----------------------------------------------------------------------------
 
@@ -438,13 +601,54 @@ def poll_batch_mode(args) -> int:
 
     save_cache(cache)
 
+    print(f"\nDownloaded {done} translation(s). Failed: {len(failed)}.")
+
+    # Post-batch quality scan. Only check the languages that were in this
+    # batch — no point scanning untouched ones.
+    langs_in_batch = sorted({entry["lang"] for entry in pairs.values()})
+    print(f"\nRunning quality scan over languages: {', '.join(langs_in_batch)}")
+    suspects = run_quality_scan(lang_filter=langs_in_batch)
+
+    if suspects:
+        print(f"\n{len(suspects)} suspect translation(s) found. Auto-retrying...")
+        fixed, remaining = auto_retry_suspects(client, suspects, cache)
+        save_cache(cache)
+        print(f"Auto-retry fixed {fixed}. Remaining suspect: {len(remaining)}")
+        if remaining:
+            print("Manual review recommended for:")
+            for source, lang_code in remaining:
+                print(f"  {lang_code}/{source.name}")
+    else:
+        print("Quality scan: all clean ✓")
+
     # Leave the mapping file in place if there were failures; remove only on
     # full success so subsequent retries have what they need.
-    if not failed:
+    if not failed and not suspects:
         mapping_file.unlink()
 
-    print(f"\nDownloaded {done} translation(s). Failed: {len(failed)}.")
     return 0 if not failed else 1
+
+
+def audit_mode(args) -> int:
+    """Standalone quality scan over existing translations. Useful after a
+    real-time bulk run, or to verify a batch's output much later.
+    """
+    lang_filter = args.lang if args.lang else None
+    print(f"Auditing languages: {', '.join(lang_filter) if lang_filter else 'all'}")
+    suspects = run_quality_scan(lang_filter=lang_filter)
+    if not suspects:
+        print("All translations look healthy ✓")
+        return 0
+    print(f"\n{len(suspects)} suspect file(s) found.")
+    if args.dry_run:
+        print("Dry-run: not retrying. Drop --dry-run to fix.")
+        return 0
+    client = anthropic.Anthropic()
+    cache = load_cache()
+    fixed, remaining = auto_retry_suspects(client, suspects, cache)
+    save_cache(cache)
+    print(f"\nFixed {fixed}. Remaining suspect: {len(remaining)}")
+    return 0 if not remaining else 1
 
 
 # ----------------------------------------------------------------------------
@@ -468,6 +672,9 @@ def main() -> int:
                              "(50%% cheaper, ~minutes to hours latency). Prints batch ID.")
     parser.add_argument("--batch-poll", default=None, metavar="BATCH_ID",
                         help="Poll an existing batch ID; download results when ready.")
+    parser.add_argument("--audit", action="store_true",
+                        help="Run the quality scan over existing translations (no API calls "
+                             "unless suspects are found, then auto-retry Haiku → Sonnet).")
     args = parser.parse_args()
 
     if not args.dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
@@ -479,6 +686,8 @@ def main() -> int:
         return poll_batch_mode(args)
     if args.batch:
         return submit_batch_mode(args)
+    if args.audit:
+        return audit_mode(args)
 
     # Real-time mode (the original path).
     cache = load_cache()
