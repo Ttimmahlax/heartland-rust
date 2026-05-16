@@ -97,7 +97,7 @@ pub fn Header() -> Element {
                     a {
                         href: "#contact",
                         class: "site-header-cta inline-flex items-center justify-center px-3 py-2 md:px-4 md:py-2 rounded-md bg-[#ad2929] text-white text-xs md:text-sm font-bold tracking-wide hover:bg-[#931f1f] hover:text-white transition-colors shadow-md",
-                        "Contact"
+                        "Contact us"
                     }
                     button {
                         class: "lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-[color:var(--color-border)]",
