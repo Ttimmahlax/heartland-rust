@@ -344,9 +344,6 @@
   .-z-10 {
     z-index: calc(10 * -1);
   }
-  .z-10 {
-    z-index: 10;
-  }
   .z-50 {
     z-index: 50;
   }
@@ -522,17 +519,8 @@
   .aspect-\[16\/10\] {
     aspect-ratio: 16/10;
   }
-  .aspect-\[950\/620\] {
-    aspect-ratio: 950/620;
-  }
   .h-2 {
     height: calc(var(--spacing) * 2);
-  }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
-  }
-  .h-4 {
-    height: calc(var(--spacing) * 4);
   }
   .h-6 {
     height: calc(var(--spacing) * 6);
@@ -561,23 +549,11 @@
   .max-h-\[80vh\] {
     max-height: 80vh;
   }
-  .max-h-full {
-    max-height: 100%;
-  }
   .min-h-\[110vh\] {
     min-height: 110vh;
   }
   .min-h-\[300px\] {
     min-height: 300px;
-  }
-  .min-h-\[400px\] {
-    min-height: 400px;
-  }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
-  .w-4 {
-    width: calc(var(--spacing) * 4);
   }
   .w-7 {
     width: calc(var(--spacing) * 7);
@@ -656,9 +632,6 @@
   .animate-fade-in-up {
     animation: fade-in-up 600ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
   }
-  .animate-ping {
-    animation: var(--animate-ping);
-  }
   .animate-scale-in {
     animation: scale-in 480ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
   }
@@ -691,9 +664,6 @@
   }
   .items-end {
     align-items: flex-end;
-  }
-  .items-start {
-    align-items: flex-start;
   }
   .items-stretch {
     align-items: stretch;
@@ -845,9 +815,6 @@
   .to-transparent {
     --tw-gradient-to: transparent;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .object-contain {
-    object-fit: contain;
   }
   .object-cover {
     object-fit: cover;
@@ -1065,9 +1032,6 @@
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
   }
-  .whitespace-nowrap {
-    white-space: nowrap;
-  }
   .text-\[color\:var\(--color-accent\)\] {
     color: var(--color-accent);
   }
@@ -1138,10 +1102,6 @@
     --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .ring-2 {
-    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
   .header-glow {
     border-bottom: 1px solid color-mix(in srgb, #ad2929 20%, #d9d9e0);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1152,20 +1112,12 @@
       box-shadow: 0 8px 24px -16px color-mix(in oklab, var(--color-accent) 35%, transparent);
     }
   }
-  .ring-white {
-    --tw-ring-color: var(--color-white);
-  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
   .blur-3xl {
     --tw-blur: blur(var(--blur-3xl));
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .drop-shadow {
-    --tw-drop-shadow-size: drop-shadow(0 1px 2px var(--tw-drop-shadow-color, rgb(0 0 0 / 0.1))) drop-shadow(0 1px 1px var(--tw-drop-shadow-color, rgb(0 0 0 / 0.06)));
-    --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow( 0 1px 1px rgb(0 0 0 / 0.06));
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .filter {
@@ -1213,11 +1165,6 @@
   .group-open\:rotate-180 {
     &:is(:where(.group):is([open], :popover-open, :open) *) {
       rotate: 180deg;
-    }
-  }
-  .group-focus-within\:visible {
-    &:is(:where(.group):focus-within *) {
-      visibility: visible;
     }
   }
   .group-hover\:visible {
@@ -1680,11 +1627,6 @@
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
-    }
-  }
-  .lg\:min-h-\[500px\] {
-    @media (width >= 64rem) {
-      min-height: 500px;
     }
   }
   .lg\:grid-cols-2 {

@@ -1,0 +1,38 @@
++++
+title = "고유성이 높은 탄소시장 지원을 위한 공개서신"
+excerpt = "다음 서신은 탄소크레딧의 광범위한 채택의 긴급한 필요성에 대응하여 Sylvera에 의해 작성되었습니다. 이 공개서신은 Sylvera의 50개 이상의 파트너들에 의해 서명되었으며, 하단에 링크되어 있습니다. Heartland에서는…"
+hero_image = "sylvera-letter-image.webp"
+hero_alt = "고유성이 높은 탄소시장 지원을 위한 공개서신"
+published_at = "2023-02-09"
+author = "Heartland Industries"
+categories = ["article", "sustainable-plastics"]
+tags = ["carbon-credits", "carbon-markets", "innovation", "plastic", "sustainability"]
++++
+
+**_다음 서신은 탄소크레딧의 광범위한 채택의 긴급한 필요성에 대응하여 Sylvera에 의해 작성되었습니다. 이 공개서신은 Sylvera의 50개 이상의 파트너들에 의해 서명되었으며, 하단에 링크되어 있습니다. Heartland에서는 Sylvera의 글에 매우 감동 받아 이 서신에 서명했으며, 당사 사이트에 게재할 수 있는 허가를 받았습니다. 다음은 전문입니다. _**
+
+탄소크레딧 시장 자체만으로는 기후변화를 해결할 수 없습니다. 모든 크레딧이 주장하는 기후상의 이점을 제공하지는 않습니다. 이 두 가지 사실은 논쟁의 여지가 없습니다. 하지만 이것이 상쇄를 완전히 포기하고 탄소시장과의 모든 협력이 그린워싱이라는 의미는 아닙니다. 탄소크레딧은 자연 탄소 저장소의 광범위한 보존과 더 넓은 기후 해결책에 자금을 지원하기 위해 현재 우리가 보유한 몇 가지 메커니즘 중 하나입니다.
+
+탄소크레딧이 더 광범위한 기후 전략의 일부일 뿐이라는 [광범위한 합의](https://www.weforum.org/agenda/2023/01/5-reasons-forest-carbon-credits-climate-action)가 존재합니다. 당사의 경험상, 투자 프로젝트에 투자하는 대부분의 기업 구매자들은 자신의 밸류체인 탈탄소화에도 막대한 투자를 하고 있으며 크레딧을 단기적으로 차이를 만드는 데 사용하고 있습니다. **구매자, 프로젝트 개발자, 업계 단체, 평가 및 데이터 제공자, 투자자, 복원 및 보존 조직, 그리고 비영리 단체의 그룹으로서 우리는 "완화 계층"의 준수를 적극적으로 촉진합니다 – 기업은 먼저 배출량을 회피하고 감축해야 하며, 크레딧은 회피할 수 없는 배출량을 보상하기 위해서만 사용됩니다 – 이는 **[**United Nations**](https://www.un.org/en/climatechange/high-level-expert-group)**과 **[**Science-Based Targets initiative**](https://sciencebasedtargets.org/blog/net-zero-urgent-beyond-value-chain-mitigation-is-essential)**로부터의 선도적인 넷제로 지침과 일치합니다.**‍
+
+탄소크레딧은 "기업이 지금 바로 취할 수 있는 후회 없는 행동"으로서 역할할 수 있을 뿐만 아니라, 탄소 비용을 사실상 도입하는 추가의 이점이 있습니다 (다른 탄소거래제도로 적용되지 않는 배출량의 경우). 따라서 구매자가 가능한 한 빨리 배출량을 감축하기 위한 추가적인 인센티브를 만듭니다. 결국, 조직이 탈탄소화할수록 결국 구매해야 할 크레딧이 더 적어집니다.
+
+물론 이것은 사용된 크레딧이 진정한 배출량 감축 또는 제거를 나타낼 때만 효과적입니다. 자발적 탄소시장(VCM)은 일관되지 않은 크레딧 품질의 과제를 해결해야 합니다. 이를 강조하는 것은 타당하고 중요합니다. 왜냐하면 구매자들이 추가 실사를 수행해야 할 필요가 생겼고, 탄소크레딧 평가 제공자와 기타 제3자 측정 및 추적 조직이 존재하는 이유이기 때문입니다. 시장 자체도 이를 인식하고 있으며, 최근 몇 년 동안 설립된 여러 시장 이니셔티브로 입증되고 있습니다. 가장 주목할 만한 것은 [Integrity Council for VCMs](https://icvcm.org/)입니다.
+
+좋은 소식은 기술 발전으로 이제 품질을 정확하게 평가할 수 있다는 것입니다. 이는 구매자가 현재 신뢰할 수 있는 고품질 크레딧을 찾을 수 있다는 의미입니다. 또한 이러한 고품질 크레딧이 마땅히 가격 프리미엄을 명령하기 시작하는 것을 보고 있습니다 – 잘 기능하는 시장에서 예상할 수 있듯이 – 그리고 사회 및 환경 무결성을 우선시하는 진지한 구매자들은 실질적인 성과를 위해 기꺼이 비용을 지불하고 있습니다.
+
+모든 탄소크레딧이 완벽하지 않다는 사실이 우리가 이를 사용하지 말아야 한다는 의미는 아닙니다 – 그럴 시간은 너무 늦었습니다. 현재 [지구 온도 상승을 1.5°C 이하로 유지하기 위한 신뢰할 수 있는 경로](https://www.unep.org/resources/emissions-gap-report-2022)가 없습니다. 기후변화 협의체(IPCC)에 따르면 "과학적 증거는 명백합니다", "기후변화는 인간의 안녕과 지구 건강에 대한 위협입니다. 일관된 지구적 행동의 추가 지연은 살 수 있는 미래를 확보할 수 있는 짧고 빠르게 닫혀가는 창을 놓칠 것입니다." 우리는 탄소크레딧을 포함하여 상자 안의 모든 도구가 필요합니다.
+
+‍**우리가 고유성이 높은 탄소크레딧 시장에 대한 신뢰를 구축하지 않으면 무엇이 위험한가?**
+
+- 우리는 기업들이 오늘 자르지 못할 배출량에 대해 아무것도 하지 않을 수 있는 허가를 제공하고, 대신 완벽한 해결책을 기다립니다. 우리는 시간이 없습니다.
+
+- 우리는 유망하지만 초기 단계인 기술적 탄소 제거 솔루션이 테스트되고 입증되고 확장될 때까지 기다리는 동안 자연 기반 솔루션에 대한 자금을 극적으로 감소시킵니다.
+
+- 우리는 열대우림과 맹그로브 같은 중요한 탄소 격리 생태계가 제거되도록 허용하며, 우리의 가장 큰 탄소 저장소를 잃고, 필수 생물 다양성을 파괴하며, 토착민과 지역 공동체에 추가적인 영향을 미칩니다.
+
+탄소크레딧의 긍정적인 영향 가능성을 인식하면서, 우리는 이들이 더욱 효과적이어야 할 필요성을 인식합니다. 우리는 무결성, 투명성, 및 책임을 필요로 하며, 그것이 우리가 집단적으로 달성하기 위해 노력하고 있는 것입니다.
+
+서명인:
+
+Allister Furey/공동 설립자 및 CEO, [Sylvera](https://www.sylvera.com/)Sam Gill/공동 설립자 및 President, [Sylvera](https://www.sylvera.com/)Tommy Ricketts/공동 설립자 및 CEO, [BeZero Carbon](https://bezerocarbon.com/)Jo Anderson/공동 설립자 및 Director, [Carbon Tanzania](https://www.carbontanzania.com/)Dee Lawrence/Founder 및 Director, [Cool Effect](https://www.cooleffect.org/)Eric Wilburn/Head of Product, [EarthShot Labs](https://www.earthshot.eco/)Elliot Coad/CEO, [Ecologi](https://ecologi.com/)James Tansey/CEO, [KlimatX](https://www.klimatx.com/)Till Tornieporth/Co-Founder, [Maya Climate](https://www.maya-climate.com/)Chris Poesngen/Co-Founder, [Maya Climate](https://www.maya-climate.com/)Celia Francis/Founder, The Art of Forests & CCO, [Earthshot Labs](https://www.earthshot.eco/)Sergey Ivliev/Founder, [Vlinder Climate](https://vlinderclimate.com/)Ana Haurie/CEO, [Respira](https://www.respira-international.com/)Dr. Hassan Sachedina/Founder of BioCarbon Partners, CEO & Co-founder, [Sayari Earth](https://bcp.earth/)Marie-Noelle Keijzer/Co-founder & CEO, [We Forest](https://www.weforest.org/)Emilia Giron de Mendoza/Executive Director, [Proyecto Mirador](https://www.proyectomirador.org/)Kate Wharton/Principal & Head of Natural Capital, [CrossBoundary](https://www.crossboundary.com/)Theron Morgan-Brown/Director, [Reterra](http://www.reterra.com/)Martin Dilger/CEO, [Umwelt Projekt Management GmbH](https://www.upm-cdm.eu/de/)Tom Skirrow/CEO, [Tree Aid](https://www.treeaid.org/)Stuart Rowland/CEO, [Revalue Nature](https://revalue.earth/)Cheri Sugal/CEO, [Integrity Global Partners](https://www.integrityglobal.com/)Dr Barbara Baarsma/Rabo Carbon Bank 및 [University of Amsterdam](https://www.uva.nl/en)의 응용경제학 교수Karen Haugen-Kozyra/President, [Viresco](https://virescoad.com/)Cristiano Alves/Director, [Carbon Credit Consulting](https://carboncreditsconsulting.com/)Zack Parisa/Co-founder & CEO of [NCX](https://ncx.com/)Keith Bohannon/CEO, [Plan Vivo](https://www.planvivo.org/)Ana Milena/CEO, [Biofix](https://biofix.co/en/)Simon Mulcahy/CEO, [TIME CO2.com](https://time.com/6214808/time-co2/)Zoë Quiroz Cullen/Director of Climate & Nature Linkages, [Flora and Fauna International](https://www.fauna-flora.org/)Lisa Walker/CEO, [Ecosphere+](https://ecosphere.plus/)Natalia Arango Vélez/Executive Director, [Fondo Accion](https://fondoaccion.org/)Diego Saez Gill/CEO, [Pachama](https://pachama.com/)Justin Cochrane/Founder & CEO, [Carbon Streaming Corporation](https://www.carbonstreaming.com/)Dirk Forrister/President & CEO, [IETA](https://www.ieta.org/)Stuart Lemmon/CEO 및 Atos의 Net Zero Transformation Practice 경영이사, [EcoAct](https://eco-act.com/)Eron Bloomgarden/CEO, [Emergent](https://emergentclimate.com/)Chris Harbourt/Chief Strategy Officer, [Indigo](https://www.indigoag.com/)Bill Pazos/Co-Founder 및 Co-CEO, [Air Carbon Exchange](https://www.aircarbon.co/)Sean Penrith/CEO, [Gordian Knot Strategies](https://gordianknotstrategies.com/)BASCS [Business Alliance to Scale Climate Solutions](https://scalingclimatesolutions.org/)Kahlil Baker/Co-founder 및 CEO, [Taking Root](https://takingroot.org/)Murray Collins/CEO & Co-Founder, [Space Intelligence](https://www.space-intelligence.com/)Plinio Ribeiro/CEO, [Biofilica](https://www.biofilica.com.br/en/)Thomas Herry/CEO, [Fenix Carbon](https://www.fenixcarbon.com/)Janaina Dallan/CEO, [CarbonNext](http://carbonnext.eu/)Michel Schuurman/Chair, [REDD+ Business Initiative (RBI)](https://reddplusbusiness.com/)Aadith Moorthy/CEO, [Boomitra](https://boomitra.com/)Raphaël Haupt/Founder 및 CEO, [Toucan](https://toucan.earth/)Edward Rumsey/Managing Partner, [Permian Global](https://permianglobal.com/)Edward Mitchard/Chief Scientist & Co-founder, [Space Intelligence](https://www.space-intelligence.com/)Fabrice Le Saché/Executive Chairman 및 Co-Founder, [Aera Group FR](https://aera-group.fr/)Craig Ebert/President, [Climate Action Reserve](https://www.climateactionreserve.org/)Bryan Adkins/CEO, [Compassionate Carbon](https://www.compassionatecarbon.com/)Simon Heppner/Founder & Executive Director, [Net Zero Now](https://netzeronow.org/)Troy Carter/CEO, [Earthshot Labs](https://www.earthshot.eco/)Darren Howie/Director, Carbon & Sustainability, [Trimble](https://www.trimble.com/en/)Jesse Henry/CEO, [Heartland Industries](https://heartland.io)
