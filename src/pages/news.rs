@@ -12,6 +12,12 @@ use crate::Route;
 /// updates the result counter + "no matches" message.
 const SEARCH_JS: &str = r#"
 (function () {
+  // Initial visible cards on page load. The rest get display:none and
+  // reveal in batches as the user scrolls (Intersection Observer on a
+  // sentinel placed at the end of the currently-visible window).
+  var INITIAL = 15;
+  var BATCH   = 15;
+
   function init() {
     var input  = document.getElementById('news-search-input');
     var grid   = document.getElementById('news-grid');
@@ -24,17 +30,65 @@ const SEARCH_JS: &str = r#"
       grid.querySelectorAll('[data-search]')
     );
     var total = cards.length;
+    var visibleCount = Math.min(INITIAL, total);
+    var searching = false;
 
-    function apply() {
+    // Hide everything past the initial window. If JS isn't running the
+    // cards just stay visible — that's the graceful no-JS fallback.
+    function applyLazy() {
+      for (var i = 0; i < cards.length; i++) {
+        cards[i].style.display = (i < visibleCount) ? '' : 'none';
+      }
+    }
+
+    function revealMore() {
+      if (visibleCount >= total) return false;
+      var next = Math.min(visibleCount + BATCH, total);
+      for (var i = visibleCount; i < next; i++) cards[i].style.display = '';
+      visibleCount = next;
+      return visibleCount < total;
+    }
+
+    // Auto-reveal the next batch when the user scrolls near the bottom of
+    // the current visible window. The sentinel is the last currently-visible
+    // card; once it enters the viewport we reveal another BATCH.
+    var observer = ('IntersectionObserver' in window)
+      ? new IntersectionObserver(function (entries) {
+          if (searching) return;
+          for (var k = 0; k < entries.length; k++) {
+            if (entries[k].isIntersecting) {
+              observer.unobserve(entries[k].target);
+              var more = revealMore();
+              if (more) observeSentinel();
+            }
+          }
+        }, { rootMargin: '600px 0px' })
+      : null;
+
+    function observeSentinel() {
+      if (!observer || visibleCount === 0 || visibleCount >= total) return;
+      observer.observe(cards[visibleCount - 1]);
+    }
+
+    function applySearch() {
       var q = (input.value || '').trim().toLowerCase();
       if (clear) clear.style.display = q ? '' : 'none';
+
       if (!q) {
-        for (var i = 0; i < cards.length; i++) cards[i].style.display = '';
+        // Empty search → re-apply lazy state (collapse back to initial window
+        // unless the user already revealed more by scrolling).
+        searching = false;
+        applyLazy();
+        observeSentinel();
         status.textContent = total + ' articles';
         if (empty) empty.style.display = 'none';
         grid.style.display = '';
         return;
       }
+
+      // During search, ignore the lazy state — every card is a candidate.
+      searching = true;
+      if (observer) observer.disconnect();
       var shown = 0;
       for (var j = 0; j < cards.length; j++) {
         var hit = cards[j].getAttribute('data-search').indexOf(q) !== -1;
@@ -54,13 +108,17 @@ const SEARCH_JS: &str = r#"
       }
     }
 
-    input.addEventListener('input', apply);
+    // Initial render: apply lazy, wire up listeners, hook up the observer.
+    applyLazy();
+    observeSentinel();
+    status.textContent = total + ' articles';
+
+    input.addEventListener('input', applySearch);
     if (clear) clear.addEventListener('click', function () {
       input.value = '';
-      apply();
+      applySearch();
       input.focus();
     });
-    apply();
   }
   if (document.readyState !== 'loading') init();
   else document.addEventListener('DOMContentLoaded', init);
