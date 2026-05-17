@@ -88,7 +88,7 @@ fn HighPerformanceSection() -> Element {
                         "Plastics, textiles, paper, and construction. Global demand is accelerating the need for more sustainable materials that perform better and cost less."
                     }
                     p { class: "text-lg text-[color:var(--color-fg-muted)]",
-                        "Heartland's Imperium improves the strength of everyday plastic and textile products while reducing the cost, weight and carbon footprint."
+                        "Heartland's Imperium improves the strength of everyday products while reducing the cost, weight and carbon footprint."
                     }
                 }
                 // Right: image
