@@ -90,8 +90,17 @@ fn Section2() -> Element {
     rsx! {
         section { class: "container-content py-16 md:py-20",
             div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
-                // Left: text
-                div { class: "animate-fade-in-up md:order-1 order-2",
+                // Left: image
+                div { class: "animate-fade-in-up md:order-1 order-1",
+                    img {
+                        src: "/assets/pages/engineering-earth/mining-1.webp",
+                        alt: "farmland 1",
+                        loading: "lazy",
+                        class: "w-full rounded-xl shadow-lg",
+                    }
+                }
+                // Right: text
+                div { class: "animate-fade-in-up md:order-2 order-2",
                     p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
                         "25% Of All Biodiversity"
                     }
@@ -103,16 +112,7 @@ fn Section2() -> Element {
                         "Agricultural practices have the potential to help or harm our planet more than the Amazon."
                     }
                     p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
-                        "4.25 billion acres on Earth are farmland. Implementing regenerative farming practices can empower Earth to store more carbon in less time than any manmade technology ever could."
-                    }
-                }
-                // Right: image
-                div { class: "animate-fade-in-up md:order-2 order-1",
-                    img {
-                        src: "/assets/pages/engineering-earth/mining-1.webp",
-                        alt: "farmland 1",
-                        loading: "lazy",
-                        class: "w-full rounded-xl shadow-lg",
+                        "4.25 billion acres on Earth are farmland. Implementing regenerative farming practices can empower Earth to store more carbon in less time than any manmade technology."
                     }
                 }
             }
@@ -160,8 +160,17 @@ fn Section5() -> Element {
     rsx! {
         section { class: "container-content py-16 md:py-20",
             div { class: "grid md:grid-cols-2 gap-10 md:gap-14 items-center",
-                // Left: text
-                div { class: "animate-fade-in-up md:order-1 order-2",
+                // Left: image
+                div { class: "animate-fade-in-up md:order-1 order-1",
+                    img {
+                        src: "/assets/pages/engineering-earth/mining-3.webp",
+                        alt: "tesla",
+                        loading: "lazy",
+                        class: "w-full rounded-xl shadow-lg",
+                    }
+                }
+                // Right: text
+                div { class: "animate-fade-in-up md:order-2 order-2",
                     p { class: "text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] mb-4",
                         "Looking To The Future"
                     }
@@ -171,15 +180,6 @@ fn Section5() -> Element {
                     }
                     p { class: "text-lg text-[color:var(--color-fg-muted)] mb-4 last:mb-0",
                         "There are 40 million acres of corn farmed for ethanol here in America. By 2030, every major car manufacturer has committed to only making electric vehicles. This will create a significant reduction in the demand for ethanol."
-                    }
-                }
-                // Right: image
-                div { class: "animate-fade-in-up md:order-2 order-1",
-                    img {
-                        src: "/assets/pages/engineering-earth/mining-3.webp",
-                        alt: "tesla",
-                        loading: "lazy",
-                        class: "w-full rounded-xl shadow-lg",
                     }
                 }
             }

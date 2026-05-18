@@ -9,4 +9,5 @@ pub mod mats_amplify;
 pub mod news_carousel;
 pub mod stat_counters;
 pub mod supply_chain;
+pub mod textile_solutions;
 pub mod video_hero;
