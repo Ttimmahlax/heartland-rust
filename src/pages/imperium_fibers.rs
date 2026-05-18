@@ -5,6 +5,7 @@ use crate::components::news_carousel::NewsCarousel;
 use crate::components::supply_chain::{SupplyChainStep, SupplyIcon};
 use crate::components::textile_solutions::TextileSolutions;
 use crate::components::video_hero::VideoBackground;
+use crate::popups::TextileFiberIndexPopup;
 use crate::seo::Seo;
 
 #[component]
@@ -23,6 +24,7 @@ pub fn ImperiumFibers() -> Element {
         TextileSolutions {}
         SupplyChainSection6 {}
         NewsCarousel { heading: "Related Articles" }
+        TextileFiberIndexPopup {}
     }
 }
 

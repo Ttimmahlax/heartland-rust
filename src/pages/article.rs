@@ -2,6 +2,7 @@ use dioxus::prelude::*;
 
 use crate::components::markdown::Markdown;
 use crate::content;
+use crate::popups::{has_textile_keyword, TextileFiberIndexPopup};
 use crate::seo::{article_jsonld, HreflangAlternates, Seo};
 use crate::Route;
 
@@ -49,6 +50,7 @@ fn ArticleInner(props: ArticleInnerProps) -> Element {
     let tags = article.front.tags.clone();
     let body = article.body.clone();
     let alt = article.front.hero_alt.clone();
+    let show_textile_embed = has_textile_keyword(&title) || has_textile_keyword(&body);
 
     let jsonld = article_jsonld(
         &title,
@@ -126,6 +128,10 @@ fn ArticleInner(props: ArticleInnerProps) -> Element {
                 Link { to: Route::News {}, class: "hover:text-[color:var(--color-accent)]", "← All articles" }
                 Link { to: Route::WhyImperium {}, class: "btn-accent-gradient text-sm", "Why Imperium" }
             }
+        }
+
+        if show_textile_embed {
+            TextileFiberIndexPopup {}
         }
     }
 }

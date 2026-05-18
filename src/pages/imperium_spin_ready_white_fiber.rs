@@ -4,6 +4,7 @@ use crate::components::logo_carousel::LogoCarousel;
 use crate::components::news_carousel::NewsCarousel;
 use crate::components::textile_solutions::TextileSolutions;
 use crate::components::video_hero::VideoBackground;
+use crate::popups::TextileFiberIndexPopup;
 use crate::seo::Seo;
 use crate::Route;
 
@@ -23,6 +24,7 @@ pub fn ImperiumSpinReadyWhiteFiber() -> Element {
         TextileSolutions {}
         ClosingCta {}
         NewsCarousel { heading: "Related Articles" }
+        TextileFiberIndexPopup {}
     }
 }
 

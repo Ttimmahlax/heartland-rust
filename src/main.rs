@@ -6,6 +6,7 @@ mod components;
 mod content;
 mod i18n;
 mod pages;
+mod popups;
 mod seo;
 mod tracking;
 

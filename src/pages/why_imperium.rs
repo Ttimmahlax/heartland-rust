@@ -7,6 +7,7 @@ use crate::components::markets_amplify::MarketsAmplify;
 use crate::components::news_carousel::NewsCarousel;
 use crate::components::supply_chain::{SupplyChainStep, SupplyIcon};
 use crate::components::video_hero::VideoBackground;
+use crate::popups::TextileFiberIndexPopup;
 use crate::seo::Seo;
 use crate::Route;
 
@@ -34,6 +35,7 @@ pub fn WhyImperium() -> Element {
         LocalFarmingLocalManufacturing {}
         CarbonCalculator {}
         NewsCarousel { heading: "Related Articles" }
+        TextileFiberIndexPopup {}
     }
 }
 
