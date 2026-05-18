@@ -65,7 +65,7 @@ const EXECUTIVES: &[Person] = &[
     Person { slug: "tim-almond",      name: "Tim Almond",      role: "Chief Operating Officer" },
     Person { slug: "robby-dameron",   name: "Robby Dameron",   role: "Head of Sales" },
     Person { slug: "markus-von-graf", name: "Markus Von Graf", role: "Strategic Initiatives" },
-    Person { slug: "amey-padma",      name: "Amey Padma",      role: "Head of India" },
+    Person { slug: "amey-padma",      name: "Amey Padma",      role: "India Head" },
 ];
 
 const ADVISORS: &[Person] = &[
