@@ -41,7 +41,7 @@ const LOGOS: &[(&str, &str, &str, &str)] = &[
     ),
     (
         "cleantechnica",
-        "cleantechnica.png",
+        "cleantechnica.webp",
         "Heartland in CleanTechnica",
         "https://cleantechnica.com/2024/03/13/precision-agriculture-the-future-of-farming/",
     ),
@@ -59,7 +59,7 @@ const LOGOS: &[(&str, &str, &str, &str)] = &[
     ),
     (
         "basf",
-        "basf.jpg",
+        "basf.webp",
         "Heartland × BASF investment",
         "https://www.basf.com/global/en/media/news-releases/2024/05/p-24-191.html",
     ),
