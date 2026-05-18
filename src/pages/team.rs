@@ -62,16 +62,16 @@ struct Person {
 
 const EXECUTIVES: &[Person] = &[
     Person { slug: "john-ely",        name: "John Ely",        role: "Chief Executive Officer" },
-    Person { slug: "tim-almond",      name: "Tim Almond",      role: "Chairman & Chief Operating Officer" },
-    Person { slug: "robby-dameron",   name: "Robby Dameron",   role: "Materials Science" },
-    Person { slug: "markus-von-graf", name: "Markus Von Graf", role: "Strategy & Capital Markets" },
+    Person { slug: "tim-almond",      name: "Tim Almond",      role: "Chief Operating Officer" },
+    Person { slug: "robby-dameron",   name: "Robby Dameron",   role: "Head of Sales" },
+    Person { slug: "markus-von-graf", name: "Markus Von Graf", role: "Strategic Initiatives" },
     Person { slug: "amey-padma",      name: "Amey Padma",      role: "Head of India" },
 ];
 
 const ADVISORS: &[Person] = &[
-    Person { slug: "eric-austermann", name: "Eric Austermann", role: "Engineering Advisor" },
+    Person { slug: "eric-austermann", name: "Eric Austermann", role: "Senior Advisor" },
     Person { slug: "roger-blackwell", name: "Roger Blackwell", role: "Senior Advisor" },
-    Person { slug: "deborah-labelle", name: "Deborah Labelle", role: "General Counsel" },
+    Person { slug: "deborah-labelle", name: "Deborah Labelle", role: "Senior Advisor" },
 ];
 
 #[component]
