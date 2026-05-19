@@ -285,7 +285,7 @@ fn AboutDropdown() -> Element {
 #[component]
 fn MobileMenu(close: EventHandler<()>) -> Element {
     rsx! {
-        div { class: "lg:hidden border-t border-[color:var(--color-border)] max-h-[80vh] overflow-y-auto",
+        div { class: "lg:hidden bg-[color:var(--color-bg)] border-t border-[color:var(--color-border)] shadow-xl max-h-[80vh] overflow-y-auto",
             div { class: "container-content py-4 flex flex-col gap-1 text-base",
                 MobileLink { to: Route::WhyImperium {}, label: "Why Imperium", close }
 
